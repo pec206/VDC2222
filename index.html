@@ -97,7 +97,7 @@ ul{list-style:none}
 .hdr-logo img{height:40px;width:auto}
 .hdr-nav{flex:1;display:flex;justify-content:center}
 .nav-ul{display:flex;align-items:center;gap:2px}
-.nav-ul a{font-size:13px;font-weight:600;color:rgba(255,255,255,.72);padding:7px 12px;border-radius:7px;transition:all .2s}
+.nav-ul a{font-size:12.5px;font-weight:600;color:rgba(255,255,255,.72);padding:6px 9px;border-radius:7px;transition:all .2s;white-space:nowrap}
 .nav-ul a:hover{color:var(--w);background:rgba(255,255,255,.08)}
 .hdr-r{display:flex;align-items:center;gap:12px;flex-shrink:0}
 .hdr-lic{font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
@@ -676,6 +676,66 @@ ul{list-style:none}
   </div>
 </div>
 
+<!-- BEFORE / AFTER GALLERY -->
+<section id="ba" class="S" style="background:var(--s900)" aria-labelledby="ba-h">
+  <div class="W">
+    <div class="ba-h">
+      <p class="eye eye--lt eye--cx rv">Real Results</p>
+      <h2 class="Hlg Hlg--lt rv d1" id="ba-h" style="text-align:center">
+        Transformations That<br><em class="em--lt">Speak for Themselves</em>
+      </h2>
+      <p class="Blg Blg--lt rv d2" style="max-width:480px;margin:10px auto 0;text-align:center">
+        Every case planned digitally, executed with precision. Real patients. Real results.
+      </p>
+    </div>
+    <div class="ba-fs" role="tablist">
+      <button class="ba-f ac" data-filter="all" role="tab" aria-selected="true">All Cases</button>
+      <button class="ba-f" data-filter="implants" role="tab" aria-selected="false">Implants</button>
+      <button class="ba-f" data-filter="veneers" role="tab" aria-selected="false">Veneers</button>
+      <button class="ba-f" data-filter="fullmouth" role="tab" aria-selected="false">Full Mouth</button>
+    </div>
+    <div class="ba-carousel" id="ba-carousel">
+      <div class="ba-track" id="ba-track">
+        <div class="bac" data-cat="veneers">
+          <div class="ba-slider" data-before="ba-1-before.webp" data-after="ba-1-after.webp">
+            <div class="ba-img-b"><img src="ba-1-before.webp" alt="Before — Veneers"></div>
+            <div class="ba-img-a"><img src="ba-1-after.webp" alt="After — Veneers"></div>
+            <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
+            <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
+          </div>
+          <div class="ba-inf"><h4>Porcelain Veneers</h4><p>Dr. Ammar Anbari · Digital Smile Design</p></div>
+        </div>
+        <div class="bac" data-cat="fullmouth">
+          <div class="ba-slider" data-before="ba-2-before.webp" data-after="ba-2-after.webp">
+            <div class="ba-img-b"><img src="ba-2-before.webp" alt="Before — Full Mouth"></div>
+            <div class="ba-img-a"><img src="ba-2-after.webp" alt="After — Full Mouth"></div>
+            <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
+            <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
+          </div>
+          <div class="ba-inf"><h4>Full Mouth Rehabilitation</h4><p>Dr. Ammar Anbari · Crowns + Implants</p></div>
+        </div>
+        <div class="bac" data-cat="fullmouth">
+          <div class="ba-slider" data-before="ba-3-before.webp" data-after="ba-3-after.webp">
+            <div class="ba-img-b"><img src="ba-3-before.webp" alt="Before — Full Mouth"></div>
+            <div class="ba-img-a"><img src="ba-3-after.webp" alt="After — Full Mouth"></div>
+            <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
+            <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
+          </div>
+          <div class="ba-inf"><h4>Full Mouth Rehabilitation</h4><p>Dr. Asmaa Butt · Complete Restoration</p></div>
+        </div>
+      </div>
+      <div class="ba-arrows">
+        <button class="ba-arr" id="ba-prev" aria-label="Previous" disabled>←</button>
+        <button class="ba-arr" id="ba-next" aria-label="Next">→</button>
+      </div>
+    </div>
+    <div class="ba-ct rv">
+      <a href="gallery.html" class="btn btn--g btn--arr">View Full Gallery</a>
+      <a href="case-studies.html" class="btn btn--gh" style="margin-left:10px">Case Studies</a>
+    </div>
+  </div>
+</section>
+
 <!-- ② SERVICES -->
 <section id="services" class="S" aria-labelledby="srv-h">
   <div class="W">
@@ -695,7 +755,7 @@ ul{list-style:none}
           <h3>Dental Implants</h3>
           <p class="sc-prc">Starting from 2,600 AED</p>
           <p>Straumann® implants with CBCT-guided surgery. Immediate loading &amp; All-on-X available.</p>
-          <div class="sc-tech"><span>CBCT</span><span>3Shape Scanner</span><span>Guided Surgery</span><span>STA Anesthesia</span></div>
+          <div class="sc-tech"><span>CBCT</span><span>Implant Studio</span><span>Guided Surgery</span><span>STA</span><span>35yr Experience</span><span>5,000+ Implants</span></div>
           <div class="sc-book">
             <a href="dental-implants.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             <a href="case-studies.html#implants" class="sc-cs">Cases<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
@@ -738,9 +798,9 @@ ul{list-style:none}
         <div class="sc-img"><img src="whitning.jpg" alt="Teeth Whitening" loading="lazy"><span class="sc-bdg sc-bdg--w">Whitening</span></div>
         <div class="sc-body">
           <h3>Teeth Whitening</h3>
-          <p class="sc-prc">Starting from 1,099 AED</p>
-          <p>Philips Zoom in-chair whitening. Visible results in a single session.</p>
-          <div class="sc-tech"><span>Philips Zoom</span></div>
+          <p class="sc-prc">Starting from 580 AED</p>
+          <p>Multiple whitening options — Nano, Zoom, or take-home kits. Packages include consultation, X-ray &amp; scaling.</p>
+          <div class="sc-tech"><span>Nano Whitening</span><span>Philips Zoom</span><span>Home Kit</span></div>
           <div class="sc-book">
             <a href="whitening.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             <a href="case-whitening.html" class="sc-cs">Cases<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
@@ -753,7 +813,7 @@ ul{list-style:none}
         <div class="sc-body">
           <h3>Oral &amp; Maxillofacial Surgery</h3>
           <p>Complex extractions, bone grafting &amp; sinus lifts — led by Dr. Hussien, 35+ years.</p>
-          <div class="sc-tech"><span>CBCT</span><span>Piezo Surgery</span><span>STA Anesthesia</span></div>
+          <div class="sc-tech"><span>CBCT</span><span>Piezo Surgery</span><span>Nitrous Oxide</span><span>STA</span><span>35yr Experience</span></div>
           <div class="sc-book">
             <a href="oral-surgery.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             <a href="case-studies.html#surgery" class="sc-cs">Cases<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
@@ -767,7 +827,7 @@ ul{list-style:none}
           <h3>Prosthodontics</h3>
           <p class="sc-prc">Starting from 575 AED</p>
           <p>Crowns, bridges &amp; prosthetics — designed with CAD/CAM in our in-house lab.</p>
-          <div class="sc-tech"><span>3Shape Scanner</span><span>CAD/CAM Milling</span><span>IMES-icore</span></div>
+          <div class="sc-tech"><span>3Shape Scanner</span><span>Exocad</span><span>CAD/CAM Milling</span><span>IMES-icore</span></div>
           <div class="sc-book">
             <a href="prosthodontics.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             <a href="case-prosthodontic.html" class="sc-cs">Cases<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
@@ -799,7 +859,7 @@ ul{list-style:none}
           <h3>Scaling &amp; Polishing</h3>
           <p class="sc-prc">Starting from 195 AED</p>
           <p>Professional deep cleaning to remove tartar and prevent gum disease.</p>
-          <div class="sc-tech"><span>Ultrasonic Scaler</span></div>
+          <div class="sc-tech"><span>Ultrasonic Scaler</span><span>Air Flow</span><span>Premium Polishing</span></div>
           <div class="sc-book">
             <a href="scaling.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
@@ -825,7 +885,7 @@ ul{list-style:none}
           <h3>Pediatric Dentistry</h3>
           <p class="sc-prc">Starting from 97 AED</p>
           <p>Gentle dental care for children — preventive treatments, sealants &amp; space maintainers.</p>
-          <div class="sc-tech"><span>STA Anesthesia</span></div>
+          <div class="sc-tech"><span>STA Anesthesia</span><span>Fluoride Sessions</span></div>
           <div class="sc-book">
             <a href="pediatric.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
@@ -914,69 +974,15 @@ ul{list-style:none}
             <p>Exact position from CBCT plan</p>
             <span class="dtc-tag">Precision placement</span>
           </div>
+          <div class="dtc rv d4">
+            <div class="dtc-img" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--b50),var(--g50))"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--g500)" stroke-width="1.2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><circle cx="9" cy="9.5" r="1" fill="var(--g500)"/><circle cx="15" cy="9.5" r="1" fill="var(--g500)"/></svg></div>
+            <h4>Nitrous Oxide Sedation</h4>
+            <p>Laughing gas for anxiety-free surgery</p>
+            <span class="dtc-tag">Calm &amp; comfortable</span>
+          </div>
         </div>
       </div>
 
-    </div>
-  </div>
-</section>
-
-<!-- ④ BEFORE / AFTER -->
-<section id="ba" class="S" style="background:var(--s900)" aria-labelledby="ba-h">
-  <div class="W">
-    <div class="ba-h">
-      <p class="eye eye--lt eye--cx rv">Real Results</p>
-      <h2 class="Hlg Hlg--lt rv d1" id="ba-h" style="text-align:center">
-        Transformations That<br><em class="em--lt">Speak for Themselves</em>
-      </h2>
-      <p class="Blg Blg--lt rv d2" style="max-width:480px;margin:10px auto 0;text-align:center">
-        Every case planned digitally, executed with precision. Real patients. Real results.
-      </p>
-    </div>
-    <div class="ba-fs" role="tablist">
-      <button class="ba-f ac" data-filter="all" role="tab" aria-selected="true">All Cases</button>
-      <button class="ba-f" data-filter="implants" role="tab" aria-selected="false">Implants</button>
-      <button class="ba-f" data-filter="veneers" role="tab" aria-selected="false">Veneers</button>
-      <button class="ba-f" data-filter="fullmouth" role="tab" aria-selected="false">Full Mouth</button>
-    </div>
-    <div class="ba-carousel" id="ba-carousel">
-      <div class="ba-track" id="ba-track">
-        <div class="bac" data-cat="veneers">
-          <div class="ba-slider" data-before="ba-1-before.webp" data-after="ba-1-after.webp">
-            <div class="ba-img-b"><img src="ba-1-before.webp" alt="Before — Veneers"></div>
-            <div class="ba-img-a"><img src="ba-1-after.webp" alt="After — Veneers"></div>
-            <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
-            <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
-          </div>
-          <div class="ba-inf"><h4>Porcelain Veneers</h4><p>Dr. Ammar Anbari · Digital Smile Design</p></div>
-        </div>
-        <div class="bac" data-cat="fullmouth">
-          <div class="ba-slider" data-before="ba-2-before.webp" data-after="ba-2-after.webp">
-            <div class="ba-img-b"><img src="ba-2-before.webp" alt="Before — Full Mouth"></div>
-            <div class="ba-img-a"><img src="ba-2-after.webp" alt="After — Full Mouth"></div>
-            <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
-            <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
-          </div>
-          <div class="ba-inf"><h4>Full Mouth Rehabilitation</h4><p>Dr. Ammar Anbari · Crowns + Implants</p></div>
-        </div>
-        <div class="bac" data-cat="fullmouth">
-          <div class="ba-slider" data-before="ba-3-before.webp" data-after="ba-3-after.webp">
-            <div class="ba-img-b"><img src="ba-3-before.webp" alt="Before — Full Mouth"></div>
-            <div class="ba-img-a"><img src="ba-3-after.webp" alt="After — Full Mouth"></div>
-            <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
-            <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
-          </div>
-          <div class="ba-inf"><h4>Full Mouth Rehabilitation</h4><p>Dr. Asmaa Butt · Complete Restoration</p></div>
-        </div>
-      </div>
-      <div class="ba-arrows">
-        <button class="ba-arr" id="ba-prev" aria-label="Previous" disabled>←</button>
-        <button class="ba-arr" id="ba-next" aria-label="Next">→</button>
-      </div>
-    </div>
-    <div class="ba-ct rv">
-      <a href="gallery.html" class="btn btn--g btn--arr">View Full Gallery</a>
-      <a href="case-studies.html" class="btn btn--gh" style="margin-left:10px">Case Studies</a>
     </div>
   </div>
 </section>
@@ -1362,12 +1368,15 @@ document.querySelectorAll('.ba-f').forEach(b=>b.addEventListener('click',()=>{
   b.classList.add('ac');b.setAttribute('aria-selected','true');
   const track=document.getElementById('ba-track');
   track.querySelectorAll('.bac').forEach(card=>{
-    if(filter==='all'||card.dataset.cat===filter){
-      card.style.display='block';
-    } else {
-      card.style.display='none';
-    }
+    card.style.display=(filter==='all'||card.dataset.cat===filter)?'block':'none';
   });
+  track.style.transform='translateX(0)';
+  const prev=document.getElementById('ba-prev');
+  const next=document.getElementById('ba-next');
+  if(prev)prev.disabled=true;
+  const visible=track.querySelectorAll('.bac[style*="block"],.bac:not([style])');
+  const vis=window.innerWidth<600?1:window.innerWidth<900?2:3;
+  if(next)next.disabled=visible.length<=vis;
 }));
 // Seamless marquee for partners & insurance
 document.querySelectorAll('.tb-track, .ins-track').forEach(track=>{
