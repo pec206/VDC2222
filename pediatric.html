@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pediatric Dentistry Abu Dhabi | Vision Dental Clinic</title>
+<meta name="description" content="Gentle pediatric dentistry in Abu Dhabi. Preventive treatments, sealants, space maintainers & pain-free care for children. STA digital anesthesia. Vision Dental Clinic.">
+<meta property="og:title" content="Pediatric Dentistry | Vision Dental Clinic Abu Dhabi">
+<meta property="og:description" content="Gentle dental care for children — preventive treatments, sealants, and space maintainers at Vision Dental Clinic Abu Dhabi.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_AE">
+<meta property="og:image" content="og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --b900:#1a3a52;--b800:#1e4a6e;--b700:#2D5F8A;--b50:#eaf4fb;
+  --g600:#5a9f2a;--g500:#7AB648;--g100:#e8f5d8;--g50:#f3fae8;
+  --s900:#0f1923;--s800:#1c2b38;--s600:#3d5268;--s400:#7a95ab;
+  --s200:#c8d8e4;--s100:#e8eff5;--s50:#f5f8fb;--w:#fff;
+  --gg:linear-gradient(135deg,#5a9f2a,#7AB648);
+  --gb:linear-gradient(135deg,#1e4a6e,#2D5F8A);
+  --fd:'DM Serif Display',Georgia,serif;--fb:'Plus Jakarta Sans',system-ui,sans-serif;
+  --sh:0 2px 8px rgba(15,25,35,.08);--shm:0 6px 24px rgba(15,25,35,.10);--shl:0 16px 48px rgba(15,25,35,.14);
+  --cw:1160px;--px:clamp(20px,5vw,48px);--r:8px;--rl:22px;--rxl:32px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{font-family:var(--fb);color:var(--s900);background:var(--w);overflow-x:hidden;line-height:1.6}
+img{max-width:100%;height:auto;display:block}a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer;border:none;background:none}ul{list-style:none}
+.W{max-width:var(--cw);margin:0 auto;padding:0 var(--px)}
+.S{padding:clamp(60px,7vw,100px) 0}.S--lt{background:var(--s50)}.S--dk{background:var(--s900);color:var(--w)}
+.eye{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--g600);margin-bottom:12px}
+.eye::before{content:'';width:16px;height:2px;background:var(--gg);border-radius:2px}
+.eye--lt{color:#93c96a}.eye--lt::before{background:var(--gg)}.eye--cx{justify-content:center}
+.Hlg{font-family:var(--fd);font-size:clamp(30px,4vw,50px);line-height:1.12;letter-spacing:-.015em;color:var(--b900)}
+.Hlg--lt{color:var(--w)}
+.Hmd{font-family:var(--fd);font-size:clamp(22px,2.8vw,34px);line-height:1.2;color:var(--b900)}
+.em{color:var(--g500);font-style:italic}.em--lt{color:#93c96a;font-style:italic}
+.Blg{font-size:clamp(14px,1.4vw,16px);line-height:1.78;color:var(--s600)}.Blg--lt{color:rgba(255,255,255,.62)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;padding:13px 26px;border-radius:100px;white-space:nowrap;transition:all .25s;cursor:pointer}
+.btn--g{background:var(--gg);color:var(--w);box-shadow:0 4px 18px rgba(90,159,42,.30)}.btn--g:hover{transform:translateY(-2px);box-shadow:0 8px 26px rgba(90,159,42,.40)}
+.btn--b{background:var(--gb);color:var(--w);box-shadow:0 4px 18px rgba(30,74,110,.25)}.btn--b:hover{transform:translateY(-2px)}
+.btn--gh{background:rgba(255,255,255,.1);color:var(--w);border:1.5px solid rgba(255,255,255,.28)}.btn--gh:hover{background:rgba(255,255,255,.18);transform:translateY(-2px)}
+.btn--lg{font-size:16px;padding:16px 36px}
+.btn--arr::after{content:'\2192';font-size:14px;transition:transform .2s}.btn--arr:hover::after{transform:translateX(4px)}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s cubic-bezier(.4,0,.2,1),transform .6s cubic-bezier(.4,0,.2,1)}.rv.on{opacity:1;transform:none}
+.rv-l{transform:translateX(-18px)}.rv-l.on{transform:none}.rv-r{transform:translateX(18px)}.rv-r.on{transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.18s}.d3{transition-delay:.26s}.d4{transition-delay:.34s}
+#hdr{position:fixed;top:0;left:0;right:0;z-index:1000;transition:background .3s,box-shadow .3s;padding:0 var(--px)}
+#hdr.on{background:rgba(10,22,36,.96);backdrop-filter:blur(24px);box-shadow:0 1px 0 rgba(255,255,255,.05),0 4px 24px rgba(0,0,0,.22)}
+.hdr-in{max-width:var(--cw);margin:0 auto;display:flex;align-items:center;gap:20px;padding:14px 0}
+.hdr-logo img{height:38px;width:auto}.hdr-logo span{font-size:15px;font-weight:800;color:var(--w)}
+.hdr-nav{flex:1;display:flex;justify-content:center}.nav-ul{display:flex;align-items:center;gap:2px}
+.nav-ul a{font-size:13px;font-weight:600;color:rgba(255,255,255,.72);padding:7px 12px;border-radius:7px;transition:all .2s}
+.nav-ul a:hover,.nav-ul a.ac{color:var(--w);background:rgba(255,255,255,.08)}
+.hdr-r{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.hdr-lic{font-size:9px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:rgba(255,255,255,.38);text-align:right;line-height:1.4}
+.hdr-lic b{color:rgba(255,255,255,.6);display:block;font-size:10px}
+.hbg{display:none;flex-direction:column;gap:5px;padding:6px;cursor:pointer}
+.hbg span{display:block;width:22px;height:2px;background:var(--w);border-radius:2px;transition:all .3s}
+.hbg.op span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}.hbg.op span:nth-child(2){opacity:0}.hbg.op span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.mob-nav{display:none;position:fixed;inset:0;z-index:999;background:rgba(10,22,36,.98);backdrop-filter:blur(24px);flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:80px 32px 40px}
+.mob-nav.op{display:flex}
+.mob-nav a{font-size:19px;font-weight:700;color:rgba(255,255,255,.7);padding:12px 40px;border-radius:12px;width:100%;text-align:center;transition:all .2s}
+.mob-nav a:hover{color:var(--w);background:rgba(255,255,255,.08)}
+.mob-nav .btn{width:100%;justify-content:center;margin-top:12px}
+.mob-x{position:absolute;top:22px;right:22px;color:rgba(255,255,255,.6);font-size:22px;cursor:pointer;padding:8px;line-height:1}
+.srv-hero{min-height:56vh;position:relative;display:flex;align-items:center;background:var(--s900) url('hero-bg.webp') center/cover no-repeat;overflow:hidden}
+.srv-hero-bg{position:absolute;inset:0;z-index:0;background:url('pediatric.webp') center/cover no-repeat;opacity:.2;mix-blend-mode:luminosity}
+.srv-hero-ov{position:absolute;inset:0;z-index:1;background:linear-gradient(to right,rgba(10,22,36,.95) 0%,rgba(10,22,36,.7) 100%)}
+.srv-hero-in{position:relative;z-index:2;max-width:var(--cw);margin:0 auto;padding:130px var(--px) 72px;width:100%}
+.srv-breadcrumb{display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(255,255,255,.45);margin-bottom:20px}
+.srv-breadcrumb a{color:rgba(255,255,255,.45);transition:color .2s}.srv-breadcrumb a:hover{color:rgba(255,255,255,.8)}
+.srv-breadcrumb span{color:rgba(255,255,255,.25)}
+.srv-hero h1{font-family:var(--fd);font-size:clamp(36px,5vw,64px);color:var(--w);line-height:1.07;letter-spacing:-.02em;margin-bottom:16px}
+.srv-hero h1 em{font-style:italic;color:#93c96a}
+.srv-hero-sub{font-size:clamp(15px,1.5vw,17px);color:rgba(255,255,255,.62);line-height:1.75;max-width:520px;margin-bottom:32px}
+.srv-hero-acts{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:36px}
+.srv-hero-trust{display:flex;flex-wrap:wrap;gap:20px}
+.sht{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;color:rgba(255,255,255,.55)}
+.sht svg{width:16px;height:16px;stroke:#93c96a;fill:none;stroke-width:2;flex-shrink:0}
+.ov-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.ov-img{border-radius:var(--rxl);overflow:hidden;aspect-ratio:4/3;background:linear-gradient(135deg,var(--b50),var(--g50))}
+.ov-img img{width:100%;height:100%;object-fit:cover}
+.ov-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
+.ov-stat{text-align:center;padding:16px 10px;background:linear-gradient(150deg,var(--b50),var(--g50));border:.5px solid var(--s100);border-radius:var(--r)}
+.ov-sn{font-family:var(--fd);font-size:26px;color:var(--b700);line-height:1;margin-bottom:4px}.ov-sn b{color:var(--g600);font-style:normal}
+.ov-sl{font-size:10px;font-weight:700;color:var(--s600);text-transform:uppercase;letter-spacing:.04em;line-height:1.3}
+.proc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.proc-step{display:flex;gap:18px;align-items:flex-start;background:var(--w);border:.5px solid var(--s100);border-radius:var(--rl);padding:22px 24px;transition:all .28s}
+.proc-step:hover{box-shadow:var(--shm);border-color:transparent}
+.proc-num{width:42px;height:42px;border-radius:50%;background:var(--gg);color:var(--w);font-weight:800;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.proc-step h4{font-size:15px;font-weight:800;color:var(--b900);margin-bottom:5px}
+.proc-step p{font-size:13px;line-height:1.6;color:var(--s600)}
+.tech-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.tech-card{background:var(--w);border:.5px solid var(--s100);border-radius:var(--rl);overflow:hidden;transition:all .28s}
+.tech-card:hover{box-shadow:var(--shm);transform:translateY(-4px)}
+.tech-card-img{height:180px;overflow:hidden;background:linear-gradient(135deg,var(--b50),var(--g50))}
+.tech-card-img img{width:100%;height:100%;object-fit:cover}
+.tech-card-body{padding:18px}.tech-card-body h3{font-size:15px;font-weight:800;color:var(--b900);margin-bottom:6px}
+.tech-card-body p{font-size:13px;line-height:1.6;color:var(--s600)}
+.ben-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.ben-card{background:var(--w);border:.5px solid var(--s100);border-radius:var(--rl);padding:28px 22px;text-align:center;transition:all .28s}
+.ben-card:hover{box-shadow:var(--shm);transform:translateY(-4px)}
+.ben-ico{width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,var(--b50),var(--g50));display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+.ben-ico svg{width:24px;height:24px;stroke:var(--b700);fill:none;stroke-width:1.6;stroke-linecap:round}
+.ben-card h3{font-size:15px;font-weight:800;color:var(--b900);margin-bottom:6px}
+.ben-card p{font-size:13px;line-height:1.6;color:var(--s600)}
+.srv-cta{background:linear-gradient(rgba(10,22,36,.88),rgba(10,22,36,.88)),url('hero-bg.webp') center/cover no-repeat;position:relative;overflow:hidden}
+.srv-cta::before{content:'';position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(122,182,72,.1) 0%,transparent 70%);top:-80px;right:-60px;pointer-events:none}
+.srv-cta-in{position:relative;z-index:1;text-align:center;max-width:600px;margin:0 auto}
+.srv-cta h2{font-family:var(--fd);font-size:clamp(28px,4vw,48px);color:var(--w);line-height:1.1;margin-bottom:14px}
+.srv-cta p{font-size:16px;color:rgba(255,255,255,.55);line-height:1.75;margin-bottom:32px}
+.srv-cta-btns{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+.srv-cta-inf{display:flex;justify-content:center;flex-wrap:wrap;gap:20px}
+.sci{display:flex;align-items:center;gap:7px;font-size:13px;color:rgba(255,255,255,.42);font-weight:500}
+.sci svg{width:14px;height:14px;stroke:#93c96a;fill:none;stroke-width:2;stroke-linecap:round;flex-shrink:0}
+.rel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rel-card{border-radius:var(--rl);overflow:hidden;border:.5px solid var(--s100);background:var(--w);transition:all .28s}
+.rel-card:hover{box-shadow:var(--shl);transform:translateY(-5px);border-color:transparent}
+.rel-img{height:170px;overflow:hidden}.rel-img img{width:100%;height:100%;object-fit:cover;transition:transform .45s}
+.rel-card:hover .rel-img img{transform:scale(1.05)}
+.rel-img-ph{height:170px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--b50),var(--g50))}
+.rel-body{padding:18px}.rel-body h3{font-size:15px;font-weight:800;color:var(--b900);margin-bottom:8px}
+.rel-body p{font-size:13px;line-height:1.6;color:var(--s600);margin-bottom:12px}
+.rel-lnk{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:700;color:var(--g600);transition:gap .18s}
+.rel-lnk:hover{gap:9px}.rel-lnk svg{width:12px;height:12px;transition:transform .18s}.rel-lnk:hover svg{transform:translateX(3px)}
+#ftr{background:var(--s900);border-top:.5px solid rgba(255,255,255,.05)}
+.ft{padding:52px var(--px) 36px;max-width:var(--cw);margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px}
+.fl img{height:36px;width:auto;margin-bottom:12px}.fl-d{font-size:13px;line-height:1.7;color:rgba(255,255,255,.38);margin-bottom:18px;max-width:230px}
+.fl-lic{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.05);border:.5px solid rgba(255,255,255,.08);border-radius:var(--r);padding:8px 12px;font-size:9.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:rgba(255,255,255,.42)}
+.fl-lic svg{width:12px;height:12px;stroke:#93c96a;fill:none;stroke-width:2;flex-shrink:0}
+.fcol h4{font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:14px}
+.fls{display:flex;flex-direction:column;gap:8px}.fls a{font-size:13px;color:rgba(255,255,255,.46);transition:color .2s}.fls a:hover{color:var(--w)}
+.fcs{display:flex;flex-direction:column;gap:11px}.fci{display:flex;align-items:flex-start;gap:8px}
+.fci svg{width:13px;height:13px;stroke:#93c96a;fill:none;stroke-width:2;stroke-linecap:round;flex-shrink:0;margin-top:2px}
+.fci p{font-size:12.5px;color:rgba(255,255,255,.46);line-height:1.5}
+.fb{border-top:.5px solid rgba(255,255,255,.05);padding:16px var(--px);max-width:var(--cw);margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.fb p,.fb a{font-size:11.5px;color:rgba(255,255,255,.25)}.fb a:hover{color:rgba(255,255,255,.5)}.fb-ls{display:flex;gap:16px}
+@media(max-width:900px){.ov-grid{grid-template-columns:1fr;gap:40px}.proc-grid{grid-template-columns:1fr}.tech-grid{grid-template-columns:1fr}.ben-grid{grid-template-columns:repeat(2,1fr)}.rel-grid{grid-template-columns:repeat(2,1fr)}.ft{grid-template-columns:1fr 1fr;gap:28px}}
+@media(max-width:768px){.hdr-nav,.hdr-lic,.hdr-ct{display:none}.hbg{display:flex}.ben-grid{grid-template-columns:1fr}.rel-grid{grid-template-columns:1fr}.ft{grid-template-columns:1fr;gap:24px}}
+.wa-float{position:fixed;bottom:24px;right:24px;z-index:900}.wa-float a{display:flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s;position:relative}.wa-float a:hover{transform:scale(1.1)}.wa-float svg{width:28px;height:28px;fill:#fff}
+.wa-pulse{position:absolute;inset:0;border-radius:50%;background:rgba(37,211,102,.3);animation:wa-ring 2s ease-out infinite;pointer-events:none}
+@keyframes wa-ring{0%{transform:scale(1);opacity:1}100%{transform:scale(1.6);opacity:0}}
+</style>
+</head>
+<body>
+<nav class="mob-nav" id="mob-nav">
+  <button class="mob-x" id="mob-x">&#10005;</button>
+  <a href="index.html">Home</a><a href="about-us.html">About Us</a><a href="services.html">Services</a>
+  <a href="index.html#trust-stack">Our Team</a><a href="gallery.html">Gallery</a><a href="blog.html">Blog</a>
+  <a href="medical-tourism.html">Medical Tourism</a><a href="contact.html">Contact</a>
+  <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book Appointment</a>
+</nav>
+<header id="hdr"><div class="hdr-in">
+  <a href="index.html" class="hdr-logo"><img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none';this.nextSibling.style.display='block'"><span style="display:none">Vision Dental</span></a>
+  <nav class="hdr-nav"><ul class="nav-ul">
+    <li><a href="index.html">Home</a></li><li><a href="about-us.html">About Us</a></li>
+    <li><a href="services.html" class="ac">Services</a></li><li><a href="index.html#trust-stack">Our Team</a></li>
+    <li><a href="gallery.html">Gallery</a></li><li><a href="blog.html">Blog</a></li>
+    <li><a href="medical-tourism.html">Medical Tourism</a></li><li><a href="contact.html">Contact</a></li>
+  </ul></nav>
+  <div class="hdr-r">
+    <div class="hdr-lic"><span>MOHAP Licensed</span><b>No. 5889VHC5-110626</b></div>
+    <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g hdr-ct" style="font-size:12.5px;padding:9px 18px">Book Appointment</a>
+    <button class="hbg" id="hbg"><span></span><span></span><span></span></button>
+  </div>
+</div></header>
+
+<section class="srv-hero">
+  <div class="srv-hero-bg"></div><div class="srv-hero-ov"></div>
+  <div class="srv-hero-in">
+    <div class="srv-breadcrumb"><a href="index.html">Home</a><span>/</span><a href="services.html">Services</a><span>/</span><span style="color:rgba(255,255,255,.7)">Pediatric Dentistry</span></div>
+    <h1>Pediatric<br>Dentistry <em>Abu Dhabi</em></h1>
+    <p class="srv-hero-sub">Gentle, compassionate dental care designed specifically for children. From first visits to preventive treatments, we make every experience positive and stress-free.</p>
+    <div class="srv-hero-acts">
+      <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--arr btn--lg">Book Your Child's Visit</a>
+      <a href="#overview" class="btn btn--gh">Learn More</a>
+    </div>
+    <div class="srv-hero-trust">
+      <div class="sht"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>30-Minute Sessions</div>
+      <div class="sht"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>Pain-Free with STA Anesthesia</div>
+      <div class="sht"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>Child-Friendly Environment</div>
+    </div>
+  </div>
+</section>
+
+<section id="overview" class="S"><div class="W"><div class="ov-grid">
+  <div class="rv rv-l">
+    <p class="eye">Children's Dental Care</p>
+    <h2 class="Hlg">Building Healthy Smiles<br><em class="em">From the Start</em></h2>
+    <p class="Blg" style="margin-top:14px">Children's dental needs are different from adults. Their teeth, jaws, and oral tissues are still developing, and early intervention can prevent complex problems later in life. At Vision Dental Clinic, we provide a full range of pediatric dental services in a warm, child-friendly environment.</p>
+    <p class="Blg" style="margin-top:12px">Our team uses <strong>STA digital anesthesia</strong> to ensure a pain-free experience for every child. From routine check-ups and fluoride treatments to sealants, space maintainers, and early orthodontic assessment &mdash; every case is reviewed by our Medical Director, <strong>Dr. Hussien Tahoun</strong>.</p>
+    <div class="ov-stats" style="margin-top:28px">
+      <div class="ov-stat"><div class="ov-sn">97<b> AED</b></div><div class="ov-sl">Consultation From</div></div>
+      <div class="ov-stat"><div class="ov-sn">30<b>min</b></div><div class="ov-sl">Session Time</div></div>
+      <div class="ov-stat"><div class="ov-sn">3<b>+</b></div><div class="ov-sl">Years &amp; Up</div></div>
+    </div>
+  </div>
+  <div class="rv rv-r"><div class="ov-img"><img src="pediatric.webp" alt="Pediatric dentistry at Vision Dental Clinic Abu Dhabi" loading="lazy"></div></div>
+</div></div></section>
+
+<section class="S S--lt"><div class="W">
+  <div style="text-align:center;margin-bottom:44px">
+    <p class="eye eye--cx rv">What We Offer</p>
+    <h2 class="Hlg rv d1" style="text-align:center">Comprehensive Care for<br><em class="em">Young Smiles</em></h2>
+  </div>
+  <div class="ben-grid">
+    <div class="ben-card rv"><div class="ben-ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Preventive Care</h3><p>Regular check-ups, professional cleaning, and fluoride treatments to keep cavities away.</p></div>
+    <div class="ben-card rv d1"><div class="ben-ico"><svg viewBox="0 0 24 24"><path d="M12 2C8 2 5 5 5 8c0 3 1 5 2 7l1 5h8l1-5c1-2 2-4 2-7 0-3-3-6-7-6z"/></svg></div><h3>Dental Sealants</h3><p>Protective coatings applied to molars to prevent decay in hard-to-clean grooves.</p></div>
+    <div class="ben-card rv d2"><div class="ben-ico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg></div><h3>Space Maintainers</h3><p>Custom devices to preserve space for permanent teeth when a baby tooth is lost early.</p></div>
+    <div class="ben-card rv"><div class="ben-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg></div><h3>Fillings &amp; Restorations</h3><p>Tooth-colored composite fillings to treat cavities while preserving your child's natural smile.</p></div>
+    <div class="ben-card rv d1"><div class="ben-ico"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div><h3>Pain Management</h3><p>STA digital anesthesia for virtually painless numbing &mdash; no scary needles for your child.</p></div>
+    <div class="ben-card rv d2"><div class="ben-ico"><svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg></div><h3>Oral Health Education</h3><p>Teaching children proper brushing and flossing techniques in a fun, engaging way.</p></div>
+  </div>
+</div></section>
+
+<section class="S"><div class="W">
+  <div style="text-align:center;margin-bottom:44px">
+    <p class="eye eye--cx rv">How It Works</p>
+    <h2 class="Hlg rv d1" style="text-align:center">Your Child's Visit &mdash;<br><em class="em">Step by Step</em></h2>
+  </div>
+  <div class="proc-grid">
+    <div class="proc-step rv"><div class="proc-num">1</div><div><h4>First Consultation</h4><p>A friendly introduction to the clinic. We assess your child's dental health and make them feel comfortable.</p></div></div>
+    <div class="proc-step rv d1"><div class="proc-num">2</div><div><h4>Digital X-ray (If Needed)</h4><p>Low-radiation chairside digital X-rays to check for hidden cavities and developing teeth.</p></div></div>
+    <div class="proc-step rv d2"><div class="proc-num">3</div><div><h4>Treatment Plan</h4><p>A detailed plan explained to parents, covering preventive measures and any needed treatments.</p></div></div>
+    <div class="proc-step rv d3"><div class="proc-num">4</div><div><h4>Medical Director Review</h4><p>Dr. Hussien Tahoun reviews every pediatric treatment plan to ensure the highest standard of care.</p></div></div>
+    <div class="proc-step rv"><div class="proc-num">5</div><div><h4>Treatment</h4><p>Gentle treatment using child-friendly techniques and STA digital anesthesia when numbing is needed.</p></div></div>
+    <div class="proc-step rv d1"><div class="proc-num">6</div><div><h4>Follow-up &amp; Prevention</h4><p>Regular follow-ups for monitoring growth, with fluoride and sealants applied as needed.</p></div></div>
+  </div>
+</div></section>
+
+<section class="S S--lt"><div class="W">
+  <div style="text-align:center;margin-bottom:44px">
+    <p class="eye eye--cx rv">Our Equipment</p>
+    <h2 class="Hlg rv d1" style="text-align:center">Child-Friendly<br><em class="em">Technology</em></h2>
+  </div>
+  <div class="tech-grid">
+    <div class="tech-card rv"><div class="tech-card-img"><img src="tech-sta-anesthesia.webp" alt="STA Digital Anesthesia" loading="lazy"></div>
+      <div class="tech-card-body"><h3>STA Digital Anesthesia</h3><p>Computer-controlled anesthesia delivery eliminates the pain and fear of traditional injections &mdash; ideal for young patients.</p></div></div>
+    <div class="tech-card rv d1"><div class="tech-card-img"><img src="tech-chairside-xray.webp" alt="Chairside X-ray" loading="lazy"></div>
+      <div class="tech-card-body"><h3>Chairside Digital X-ray</h3><p>Instant digital radiography used during treatment with minimal radiation exposure, providing real-time imaging when needed.</p></div></div>
+  </div>
+</div></section>
+
+<section class="S srv-cta"><div class="W"><div class="srv-cta-in rv">
+  <p class="eye eye--lt eye--cx">Book a Visit</p>
+  <h2>Give Your Child a<br><em class="em--lt">Healthy Smile</em></h2>
+  <p>Book a consultation for your child today. Our team creates a warm, welcoming experience that builds positive dental habits for life.</p>
+  <div class="srv-cta-btns">
+    <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--lg btn--arr">Book Your Child's Visit</a>
+    <a href="tel:+97123122777" class="btn btn--gh btn--lg"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.71A2 2 0 012.18 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.61-.61a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>02 312 2777</a>
+  </div>
+  <div class="srv-cta-inf">
+    <div class="sci"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Khalifa Street, Abu Dhabi</div>
+    <div class="sci"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Sat&ndash;Thu &middot; 10:30 AM &ndash; 7:30 PM</div>
+  </div>
+</div></div></section>
+
+<section class="S"><div class="W">
+  <div style="margin-bottom:36px"><p class="eye rv">Explore More</p><h2 class="Hlg rv d1">Related <em class="em">Services</em></h2></div>
+  <div class="rel-grid">
+    <a href="orthodontics.html" class="rel-card"><div class="rel-img"><img src="ortho.jpg" alt="Orthodontics" loading="lazy"></div>
+      <div class="rel-body"><h3>Orthodontics &amp; Invisalign</h3><p>Braces and clear aligners for children and teens to correct alignment early.</p><span class="rel-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></a>
+    <a href="scaling.html" class="rel-card"><div class="rel-img"><img src="scaling.webp" alt="Scaling" loading="lazy"></div>
+      <div class="rel-body"><h3>Scaling &amp; Polishing</h3><p>Professional cleaning to maintain healthy gums and prevent plaque buildup.</p><span class="rel-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></a>
+    <a href="restoration.html" class="rel-card"><div class="rel-img"><img src="restoration.webp" alt="Restoration" loading="lazy"></div>
+      <div class="rel-body"><h3>Teeth Restoration</h3><p>Composite fillings using tooth-colored materials for natural-looking results.</p><span class="rel-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></a>
+  </div>
+</div></section>
+
+<footer id="ftr"><div class="ft">
+  <div class="fl"><img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none'"><p class="fl-d">Abu Dhabi's centre of digital dentistry &mdash; six specialist clinics and a surgical team dedicated to changing lives.</p><div class="fl-lic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>MOHAP Licensed &middot; No. 5889VHC5-110626</div></div>
+  <div class="fcol"><h4>Services</h4><ul class="fls"><li><a href="dental-implants.html">Dental Implants</a></li><li><a href="smile-design.html">Cosmetic Dentistry / Smile Design</a></li><li><a href="orthodontics.html">Orthodontics &amp; Invisalign</a></li><li><a href="oral-surgery.html">Oral Surgery</a></li><li><a href="prosthodontics.html">Prosthodontics</a></li><li><a href="root-canal.html">Root Canal</a></li><li><a href="scaling.html">Scaling &amp; Polishing</a></li><li><a href="whitening.html">Teeth Whitening</a></li><li><a href="services.html">All Services &rarr;</a></li></ul></div>
+  <div class="fcol"><h4>Clinic</h4><ul class="fls"><li><a href="about-us.html">About Us</a></li><li><a href="why-us.html">Why Vision</a></li><li><a href="index.html#trust-stack">Our Team</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="case-studies.html">Case Studies</a></li><li><a href="medical-tourism.html">Medical Tourism</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+  <div class="fcol"><h4>Contact</h4><div class="fcs"><div class="fci"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><p>Khalifa Street, Abu Dhabi</p></div><div class="fci"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.71A2 2 0 012.18 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.61-.61a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg><p><a href="tel:+97123122777" style="color:rgba(255,255,255,.46)">02 312 2777</a></p></div><div class="fci"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><p><a href="mailto:info@visiondentalclinic.com" style="color:rgba(255,255,255,.46)">info@visiondentalclinic.com</a></p></div></div></div>
+</div><div class="fb"><p>&copy; 2026 Vision Dental Clinic. All rights reserved.</p><div class="fb-ls"><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></div></div></footer>
+
+<script>
+const hdr=document.getElementById('hdr');window.addEventListener('scroll',()=>hdr.classList.toggle('on',scrollY>50),{passive:true});
+const hbg=document.getElementById('hbg'),mn=document.getElementById('mob-nav'),mx=document.getElementById('mob-x');
+const open=()=>{mn.classList.add('op');hbg.classList.add('op');document.body.style.overflow='hidden'};
+const close=()=>{mn.classList.remove('op');hbg.classList.remove('op');document.body.style.overflow=''};
+hbg.addEventListener('click',open);mx.addEventListener('click',close);mn.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}}),{threshold:.1,rootMargin:'0px 0px -28px 0px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+<div class="wa-float"><a href="https://wa.link/08ys3l" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><div class="wa-pulse"></div><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a></div>
+</body>
+</html>

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surgical vs Non-Surgical Tooth Extraction | Vision Dental Clinic Abu Dhabi</title>
+<meta name="description" content="Understand the difference between simple and surgical tooth extraction. Expert oral surgery at Vision Dental Clinic Abu Dhabi.">
+<meta property="og:title" content="Surgical vs Non-Surgical Tooth Extraction | Vision Dental Clinic Abu Dhabi">
+<meta property="og:description" content="Understand the difference between simple and surgical tooth extraction. Expert oral surgery at Vision Dental Clinic Abu Dhabi.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_AE">
+<meta property="og:image" content="blog-surgical-extraction.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --b900:#1a3a52;--b800:#1e4a6e;--b700:#2D5F8A;--b50:#eaf4fb;
+  --g600:#5a9f2a;--g500:#7AB648;--g100:#e8f5d8;--g50:#f3fae8;
+  --s900:#0f1923;--s800:#1c2b38;--s600:#3d5268;--s400:#7a95ab;
+  --s200:#c8d8e4;--s100:#e8eff5;--s50:#f5f8fb;--w:#fff;
+  --gg:linear-gradient(135deg,#5a9f2a,#7AB648);
+  --gb:linear-gradient(135deg,#1e4a6e,#2D5F8A);
+  --fd:'DM Serif Display',Georgia,serif;--fb:'Plus Jakarta Sans',system-ui,sans-serif;
+  --sh:0 2px 8px rgba(15,25,35,.08);--shm:0 6px 24px rgba(15,25,35,.10);--shl:0 16px 48px rgba(15,25,35,.14);
+  --cw:1160px;--px:clamp(20px,5vw,48px);--r:8px;--rl:22px;--rxl:32px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{font-family:var(--fb);color:var(--s900);background:var(--w);overflow-x:hidden;line-height:1.6}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+ul{list-style:none}
+.W{max-width:var(--cw);margin:0 auto;padding:0 var(--px)}
+.S{padding:clamp(60px,7vw,100px) 0}
+.S--lt{background:var(--s50)}
+.S--dk{background:var(--s900);color:var(--w)}
+.eye{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--g600);margin-bottom:12px}
+.eye::before{content:'';width:16px;height:2px;background:var(--gg);border-radius:2px}
+.eye--lt{color:#93c96a}.eye--lt::before{background:var(--gg)}
+.eye--cx{justify-content:center}
+.Hlg{font-family:var(--fd);font-size:clamp(30px,4vw,50px);line-height:1.12;letter-spacing:-.015em;color:var(--b900)}
+.Hlg--lt{color:var(--w)}
+.Hmd{font-family:var(--fd);font-size:clamp(22px,2.8vw,34px);line-height:1.2;color:var(--b900)}
+.em{color:var(--g500);font-style:italic}.em--lt{color:#93c96a;font-style:italic}
+.Blg{font-size:clamp(14px,1.4vw,16px);line-height:1.78;color:var(--s600)}
+.Blg--lt{color:rgba(255,255,255,.62)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;padding:13px 26px;border-radius:100px;white-space:nowrap;transition:all .25s;cursor:pointer}
+.btn--g{background:var(--gg);color:var(--w);box-shadow:0 4px 18px rgba(90,159,42,.30)}
+.btn--g:hover{transform:translateY(-2px);box-shadow:0 8px 26px rgba(90,159,42,.40)}
+.btn--b{background:var(--gb);color:var(--w);box-shadow:0 4px 18px rgba(30,74,110,.25)}
+.btn--b:hover{transform:translateY(-2px)}
+.btn--od{background:transparent;color:var(--b800);border:1.5px solid var(--s200)}
+.btn--od:hover{background:var(--s50)}
+.btn--gh{background:rgba(255,255,255,.1);color:var(--w);border:1.5px solid rgba(255,255,255,.28)}
+.btn--gh:hover{background:rgba(255,255,255,.18);transform:translateY(-2px)}
+.btn--lg{font-size:16px;padding:16px 36px}
+.btn--arr::after{content:'\2192';font-size:14px;transition:transform .2s}
+.btn--arr:hover::after{transform:translateX(4px)}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s cubic-bezier(.4,0,.2,1),transform .6s cubic-bezier(.4,0,.2,1)}
+.rv.on{opacity:1;transform:none}
+.rv-l{transform:translateX(-18px)}.rv-l.on{transform:none}
+.rv-r{transform:translateX(18px)}.rv-r.on{transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.18s}.d3{transition-delay:.26s}.d4{transition-delay:.34s}
+
+/* HEADER */
+#hdr{position:fixed;top:0;left:0;right:0;z-index:1000;transition:background .3s,box-shadow .3s;padding:0 var(--px)}
+#hdr.on{background:rgba(10,22,36,.96);backdrop-filter:blur(24px);box-shadow:0 1px 0 rgba(255,255,255,.05),0 4px 24px rgba(0,0,0,.22)}
+.hdr-in{max-width:var(--cw);margin:0 auto;display:flex;align-items:center;gap:20px;padding:14px 0}
+.hdr-logo img{height:38px;width:auto}
+.hdr-logo span{font-size:15px;font-weight:800;color:var(--w)}
+.hdr-nav{flex:1;display:flex;justify-content:center}
+.nav-ul{display:flex;align-items:center;gap:2px}
+.nav-ul a{font-size:13px;font-weight:600;color:rgba(255,255,255,.72);padding:7px 12px;border-radius:7px;transition:all .2s}
+.nav-ul a:hover,.nav-ul a.ac{color:var(--w);background:rgba(255,255,255,.08)}
+.hdr-r{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.hdr-lic{font-size:9px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:rgba(255,255,255,.38);text-align:right;line-height:1.4}
+.hdr-lic b{color:rgba(255,255,255,.6);display:block;font-size:10px}
+.hbg{display:none;flex-direction:column;gap:5px;padding:6px;cursor:pointer}
+.hbg span{display:block;width:22px;height:2px;background:var(--w);border-radius:2px;transition:all .3s}
+.hbg.op span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.hbg.op span:nth-child(2){opacity:0}
+.hbg.op span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.mob-nav{display:none;position:fixed;inset:0;z-index:999;background:rgba(10,22,36,.98);backdrop-filter:blur(24px);flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:80px 32px 40px}
+.mob-nav.op{display:flex}
+.mob-nav a{font-size:19px;font-weight:700;color:rgba(255,255,255,.7);padding:12px 40px;border-radius:12px;width:100%;text-align:center;transition:all .2s}
+.mob-nav a:hover{color:var(--w);background:rgba(255,255,255,.08)}
+.mob-nav .btn{width:100%;justify-content:center;margin-top:12px}
+.mob-x{position:absolute;top:22px;right:22px;color:rgba(255,255,255,.6);font-size:22px;cursor:pointer;padding:8px;line-height:1}
+
+/* SERVICE HERO */
+.srv-hero{min-height:56vh;position:relative;display:flex;align-items:center;background:var(--s900) url('hero-bg.webp') center/cover no-repeat;overflow:hidden}
+.srv-hero-bg{position:absolute;inset:0;z-index:0;background:url('blog-surgical-extraction.webp') center/cover no-repeat;opacity:.2;mix-blend-mode:luminosity}
+.srv-hero-ov{position:absolute;inset:0;z-index:1;background:linear-gradient(to right,rgba(10,22,36,.95) 0%,rgba(10,22,36,.7) 100%)}
+.srv-hero-in{position:relative;z-index:2;max-width:var(--cw);margin:0 auto;padding:130px var(--px) 72px;width:100%}
+.srv-breadcrumb{display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(255,255,255,.45);margin-bottom:20px}
+.srv-breadcrumb a{color:rgba(255,255,255,.45);transition:color .2s}
+.srv-breadcrumb a:hover{color:rgba(255,255,255,.8)}
+.srv-breadcrumb span{color:rgba(255,255,255,.25)}
+.srv-hero h1{font-family:var(--fd);font-size:clamp(36px,5vw,64px);color:var(--w);line-height:1.07;letter-spacing:-.02em;margin-bottom:16px}
+.srv-hero h1 em{font-style:italic;color:#93c96a}
+.srv-hero-sub{font-size:clamp(15px,1.5vw,17px);color:rgba(255,255,255,.62);line-height:1.75;max-width:520px;margin-bottom:32px}
+
+/* BLOG ARTICLE */
+.blog-meta{display:flex;align-items:center;gap:16px;margin-bottom:16px;flex-wrap:wrap}
+.blog-cat{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 14px;border-radius:100px;background:var(--g50);color:var(--g600);border:1px solid var(--g100)}
+.blog-date{font-size:13px;color:rgba(255,255,255,.45);font-weight:500}
+.blog-author{font-size:13px;color:rgba(255,255,255,.45);font-weight:500}
+.blog-author::before{content:'\00B7';margin-right:8px}
+.blog-hero-img{margin:-20px auto 0;max-width:var(--cw);padding:0 var(--px);position:relative;z-index:3}
+.blog-hero-img img{width:100%;border-radius:var(--rxl);aspect-ratio:21/9;object-fit:cover;box-shadow:var(--shl)}
+.blog-body{max-width:780px;margin:0 auto;padding:48px var(--px) 0}
+.blog-body h2{font-family:var(--fd);font-size:clamp(22px,2.8vw,30px);color:var(--b900);margin:40px 0 16px;line-height:1.25}
+.blog-body h3{font-size:18px;font-weight:800;color:var(--b900);margin:32px 0 12px}
+.blog-body p{font-size:15px;line-height:1.85;color:var(--s600);margin-bottom:16px}
+.blog-body ul,.blog-body ol{margin:0 0 20px 20px;color:var(--s600)}
+.blog-body li{font-size:15px;line-height:1.85;margin-bottom:8px}
+.blog-body strong{color:var(--s800);font-weight:700}
+.blog-body blockquote{border-left:3px solid var(--g500);padding:16px 24px;margin:24px 0;background:var(--g50);border-radius:0 var(--r) var(--r) 0}
+.blog-body blockquote p{color:var(--b900);font-style:italic;margin-bottom:0}
+
+/* CTA */
+.srv-cta{background:linear-gradient(rgba(10,22,36,.88),rgba(10,22,36,.88)),url('hero-bg.webp') center/cover no-repeat;position:relative;overflow:hidden}
+.srv-cta::before{content:'';position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(122,182,72,.1) 0%,transparent 70%);top:-80px;right:-60px;pointer-events:none}
+.srv-cta-in{position:relative;z-index:1;text-align:center;max-width:600px;margin:0 auto}
+.srv-cta h2{font-family:var(--fd);font-size:clamp(28px,4vw,48px);color:var(--w);line-height:1.1;margin-bottom:14px}
+.srv-cta p{font-size:16px;color:rgba(255,255,255,.55);line-height:1.75;margin-bottom:32px}
+.srv-cta-btns{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+.srv-cta-inf{display:flex;justify-content:center;flex-wrap:wrap;gap:20px}
+.sci{display:flex;align-items:center;gap:7px;font-size:13px;color:rgba(255,255,255,.42);font-weight:500}
+.sci svg{width:14px;height:14px;stroke:#93c96a;fill:none;stroke-width:2;stroke-linecap:round;flex-shrink:0}
+
+/* RELATED */
+.rel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rel-card{border-radius:var(--rl);overflow:hidden;border:.5px solid var(--s100);background:var(--w);transition:all .28s}
+.rel-card:hover{box-shadow:var(--shl);transform:translateY(-5px);border-color:transparent}
+.rel-img{height:170px;overflow:hidden}
+.rel-img img{width:100%;height:100%;object-fit:cover;transition:transform .45s}
+.rel-card:hover .rel-img img{transform:scale(1.05)}
+.rel-img-ph{height:170px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--b50),var(--g50))}
+.rel-body{padding:18px}
+.rel-body h3{font-size:15px;font-weight:800;color:var(--b900);margin-bottom:8px}
+.rel-body p{font-size:13px;line-height:1.6;color:var(--s600);margin-bottom:12px}
+.rel-lnk{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:700;color:var(--g600);transition:gap .18s}
+.rel-lnk:hover{gap:9px}
+.rel-lnk svg{width:12px;height:12px;transition:transform .18s}
+.rel-lnk:hover svg{transform:translateX(3px)}
+
+/* FOOTER */
+#ftr{background:var(--s900);border-top:.5px solid rgba(255,255,255,.05)}
+.ft{padding:52px var(--px) 36px;max-width:var(--cw);margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px}
+.fl img{height:36px;width:auto;margin-bottom:12px}
+.fl-d{font-size:13px;line-height:1.7;color:rgba(255,255,255,.38);margin-bottom:18px;max-width:230px}
+.fl-lic{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.05);border:.5px solid rgba(255,255,255,.08);border-radius:var(--r);padding:8px 12px;font-size:9.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:rgba(255,255,255,.42)}
+.fl-lic svg{width:12px;height:12px;stroke:#93c96a;fill:none;stroke-width:2;flex-shrink:0}
+.fcol h4{font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:14px}
+.fls{display:flex;flex-direction:column;gap:8px}
+.fls a{font-size:13px;color:rgba(255,255,255,.46);transition:color .2s}
+.fls a:hover{color:var(--w)}
+.fcs{display:flex;flex-direction:column;gap:11px}
+.fci{display:flex;align-items:flex-start;gap:8px}
+.fci svg{width:13px;height:13px;stroke:#93c96a;fill:none;stroke-width:2;stroke-linecap:round;flex-shrink:0;margin-top:2px}
+.fci p{font-size:12.5px;color:rgba(255,255,255,.46);line-height:1.5}
+.fb{border-top:.5px solid rgba(255,255,255,.05);padding:16px var(--px);max-width:var(--cw);margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.fb p,.fb a{font-size:11.5px;color:rgba(255,255,255,.25)}
+.fb a:hover{color:rgba(255,255,255,.5)}
+.fb-ls{display:flex;gap:16px}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .rel-grid{grid-template-columns:repeat(2,1fr)}
+  .ft{grid-template-columns:1fr 1fr;gap:28px}
+}
+@media(max-width:768px){
+  .hdr-nav,.hdr-lic,.hdr-ct{display:none}
+  .hbg{display:flex}
+  .rel-grid{grid-template-columns:1fr}
+  .ft{grid-template-columns:1fr;gap:24px}
+}
+.wa-float{position:fixed;bottom:24px;right:24px;z-index:900;display:flex;align-items:center;gap:10px}
+.wa-float a{display:flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;
+background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s;position:relative}
+.wa-float a:hover{transform:scale(1.1);box-shadow:0 6px 28px rgba(37,211,102,.55)}
+.wa-float svg{width:28px;height:28px;fill:#fff}
+.wa-pulse{position:absolute;inset:0;border-radius:50%;background:rgba(37,211,102,.3);animation:wa-ring 2s ease-out infinite;pointer-events:none}
+@keyframes wa-ring{0%{transform:scale(1);opacity:1}100%{transform:scale(1.6);opacity:0}}
+</style>
+</head>
+<body>
+
+<nav class="mob-nav" id="mob-nav">
+  <button class="mob-x" id="mob-x">&#10005;</button>
+  <a href="index.html">Home</a>
+  <a href="about-us.html">About Us</a>
+  <a href="services.html">Services</a>
+  <a href="index.html#trust-stack">Our Team</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="blog.html">Blog</a>
+  <a href="medical-tourism.html">Medical Tourism</a>
+  <a href="contact.html">Contact</a>
+  <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book Appointment</a>
+</nav>
+
+<header id="hdr">
+  <div class="hdr-in">
+    <a href="index.html" class="hdr-logo">
+      <img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none';this.nextSibling.style.display='block'">
+      <span style="display:none">Vision Dental</span>
+    </a>
+    <nav class="hdr-nav">
+      <ul class="nav-ul">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="index.html#trust-stack">Our Team</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html" class="ac">Blog</a></li>
+        <li><a href="medical-tourism.html">Medical Tourism</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hdr-r">
+      <div class="hdr-lic"><span>MOHAP Licensed</span><b>No. 5889VHC5-110626</b></div>
+      <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g hdr-ct" style="font-size:12.5px;padding:9px 18px">Book Appointment</a>
+      <button class="hbg" id="hbg"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="srv-hero">
+  <div class="srv-hero-bg"></div>
+  <div class="srv-hero-ov"></div>
+  <div class="srv-hero-in">
+    <div class="srv-breadcrumb">
+      <a href="index.html">Home</a><span>/</span>
+      <a href="index.html#blog">Blog</a><span>/</span>
+      <span style="color:rgba(255,255,255,.7)">Surgical vs Non-Surgical Tooth Extraction</span>
+    </div>
+    <div class="blog-meta">
+      <span class="blog-cat">Surgery</span>
+      <span class="blog-date">September 2024</span>
+      <span class="blog-author">Vision Dental Team</span>
+    </div>
+    <h1>Surgical vs Non-Surgical<br><em>Tooth Extraction</em></h1>
+  </div>
+</section>
+
+<!-- FEATURED IMAGE -->
+<div class="blog-hero-img">
+  <img src="blog-surgical-extraction.webp" alt="Surgical and non-surgical tooth extraction procedures" loading="eager"
+    onerror="this.parentElement.style.display='none'">
+</div>
+
+<!-- ARTICLE BODY -->
+<article class="blog-body">
+
+  <p>Tooth extraction is sometimes the best option for preserving your overall oral health. Whether a tooth is severely damaged, impacted, or compromising neighbouring teeth, removing it can prevent further complications and open the door to restorative solutions. Understanding the difference between simple and surgical extraction helps you prepare for the procedure, set realistic expectations for recovery, and feel confident in the treatment plan your dentist recommends.</p>
+
+  <h2>Simple (Non-Surgical) Extraction</h2>
+
+  <p>A simple extraction is performed on teeth that are <strong>visible and fully erupted</strong> in the mouth. The tooth can be seen above the gumline, and its roots follow a relatively straightforward anatomy. This is the most common type of extraction and is routinely performed by general dentists as well as oral surgeons.</p>
+
+  <h3>How a Simple Extraction Works</h3>
+
+  <p>The procedure is straightforward. After administering local anaesthesia to numb the area completely, the dentist uses two primary instruments:</p>
+
+  <ul>
+    <li><strong>An elevator</strong> -- a lever-like instrument placed between the tooth and the surrounding bone to loosen the tooth from its periodontal ligament</li>
+    <li><strong>Forceps</strong> -- used to grip the loosened tooth and remove it with controlled rocking and rotational movements</li>
+  </ul>
+
+  <p>A simple extraction typically takes <strong>under 30 minutes</strong>, often considerably less. The socket is checked for any remaining fragments, and gauze is placed to control bleeding. In most cases, sutures are not required.</p>
+
+  <h3>When Simple Extraction Is Appropriate</h3>
+
+  <ul>
+    <li><strong>Severely decayed teeth</strong> that cannot be restored with a filling, crown, or root canal treatment</li>
+    <li><strong>Loose teeth from advanced gum disease</strong> (periodontitis) where the supporting bone has been significantly lost</li>
+    <li><strong>Orthodontic treatment</strong> -- strategic extractions to create space for proper alignment of remaining teeth</li>
+    <li><strong>Baby teeth that have not fallen out naturally</strong> and are blocking the eruption of permanent teeth</li>
+    <li><strong>Supernumerary (extra) teeth</strong> that are causing crowding or other complications</li>
+  </ul>
+
+  <h2>Surgical Extraction</h2>
+
+  <p>A surgical extraction is required when a tooth is <strong>not easily accessible</strong> through the mouth. This may be because the tooth has not fully erupted through the gum, has broken off at or below the gumline, or has root anatomy that prevents straightforward removal. Surgical extractions are typically performed by oral and maxillofacial surgeons or dentists with advanced surgical training.</p>
+
+  <h3>What Makes It "Surgical"</h3>
+
+  <p>Unlike a simple extraction, a surgical procedure involves one or more of the following additional steps:</p>
+
+  <ul>
+    <li><strong>Incision in the gum tissue</strong> -- a flap of gum tissue is raised to expose the tooth and surrounding bone</li>
+    <li><strong>Bone removal</strong> -- a small amount of bone covering the tooth may need to be removed using a surgical handpiece</li>
+    <li><strong>Tooth sectioning</strong> -- the tooth is divided into two or more pieces, allowing each section to be removed individually through a smaller opening</li>
+    <li><strong>Suturing</strong> -- the gum tissue is repositioned and sutured closed after the extraction</li>
+  </ul>
+
+  <p>More complex anaesthesia options may be available for surgical extractions, including conscious sedation (oral or intravenous) for patients with dental anxiety or for lengthy procedures.</p>
+
+  <h3>When Surgical Extraction Is Needed</h3>
+
+  <ul>
+    <li><strong>Impacted wisdom teeth</strong> -- fully impacted (completely buried in bone) or partially impacted (partially visible through the gum). This is the most common indication for surgical extraction</li>
+    <li><strong>Broken teeth at the gumline</strong> -- when a tooth has fractured and insufficient crown structure remains above the gum for forceps to grip</li>
+    <li><strong>Teeth with curved, long, or divergent roots</strong> -- unusual root anatomy that prevents the tooth from being removed in one piece through the socket</li>
+    <li><strong>Teeth with dense surrounding bone</strong> -- particularly common in the lower jaw, where thick cortical bone resists conventional extraction forces</li>
+    <li><strong>Ankylosed teeth</strong> -- teeth that have fused directly to the bone, eliminating the normal periodontal ligament space. These teeth cannot be loosened with an elevator and must be sectioned from the bone surgically</li>
+  </ul>
+
+  <h2>The Surgical Extraction Procedure: Step by Step</h2>
+
+  <h3>1. Imaging and Planning</h3>
+
+  <p>Before any surgical extraction, detailed imaging is essential. At Vision Dental Clinic, we use <strong>CBCT (Cone Beam Computed Tomography)</strong> 3D scans to visualise the tooth in three dimensions. This reveals the exact position of the tooth, the number and curvature of its roots, proximity to important anatomical structures (such as the inferior alveolar nerve in the lower jaw or the maxillary sinus in the upper jaw), and the density and volume of surrounding bone.</p>
+
+  <blockquote>
+    <p>A CBCT scan transforms a surgical extraction from an exercise in uncertainty to a precisely planned procedure. Every critical structure is mapped before a single incision is made.</p>
+  </blockquote>
+
+  <h3>2. Anaesthesia</h3>
+
+  <p>Local anaesthesia is administered to completely numb the tooth and surrounding tissues. For complex cases or anxious patients, conscious sedation may be offered in addition to local anaesthesia. The area is thoroughly tested for numbness before the procedure begins.</p>
+
+  <h3>3. Incision and Flap Elevation</h3>
+
+  <p>A carefully planned incision is made in the gum tissue, and a mucoperiosteal flap is raised to expose the tooth and surrounding bone. The incision design is chosen to provide optimal access while ensuring good blood supply to the tissue for healing.</p>
+
+  <h3>4. Bone Removal (If Required)</h3>
+
+  <p>When bone covers the tooth or prevents its path of removal, a surgical handpiece with a round bur is used under copious irrigation to remove the necessary amount of bone. Only the minimum bone needed for access is removed.</p>
+
+  <h3>5. Tooth Sectioning</h3>
+
+  <p>For multi-rooted teeth or teeth with complex anatomy, the tooth is divided into sections using a surgical bur. Each section is then removed individually, requiring less force and a smaller bony opening than removing the entire tooth in one piece.</p>
+
+  <h3>6. Extraction</h3>
+
+  <p>The tooth (or tooth sections) is removed using elevators and forceps. The socket is thoroughly inspected and debrided to ensure no root fragments, bone spicules, or infected tissue remains.</p>
+
+  <h3>7. Site Cleaning and Suturing</h3>
+
+  <p>The extraction site is irrigated with sterile saline to remove debris. If bone grafting is planned for future implant placement, the graft material is placed at this stage. The gum flap is repositioned and secured with sutures, which may be resorbable (dissolve on their own) or non-resorbable (removed at a follow-up appointment).</p>
+
+  <h2>Recovery: Simple vs Surgical Extraction</h2>
+
+  <h3>Simple Extraction Recovery (1 to 3 Days)</h3>
+
+  <p>Most patients experience only mild discomfort after a simple extraction, peaking within the first 24 hours and resolving within 2 to 3 days. Over-the-counter pain medication is usually sufficient. Light bleeding and minor swelling are normal. Most patients return to normal activities the following day.</p>
+
+  <h3>Surgical Extraction Recovery (5 to 7 Days)</h3>
+
+  <p>Surgical extractions involve more tissue manipulation and therefore require a longer recovery period. Swelling typically peaks at 48 to 72 hours and gradually subsides over the following days. Prescription pain medication may be provided for the first 2 to 3 days. Most patients feel significantly better by day 5 and return to full activities within a week.</p>
+
+  <h3>Post-Operative Care Instructions</h3>
+
+  <p>Regardless of the type of extraction, following these guidelines promotes optimal healing:</p>
+
+  <ul>
+    <li><strong>Gauze pressure</strong> -- bite firmly on the gauze pad for 30 to 45 minutes after the procedure. Replace with a fresh pad if bleeding continues</li>
+    <li><strong>Ice packs</strong> -- apply to the outside of the cheek for 20 minutes on, 20 minutes off during the first 24 hours to minimise swelling</li>
+    <li><strong>Soft diet</strong> -- eat soft foods (yoghurt, soup, mashed potatoes, smoothies) for the first 2 to 3 days. Avoid hot foods and drinks for the first 24 hours</li>
+    <li><strong>Pain management</strong> -- take prescribed or recommended pain medication as directed. Do not wait for pain to become severe before taking medication</li>
+    <li><strong>Avoid straws and smoking</strong> -- the sucking action can dislodge the blood clot and cause dry socket. Avoid straws for at least 5 days and smoking for at least 72 hours (ideally longer)</li>
+    <li><strong>Oral hygiene</strong> -- brush teeth normally but avoid the extraction site for 24 hours. After 24 hours, gently rinse with warm salt water (half a teaspoon of salt in a glass of warm water) 3 to 4 times daily</li>
+    <li><strong>Rest</strong> -- avoid strenuous physical activity for 48 to 72 hours after surgical extractions to prevent increased bleeding</li>
+  </ul>
+
+  <h2>Potential Complications and How to Avoid Them</h2>
+
+  <h3>Dry Socket (Alveolar Osteitis)</h3>
+
+  <p>Dry socket occurs when the blood clot in the extraction site is dislodged or dissolves before healing is complete, exposing the underlying bone to air, food, and bacteria. It causes <strong>significant pain</strong> that typically begins 2 to 4 days after extraction and may radiate to the ear. Dry socket is more common after lower wisdom tooth extractions and in patients who smoke. Treatment involves gentle irrigation of the socket and placement of a medicated dressing to relieve pain and promote healing.</p>
+
+  <h3>Infection</h3>
+
+  <p>Post-extraction infection is uncommon but can occur, particularly when pre-existing infection was present. Signs include increasing pain, swelling, fever, and pus discharge from the site. Antibiotics may be prescribed preventatively for patients with compromised immune systems or when extracting heavily infected teeth.</p>
+
+  <h3>Nerve Damage (Rare)</h3>
+
+  <p>The inferior alveolar nerve runs through the lower jaw near the roots of the lower wisdom teeth. In rare cases, surgical extraction of impacted lower wisdom teeth can cause temporary or (very rarely) permanent numbness or altered sensation in the lower lip, chin, or tongue. CBCT imaging allows precise assessment of the nerve's proximity to the tooth roots, enabling the surgeon to plan accordingly and minimise this risk.</p>
+
+  <h3>Sinus Communication (Upper Teeth)</h3>
+
+  <p>The roots of upper premolars and molars sit close to the floor of the maxillary sinus. Occasionally, extraction of these teeth creates a small communication between the mouth and the sinus cavity. If this occurs, it is identified immediately and managed with appropriate closure techniques. Patients are instructed to avoid blowing their nose forcefully and to sneeze with their mouth open for several days to allow the site to heal.</p>
+
+  <h2>Dr. Hussien's Oral Surgery Expertise</h2>
+
+  <p>At Vision Dental Clinic Abu Dhabi, surgical extractions are performed by <strong>Dr. Hussien Tahoun</strong>, who brings over 35 years of experience in oral and maxillofacial surgery. Dr. Hussien has performed thousands of surgical extractions, from routine wisdom tooth removals to complex cases involving deeply impacted teeth, ankylosed teeth, and teeth in close proximity to vital structures.</p>
+
+  <p>Every surgical extraction at Vision Dental Clinic begins with a comprehensive CBCT scan and a thorough discussion of the procedure, risks, and recovery expectations. Dr. Hussien's approach prioritises <strong>minimally invasive technique</strong> -- removing only the bone necessary for access, sectioning teeth strategically to reduce force, and placing sutures meticulously to promote primary healing. This philosophy results in less post-operative pain, faster recovery, and fewer complications.</p>
+
+  <blockquote>
+    <p>When surgery is indicated, precision and experience make the difference between a straightforward recovery and unnecessary complications.</p>
+  </blockquote>
+
+</article>
+
+<!-- RELATED ARTICLES -->
+<section class="S">
+  <div class="W">
+    <div style="margin-bottom:36px">
+      <p class="eye rv">Related Reading</p>
+      <h2 class="Hlg rv d1">Related <em class="em">Articles</em></h2>
+    </div>
+    <div class="rel-grid">
+      <a href="blog-cbct-scan.html" class="rel-card rv">
+        <div class="rel-img-ph"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="var(--b700)" stroke-width="1.2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <div class="rel-body">
+          <h3>Why a CBCT Scan is Essential</h3>
+          <p>How 3D cone-beam CT imaging improves diagnosis, treatment planning, and surgical outcomes.</p>
+          <span class="rel-lnk">Read more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+      <a href="blog-implants-guide.html" class="rel-card rv d1">
+        <div class="rel-img-ph"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="var(--g500)" stroke-width="1.2" stroke-linecap="round"><path d="M12 2C8 2 5 5 5 8c0 3 1 5 2 7l1 5h8l1-5c1-2 2-4 2-7 0-3-3-6-7-6z"/></svg></div>
+        <div class="rel-body">
+          <h3>The Ultimate Guide to Dental Implants</h3>
+          <p>Everything you need to know about replacing missing teeth with dental implants.</p>
+          <span class="rel-lnk">Read more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+      <a href="blog-root-canal.html" class="rel-card rv d2">
+        <div class="rel-img-ph"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="var(--g500)" stroke-width="1.2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg></div>
+        <div class="rel-body">
+          <h3>Saving Your Smile with Root Canal Treatment</h3>
+          <p>Understanding when root canal therapy can save a tooth and what the procedure involves.</p>
+          <span class="rel-lnk">Read more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="S srv-cta">
+  <div class="W">
+    <div class="srv-cta-in rv">
+      <p class="eye eye--lt eye--cx">Start Your Journey</p>
+      <h2>Need a <em class="em--lt">Tooth Extraction?</em></h2>
+      <p>Book a consultation with Dr. Hussien. We'll take a CBCT scan, assess your case, and explain exactly what the procedure involves -- before any commitment.</p>
+      <div class="srv-cta-btns">
+        <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--lg btn--arr">Book Consultation</a>
+        <a href="tel:+97123122777" class="btn btn--gh btn--lg">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.71A2 2 0 012.18 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.61-.61a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          02 312 2777
+        </a>
+      </div>
+      <div class="srv-cta-inf">
+        <div class="sci"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Khalifa Street, Abu Dhabi</div>
+        <div class="sci"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Sat&ndash;Thu &middot; 10:30 AM &ndash; 7:30 PM &middot; Fri Off</div>
+        <div class="sci"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>MOHAP No. 5889VHC5-110626</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="ftr">
+  <div class="ft">
+    <div class="fl">
+      <img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none'">
+      <p class="fl-d">Abu Dhabi's centre of digital dentistry -- six specialist clinics and a surgical team dedicated to changing lives.</p>
+      <div class="fl-lic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>MOHAP Licensed &middot; No. 5889VHC5-110626</div>
+    </div>
+    <div class="fcol">
+      <h4>Services</h4>
+      <ul class="fls">
+        
+        <li><a href="dental-implants.html">Dental Implants</a></li>
+        <li><a href="smile-design.html">Cosmetic Dentistry / Smile Design</a></li>
+        <li><a href="orthodontics.html">Orthodontics</a></li>
+        <li><a href="oral-surgery.html">Oral Surgery</a></li>
+        <li><a href="prosthodontics.html">Prosthodontics</a></li>
+        <li><a href="root-canal.html">Root Canal</a></li>
+        <li><a href="scaling.html">Scaling</a></li>
+        <li><a href="pediatric.html">Pediatric</a></li>
+        <li><a href="services.html">All Services &rarr;</a></li>
+  </ul>
+    </div>
+    <div class="fcol">
+      <h4>Clinic</h4>
+      <ul class="fls">
+        
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="why-us.html">Why Vision</a></li>
+        <li><a href="index.html#trust-stack">Our Team</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="medical-tourism.html">Medical Tourism</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+  </ul>
+    </div>
+    <div class="fcol">
+      <h4>Contact</h4>
+      <div class="fcs">
+        <div class="fci"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><p>Khalifa Street, Abu Dhabi</p></div>
+        <div class="fci"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.71A2 2 0 012.18 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.61-.61a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg><p><a href="tel:+97123122777">02 312 2777</a></p></div>
+        <div class="fci"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><p><a href="mailto:info@visiondentalclinic.com">info@visiondentalclinic.com</a></p></div>
+      </div>
+    </div>
+  </div>
+  <div class="fb">
+    <p>&copy; 2026 Vision Dental Clinic. All rights reserved.</p>
+    <div class="fb-ls"><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></div>
+  </div>
+</footer>
+
+<script>
+const hdr=document.getElementById('hdr');
+window.addEventListener('scroll',()=>hdr.classList.toggle('on',scrollY>50),{passive:true});
+const hbg=document.getElementById('hbg'),mn=document.getElementById('mob-nav'),mx=document.getElementById('mob-x');
+const open=()=>{mn.classList.add('op');hbg.classList.add('op');document.body.style.overflow='hidden'};
+const close=()=>{mn.classList.remove('op');hbg.classList.remove('op');document.body.style.overflow=''};
+hbg.addEventListener('click',open);mx.addEventListener('click',close);
+mn.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}}),{threshold:.1,rootMargin:'0px 0px -28px 0px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+
+<!-- FLOATING WHATSAPP -->
+<div class="wa-float">
+  <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <div class="wa-pulse"></div>
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+</body>
+</html>

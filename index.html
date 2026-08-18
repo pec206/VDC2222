@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vision Dental Clinic | Abu Dhabi's Centre of Digital Dentistry</title>
+<meta name="description" content="Vision Dental Clinic – 6 specialist clinics, in-house digital lab, 3D radiology, 35+ years of surgical excellence. Led by Dr. Hussien Tahoun. Abu Dhabi.">
+<meta property="og:title" content="Vision Dental Clinic | Abu Dhabi's Centre of Digital Dentistry">
+<meta property="og:description" content="6 specialist clinics, in-house digital lab, 3D radiology & 35+ years of surgical excellence in Abu Dhabi.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_AE">
+<meta property="og:image" content="og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="canonical" href="https://visiondentalclinic.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+/* ═══ TOKENS ═══ */
+:root{
+  --b950:#0f2236;--b900:#1a3a52;--b800:#1e4a6e;--b700:#2D5F8A;--b600:#3a74a8;
+  --b400:#5b9cc9;--b200:#b8d9ef;--b100:#d9edf8;--b50:#eaf4fb;
+  --g700:#4a8a1f;--g600:#5a9f2a;--g500:#7AB648;--g400:#93c96a;
+  --g200:#c5e49a;--g100:#e8f5d8;--g50:#f3fae8;
+  --s950:#080f16;--s900:#0f1923;--s800:#1c2b38;--s700:#263a4a;
+  --s600:#3d5268;--s400:#7a95ab;--s300:#a8bfce;--s200:#c8d8e4;
+  --s100:#e8eff5;--s50:#f5f8fb;--w:#ffffff;
+  --gg:linear-gradient(135deg,#5a9f2a 0%,#7AB648 100%);
+  --gb:linear-gradient(135deg,#1e4a6e 0%,#2D5F8A 100%);
+  --gcard:linear-gradient(150deg,#eaf4fb 0%,#f3fae8 100%);
+  --fd:'DM Serif Display',Georgia,serif;--fb:'Plus Jakarta Sans',system-ui,sans-serif;
+  --sh:0 2px 8px rgba(15,25,35,.08);--shm:0 6px 24px rgba(15,25,35,.10);
+  --shl:0 16px 48px rgba(15,25,35,.14);--shxl:0 28px 72px rgba(15,25,35,.18);
+  --sy:clamp(64px,7vw,100px);--cw:1200px;--px:clamp(20px,5vw,48px);
+  --r:8px;--rm:14px;--rl:22px;--rxl:32px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{font-family:var(--fb);color:var(--s900);background:var(--w);overflow-x:hidden;line-height:1.6}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+ul{list-style:none}
+
+/* ═══ LAYOUT ═══ */
+.W{max-width:var(--cw);margin:0 auto;padding:0 var(--px)}
+.S{padding:var(--sy) 0}
+.S--lt{background:var(--s50)}
+.S--dk{background:var(--s950);color:var(--w)}
+
+/* ═══ TYPE ═══ */
+.eye{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--g600);margin-bottom:14px}
+.eye::before{content:'';width:18px;height:2px;background:var(--gg);border-radius:2px;flex-shrink:0}
+.eye--lt{color:var(--g400)}.eye--lt::before{background:var(--gg)}
+.eye--cx{justify-content:center}
+.Hxl{font-family:var(--fd);font-size:clamp(40px,5.8vw,76px);line-height:1.06;letter-spacing:-.025em;color:var(--w)}
+.Hlg{font-family:var(--fd);font-size:clamp(30px,3.8vw,48px);line-height:1.12;letter-spacing:-.015em;color:var(--b900)}
+.Hlg--lt{color:var(--w)}
+.Hmd{font-family:var(--fd);font-size:clamp(22px,2.5vw,32px);line-height:1.2;color:var(--b900)}
+.em{color:var(--g500);font-style:italic}.em--lt{color:var(--g400);font-style:italic}
+.Blg{font-size:clamp(14px,1.4vw,16px);line-height:1.75;color:var(--s600)}
+.Blg--lt{color:rgba(255,255,255,.65)}
+.Bmd{font-size:13.5px;line-height:1.7;color:var(--s600)}
+
+/* ═══ BTNS ═══ */
+.btn{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;
+  padding:13px 26px;border-radius:100px;white-space:nowrap;
+  transition:all .25s cubic-bezier(.4,0,.2,1);cursor:pointer;letter-spacing:.01em}
+.btn--g{background:var(--gg);color:var(--w);box-shadow:0 4px 20px rgba(90,159,42,.32)}
+.btn--g:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(90,159,42,.42)}
+.btn--gh{background:rgba(255,255,255,.1);color:var(--w);border:1.5px solid rgba(255,255,255,.28);backdrop-filter:blur(8px)}
+.btn--gh:hover{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.55);transform:translateY(-2px)}
+.btn--b{background:var(--gb);color:var(--w);box-shadow:0 4px 20px rgba(30,74,110,.28)}
+.btn--b:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(30,74,110,.38)}
+.btn--od{background:transparent;color:var(--b800);border:1.5px solid var(--s200)}
+.btn--od:hover{background:var(--s50);border-color:var(--b200)}
+.btn--sm{font-size:13px;padding:9px 18px}
+.btn--lg{font-size:16px;padding:16px 36px}
+.btn--arr::after{content:'→';font-size:15px;transition:transform .2s}
+.btn--arr:hover::after{transform:translateX(4px)}
+
+/* ═══ REVEAL ═══ */
+.rv{opacity:0;transform:translateY(20px);transition:opacity .6s cubic-bezier(.4,0,.2,1),transform .6s cubic-bezier(.4,0,.2,1)}
+.rv.on{opacity:1;transform:none}
+.rv-l{transform:translateX(-20px)}.rv-l.on{transform:none}
+.rv-r{transform:translateX(20px)}.rv-r.on{transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.18s}.d3{transition-delay:.26s}
+.d4{transition-delay:.34s}.d5{transition-delay:.42s}
+
+/* ═══ HEADER ═══ */
+#hdr{position:fixed;top:0;left:0;right:0;z-index:1000;transition:background .3s,box-shadow .3s;padding:0 var(--px)}
+#hdr.on{background:rgba(10,22,36,.96);backdrop-filter:blur(24px);
+  box-shadow:0 1px 0 rgba(255,255,255,.05),0 4px 24px rgba(0,0,0,.22)}
+.hdr-in{max-width:var(--cw);margin:0 auto;display:flex;align-items:center;gap:20px;padding:14px 0}
+.hdr-logo img{height:40px;width:auto}
+.hdr-nav{flex:1;display:flex;justify-content:center}
+.nav-ul{display:flex;align-items:center;gap:2px}
+.nav-ul a{font-size:13px;font-weight:600;color:rgba(255,255,255,.72);padding:7px 12px;border-radius:7px;transition:all .2s}
+.nav-ul a:hover{color:var(--w);background:rgba(255,255,255,.08)}
+.hdr-r{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.hdr-lic{font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  color:rgba(255,255,255,.38);line-height:1.4;text-align:right}
+.hdr-lic b{color:rgba(255,255,255,.62);display:block;font-size:10px}
+.hbg{display:none;flex-direction:column;gap:5px;padding:6px;cursor:pointer}
+.hbg span{display:block;width:22px;height:2px;background:var(--w);border-radius:2px;transition:all .3s}
+.hbg.op span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.hbg.op span:nth-child(2){opacity:0}
+.hbg.op span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.mob-nav{display:none;position:fixed;inset:0;z-index:999;background:rgba(10,22,36,.98);
+  backdrop-filter:blur(24px);flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:80px 32px 40px}
+.mob-nav.op{display:flex}
+.mob-nav a{font-size:19px;font-weight:700;color:rgba(255,255,255,.7);padding:12px 40px;
+  border-radius:12px;width:100%;text-align:center;transition:all .2s}
+.mob-nav a:hover{color:var(--w);background:rgba(255,255,255,.08)}
+.mob-nav .btn{width:100%;justify-content:center;margin-top:12px}
+.mob-x{position:absolute;top:22px;right:22px;color:rgba(255,255,255,.6);font-size:22px;cursor:pointer;padding:8px;line-height:1}
+
+/* ═══ HERO ═══ */
+#hero{min-height:100svh;position:relative;overflow:hidden;display:flex;align-items:center;background:var(--b950)}
+.h-bg{position:absolute;inset:0;z-index:0;background:url('hero-bg.webp') center/cover no-repeat;
+  animation:hero-zoom 10s ease-in-out infinite alternate}
+@keyframes hero-zoom{0%{transform:scale(1)}100%{transform:scale(1.12)}}
+/* JAWDA Badge */
+.jawda-badge{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,rgba(212,175,55,.15),rgba(212,175,55,.08));
+  border:1.5px solid rgba(212,175,55,.35);border-radius:var(--rm);padding:10px 16px;margin-bottom:20px}
+.jawda-badge svg{width:28px;height:28px;flex-shrink:0}
+.jawda-badge-txt{display:flex;flex-direction:column}
+.jawda-badge-t{font-size:12px;font-weight:800;color:#d4af37;letter-spacing:.04em;line-height:1.2}
+.jawda-badge-s{font-size:10px;font-weight:600;color:rgba(212,175,55,.7);letter-spacing:.03em}
+.h-ov{position:absolute;inset:0;z-index:1;
+  background:linear-gradient(to right,rgba(10,24,40,.94) 0%,rgba(10,24,40,.78) 50%,rgba(10,24,40,.30) 100%)}
+.h-in{position:relative;z-index:2;max-width:var(--cw);margin:0 auto;
+  padding:120px var(--px) 64px;width:100%;
+  display:flex;flex-direction:column;align-items:flex-start}
+.h-trust-pill{display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap;
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);
+  border-radius:100px;padding:6px 14px;margin-bottom:24px}
+.htp-dot{width:5px;height:5px;border-radius:50%;flex-shrink:0}
+.htp-item{font-size:11px;font-weight:700;color:rgba(255,255,255,.65);letter-spacing:.04em;white-space:nowrap}
+.htp-sep{color:rgba(255,255,255,.2);font-size:12px}
+.h-h1{font-family:var(--fd);font-size:clamp(40px,5.8vw,76px);
+  line-height:1.06;letter-spacing:-.025em;color:var(--w);margin-bottom:8px}
+.h-h1 em{font-style:italic;color:var(--g400)}
+.h-lead{font-size:12px;font-weight:600;letter-spacing:.04em;
+  color:rgba(255,255,255,.45);text-transform:uppercase;margin-bottom:18px}
+.h-lead span{color:rgba(255,255,255,.7)}
+.h-sub{font-size:clamp(14px,1.5vw,17px);line-height:1.75;
+  color:rgba(255,255,255,.62);margin-bottom:32px;max-width:460px}
+.h-acts{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:44px}
+
+/* Stat strip */
+.h-stats{display:grid;grid-template-columns:repeat(7,1fr);border:1px solid rgba(255,255,255,.1);border-radius:var(--rl);max-width:100%}
+@media(max-width:900px){.h-stats{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:600px){.h-stats{grid-template-columns:repeat(2,1fr)}}
+.hst{padding:16px 14px;text-align:center;flex-shrink:0;min-width:96px;
+  background:rgba(255,255,255,.04);border-right:1px solid rgba(255,255,255,.07);transition:background .2s}
+.hst:last-child{border-right:none}
+.hst:hover{background:rgba(255,255,255,.08)}
+.hst-n{font-family:var(--fd);font-size:clamp(16px,2vw,24px);color:var(--w);line-height:1.1;margin-bottom:3px}
+.hst-n b{color:var(--g400);font-style:normal}
+.hst-l{font-size:9.5px;color:rgba(255,255,255,.42);font-weight:600;letter-spacing:.04em;line-height:1.3}
+.hst-ico{display:flex;justify-content:center;margin-bottom:3px}
+.hst-ico svg{width:18px;height:18px;stroke:var(--g400);fill:none;stroke-width:1.8;stroke-linecap:round}
+
+.h-mohap{display:inline-flex;align-items:center;gap:7px;margin-top:14px;
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);
+  border-radius:100px;padding:6px 13px;
+  font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:rgba(255,255,255,.45)}
+.h-mohap svg{width:12px;height:12px;stroke:var(--g400);fill:none;stroke-width:2;flex-shrink:0}
+
+/* ═══ TRUST BAR ═══ */
+#trust{background:var(--w);border-top:1px solid var(--s100);border-bottom:1px solid var(--s100);padding:22px 0;overflow:hidden}
+.tb-in{max-width:var(--cw);margin:0 auto;padding:0 var(--px);display:flex;align-items:center}
+.tb-lbl{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--s400);white-space:nowrap;padding-right:32px;
+  border-right:1px solid var(--s100);flex-shrink:0}
+.tb-wrap{overflow:hidden;flex:1;position:relative}
+.tb-wrap::before,.tb-wrap::after{content:'';position:absolute;top:0;bottom:0;width:48px;z-index:2;pointer-events:none}
+.tb-wrap::before{left:0;background:linear-gradient(to right,white,transparent)}
+.tb-wrap::after{right:0;background:linear-gradient(to left,white,transparent)}
+.tb-track{display:flex;align-items:center;gap:48px;width:max-content}
+.tb-track:hover{animation-play-state:paused}
+.tlog{display:flex;align-items:center;flex-shrink:0;
+  filter:grayscale(100%) opacity(.5);transition:filter .3s;cursor:default}
+.tlog:hover{filter:grayscale(0%) opacity(1)}
+.tlog img{height:24px;width:auto;object-fit:contain}
+.tlog-t{font-size:13px;font-weight:800;color:var(--s400);letter-spacing:.02em}
+
+/* ═══ SERVICES ═══ */
+#services{}
+.srv-h{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:44px;flex-wrap:wrap;gap:16px}
+.srv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:20px}
+.srv-grid-2{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.sc{border-radius:var(--rl);overflow:hidden;border:1px solid var(--s100);
+  background:var(--w);transition:all .32s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column}
+.sc:hover{box-shadow:var(--shl);transform:translateY(-6px);border-color:transparent}
+.sc-img{aspect-ratio:3/2;overflow:hidden;position:relative;background:var(--gcard);flex-shrink:0}
+.sc-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.sc:hover .sc-img img{transform:scale(1.05)}
+.sc-img-ph{aspect-ratio:3/2;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px}
+.sc-bdg{position:absolute;top:10px;left:10px;font-size:10px;font-weight:700;
+  letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:100px}
+.sc-bdg--g{background:var(--gg);color:var(--w)}
+.sc-bdg--w{background:var(--w);color:var(--b900);box-shadow:var(--sh)}
+.sc-body{padding:18px 20px;flex:1;display:flex;flex-direction:column}
+.sc-body h3{font-size:16px;font-weight:800;color:var(--b900);margin-bottom:6px}
+.sc-body p{font-size:13px;line-height:1.6;color:var(--s600);margin-bottom:14px;flex:1}
+.sc-lnk{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:var(--g600);transition:gap .2s}
+.sc-lnk:hover{gap:10px}
+.sc-lnk svg{width:12px;height:12px;transition:transform .2s}
+.sc-lnk:hover svg{transform:translateX(3px)}
+.sc-prc{display:inline-flex;align-items:center;gap:4px;font-size:11.5px;font-weight:600;color:var(--g600);margin-bottom:6px}
+.sc-prc svg{width:11px;height:11px;flex-shrink:0}
+.sc-cs{display:inline-flex;align-items:center;gap:4px;font-size:11.5px;font-weight:600;color:var(--b700);transition:gap .2s}
+.sc-cs:hover{gap:8px}
+.sc-cs svg{width:10px;height:10px}
+.sc-book{display:flex;align-items:center;justify-content:space-between;margin-top:14px;
+  padding-top:14px;border-top:1px solid var(--s100)}
+
+/* ═══ VISION DIFFERENCE ═══ */
+#diff{background:var(--s50)}
+.diff-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.diff-feats{display:flex;flex-direction:column;gap:18px;margin-top:36px}
+.df{display:flex;gap:16px;align-items:flex-start;padding:16px 18px;
+  border-radius:var(--rm);border:1px solid transparent;transition:all .28s}
+.df:hover{background:var(--gcard);border-color:var(--s200);transform:translateX(5px)}
+.df-ico{width:42px;height:42px;flex-shrink:0;border-radius:11px;
+  display:flex;align-items:center;justify-content:center}
+.df-ico--b{background:var(--b50)}.df-ico--g{background:var(--g50)}
+.df-ico svg{width:21px;height:21px}
+.df h4{font-size:14px;font-weight:700;color:var(--b900);margin-bottom:3px}
+.df p{font-size:13px;line-height:1.6;color:var(--s600)}
+/* Tech mini-cards */
+.diff-tech{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px}
+.dtc{background:var(--w);border:1px solid var(--s100);border-radius:var(--rm);
+  padding:16px;transition:all .25s;position:relative;overflow:hidden}
+.dtc::after{content:'';position:absolute;top:0;left:0;right:0;height:2.5px;
+  background:var(--gg);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.dtc:hover{box-shadow:var(--shm);transform:translateY(-3px)}
+.dtc:hover::after{transform:scaleX(1)}
+.dtc-ico{width:40px;height:40px;border-radius:10px;background:rgba(45,95,138,.08);
+  display:flex;align-items:center;justify-content:center;margin-bottom:10px}
+.dtc-ico svg{width:20px;height:20px;stroke:var(--b700);fill:none;stroke-width:1.6;stroke-linecap:round}
+.dtc h4{font-size:13px;font-weight:700;color:var(--b900);margin-bottom:3px}
+.dtc p{font-size:11.5px;line-height:1.5;color:var(--s600)}
+.dtc-tag{font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--g600);margin-top:8px;display:block}
+.dtc-img{width:100%;aspect-ratio:16/9;border-radius:var(--r);overflow:hidden;margin-bottom:10px}
+.dtc-img img{width:100%;height:100%;object-fit:cover}
+
+/* ═══ BEFORE / AFTER ═══ */
+#ba{background:linear-gradient(rgba(10,22,36,.88),rgba(10,22,36,.88)),url('hero-bg.webp') center/cover no-repeat}
+.ba-h{text-align:center;margin-bottom:44px}
+.ba-fs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:40px}
+.ba-f{padding:8px 18px;border-radius:100px;font-size:12px;font-weight:700;
+  border:1px solid rgba(255,255,255,.14);color:rgba(255,255,255,.5);cursor:pointer;transition:all .2s}
+.ba-f.ac,.ba-f:hover{background:var(--gg);border-color:transparent;color:var(--w)}
+.ba-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.bac{border-radius:var(--rl);overflow:hidden;border:1px solid rgba(255,255,255,.07);
+  background:rgba(255,255,255,.03);transition:all .28s}
+.bac:hover{border-color:rgba(122,182,72,.22);box-shadow:0 8px 28px rgba(122,182,72,.08)}
+.ba-sp{display:grid;grid-template-columns:1fr 1fr;height:260px;position:relative}
+.ba-hf{height:100%;overflow:hidden;background:var(--s800);
+  display:flex;align-items:center;justify-content:center}
+.ba-lbl{position:absolute;bottom:8px;font-size:10px;font-weight:700;
+  letter-spacing:.07em;text-transform:uppercase;padding:3px 8px;border-radius:100px}
+.ba-lb{left:8px;background:rgba(0,0,0,.5);color:rgba(255,255,255,.6)}
+.ba-la{right:8px;background:var(--gg);color:var(--w)}
+.ba-dv{position:absolute;left:50%;top:0;bottom:0;width:2px;
+  background:rgba(255,255,255,.85);transform:translateX(-50%);z-index:2}
+.ba-di{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:24px;height:24px;border-radius:50%;background:var(--w);z-index:3;
+  display:flex;align-items:center;justify-content:center;
+  font-size:10px;font-weight:800;color:var(--s900);box-shadow:var(--shm)}
+.ba-ph{display:flex;flex-direction:column;align-items:center;
+  justify-content:center;color:rgba(255,255,255,.18);gap:6px;padding:14px}
+.ba-ph svg{width:32px;height:32px;opacity:.35}
+.ba-ph span{font-size:10px;font-weight:600}
+.ba-inf{padding:14px 16px}
+.ba-inf h4{font-size:13px;font-weight:700;color:var(--w);margin-bottom:2px}
+.ba-inf p{font-size:11px;color:rgba(255,255,255,.42)}
+.ba-ct{text-align:center;margin-top:40px}
+/* Gallery carousel */
+.ba-carousel{position:relative;overflow:hidden}
+.ba-track{display:flex;gap:16px;transition:transform .4s ease}
+.ba-track .bac{min-width:calc(33.333% - 11px);flex-shrink:0}
+.ba-arrows{display:flex;gap:8px;margin-top:24px;justify-content:center}
+.ba-arr{width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(255,255,255,.18);
+  background:rgba(255,255,255,.06);color:rgba(255,255,255,.7);display:flex;align-items:center;
+  justify-content:center;cursor:pointer;transition:all .2s;font-size:18px}
+.ba-arr:hover{background:var(--gg);border-color:transparent;color:var(--w)}
+.ba-arr:disabled{opacity:.3;cursor:default;background:transparent;border-color:rgba(255,255,255,.08)}
+/* Draggable slider */
+.ba-slider{position:relative;height:260px;overflow:hidden;cursor:ew-resize;user-select:none;-webkit-user-select:none}
+.ba-slider .ba-img-b,.ba-slider .ba-img-a{position:absolute;inset:0}
+.ba-slider .ba-img-b img,.ba-slider .ba-img-a img{width:100%;height:100%;object-fit:cover}
+.ba-slider .ba-img-a{clip-path:inset(0 0 0 50%)}
+.ba-slider .ba-handle{position:absolute;top:0;bottom:0;left:50%;width:3px;background:rgba(255,255,255,.9);
+  transform:translateX(-50%);z-index:4;pointer-events:none}
+.ba-slider .ba-handle-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:32px;height:32px;border-radius:50%;background:var(--w);z-index:5;
+  display:flex;align-items:center;justify-content:center;box-shadow:var(--shm);
+  font-size:11px;font-weight:800;color:var(--s900);pointer-events:none}
+@media(max-width:900px){.ba-track .bac{min-width:calc(50% - 8px)}}
+@media(max-width:600px){.ba-track .bac{min-width:100%}}
+
+/* ═══ TRUST STACK ═══ */
+#trust-stack{background:var(--w)}
+/* Dr Hussain */
+.ts-dr{display:grid;grid-template-columns:5fr 7fr;gap:64px;align-items:center;
+  padding-bottom:var(--sy);border-bottom:.5px solid var(--s100)}
+.dr-fw{position:relative}
+.dr-fr{border-radius:var(--rxl);overflow:hidden;aspect-ratio:3/4;
+  background:var(--gcard);border:.5px solid var(--s100)}
+.dr-fr img{width:100%;height:100%;object-fit:cover;object-position:top center}
+.dr-ct{position:absolute;bottom:22px;left:-22px;background:var(--w);
+  border-radius:var(--rm);padding:14px 18px;box-shadow:var(--shl);min-width:200px}
+.dr-cr{display:flex;align-items:center;gap:9px;padding:4px 0}
+.dr-cd{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+.dr-cd-g{background:var(--g500)}.dr-cd-b{background:var(--b700)}
+.dr-ct-txt{font-size:11px;font-weight:600;color:var(--s700);line-height:1.3}
+.dr-ph{position:absolute;top:22px;right:-18px;background:var(--gg);color:var(--w);
+  border-radius:var(--rm);padding:12px 16px;box-shadow:var(--shl);max-width:180px}
+.dr-ph p{font-size:11.5px;font-weight:700;line-height:1.4}
+.dr-ph span{font-size:10px;opacity:.8;display:block;margin-top:3px}
+.dr-bdgs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}
+.drbdg{font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+  padding:4px 10px;border-radius:100px;background:var(--b50);color:var(--b800);border:.5px solid var(--b200)}
+.drbdg--g{background:var(--g50);color:var(--g700);border-color:var(--g200)}
+.dr-nm{font-family:var(--fd);font-size:clamp(26px,3.2vw,42px);color:var(--b900);line-height:1.1;margin-bottom:4px}
+.dr-ti{font-size:13.5px;font-weight:700;color:var(--g600);margin-bottom:4px;letter-spacing:.02em}
+.dr-ql{font-size:12px;color:var(--s400);margin-bottom:20px;font-weight:500}
+.dr-bio{font-size:14px;line-height:1.8;color:var(--s600);margin-bottom:24px}
+.dr-sts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:22px}
+.dr-st{text-align:center;padding:16px 10px;background:var(--gcard);
+  border:.5px solid var(--s100);border-radius:var(--rm)}
+.dr-sn{font-family:var(--fd);font-size:26px;color:var(--b700);line-height:1;margin-bottom:4px}
+.dr-sn b{color:var(--g600);font-style:normal}
+.dr-sl{font-size:10px;font-weight:700;color:var(--s600);text-transform:uppercase;letter-spacing:.04em;line-height:1.3}
+.dr-sp{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:24px}
+.dr-sptg{font-size:11px;font-weight:600;padding:4px 10px;border-radius:100px;
+  background:var(--s50);color:var(--s700);border:.5px solid var(--s200)}
+.dr-acs{display:flex;gap:10px;flex-wrap:wrap}
+
+/* Team strip */
+.ts-team{padding:var(--sy) 0;border-bottom:.5px solid var(--s100)}
+.ts-team-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:32px;flex-wrap:wrap;gap:12px}
+.team-strip{display:grid;grid-template-columns:repeat(7,1fr);gap:14px}
+.tc{border-radius:var(--rl);overflow:hidden;border:.5px solid var(--s100);
+  background:var(--w);transition:all .3s cubic-bezier(.4,0,.2,1)}
+.tc:hover{box-shadow:var(--shl);transform:translateY(-5px);border-color:transparent}
+.tc-ph{height:180px;overflow:hidden;position:relative;
+  background:linear-gradient(160deg,var(--b50),var(--g50))}
+.tc-ph img{width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .45s}
+.tc:hover .tc-ph img{transform:scale(1.04)}
+.tc-sp{position:absolute;bottom:0;left:0;right:0;
+  background:linear-gradient(to top,rgba(10,22,36,.85),transparent);
+  padding:20px 10px 8px;font-size:10px;font-weight:700;color:rgba(255,255,255,.85);letter-spacing:.02em}
+.tc-bd{padding:12px}
+.tc-bd h3{font-size:13px;font-weight:800;color:var(--b900);margin-bottom:2px;line-height:1.25}
+.tc-bd p{font-size:11px;color:var(--s600);margin-bottom:8px;line-height:1.4}
+.tc-lnk{font-size:11.5px;font-weight:700;color:var(--g600);display:flex;align-items:center;gap:4px;transition:gap .18s}
+.tc-lnk:hover{gap:8px}
+.tc-lnk svg{width:11px;height:11px;transition:transform .18s}
+.tc-lnk:hover svg{transform:translateX(3px)}
+
+/* Reviews strip */
+.ts-rev{padding:var(--sy) 0}
+.ts-rev-h{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:32px;flex-wrap:wrap;gap:16px}
+.rev-sc{display:flex;align-items:center;gap:14px;background:var(--gcard);
+  border:.5px solid var(--s100);border-radius:var(--rm);padding:16px 22px}
+.rsn{font-family:var(--fd);font-size:48px;color:var(--b900);line-height:1}
+.rstars{display:flex;gap:2px;margin-bottom:4px}
+.rstars svg{width:14px;height:14px;fill:#f59e0b}
+.rsct{font-size:11px;color:var(--s600);font-weight:600}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rc{background:var(--w);border:.5px solid var(--s100);border-radius:var(--rl);
+  padding:22px;display:flex;flex-direction:column;gap:12px;transition:all .28s}
+.rc:hover{box-shadow:var(--shm);transform:translateY(-3px)}
+.rc-stars{display:flex;gap:2px}
+.rc-stars svg{width:12px;height:12px;fill:#f59e0b}
+.rc-q{font-size:13px;line-height:1.75;color:var(--s600);flex:1}
+.rc-q::before{content:'\201C';font-family:var(--fd);font-size:48px;color:var(--s200);
+  line-height:0;vertical-align:-.4em;margin-right:2px}
+.rc-auth{display:flex;align-items:center;gap:10px}
+.rc-av{width:36px;height:36px;border-radius:50%;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:var(--w)}
+.av1{background:var(--gb)}.av2{background:var(--gg)}.av3{background:linear-gradient(135deg,var(--b700),var(--g600))}
+.rc-ai h5{font-size:12.5px;font-weight:800;color:var(--s900)}
+.rc-ai p{font-size:10.5px;color:var(--s400);font-weight:500}
+
+/* ═══ BOOK CTA ═══ */
+#book{background:linear-gradient(rgba(10,22,36,.88),rgba(10,22,36,.88)),url('hero-bg.webp') center/cover no-repeat;position:relative;overflow:hidden}
+#book::before{content:'';position:absolute;width:500px;height:500px;border-radius:50%;
+  background:radial-gradient(circle,rgba(122,182,72,.09) 0%,transparent 68%);
+  top:-120px;right:-80px;pointer-events:none}
+.bk-in{position:relative;z-index:1;text-align:center;max-width:620px;margin:0 auto}
+.bk-in h2{font-family:var(--fd);font-size:clamp(30px,4.2vw,52px);
+  color:var(--w);line-height:1.1;margin-bottom:16px}
+.bk-in p{font-size:15px;color:rgba(255,255,255,.55);line-height:1.75;margin-bottom:36px;max-width:480px;margin-left:auto;margin-right:auto}
+.bk-btns{display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:36px}
+.bk-inf{display:flex;justify-content:center;flex-wrap:wrap;gap:24px}
+.bk-ii{display:flex;align-items:center;gap:7px;font-size:13px;color:rgba(255,255,255,.45);font-weight:500}
+.bk-ii svg{width:15px;height:15px;stroke:var(--g400);fill:none;stroke-width:2;stroke-linecap:round;flex-shrink:0}
+
+/* ═══ BLOG ═══ */
+#blog{background:var(--s50)}
+.bl-h{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:40px;flex-wrap:wrap;gap:16px}
+.bl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.blc{background:var(--w);border:.5px solid var(--s100);border-radius:var(--rl);
+  overflow:hidden;transition:all .32s cubic-bezier(.4,0,.2,1)}
+.blc:hover{box-shadow:var(--shl);transform:translateY(-5px);border-color:transparent}
+.blc-img{height:180px;overflow:hidden;position:relative}
+.blc-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.blc:hover .blc-img img{transform:scale(1.05)}
+.blc-cat{position:absolute;top:10px;left:10px;font-size:10px;font-weight:700;
+  letter-spacing:.06em;text-transform:uppercase;padding:4px 9px;border-radius:100px;
+  background:var(--gb);color:var(--w)}
+.blc-bd{padding:18px 20px}
+.blc-dt{font-size:11px;font-weight:600;color:var(--s400);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px}
+.blc-bd h3{font-size:15px;font-weight:800;color:var(--b900);margin-bottom:8px;line-height:1.35}
+.blc-bd p{font-size:13px;line-height:1.6;color:var(--s600);margin-bottom:14px}
+.bl-lnk{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:700;color:var(--g600);transition:gap .18s}
+.bl-lnk:hover{gap:9px}
+.bl-lnk svg{width:12px;height:12px;transition:transform .18px}
+.bl-lnk:hover svg{transform:translateX(3px)}
+
+/* ═══ FOOTER ═══ */
+#ftr{background:var(--s900);border-top:.5px solid rgba(255,255,255,.05)}
+.ft{padding:60px var(--px) 44px;max-width:var(--cw);margin:0 auto;
+  display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:44px}
+.fl img{height:38px;width:auto;margin-bottom:14px}
+.fl-d{font-size:13px;line-height:1.75;color:rgba(255,255,255,.38);margin-bottom:20px;max-width:240px}
+.fl-lic{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.05);
+  border:.5px solid rgba(255,255,255,.08);border-radius:var(--r);padding:9px 12px;
+  font-size:9.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:rgba(255,255,255,.42)}
+.fl-lic svg{width:13px;height:13px;stroke:var(--g400);fill:none;stroke-width:2;flex-shrink:0}
+.fcol h4{font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  color:rgba(255,255,255,.28);margin-bottom:16px}
+.fls{display:flex;flex-direction:column;gap:9px}
+.fls a{font-size:13px;color:rgba(255,255,255,.48);transition:color .2s}
+.fls a:hover{color:var(--w)}
+.fcs{display:flex;flex-direction:column;gap:12px}
+.fci{display:flex;align-items:flex-start;gap:9px}
+.fci svg{width:14px;height:14px;stroke:var(--g400);fill:none;stroke-width:2;stroke-linecap:round;flex-shrink:0;margin-top:2px}
+.fci p{font-size:12.5px;color:rgba(255,255,255,.48);line-height:1.5}
+.fci a{color:rgba(255,255,255,.48);transition:color .2s}
+.fci a:hover{color:var(--w)}
+.fsoc{display:flex;gap:7px;margin-top:16px}
+.fsi{width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,.05);
+  border:.5px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;transition:all .2s}
+.fsi:hover{background:var(--gg);border-color:transparent}
+.fsi svg{width:14px;height:14px;fill:none;stroke:rgba(255,255,255,.52);stroke-width:2;transition:stroke .2s}
+.fsi:hover svg{stroke:var(--w)}
+.fb{border-top:.5px solid rgba(255,255,255,.05);padding:18px var(--px);
+  max-width:var(--cw);margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.fb p,.fb a{font-size:11.5px;color:rgba(255,255,255,.26)}
+.fb a:hover{color:rgba(255,255,255,.5)}
+.fb-ls{display:flex;gap:18px}
+
+/* ═══ RESPONSIVE ═══ */
+@media(max-width:1100px){
+  .team-strip{grid-template-columns:repeat(4,1fr)}
+  .ts-dr{grid-template-columns:1fr;gap:44px}
+  .dr-ct,.dr-ph{display:none}
+  .diff-grid{grid-template-columns:1fr;gap:44px}
+}
+@media(max-width:900px){
+  .srv-grid,.srv-grid-2{grid-template-columns:repeat(2,1fr)!important}
+  .ba-grid{grid-template-columns:repeat(2,1fr)}
+  .bl-grid{grid-template-columns:repeat(2,1fr)}
+  .rev-grid{grid-template-columns:1fr}
+  .diff-tech{grid-template-columns:1fr 1fr}
+  .ft{grid-template-columns:1fr 1fr;gap:32px}
+}
+@media(max-width:768px){
+  :root{--sy:52px}
+  .hdr-nav,.hdr-lic,.hdr-ct{display:none}
+  .hbg{display:flex}
+  .srv-grid,.srv-grid-2{grid-template-columns:1fr!important}
+  .team-strip{grid-template-columns:repeat(2,1fr)}
+  .tc-ph{height:160px}
+  .ba-grid{grid-template-columns:1fr}
+  .bl-grid{grid-template-columns:1fr}
+  .srv-h,.bl-h,.ts-team-h{flex-direction:column;align-items:flex-start}
+  .ft{grid-template-columns:1fr;gap:26px}
+  .diff-tech{grid-template-columns:1fr 1fr}
+  .dr-sts{grid-template-columns:repeat(2,1fr)}
+}
+/* ═══ FLOATING WHATSAPP ═══ */
+.wa-float{position:fixed;bottom:24px;right:24px;z-index:900;display:flex;align-items:center;gap:10px}
+.wa-float a{display:flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;
+  background:#25d366;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:all .25s;color:#fff}
+.wa-float a:hover{transform:scale(1.1);box-shadow:0 6px 28px rgba(37,211,102,.55)}
+.wa-float svg{width:28px;height:28px;fill:#fff}
+.wa-pulse{position:absolute;inset:0;border-radius:50%;background:rgba(37,211,102,.3);animation:wa-ring 2s ease-out infinite;pointer-events:none}
+@keyframes wa-ring{0%{transform:scale(1);opacity:1}100%{transform:scale(1.6);opacity:0}}
+
+/* ═══ INSURANCE BAR (sliding marquee — reverse direction) ═══ */
+.ins-bar{background:var(--gcard);border-top:1px solid var(--s100);border-bottom:1px solid var(--s100);padding:14px 0;overflow:hidden;position:relative}
+.ins-bar::before,.ins-bar::after{content:'';position:absolute;top:0;bottom:0;width:48px;z-index:2;pointer-events:none}
+.ins-bar::before{left:0;background:linear-gradient(to right,#eef6f0,transparent)}
+.ins-bar::after{right:0;background:linear-gradient(to left,#eef6f0,transparent)}
+.ins-track{display:flex;align-items:center;gap:48px;width:max-content}
+.ins-track:hover{animation-play-state:paused}
+.ins-lbl{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--s400);white-space:nowrap;flex-shrink:0}
+.ins-sep{color:var(--s200);font-size:14px;flex-shrink:0}
+.ins-logo{height:28px;width:auto;object-fit:contain;filter:grayscale(30%);transition:filter .3s;flex-shrink:0}
+.ins-logo:hover{filter:grayscale(0%)}
+
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+
+<!-- MOB NAV -->
+<nav class="mob-nav" id="mob-nav">
+  <button class="mob-x" id="mob-x">✕</button>
+  <a href="index.html">Home</a>
+  <a href="about-us.html">About Us</a>
+  <a href="services.html">Services</a>
+  <a href="#trust-stack">Our Team</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="blog.html">Blog</a>
+  <a href="medical-tourism.html">Medical Tourism</a>
+  <a href="contact.html">Contact</a>
+  <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book Appointment</a>
+</nav>
+
+<!-- HEADER -->
+<header id="hdr" role="banner">
+  <div class="hdr-in">
+    <a href="/" class="hdr-logo">
+      <img src="Logo_H_White.png" alt="Vision Dental Clinic"
+        onerror="this.style.display='none';this.nextSibling.style.display='flex'"
+      ><span style="display:none;align-items:center;gap:9px;color:white;font-size:15px;font-weight:800">Vision Dental</span>
+    </a>
+    <nav class="hdr-nav">
+      <ul class="nav-ul">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="#trust-stack">Our Team</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="medical-tourism.html">Medical Tourism</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hdr-r">
+      <div class="hdr-lic"><span>MOHAP Licensed</span><b>No. 5889VHC5-110626</b></div>
+      <a href="https://wa.link/08ys3l" target="_blank" rel="noopener"
+        class="btn btn--g hdr-ct" style="font-size:12.5px;padding:9px 18px">Book Appointment</a>
+      <button class="hbg" id="hbg" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ① HERO -->
+<section id="hero" aria-labelledby="h-h1">
+  <div class="h-bg" role="presentation"></div>
+  <div class="h-ov" role="presentation"></div>
+  <div class="h-in">
+  <div class="h-content">
+    <!-- Trust pill -->
+    <div class="h-trust-pill">
+      <div class="htp-dot" style="background:var(--g400)"></div>
+      <span class="htp-item">Straumann® Partner</span>
+      <span class="htp-sep">·</span>
+      <span class="htp-item">Invisalign® Provider</span>
+      <span class="htp-sep">·</span>
+      <span class="htp-item">MOHAP Licensed</span>
+    </div>
+
+    <h1 class="h-h1" id="h-h1">A New Life.<br><em>Less Pain.</em><br>One Clinic.</h1>
+
+    <p class="h-lead">Led by <span>Dr. Hussien Tahoun</span> — Oral &amp; Maxillofacial Surgeon · Medical Director · 35+ Years</p>
+
+    <div class="jawda-badge">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z" fill="#d4af37" stroke="#b8962e" stroke-width=".5"/></svg>
+      <div class="jawda-badge-txt">
+        <span class="jawda-badge-t">JAWDA Certified — Grade A</span>
+        <span class="jawda-badge-s">Accredited by TASNEEF · JDC2398</span>
+      </div>
+    </div>
+
+    <p class="h-sub">
+      Six specialist clinics, a full digital workflow, and 35 years of surgical
+      precision — all dedicated to changing lives with as little discomfort as possible.
+    </p>
+
+    <div class="h-acts">
+      <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book Appointment</a>
+      <a href="#services" class="btn btn--gh">Our Services</a>
+    </div>
+
+    <!-- 7-stat strip -->
+    <div class="h-stats" role="list">
+      <div class="hst" role="listitem"><div class="hst-n">6<b>+</b></div><div class="hst-l">Specialist Clinics</div></div>
+      <div class="hst" role="listitem"><div class="hst-n">9<b>k+</b></div><div class="hst-l">Lives Changed</div></div>
+      <div class="hst" role="listitem"><div class="hst-n">35<b>+</b></div><div class="hst-l">Years of Experience</div></div>
+      <div class="hst" role="listitem"><div class="hst-n">5<b>k+</b></div><div class="hst-l">Implants Placed</div></div>
+      <div class="hst" role="listitem">
+        <div class="hst-ico"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <div class="hst-l">Full Digital</div>
+      </div>
+      <div class="hst" role="listitem">
+        <div class="hst-ico"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 6V4M17 6V4M3 10h18"/></svg></div>
+        <div class="hst-l">In-House Lab</div>
+      </div>
+      <div class="hst" role="listitem">
+        <div class="hst-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2"/></svg></div>
+        <div class="hst-l">3D Radiology</div>
+      </div>
+    </div>
+
+    <div class="h-mohap">
+      <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" fill="none" stroke-width="2"/></svg>
+      MOHAP Licensed · No. 5889VHC5-110626
+    </div>
+  </div><!-- end h-content -->
+
+
+  </div><!-- end h-in -->
+</section>
+
+<!-- TRUST BAR -->
+<div id="trust" role="complementary" aria-label="Partners">
+  <div class="tb-in">
+    <p class="tb-lbl">Our Partners</p>
+    <div class="tb-wrap">
+      <div class="tb-track">
+        <div class="tlog"><img src="straumann.png" alt="Straumann" onerror="this.outerHTML='<span class=\'tlog-t\'>Straumann®</span>'"></div>
+        <div class="tlog"><img src="invisalign.png" alt="Invisalign" onerror="this.outerHTML='<span class=\'tlog-t\'>Invisalign®</span>'"></div>
+        <div class="tlog"><img src="Imes_icore.png" alt="imes-icore" onerror="this.outerHTML='<span class=\'tlog-t\'>imes-icore®</span>'"></div>
+        <div class="tlog"><img src="ivoclar.png" alt="Ivoclar" onerror="this.outerHTML='<span class=\'tlog-t\'>Ivoclar</span>'"></div>
+        <div class="tlog"><img src="3shape.png" alt="3Shape" onerror="this.outerHTML='<span class=\'tlog-t\'>3Shape</span>'"></div>
+        <!-- Duplicate for loop -->
+        <div class="tlog"><img src="straumann.png" alt="" aria-hidden="true" onerror="this.outerHTML='<span class=\'tlog-t\'>Straumann®</span>'"></div>
+        <div class="tlog"><img src="invisalign.png" alt="" aria-hidden="true" onerror="this.outerHTML='<span class=\'tlog-t\'>Invisalign®</span>'"></div>
+        <div class="tlog"><img src="Imes_icore.png" alt="" aria-hidden="true" onerror="this.outerHTML='<span class=\'tlog-t\'>imes-icore®</span>'"></div>
+        <div class="tlog"><img src="ivoclar.png" alt="" aria-hidden="true" onerror="this.outerHTML='<span class=\'tlog-t\'>Ivoclar</span>'"></div>
+        <div class="tlog"><img src="3shape.png" alt="" aria-hidden="true" onerror="this.outerHTML='<span class=\'tlog-t\'>3Shape</span>'"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- INSURANCE & PAYMENT BAR -->
+<div class="ins-bar" role="complementary" aria-label="Insurance & Payment">
+  <div class="ins-track">
+    <span class="ins-lbl">Accepted Insurance</span>
+    <img src="thiqa-logo.webp" alt="Thiqa" class="ins-logo">
+    <img src="daman-logo.webp" alt="Daman" class="ins-logo">
+    <img src="nextcare-logo.webp" alt="NextCare" class="ins-logo">
+    <img src="adnic-logo.webp" alt="ADNIC" class="ins-logo">
+    <img src="axa-logo.webp" alt="AXA" class="ins-logo">
+    <span class="ins-sep">·</span>
+    <span class="ins-lbl">Pay in Installments</span>
+    <img src="tabby-logo.webp" alt="Tabby" class="ins-logo">
+    <img src="tamara-logo.webp" alt="Tamara" class="ins-logo">
+    <!-- Duplicate for seamless loop -->
+    <span class="ins-lbl" aria-hidden="true">Accepted Insurance</span>
+    <img src="thiqa-logo.webp" alt="" aria-hidden="true" class="ins-logo">
+    <img src="daman-logo.webp" alt="" aria-hidden="true" class="ins-logo">
+    <img src="nextcare-logo.webp" alt="" aria-hidden="true" class="ins-logo">
+    <img src="adnic-logo.webp" alt="" aria-hidden="true" class="ins-logo">
+    <img src="axa-logo.webp" alt="" aria-hidden="true" class="ins-logo">
+    <span class="ins-sep" aria-hidden="true">·</span>
+    <span class="ins-lbl" aria-hidden="true">Pay in Installments</span>
+    <img src="tabby-logo.webp" alt="" aria-hidden="true" class="ins-logo">
+    <img src="tamara-logo.webp" alt="" aria-hidden="true" class="ins-logo">
+  </div>
+</div>
+
+<!-- ② SERVICES -->
+<section id="services" class="S" aria-labelledby="srv-h">
+  <div class="W">
+    <div class="srv-h rv">
+      <div>
+        <p class="eye">Our Specialties</p>
+        <h2 class="Hlg" id="srv-h">Expert Care Across<br>Every <em class="em">Discipline</em></h2>
+      </div>
+      <a href="services.html" class="btn btn--b btn--arr rv d2">View All Services</a>
+    </div>
+
+    <!-- Row 1: 3 main -->
+    <div class="srv-grid">
+      <article class="sc rv">
+        <div class="sc-img"><img src="implants.jpg" alt="Dental Implants" loading="lazy"><span class="sc-bdg sc-bdg--g">Most Requested</span></div>
+        <div class="sc-body">
+          <h3>Dental Implants</h3>
+          <p class="sc-prc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>Starting from 2,600 AED</p>
+          <p>Straumann® implants with CBCT-guided surgery. Immediate loading &amp; All-on-X available.</p>
+          <div class="sc-book">
+            <a href="dental-implants.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="case-studies.html#implants" class="sc-cs">Cases<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
+          </div>
+        </div>
+      </article>
+      <article class="sc rv d1">
+        <div class="sc-img"><img src="Smile_design.jpg" alt="Cosmetic Dentistry / Smile Design" loading="lazy"><span class="sc-bdg sc-bdg--w">Cosmetic</span></div>
+        <div class="sc-body">
+          <h3>Cosmetic Dentistry / Smile Design</h3>
+          <p class="sc-prc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>Starting from 9,700 AED</p>
+          <p>Digital Smile Design — preview your result before any preparation. In-house lab.</p>
+          <div class="sc-book">
+            <a href="smile-design.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="case-veneers.html" class="sc-cs">Cases<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
+          </div>
+        </div>
+      </article>
+      <article class="sc rv d2">
+        <div class="sc-img"><img src="ortho.jpg" alt="Orthodontics" loading="lazy"><span class="sc-bdg sc-bdg--w">Orthodontics</span></div>
+        <div class="sc-body">
+          <h3>Orthodontics &amp; Invisalign®</h3>
+          <p class="sc-prc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>Starting from 3,500 AED</p>
+          <p>Certified Invisalign® provider. Clear aligners &amp; braces for all ages.</p>
+          <div class="sc-book">
+            <a href="orthodontics.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- Row 2: 3 secondary -->
+    <div class="srv-grid-2" style="margin-top:20px">
+      <article class="sc rv">
+        <div class="sc-img"><img src="whitning.jpg" alt="Teeth Whitening" loading="lazy"><span class="sc-bdg sc-bdg--w">Whitening</span></div>
+        <div class="sc-body">
+          <h3>Teeth Whitening</h3>
+          <p class="sc-prc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>Starting from 1,099 AED</p>
+          <p>Philips Zoom in-chair whitening. Visible results in a single session.</p>
+          <div class="sc-book">
+            <a href="whitening.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="case-whitening.html" class="sc-cs">Cases<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
+          </div>
+        </div>
+      </article>
+      <article class="sc rv d1">
+        <div class="sc-img"><img src="surgery-hero.png" alt="Oral Surgery" loading="lazy"><span class="sc-bdg sc-bdg--w">Oral Surgery</span></div>
+        <div class="sc-body">
+          <h3>Oral &amp; Maxillofacial Surgery</h3>
+          <p class="sc-prc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>Starting from 179 AED</p>
+          <p>Complex extractions, bone grafting &amp; sinus lifts — led by Dr. Hussien, 35+ years.</p>
+          <div class="sc-book">
+            <a href="oral-surgery.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="case-studies.html#surgery" class="sc-cs">Cases<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
+          </div>
+        </div>
+      </article>
+      <article class="sc rv d2">
+        <div class="sc-img"><img src="prosthodontics-hero.webp" alt="Prosthodontics" loading="lazy"><span class="sc-bdg sc-bdg--w">Prosthodontics</span></div>
+        <div class="sc-body">
+          <h3>Prosthodontics</h3>
+          <p class="sc-prc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>Starting from 575 AED</p>
+          <p>Crowns, bridges &amp; prosthetics — designed with CAD/CAM in our in-house lab.</p>
+          <div class="sc-book">
+            <a href="prosthodontics.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="case-prosthodontic.html" class="sc-cs">Cases<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- Row 3: 4 additional specialties -->
+    <div class="srv-grid" style="margin-top:20px;grid-template-columns:repeat(4,1fr)">
+      <article class="sc rv">
+        <div class="sc-img"><img src="root-canal.webp" alt="Root Canal Treatment" loading="lazy"><span class="sc-bdg sc-bdg--w">Endodontics</span></div>
+        <div class="sc-body">
+          <h3>Root Canal Treatment</h3>
+          <p class="sc-prc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>Starting from 262 AED</p>
+          <p>Painless endodontic treatment with rotary motors and digital imaging.</p>
+          <div class="sc-book">
+            <a href="root-canal.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="case-pulpectomy.html" class="sc-cs">Cases<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
+          </div>
+        </div>
+      </article>
+      <article class="sc rv d1">
+        <div class="sc-img"><img src="scaling.webp" alt="Scaling & Polishing" loading="lazy"><span class="sc-bdg sc-bdg--w">Hygiene</span></div>
+        <div class="sc-body">
+          <h3>Scaling &amp; Polishing</h3>
+          <p class="sc-prc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>Starting from 195 AED</p>
+          <p>Professional deep cleaning to remove tartar and prevent gum disease.</p>
+          <div class="sc-book">
+            <a href="scaling.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
+          </div>
+        </div>
+      </article>
+      <article class="sc rv d2">
+        <div class="sc-img"><img src="restoration.webp" alt="Teeth Restoration" loading="lazy"><span class="sc-bdg sc-bdg--w">Restorative</span></div>
+        <div class="sc-body">
+          <h3>Teeth Restoration</h3>
+          <p class="sc-prc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>Starting from 156 AED</p>
+          <p>Composite fillings and inlays/onlays to restore damaged teeth to full function.</p>
+          <div class="sc-book">
+            <a href="restoration.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="case-restoration.html" class="sc-cs">Cases<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
+          </div>
+        </div>
+      </article>
+      <article class="sc rv d3">
+        <div class="sc-img"><img src="pediatric.webp" alt="Pediatric Dentistry" loading="lazy"><span class="sc-bdg sc-bdg--g">Kids</span></div>
+        <div class="sc-body">
+          <h3>Pediatric Dentistry</h3>
+          <p class="sc-prc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>Starting from 97 AED</p>
+          <p>Gentle dental care for children — preventive treatments, sealants &amp; space maintainers.</p>
+          <div class="sc-book">
+            <a href="pediatric.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ③ VISION DIFFERENCE -->
+<section id="diff" class="S S--lt" aria-labelledby="diff-h">
+  <div class="W">
+    <div class="diff-grid">
+
+      <div class="rv rv-l">
+        <p class="eye">The Vision Difference</p>
+        <h2 class="Hlg" id="diff-h">A Complete Dental<br>Ecosystem <em class="em">Under One Roof</em></h2>
+        <p class="Blg" style="margin-top:14px">From your first 3D scan to your final smile, every step is handled in-house — same team, same records, zero compromise on care.</p>
+        <div class="diff-feats">
+          <div class="df rv d1">
+            <div class="df-ico df-ico--b">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#2D5F8A" stroke-width="1.8" stroke-linecap="round">
+                <path d="M19 14c1.5-1 3-3.5 3-5.5A6.5 6.5 0 006 7c0 4 3 6.5 6 9.5"/>
+                <path d="M12 16.5c0 3 2 5 2 5s-4 .5-4-4"/>
+              </svg>
+            </div>
+            <div><h4>In-House Digital Laboratory</h4><p>German milling machines produce your crowns and veneers internally — faster, more precise, at lower cost.</p></div>
+          </div>
+          <div class="df rv d2">
+            <div class="df-ico df-ico--g">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#5a9f2a" stroke-width="1.8" stroke-linecap="round">
+                <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4M7 8h10M7 11h7"/>
+              </svg>
+            </div>
+            <div><h4>2D &amp; 3D Radiology Suite</h4><p>CBCT cone-beam imaging provides a full 3D map of your anatomy before any surgery begins.</p></div>
+          </div>
+          <div class="df rv d3">
+            <div class="df-ico df-ico--b">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#2D5F8A" stroke-width="1.8" stroke-linecap="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <div><h4>Full Digital Dentistry Workflow</h4><p>Scanning, designing, planning, delivering — every step digital, documented, and precise.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech mini-cards grid -->
+      <div class="rv rv-r">
+        <p class="eye d2" style="margin-bottom:18px">Our Technology</p>
+        <div class="diff-tech">
+          <div class="dtc rv d1">
+            <div class="dtc-img"><img src="tech-3shape-scanner.webp" alt="3Shape Intraoral Scanner" loading="lazy"></div>
+            <h4>Intraoral Scanner</h4>
+            <p>Digital impressions in under 2 mins</p>
+            <span class="dtc-tag">Zero impressions</span>
+          </div>
+          <div class="dtc rv d2">
+            <div class="dtc-img"><img src="blog-cbct-scan.webp" alt="CBCT 3D Imaging" loading="lazy"></div>
+            <h4>CBCT 3D Radiology</h4>
+            <p>Full bone map before any surgery</p>
+            <span class="dtc-tag">3D planning</span>
+          </div>
+          <div class="dtc rv d2">
+            <div class="dtc-img"><img src="tech-lab.webp" alt="German CAD/CAM Milling Machine" loading="lazy"></div>
+            <h4>German CAD/CAM Milling</h4>
+            <p>IMES-icore same-day restorations</p>
+            <span class="dtc-tag">In-house · Same day</span>
+          </div>
+          <div class="dtc rv d3">
+            <div class="dtc-img"><img src="tech-inhouse-lab.webp" alt="3D Dental Printer" loading="lazy"></div>
+            <h4>3D Dental Printer</h4>
+            <p>Surgical guides &amp; temporaries</p>
+            <span class="dtc-tag">Guided surgery</span>
+          </div>
+          <div class="dtc rv d3">
+            <div class="dtc-img"><img src="Smile_design.jpg" alt="Digital Smile Design" loading="lazy"></div>
+            <h4>Digital Smile Design</h4>
+            <p>Preview result before treatment</p>
+            <span class="dtc-tag">See before you start</span>
+          </div>
+          <div class="dtc rv d4">
+            <div class="dtc-img"><img src="tech-implant-center.webp" alt="Guided Implant Surgery" loading="lazy"></div>
+            <h4>Guided Implant Surgery</h4>
+            <p>Exact position from CBCT plan</p>
+            <span class="dtc-tag">Precision placement</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ④ BEFORE / AFTER -->
+<section id="ba" class="S" style="background:var(--s900)" aria-labelledby="ba-h">
+  <div class="W">
+    <div class="ba-h">
+      <p class="eye eye--lt eye--cx rv">Real Results</p>
+      <h2 class="Hlg Hlg--lt rv d1" id="ba-h" style="text-align:center">
+        Transformations That<br><em class="em--lt">Speak for Themselves</em>
+      </h2>
+      <p class="Blg Blg--lt rv d2" style="max-width:480px;margin:10px auto 0;text-align:center">
+        Every case planned digitally, executed with precision. Real patients. Real results.
+      </p>
+    </div>
+    <div class="ba-fs" role="tablist">
+      <button class="ba-f ac" data-filter="all" role="tab" aria-selected="true">All Cases</button>
+      <button class="ba-f" data-filter="implants" role="tab" aria-selected="false">Implants</button>
+      <button class="ba-f" data-filter="veneers" role="tab" aria-selected="false">Veneers</button>
+      <button class="ba-f" data-filter="fullmouth" role="tab" aria-selected="false">Full Mouth</button>
+    </div>
+    <div class="ba-carousel" id="ba-carousel">
+      <div class="ba-track" id="ba-track">
+        <div class="bac" data-cat="veneers">
+          <div class="ba-slider" data-before="ba-1-before.webp" data-after="ba-1-after.webp">
+            <div class="ba-img-b"><img src="ba-1-before.webp" alt="Before — Veneers"></div>
+            <div class="ba-img-a"><img src="ba-1-after.webp" alt="After — Veneers"></div>
+            <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
+            <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
+          </div>
+          <div class="ba-inf"><h4>Porcelain Veneers</h4><p>Dr. Ammar Anbari · Digital Smile Design</p></div>
+        </div>
+        <div class="bac" data-cat="fullmouth">
+          <div class="ba-slider" data-before="ba-2-before.webp" data-after="ba-2-after.webp">
+            <div class="ba-img-b"><img src="ba-2-before.webp" alt="Before — Full Mouth"></div>
+            <div class="ba-img-a"><img src="ba-2-after.webp" alt="After — Full Mouth"></div>
+            <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
+            <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
+          </div>
+          <div class="ba-inf"><h4>Full Mouth Rehabilitation</h4><p>Dr. Ammar Anbari · Crowns + Implants</p></div>
+        </div>
+        <div class="bac" data-cat="fullmouth">
+          <div class="ba-slider" data-before="ba-3-before.webp" data-after="ba-3-after.webp">
+            <div class="ba-img-b"><img src="ba-3-before.webp" alt="Before — Full Mouth"></div>
+            <div class="ba-img-a"><img src="ba-3-after.webp" alt="After — Full Mouth"></div>
+            <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
+            <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
+          </div>
+          <div class="ba-inf"><h4>Full Mouth Rehabilitation</h4><p>Dr. Asmaa Butt · Complete Restoration</p></div>
+        </div>
+      </div>
+      <div class="ba-arrows">
+        <button class="ba-arr" id="ba-prev" aria-label="Previous" disabled>←</button>
+        <button class="ba-arr" id="ba-next" aria-label="Next">→</button>
+      </div>
+    </div>
+    <div class="ba-ct rv">
+      <a href="gallery.html" class="btn btn--g btn--arr">View Full Gallery</a>
+      <a href="case-studies.html" class="btn btn--gh" style="margin-left:10px">Case Studies</a>
+    </div>
+  </div>
+</section>
+
+<!-- ④ TRUST STACK — Dr + Team + Reviews in one continuous section -->
+<section id="trust-stack" class="S" aria-labelledby="ts-h">
+  <div class="W">
+
+    <!-- Dr. Hussain -->
+    <div class="ts-dr">
+      <div class="dr-fw rv rv-l">
+        <div class="dr-fr">
+          <img src="dr-hussien.webp" alt="Dr. Hussien Tahoun — Oral & Maxillofacial Surgeon, Medical Director" loading="lazy">
+        </div>
+        <div class="dr-ct">
+          <div class="dr-cr"><div class="dr-cd dr-cd-b"></div><span class="dr-ct-txt">International Team for Implantology (ITI)</span></div>
+          <div class="dr-cr"><div class="dr-cd dr-cd-g"></div><span class="dr-ct-txt">American Academy of Implant Dentistry</span></div>
+          <div class="dr-cr"><div class="dr-cd dr-cd-b"></div><span class="dr-ct-txt">American Academy of Cosmetic Dentistry</span></div>
+        </div>
+        <div class="dr-ph">
+          <p>"The goal is the quality of life — not just the quality of the tooth."</p>
+          <span>— Dr. Hussien Tahoun</span>
+        </div>
+      </div>
+
+      <div class="rv rv-r">
+        <div class="dr-bdgs">
+          <span class="drbdg drbdg--g">Medical Director</span>
+          <span class="drbdg">Oral &amp; Maxillofacial Surgeon</span>
+          <span class="drbdg">Implantologist</span>
+        </div>
+        <h2 class="dr-nm" id="ts-h">Dr. Hussien<br>Salah Tahoun</h2>
+        <p class="dr-ti">Oral &amp; Maxillofacial Surgeon · Implantology Consultant</p>
+        <p class="dr-ql">PhD · Master in Aesthetic Implant Dentistry, University of Bern, Switzerland · 35+ Years</p>
+        <p class="dr-bio">Dr. Hussien built his career on one conviction: that reducing pain and fear is as important as the surgery itself. With a PhD in Oral &amp; Maxillofacial Surgery and advanced training in Switzerland, he has placed over 5,000 implants and led thousands of complex reconstructive procedures — always with the patient's long-term wellbeing at the centre of every decision.</p>
+        <div class="dr-sts">
+          <div class="dr-st"><div class="dr-sn">35<b>+</b></div><div class="dr-sl">Years of Practice</div></div>
+          <div class="dr-st"><div class="dr-sn">5<b>k+</b></div><div class="dr-sl">Implants Placed</div></div>
+          <div class="dr-st"><div class="dr-sn">PhD</div><div class="dr-sl">Oral &amp; Maxillofacial</div></div>
+        </div>
+        <div class="dr-sp">
+          <span class="dr-sptg">Implantology</span><span class="dr-sptg">All-on-X</span>
+          <span class="dr-sptg">Bone Grafting</span><span class="dr-sptg">Sinus Lift</span>
+          <span class="dr-sptg">Full Mouth Rehab</span><span class="dr-sptg">Digital Dentistry</span>
+        </div>
+        <div class="dr-acs">
+          <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book with Dr. Hussien</a>
+          <a href="dr-hussien.html" class="btn btn--od">Full Profile</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team strip — flows directly below -->
+    <div class="ts-team">
+      <div class="ts-team-h rv">
+        <div>
+          <p class="eye" style="margin-bottom:6px">Our Specialists</p>
+          <h3 class="Hmd">The Team Behind <em class="em">Your Smile</em></h3>
+        </div>
+        <a href="about-us.html#team" class="btn btn--od btn--sm rv d2">Meet the Full Team</a>
+      </div>
+      <div class="team-strip">
+        <div class="tc rv">
+          <div class="tc-ph"><img src="dr-hussien.webp" alt="Dr. Hussien Tahoun" loading="lazy"><div class="tc-sp">Implantology · Oral Surgery</div></div>
+          <div class="tc-bd"><h3>Dr. Hussien Tahoun</h3><p>PhD · Medical Director · 35+ Yrs</p><a href="dr-hussien.html" class="tc-lnk">Profile<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+        </div>
+        <div class="tc rv d1">
+          <div class="tc-ph"><img src="dr-amr.webp" alt="Prof. Amr Labib" loading="lazy"><div class="tc-sp">Orthodontics</div></div>
+          <div class="tc-bd"><h3>Prof. Amr Labib</h3><p>Professor of Orthodontics</p><a href="dr-amr.html" class="tc-lnk">Profile<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+        </div>
+        <div class="tc rv d2">
+          <div class="tc-ph"><img src="dr-ammar.webp" alt="Dr. Ammar Anbari" loading="lazy"><div class="tc-sp">Dental Surgery · Implantology</div></div>
+          <div class="tc-bd"><h3>Dr. Ammar Anbari</h3><p>Dental Surgeon &amp; Implantologist</p><a href="dr-ammar.html" class="tc-lnk">Profile<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+        </div>
+        <div class="tc rv d2">
+          <div class="tc-ph"><img src="dr-salim.webp" alt="Dr. Salim Alhamadani" loading="lazy"><div class="tc-sp">Cosmetic Dentistry · GP</div></div>
+          <div class="tc-bd"><h3>Dr. Salim Alhamadani</h3><p>Cosmetic Dentistry · GP</p><a href="dr-salim.html" class="tc-lnk">Profile<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+        </div>
+        <div class="tc rv d3">
+          <div class="tc-ph"><img src="dr-asma.webp" alt="Dr. Asmaa Butt" loading="lazy"><div class="tc-sp">Invisalign® · Cosmetic · GP</div></div>
+          <div class="tc-bd"><h3>Dr. Asmaa Butt</h3><p>Invisalign® Certified Provider</p><a href="dr-asmaa.html" class="tc-lnk">Profile<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+        </div>
+        <div class="tc rv d3">
+          <div class="tc-ph"><img src="dr-emad.webp" alt="Dr. Emad El-Din Sharqawi" loading="lazy"><div class="tc-sp">Prosthodontics · PhD</div></div>
+          <div class="tc-bd"><h3>Dr. Emad Sharqawi</h3><p>PhD in Prosthodontics</p><a href="dr-emad.html" class="tc-lnk">Profile<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+        </div>
+        <div class="tc rv d4">
+          <div class="tc-ph"><img src="dr-mohy.webp" alt="Dr. Mohy El Din Mahmoud" loading="lazy"><div class="tc-sp">Prosthodontics · Implant Prosthetics</div></div>
+          <div class="tc-bd"><h3>Dr. Mohy El Din</h3><p>MSc Prosthodontics · DOH Licensed</p><a href="dr-mohy.html" class="tc-lnk">Profile<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reviews — flows below team -->
+    <div class="ts-rev">
+      <div class="ts-rev-h rv">
+        <div>
+          <p class="eye" style="margin-bottom:6px">Patient Stories</p>
+          <h3 class="Hmd">What Our Patients <em class="em">Say</em></h3>
+        </div>
+        <div class="rev-sc rv d2">
+          <div class="rsn" aria-label="4.9 out of 5">4.9</div>
+          <div>
+            <div class="rstars" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <div class="rsct">340+ Google Reviews</div>
+          </div>
+        </div>
+      </div>
+      <div class="rev-grid">
+        <article class="rc rv">
+          <div class="rc-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <p class="rc-q">I was turned away by two other clinics. Dr. Hussien reviewed my CBCT the same day, explained every step, and performed the implant surgery without a single complication. The in-house lab had my crowns ready faster than I expected. Truly life-changing.</p>
+          <div class="rc-auth"><div class="rc-av av1">KA</div><div class="rc-ai"><h5>Khalid A.</h5><p>Dental Implants · Abu Dhabi</p></div></div>
+        </article>
+        <article class="rc rv d1">
+          <div class="rc-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <p class="rc-q">The Invisalign team showed me a digital preview of my smile before I started. 14 months later, the result was exactly what they promised. No surprises. The follow-up care was exceptional.</p>
+          <div class="rc-auth"><div class="rc-av av2">SM</div><div class="rc-ai"><h5>Sara M.</h5><p>Invisalign® · Dubai</p></div></div>
+        </article>
+        <article class="rc rv d2">
+          <div class="rc-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <p class="rc-q">Flew from Germany for full-mouth veneers. Everything from digital smile design to final placement in one efficient week. The porcelain quality — all produced in their own lab — was genuinely world-class.</p>
+          <div class="rc-auth"><div class="rc-av av3">MH</div><div class="rc-ai"><h5>Markus H.</h5><p>Porcelain Veneers · Germany</p></div></div>
+        </article>
+      </div>
+      <div style="text-align:center;margin-top:32px" class="rv">
+        <a href="https://maps.app.goo.gl/p3T7cCv46nRdvMCv7" target="_blank" rel="noopener" class="btn btn--b btn--arr">Read All Google Reviews</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ⑥ BOOK CTA -->
+<section id="book" class="S" aria-labelledby="bk-h">
+  <div class="W">
+    <div class="bk-in rv">
+      <!-- V motif from logo -->
+      <div style="margin-bottom:20px;opacity:.12" aria-hidden="true">
+        <svg width="52" height="52" viewBox="0 0 24 24" fill="var(--g400)"><path d="M2 3l10 18L22 3H2z"/></svg>
+      </div>
+      <p class="eye eye--lt eye--cx">Start Your Journey</p>
+      <h2 id="bk-h">Ready to Change<br>Your <em class="em--lt">Life?</em></h2>
+      <p>Book a consultation today. Our team reviews every case personally and responds within a few hours. We speak English and Arabic.</p>
+      <div class="bk-btns">
+        <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--lg btn--arr">Book Appointment</a>
+        <a href="tel:+97123122777" class="btn btn--gh btn--lg">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.71A2 2 0 012.18 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.61-.61a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          02 312 2777
+        </a>
+      </div>
+      <div class="bk-inf">
+        <div class="bk-ii"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Khalifa Street, Abu Dhabi</div>
+        <div class="bk-ii"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Sat–Thu · 10:30 AM – 7:30 PM · Fri Off</div>
+        <div class="bk-ii"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>MOHAP No. 5889VHC5-110626</div>
+        <div class="bk-ii"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>English &amp; Arabic</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑦ BLOG -->
+<section id="blog" class="S S--lt" aria-labelledby="bl-h">
+  <div class="W">
+    <div class="bl-h rv">
+      <div>
+        <p class="eye">Dental Health Blog</p>
+        <h2 class="Hlg" id="bl-h">Expert Insights &amp;<br><em class="em">Dental Knowledge</em></h2>
+      </div>
+      <a href="blog.html" class="btn btn--b btn--arr rv d2">All Articles</a>
+    </div>
+    <div class="bl-grid">
+      <article class="blc rv">
+        <div class="blc-img"><img src="blog-implants-guide.webp" alt="Complete Guide to Dental Implants" loading="lazy"><span class="blc-cat">Implants</span></div>
+        <div class="blc-bd">
+          <p class="blc-dt">December 2024</p>
+          <h3>Complete Guide to Dental Implants in Abu Dhabi</h3>
+          <p>Everything you need to know about implant types, procedures, and recovery.</p>
+          <a href="blog-implants-guide.html" class="bl-lnk">Read Article<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </article>
+      <article class="blc rv d1">
+        <div class="blc-img"><img src="blog-braces-vs-invisalign.webp" alt="Braces vs Invisalign" loading="lazy"><span class="blc-cat">Orthodontics</span></div>
+        <div class="blc-bd">
+          <p class="blc-dt">November 2024</p>
+          <h3>Braces vs Invisalign: Which Is Right for You?</h3>
+          <p>A side-by-side comparison to help you choose the best orthodontic option.</p>
+          <a href="blog-braces-vs-invisalign.html" class="bl-lnk">Read Article<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </article>
+      <article class="blc rv d2">
+        <div class="blc-img"><img src="blog-cbct-scan.webp" alt="CBCT Scan in Dentistry" loading="lazy"><span class="blc-cat">Technology</span></div>
+        <div class="blc-bd">
+          <p class="blc-dt">October 2024</p>
+          <h3>What Is a CBCT Scan and Why Does It Matter?</h3>
+          <p>How 3D cone-beam imaging transforms diagnosis and treatment planning.</p>
+          <a href="blog-cbct-scan.html" class="bl-lnk">Read Article<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </article>
+      <article class="blc rv">
+        <div class="blc-img"><img src="blog-root-canal-endocrown.webp" alt="Root Canal Treatment" loading="lazy"><span class="blc-cat">Endodontics</span></div>
+        <div class="blc-bd">
+          <p class="blc-dt">October 2024</p>
+          <h3>Root Canal Treatment: What to Expect</h3>
+          <p>A step-by-step guide to modern root canal therapy and post-treatment care.</p>
+          <a href="blog-root-canal.html" class="bl-lnk">Read Article<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </article>
+      <article class="blc rv d1">
+        <div class="blc-img"><img src="blog-space-maintainer.webp" alt="Space Maintainers for Children" loading="lazy"><span class="blc-cat">Pediatric</span></div>
+        <div class="blc-bd">
+          <p class="blc-dt">September 2024</p>
+          <h3>Space Maintainers: Protecting Your Child's Smile</h3>
+          <p>Why early intervention matters when a child loses a baby tooth prematurely.</p>
+          <a href="blog-space-maintainer.html" class="bl-lnk">Read Article<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </article>
+      <article class="blc rv d2">
+        <div class="blc-img"><img src="blog-child-smile.webp" alt="Children's Dental Health" loading="lazy"><span class="blc-cat">Pediatric</span></div>
+        <div class="blc-bd">
+          <p class="blc-dt">September 2024</p>
+          <h3>Your Child's First Dental Visit: A Parent's Guide</h3>
+          <p>When to start, what to expect, and how to build healthy dental habits early.</p>
+          <a href="blog-child-smile.html" class="bl-lnk">Read Article<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </article>
+      <article class="blc rv">
+        <div class="blc-img"><img src="blog-calcification.webp" alt="Dental Calcification" loading="lazy"><span class="blc-cat">General</span></div>
+        <div class="blc-bd">
+          <p class="blc-dt">August 2024</p>
+          <h3>Understanding Dental Calcification</h3>
+          <p>What causes calcification, how it affects your teeth, and treatment options.</p>
+          <a href="blog-calcification.html" class="bl-lnk">Read Article<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </article>
+      <article class="blc rv d1">
+        <div class="blc-img"><img src="blog-gum-issues.webp" alt="Gum Disease" loading="lazy"><span class="blc-cat">Periodontics</span></div>
+        <div class="blc-bd">
+          <p class="blc-dt">August 2024</p>
+          <h3>Gum Disease: Signs, Causes &amp; Treatment</h3>
+          <p>How to spot early warning signs and protect your gums for life.</p>
+          <a href="blog-gum-issues.html" class="bl-lnk">Read Article<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </article>
+      <article class="blc rv d2">
+        <div class="blc-img"><img src="blog-smile-makeover.webp" alt="Smile Makeover" loading="lazy"><span class="blc-cat">Cosmetic</span></div>
+        <div class="blc-bd">
+          <p class="blc-dt">July 2024</p>
+          <h3>Smile Makeover: Transform Your Confidence</h3>
+          <p>How veneers, whitening, and digital design combine for a complete transformation.</p>
+          <a href="blog-smile-makeover.html" class="bl-lnk">Read Article<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </article>
+      <article class="blc rv">
+        <div class="blc-img"><img src="blog-implant-materials.webp" alt="Dental Implant Materials" loading="lazy"><span class="blc-cat">Implants</span></div>
+        <div class="blc-bd">
+          <p class="blc-dt">December 2024</p>
+          <h3>What Are Dental Implants Made Of?</h3>
+          <p>Dr. Hussien explains why Straumann® titanium leads the field in implant materials.</p>
+          <a href="blog-implant-materials.html" class="bl-lnk">Read Article<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </article>
+      <article class="blc rv d1">
+        <div class="blc-img"><img src="blog-endocrown-vs-crown.webp" alt="Endocrown vs Crown" loading="lazy"><span class="blc-cat">Restorations</span></div>
+        <div class="blc-bd">
+          <p class="blc-dt">December 2024</p>
+          <h3>Endocrown vs Crown: What's the Difference?</h3>
+          <p>Understanding the materials, indications, and benefits of each restoration type.</p>
+          <a href="blog-endocrown-vs-crown.html" class="bl-lnk">Read Article<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </article>
+      <article class="blc rv d2">
+        <div class="blc-img"><img src="blog-surgical-extraction.webp" alt="Surgical Tooth Extraction" loading="lazy"><span class="blc-cat">Surgery</span></div>
+        <div class="blc-bd">
+          <p class="blc-dt">September 2024</p>
+          <h3>Surgical vs Non-Surgical Tooth Extraction</h3>
+          <p>When surgical extraction is necessary and what to expect from each procedure.</p>
+          <a href="blog-surgical-extraction.html" class="bl-lnk">Read Article<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ⑧ FOOTER -->
+<footer id="ftr" role="contentinfo">
+  <div class="ft">
+    <div class="fl">
+      <img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none'">
+      <p class="fl-d">Abu Dhabi's centre of digital dentistry — six specialist clinics, an in-house lab, and a surgical team dedicated to changing lives.</p>
+      <div class="fl-lic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>MOHAP Licensed · No. 5889VHC5-110626</div>
+    </div>
+    <div class="fcol">
+      <h4>Services</h4>
+      <ul class="fls">
+        <li><a href="dental-implants.html">Dental Implants</a></li>
+        <li><a href="smile-design.html">Cosmetic Dentistry / Smile Design</a></li>
+        <li><a href="orthodontics.html">Orthodontics &amp; Invisalign®</a></li>
+        <li><a href="oral-surgery.html">Oral &amp; Maxillofacial Surgery</a></li>
+        <li><a href="prosthodontics.html">Prosthodontics</a></li>
+        <li><a href="root-canal.html">Root Canal Treatment</a></li>
+        <li><a href="scaling.html">Scaling &amp; Polishing</a></li>
+        <li><a href="pediatric.html">Pediatric Dentistry</a></li>
+        <li><a href="whitening.html">Teeth Whitening</a></li>
+        <li><a href="services.html">All Services →</a></li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h4>Clinic</h4>
+      <ul class="fls">
+        <li><a href="about-us.html">About Vision Dental</a></li>
+        <li><a href="why-us.html">Why Vision</a></li>
+        <li><a href="index.html#trust-stack">Our Specialists</a></li>
+        <li><a href="#diff">Our Technology</a></li>
+        <li><a href="gallery.html">Before &amp; After Gallery</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="medical-tourism.html">Medical Tourism</a></li>
+        <li><a href="blog.html">Dental Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h4>Contact</h4>
+      <div class="fcs">
+        <div class="fci"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><p>1302 Al Ansari Exchange Bldg.<br>Khalifa Street, Abu Dhabi</p></div>
+        <div class="fci"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.71A2 2 0 012.18 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.61-.61a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg><p><a href="tel:+97123122777">02 312 2777</a></p></div>
+        <div class="fci"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><p><a href="mailto:info@visiondentalclinic.com">info@visiondentalclinic.com</a></p></div>
+        <div class="fci"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><p>Sat–Thu: 10:30 AM – 7:30 PM · Fri Off</p></div>
+      </div>
+      <div class="fsoc">
+        <a href="https://www.facebook.com/visiondentalcl/" target="_blank" rel="noopener" class="fsi" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+        <a href="https://www.instagram.com/visiondentalclinic/" target="_blank" rel="noopener" class="fsi" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="fb">
+    <p>© 2026 Vision Dental Clinic. All rights reserved. · Care for Your Smile</p>
+    <div class="fb-ls">
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="/sitemap.xml">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+const hdr=document.getElementById('hdr');
+window.addEventListener('scroll',()=>hdr.classList.toggle('on',scrollY>50),{passive:true});
+const hbg=document.getElementById('hbg'),mn=document.getElementById('mob-nav'),mx=document.getElementById('mob-x');
+const open=()=>{mn.classList.add('op');hbg.classList.add('op');hbg.setAttribute('aria-expanded','true');document.body.style.overflow='hidden'};
+const close=()=>{mn.classList.remove('op');hbg.classList.remove('op');hbg.setAttribute('aria-expanded','false');document.body.style.overflow=''};
+hbg.addEventListener('click',open);mx.addEventListener('click',close);
+mn.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
+// Gallery carousel
+(function(){
+  const track=document.getElementById('ba-track');
+  const prev=document.getElementById('ba-prev');
+  const next=document.getElementById('ba-next');
+  if(!track||!prev||!next) return;
+  let pos=0;
+  function getVisible(){return window.innerWidth<600?1:window.innerWidth<900?2:3}
+  function getCardW(){const c=track.querySelector('.bac');if(!c)return 0;return c.offsetWidth+16}
+  function update(){
+    const max=track.children.length-getVisible();
+    if(pos>max)pos=max;if(pos<0)pos=0;
+    track.style.transform='translateX(-'+pos*getCardW()+'px)';
+    prev.disabled=pos<=0;next.disabled=pos>=max;
+  }
+  prev.addEventListener('click',()=>{pos--;update()});
+  next.addEventListener('click',()=>{pos++;update()});
+  window.addEventListener('resize',update);update();
+})();
+// Gallery filters
+document.querySelectorAll('.ba-f').forEach(b=>b.addEventListener('click',()=>{
+  const filter=b.dataset.filter;
+  document.querySelectorAll('.ba-f').forEach(x=>{x.classList.remove('ac');x.setAttribute('aria-selected','false')});
+  b.classList.add('ac');b.setAttribute('aria-selected','true');
+  const track=document.getElementById('ba-track');
+  track.querySelectorAll('.bac').forEach(card=>{
+    if(filter==='all'||card.dataset.cat===filter){
+      card.style.display='block';
+    } else {
+      card.style.display='none';
+    }
+  });
+}));
+// Seamless marquee for partners & insurance
+document.querySelectorAll('.tb-track, .ins-track').forEach(track=>{
+  const items=track.children;
+  const half=items.length/2;
+  let w=0;
+  for(let i=0;i<half;i++){w+=items[i].offsetWidth}
+  w+=half*48;
+  const name='mq_'+Math.random().toString(36).slice(2,8);
+  const rev=track.classList.contains('ins-track');
+  const dur=rev?25:20;
+  const sheet=document.createElement('style');
+  if(rev){
+    sheet.textContent=`@keyframes ${name}{0%{transform:translateX(-${w}px)}100%{transform:translateX(0)}}`;
+  }else{
+    sheet.textContent=`@keyframes ${name}{0%{transform:translateX(0)}100%{transform:translateX(-${w}px)}}`;
+  }
+  document.head.appendChild(sheet);
+  track.style.animation=`${name} ${dur}s linear infinite`;
+});
+// Before/After draggable slider
+document.querySelectorAll('.ba-slider').forEach(slider=>{
+  let dragging=false;
+  function setPos(x){
+    const rect=slider.getBoundingClientRect();
+    let pct=((x-rect.left)/rect.width)*100;
+    pct=Math.max(5,Math.min(95,pct));
+    slider.querySelector('.ba-img-a').style.clipPath='inset(0 0 0 '+pct+'%)';
+    slider.querySelector('.ba-handle').style.left=pct+'%';
+    slider.querySelector('.ba-handle-btn').style.left=pct+'%';
+  }
+  slider.addEventListener('mousedown',e=>{dragging=true;setPos(e.clientX);e.preventDefault()});
+  document.addEventListener('mousemove',e=>{if(dragging)setPos(e.clientX)});
+  document.addEventListener('mouseup',()=>{dragging=false});
+  slider.addEventListener('touchstart',e=>{dragging=true;setPos(e.touches[0].clientX)},{passive:true});
+  document.addEventListener('touchmove',e=>{if(dragging)setPos(e.touches[0].clientX)},{passive:true});
+  document.addEventListener('touchend',()=>{dragging=false});
+});
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}}),{threshold:.1,rootMargin:'0px 0px -28px 0px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Dentist","name":"Vision Dental Clinic","description":"Abu Dhabi's Centre of Digital Dentistry — 6 specialist clinics, in-house digital lab, 3D radiology.","url":"https://visiondentalclinic.com","telephone":"+97126666934","image":"og-image.jpg","address":{"@type":"PostalAddress","streetAddress":"Al Bateen Area, W-22, Plot-46","addressLocality":"Abu Dhabi","addressCountry":"AE"},"geo":{"@type":"GeoCoordinates","latitude":24.4539,"longitude":54.3773},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday"],"opens":"10:30","closes":"19:30"}],"priceRange":"$$","medicalSpecialty":["Dentistry","Oral Surgery","Orthodontics","Prosthodontics","Cosmetic Dentistry"],"founder":{"@type":"Person","name":"Dr. Hussien Salah Tahoun","jobTitle":"Medical Director & Oral Surgeon"},"paymentAccepted":"Cash, Credit Card, Tabby, Tamara","currenciesAccepted":"AED","hasMap":"https://maps.google.com/?q=Vision+Dental+Clinic+Abu+Dhabi"}
+</script>
+
+<!-- FLOATING WHATSAPP -->
+<div class="wa-float">
+  <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <div class="wa-pulse"></div>
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+</body>
+</html>
