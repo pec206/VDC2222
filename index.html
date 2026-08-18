@@ -212,6 +212,7 @@ ul{list-style:none}
 .sc-lnk svg{width:12px;height:12px;transition:transform .2s}
 .sc-lnk:hover svg{transform:translateX(3px)}
 .sc-prc{display:inline-block;font-size:13px;font-weight:800;color:var(--g600);margin-bottom:6px;letter-spacing:.01em}
+.sc-tech{display:flex;flex-wrap:wrap;gap:4px;margin:8px 0 4px}.sc-tech span{font-size:10px;font-weight:700;color:var(--b800);background:var(--b50);padding:2px 8px;border-radius:100px;letter-spacing:.02em;white-space:nowrap}
 .sc-cs{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;color:var(--b700);border:1.5px solid var(--b700);padding:5px 12px;border-radius:100px;transition:all .2s;letter-spacing:.01em}
 .sc-cs:hover{background:var(--b700);color:var(--w)}
 .sc-cs svg{width:10px;height:10px}
@@ -520,8 +521,7 @@ ul{list-style:none}
   <a href="about-us.html">About Us</a>
   <a href="services.html">Services</a>
   <a href="#trust-stack">Our Team</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="blog.html">Blog</a>
+  <a href="gallery.html">Gallery</a><a href="case-studies.html">Case Studies</a><a href="blog.html">Blog</a>
   <a href="medical-tourism.html">Medical Tourism</a>
   <a href="contact.html">Contact</a>
   <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book Appointment</a>
@@ -541,8 +541,7 @@ ul{list-style:none}
         <li><a href="about-us.html">About Us</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="#trust-stack">Our Team</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li><a href="gallery.html">Gallery</a></li><li><a href="case-studies.html">Case Studies</a></li><li><a href="blog.html">Blog</a></li>
         <li><a href="medical-tourism.html">Medical Tourism</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -567,9 +566,11 @@ ul{list-style:none}
     <!-- Trust pill -->
     <div class="h-trust-pill">
       <div class="htp-dot" style="background:var(--g400)"></div>
-      <span class="htp-item">Straumann® Partner</span>
+      <span class="htp-item">Expert Specialists</span>
       <span class="htp-sep">·</span>
-      <span class="htp-item">Invisalign® Provider</span>
+      <span class="htp-item">Premium Materials</span>
+      <span class="htp-sep">·</span>
+      <span class="htp-item">Advanced Technology</span>
       <span class="htp-sep">·</span>
       <span class="htp-item">MOHAP Licensed</span>
     </div>
@@ -694,6 +695,7 @@ ul{list-style:none}
           <h3>Dental Implants</h3>
           <p class="sc-prc">Starting from 2,600 AED</p>
           <p>Straumann® implants with CBCT-guided surgery. Immediate loading &amp; All-on-X available.</p>
+          <div class="sc-tech"><span>CBCT</span><span>3Shape Scanner</span><span>Guided Surgery</span><span>STA Anesthesia</span></div>
           <div class="sc-book">
             <a href="dental-implants.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             <a href="case-studies.html#implants" class="sc-cs">Cases<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
@@ -707,6 +709,7 @@ ul{list-style:none}
           <h3>Cosmetic Dentistry / Smile Design</h3>
           <p class="sc-prc">Starting from 9,700 AED</p>
           <p>Digital Smile Design — preview your result before any preparation. In-house lab.</p>
+          <div class="sc-tech"><span>3Shape Scanner</span><span>Digital Smile Design</span><span>CAD/CAM Lab</span></div>
           <div class="sc-book">
             <a href="smile-design.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             <a href="case-veneers.html" class="sc-cs">Cases<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
@@ -720,6 +723,7 @@ ul{list-style:none}
           <h3>Orthodontics &amp; Invisalign®</h3>
           <p class="sc-prc">Starting from 3,500 AED</p>
           <p>Certified Invisalign® provider. Clear aligners &amp; braces for all ages.</p>
+          <div class="sc-tech"><span>3Shape Scanner</span><span>Invisalign®</span></div>
           <div class="sc-book">
             <a href="orthodontics.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
@@ -736,6 +740,7 @@ ul{list-style:none}
           <h3>Teeth Whitening</h3>
           <p class="sc-prc">Starting from 1,099 AED</p>
           <p>Philips Zoom in-chair whitening. Visible results in a single session.</p>
+          <div class="sc-tech"><span>Philips Zoom</span></div>
           <div class="sc-book">
             <a href="whitening.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             <a href="case-whitening.html" class="sc-cs">Cases<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
@@ -748,6 +753,7 @@ ul{list-style:none}
         <div class="sc-body">
           <h3>Oral &amp; Maxillofacial Surgery</h3>
           <p>Complex extractions, bone grafting &amp; sinus lifts — led by Dr. Hussien, 35+ years.</p>
+          <div class="sc-tech"><span>CBCT</span><span>Piezo Surgery</span><span>STA Anesthesia</span></div>
           <div class="sc-book">
             <a href="oral-surgery.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             <a href="case-studies.html#surgery" class="sc-cs">Cases<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
@@ -761,6 +767,7 @@ ul{list-style:none}
           <h3>Prosthodontics</h3>
           <p class="sc-prc">Starting from 575 AED</p>
           <p>Crowns, bridges &amp; prosthetics — designed with CAD/CAM in our in-house lab.</p>
+          <div class="sc-tech"><span>3Shape Scanner</span><span>CAD/CAM Milling</span><span>IMES-icore</span></div>
           <div class="sc-book">
             <a href="prosthodontics.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             <a href="case-prosthodontic.html" class="sc-cs">Cases<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
@@ -778,6 +785,7 @@ ul{list-style:none}
           <h3>Root Canal Treatment</h3>
           <p class="sc-prc">Starting from 262 AED</p>
           <p>Painless endodontic treatment with rotary motors and digital imaging.</p>
+          <div class="sc-tech"><span>Endo Motor</span><span>STA Anesthesia</span></div>
           <div class="sc-book">
             <a href="root-canal.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             <a href="case-pulpectomy.html" class="sc-cs">Cases<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
@@ -791,6 +799,7 @@ ul{list-style:none}
           <h3>Scaling &amp; Polishing</h3>
           <p class="sc-prc">Starting from 195 AED</p>
           <p>Professional deep cleaning to remove tartar and prevent gum disease.</p>
+          <div class="sc-tech"><span>Ultrasonic Scaler</span></div>
           <div class="sc-book">
             <a href="scaling.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
@@ -816,6 +825,7 @@ ul{list-style:none}
           <h3>Pediatric Dentistry</h3>
           <p class="sc-prc">Starting from 97 AED</p>
           <p>Gentle dental care for children — preventive treatments, sealants &amp; space maintainers.</p>
+          <div class="sc-tech"><span>STA Anesthesia</span></div>
           <div class="sc-book">
             <a href="pediatric.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
@@ -881,16 +891,16 @@ ul{list-style:none}
             <span class="dtc-tag">3D planning</span>
           </div>
           <div class="dtc rv d2">
-            <div class="dtc-img"><img src="tech-lab.webp" alt="German CAD/CAM Milling Machine" loading="lazy"></div>
-            <h4>German CAD/CAM Milling</h4>
-            <p>IMES-icore same-day restorations</p>
-            <span class="dtc-tag">In-house · Same day</span>
+            <div class="dtc-img"><img src="tech-lab.webp" alt="In-House Digital Lab" loading="lazy"></div>
+            <h4>In-House Digital Lab</h4>
+            <p>German IMES-icore milling + 3D printing</p>
+            <span class="dtc-tag">Same-day restorations</span>
           </div>
           <div class="dtc rv d3">
-            <div class="dtc-img"><img src="tech-inhouse-lab.webp" alt="3D Dental Printer" loading="lazy"></div>
-            <h4>3D Dental Printer</h4>
-            <p>Surgical guides &amp; temporaries</p>
-            <span class="dtc-tag">Guided surgery</span>
+            <div class="dtc-img"><img src="tech-sta-anesthesia.webp" alt="STA Digital Anesthesia" loading="lazy"></div>
+            <h4>STA Digital Anesthesia</h4>
+            <p>Computer-guided painless injection</p>
+            <span class="dtc-tag">Pain-free treatment</span>
           </div>
           <div class="dtc rv d3">
             <div class="dtc-img"><img src="Smile_design.jpg" alt="Digital Smile Design" loading="lazy"></div>
@@ -899,7 +909,7 @@ ul{list-style:none}
             <span class="dtc-tag">See before you start</span>
           </div>
           <div class="dtc rv d4">
-            <div class="dtc-img"><img src="tech-implant-center.webp" alt="Guided Implant Surgery" loading="lazy"></div>
+            <div class="dtc-img"><img src="case-hussien-sinus-design.jpg" alt="Guided Implant Surgery" loading="lazy"></div>
             <h4>Guided Implant Surgery</h4>
             <p>Exact position from CBCT plan</p>
             <span class="dtc-tag">Precision placement</span>
