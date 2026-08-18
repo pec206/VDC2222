@@ -22,7 +22,11 @@
       "PowerShell($base1 = \"C:\\\\Users\\\\Z.obaid\\\\Documents\\\\work files\\\\website development\\\\study caces\\\\dr hussien\\\\photos\\\\New folder \\(4\\)\\\\ZARNIGOR 40002\"; $files = Get-ChildItem $base1 -File | Sort-Object Name; for \\($i = 0; $i -lt $files.Count; $i += 15\\) { Write-Output \"--- Batch $\\([math]::Floor\\($i/15\\)+1\\) ---\"; $files[$i..\\([math]::Min\\($i+14, $files.Count-1\\)\\)] | ForEach-Object { $_.Name } })",
       "PowerShell(Get-ChildItem \"C:\\\\Users\\\\Z.obaid\\\\Documents\\\\work files\\\\website development\\\\study caces\\\\dr hussien\\\\photos\\\\New folder \\(4\\)\\\\ZARNIGOR 40002\\\\42534 SOHA\" -File | ForEach-Object { $_.Name })",
       "PowerShell(git -C \"C:\\\\Users\\\\Z.obaid\\\\Downloads\\\\vision-dental-v3_6\\\\vision-dental\" add -A)",
-      "PowerShell(git -C \"C:\\\\Users\\\\Z.obaid\\\\Downloads\\\\vision-dental-v3_6\\\\vision-dental\" status --short)"
+      "PowerShell(git -C \"C:\\\\Users\\\\Z.obaid\\\\Downloads\\\\vision-dental-v3_6\\\\vision-dental\" status --short)",
+      "PowerShell(git -C \"C:\\\\Users\\\\Z.obaid\\\\Downloads\\\\vision-dental-v3_6\\\\vision-dental\" remote add origin https://github.com/pec206/VDC2222.git)",
+      "PowerShell(git -C \"C:\\\\Users\\\\Z.obaid\\\\Downloads\\\\vision-dental-v3_6\\\\vision-dental\" branch -M main)",
+      "PowerShell(git -C \"C:\\\\Users\\\\Z.obaid\\\\Downloads\\\\vision-dental-v3_6\\\\vision-dental\" push -u origin main)",
+      "PowerShell($f = \"C:\\\\Users\\\\Z.obaid\\\\Downloads\\\\vision-dental-v3_6\\\\vision-dental\\\\services.html\"; $c = [IO.File]::ReadAllText\\($f\\); $c = $c.Replace\\('<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6\"/></svg> Starting from','Starting from'\\); [IO.File]::WriteAllText\\($f,$c\\); Write-Output \"Done\")"
     ]
   }
 }

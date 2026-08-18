@@ -113,10 +113,9 @@ ul{list-style:none}
 .svc-img-ph{height:200px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--b50),var(--g50))}
 .svc-body{padding:22px;flex:1;display:flex;flex-direction:column}
 .svc-body h3{font-size:17px;font-weight:800;color:var(--b900);margin-bottom:8px}
-.svc-prc{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:600;color:var(--g600);margin-bottom:10px}
-.svc-prc svg{width:11px;height:11px;flex-shrink:0}
-.svc-cs{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:600;color:var(--b700);transition:gap .18s}
-.svc-cs:hover{gap:8px}
+.svc-prc{display:inline-block;font-size:13px;font-weight:800;color:var(--g600);margin-bottom:10px;letter-spacing:.01em}
+.svc-cs{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;color:var(--b700);border:1.5px solid var(--b700);padding:5px 12px;border-radius:100px;transition:all .2s;letter-spacing:.01em}
+.svc-cs:hover{background:var(--b700);color:var(--w)}
 .svc-cs svg{width:10px;height:10px}
 .svc-body p{font-size:13.5px;line-height:1.65;color:var(--s600);margin-bottom:16px;flex:1}
 .svc-acts{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
@@ -244,7 +243,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
         <div class="svc-img"><img src="implants.jpg" alt="Dental Implants" loading="lazy"></div>
         <div class="svc-body">
           <h3>Dental Implants</h3>
-          <p class="svc-prc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg> Starting from 2,600 AED</p>
+          <p class="svc-prc">Starting from 2,600 AED</p>
           <p>Straumann SLActive implants with CBCT-guided surgery. Single teeth, bridges, and full-arch All-on-X solutions by Dr. Hussien Tahoun.</p>
           <div class="svc-acts">
             <a href="dental-implants.html" class="svc-lnk">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
@@ -258,7 +257,6 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
         <div class="svc-img"><img src="surgery-hero.png" alt="Oral Surgery" loading="lazy"></div>
         <div class="svc-body">
           <h3>Oral &amp; Maxillofacial Surgery</h3>
-          <p class="svc-prc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg> Starting from 179 AED</p>
           <p>Wisdom tooth extraction, bone grafting, sinus lifts, and complex surgical procedures led by specialist oral surgeons.</p>
           <div class="svc-acts">
             <a href="oral-surgery.html" class="svc-lnk">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
@@ -272,7 +270,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
         <div class="svc-img"><img src="prosthodontics-hero.webp" alt="Prosthodontics" loading="lazy"></div>
         <div class="svc-body">
           <h3>Prosthodontics</h3>
-          <p class="svc-prc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg> Starting from 575 AED</p>
+          <p class="svc-prc">Starting from 575 AED</p>
           <p>Crowns, bridges, veneers, and implant prosthetics designed and milled in our in-house digital lab with German IMES-icore technology.</p>
           <div class="svc-acts">
             <a href="prosthodontics.html" class="svc-lnk">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
@@ -286,7 +284,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
         <div class="svc-img"><img src="ortho.jpg" alt="Orthodontics &amp; Invisalign" loading="lazy"></div>
         <div class="svc-body">
           <h3>Orthodontics &amp; Invisalign</h3>
-          <p class="svc-prc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg> Starting from 3,500 AED</p>
+          <p class="svc-prc">Starting from 3,500 AED</p>
           <p>Metal braces, ceramic braces, and Invisalign clear aligners. Digital treatment planning by specialist orthodontists for children and adults.</p>
           <div class="svc-acts">
             <a href="orthodontics.html" class="svc-lnk">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
@@ -299,7 +297,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
         <div class="svc-img"><img src="Smile_design.jpg" alt="Cosmetic Dentistry &amp; Smile Design" loading="lazy"></div>
         <div class="svc-body">
           <h3>Cosmetic Dentistry &amp; Smile Design</h3>
-          <p class="svc-prc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg> Starting from 9,700 AED</p>
+          <p class="svc-prc">Starting from 9,700 AED</p>
           <p>Digital Smile Design with before-you-commit previews. Porcelain veneers, composite bonding, and full smile makeovers crafted in-house.</p>
           <div class="svc-acts">
             <a href="smile-design.html" class="svc-lnk">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
@@ -313,7 +311,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
         <div class="svc-img"><img src="whitning.jpg" alt="Teeth Whitening" loading="lazy"></div>
         <div class="svc-body">
           <h3>Teeth Whitening</h3>
-          <p class="svc-prc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg> Starting from 1,099 AED</p>
+          <p class="svc-prc">Starting from 1,099 AED</p>
           <p>Professional in-office whitening for immediate results. Safe, effective, and customised to your sensitivity level and shade goals.</p>
           <div class="svc-acts">
             <a href="whitening.html" class="svc-lnk">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
@@ -327,7 +325,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
         <div class="svc-img"><img src="root-canal.webp" alt="Root Canal Treatment" loading="lazy"></div>
         <div class="svc-body">
           <h3>Root Canal Treatment</h3>
-          <p class="svc-prc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg> Starting from 262 AED</p>
+          <p class="svc-prc">Starting from 262 AED</p>
           <p>Painless endodontic treatment using rotary files and apex locators. Save your natural tooth with precision root canal therapy.</p>
           <div class="svc-acts">
             <a href="root-canal.html" class="svc-lnk">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
@@ -341,7 +339,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
         <div class="svc-img"><img src="scaling.webp" alt="Scaling &amp; Polishing" loading="lazy"></div>
         <div class="svc-body">
           <h3>Scaling &amp; Polishing</h3>
-          <p class="svc-prc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg> Starting from 195 AED</p>
+          <p class="svc-prc">Starting from 195 AED</p>
           <p>Professional dental cleaning to remove plaque, tartar, and stains. Ultrasonic scaling combined with air polishing for optimal gum health.</p>
           <div class="svc-acts">
             <a href="scaling.html" class="svc-lnk">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
@@ -354,7 +352,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
         <div class="svc-img"><img src="restoration.webp" alt="Teeth Restoration" loading="lazy"></div>
         <div class="svc-body">
           <h3>Teeth Restoration</h3>
-          <p class="svc-prc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg> Starting from 156 AED</p>
+          <p class="svc-prc">Starting from 156 AED</p>
           <p>Composite fillings, inlays, onlays, and endocrowns. Restore damaged teeth with durable, tooth-coloured materials that blend seamlessly.</p>
           <div class="svc-acts">
             <a href="restoration.html" class="svc-lnk">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
@@ -368,7 +366,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
         <div class="svc-img"><img src="pediatric.webp" alt="Pediatric Dentistry" loading="lazy"></div>
         <div class="svc-body">
           <h3>Pediatric Dentistry</h3>
-          <p class="svc-prc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg> Starting from 97 AED</p>
+          <p class="svc-prc">Starting from 97 AED</p>
           <p>Gentle, child-friendly dental care including check-ups, fluoride treatment, sealants, space maintainers, and early orthodontic assessment.</p>
           <div class="svc-acts">
             <a href="pediatric.html" class="svc-lnk">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>

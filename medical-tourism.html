@@ -84,11 +84,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}ul{list-st
 .ts-item svg{width:16px;height:16px;stroke:var(--g400);fill:none;stroke-width:2;flex-shrink:0}
 
 /* MT IMAGE */
-.mt-img-section{padding:0 var(--px)}
-.mt-img-frame{max-width:var(--cw);margin:-40px auto 0;position:relative;border-radius:var(--rxl);overflow:hidden;border:3px solid var(--g500);box-shadow:0 16px 48px rgba(90,159,42,.18);z-index:3}
 .mt-img-frame img{width:100%;height:auto;display:block}
-.mt-img-frame::after{content:'';position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.35) 50%,transparent 70%);transform:translateX(-100%);animation:light-sweep 3.5s ease-in-out infinite}
-@keyframes light-sweep{0%,100%{transform:translateX(-100%)}50%{transform:translateX(100%)}}
 
 /* WHY ABU DHABI */
 .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
@@ -248,6 +244,9 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
   <div class="srv-hero-ov"></div>
   <div class="srv-hero-in">
     <div class="hero-tag">International Patients Welcome</div>
+    <div class="mt-img-frame" style="margin-bottom:36px;border-radius:var(--rxl);overflow:hidden;border:3px solid var(--g500);box-shadow:0 16px 48px rgba(90,159,42,.18)">
+      <img src="medical-tourism-hero.webp" alt="Vision Dental Clinic — Medical Tourism Abu Dhabi">
+    </div>
     <h1>World-Class Dental Care.<br><em>Right in Abu Dhabi.</em></h1>
     <p class="srv-hero-sub">Thousands of patients travel from Europe, Asia, and the GCC to access Vision Dental Clinic's combination of specialist expertise, full digital workflow, and transparent pricing — all under one roof.</p>
     <div class="srv-hero-acts">
@@ -263,13 +262,6 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
     </div>
   </div>
 </section>
-
-<!-- MT IMAGE -->
-<div class="mt-img-section rv">
-  <div class="mt-img-frame">
-    <img src="medical-tourism-hero.webp" alt="Vision Dental Clinic — Medical Tourism Abu Dhabi" loading="lazy">
-  </div>
-</div>
 
 <!-- WHY ABU DHABI -->
 <section class="S">
