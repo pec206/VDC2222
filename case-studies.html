@@ -125,7 +125,7 @@ img{max-width:100%;height:auto;display:block}a{text-decoration:none;color:inheri
 
 <section class="S">
   <div class="W">
-    <div class="cs-filters">
+    <div class="cs-filters" id="cs-filters-cat">
       <button class="cs-f ac" data-filter="all">All Cases</button>
       <button class="cs-f" data-filter="implants">Implants</button>
       <button class="cs-f" data-filter="veneers">Veneers</button>
@@ -135,9 +135,15 @@ img{max-width:100%;height:auto;display:block}a{text-decoration:none;color:inheri
       <button class="cs-f" data-filter="pediatric">Pediatric</button>
       <button class="cs-f" data-filter="cosmetic">Cosmetic</button>
     </div>
+    <div class="cs-filters" id="cs-filters-dr">
+      <button class="cs-f cs-f-dr ac" data-dr="all">All Doctors</button>
+      <button class="cs-f cs-f-dr" data-dr="hussien">Dr. Hussien</button>
+      <button class="cs-f cs-f-dr" data-dr="asmaa">Dr. Asmaa</button>
+      <button class="cs-f cs-f-dr" data-dr="amr">Prof. Amr</button>
+    </div>
 
     <div class="cs-grid" id="cs-grid">
-      <a href="case-hussien-rehab.html" class="cs-card rv" data-cat="implants" style="text-decoration:none">
+      <a href="case-hussien-rehab.html" class="cs-card rv" data-cat="implants" data-dr="hussien" style="text-decoration:none">
         <div class="cs-imgs" style="grid-template-columns:1fr"><div><img src="case-hussien-rehab.webp" alt="OPG showing dental implants" loading="lazy"><span class="cs-lbl cs-lbl-b">OPG Scan</span></div></div>
         <div class="cs-body">
           <h3>Comprehensive Dental &amp; Implant Rehabilitation</h3>
@@ -147,7 +153,7 @@ img{max-width:100%;height:auto;display:block}a{text-decoration:none;color:inheri
         </div>
       </a>
 
-      <a href="case-hussien-phobic.html" class="cs-card rv d1" data-cat="fullmouth" style="text-decoration:none">
+      <a href="case-hussien-phobic.html" class="cs-card rv d1" data-cat="fullmouth" data-dr="hussien" style="text-decoration:none">
         <div class="cs-imgs" style="grid-template-columns:1fr"><div><img src="case-hussien-phobic.webp" alt="CBCT 3D scan" loading="lazy"><span class="cs-lbl cs-lbl-b">CBCT Scan</span></div></div>
         <div class="cs-body">
           <h3>Dental Rehabilitation for Phobic Patient</h3>
@@ -157,7 +163,7 @@ img{max-width:100%;height:auto;display:block}a{text-decoration:none;color:inheri
         </div>
       </a>
 
-      <a href="case-hussien-ortho.html" class="cs-card rv d2" data-cat="orthodontics" style="text-decoration:none">
+      <a href="case-hussien-ortho.html" class="cs-card rv d2" data-cat="orthodontics" data-dr="hussien" style="text-decoration:none">
         <div class="cs-imgs" style="grid-template-columns:1fr"><div><img src="case-hussien-ortho.webp" alt="OPG panoramic X-ray with orthodontic brackets" loading="lazy"><span class="cs-lbl cs-lbl-b">OPG Scan</span></div></div>
         <div class="cs-body">
           <h3>Orthodontic Treatment &amp; Wisdom Tooth Extraction</h3>
@@ -167,7 +173,7 @@ img{max-width:100%;height:auto;display:block}a{text-decoration:none;color:inheri
         </div>
       </a>
 
-      <a href="case-hussien-extraction.html" class="cs-card rv" data-cat="surgery" style="text-decoration:none">
+      <a href="case-hussien-extraction.html" class="cs-card rv" data-cat="surgery" data-dr="hussien" style="text-decoration:none">
         <div class="cs-imgs" style="grid-template-columns:1fr"><div><img src="case-hussien-extraction.webp" alt="CBCT 3D scan showing teeth" loading="lazy"><span class="cs-lbl cs-lbl-b">CBCT Scan</span></div></div>
         <div class="cs-body">
           <h3>Tooth Extraction for Phobic Patient</h3>
@@ -177,7 +183,7 @@ img{max-width:100%;height:auto;display:block}a{text-decoration:none;color:inheri
         </div>
       </a>
 
-      <a href="case-hussien-sinus.html" class="cs-card rv d1" data-cat="implants" style="text-decoration:none">
+      <a href="case-hussien-sinus.html" class="cs-card rv d1" data-cat="implants" data-dr="hussien" style="text-decoration:none">
         <div class="cs-imgs" style="grid-template-columns:1fr"><div><img src="case-hussien-sinus.webp" alt="3Shape intraoral scan" loading="lazy"><span class="cs-lbl cs-lbl-b">3Shape Scan</span></div></div>
         <div class="cs-body">
           <h3>Direct Implants with Sinus Lift &amp; Gingival Surgery</h3>
@@ -187,7 +193,7 @@ img{max-width:100%;height:auto;display:block}a{text-decoration:none;color:inheri
         </div>
       </a>
 
-      <a href="case-veneers.html" class="cs-card rv" data-cat="veneers" style="text-decoration:none">
+      <a href="case-veneers.html" class="cs-card rv" data-cat="veneers" data-dr="asmaa" style="text-decoration:none">
         <div class="cs-imgs"><div><img src="ba-asmaa-1-before.webp" alt="Before" loading="lazy"><span class="cs-lbl cs-lbl-b">Before</span></div><div><img src="ba-asmaa-1-after.webp" alt="After" loading="lazy"><span class="cs-lbl cs-lbl-a">After</span></div></div>
         <div class="cs-body">
           <h3>Full Upper Arch Veneers</h3>
@@ -197,7 +203,7 @@ img{max-width:100%;height:auto;display:block}a{text-decoration:none;color:inheri
         </div>
       </a>
 
-      <a href="case-pulpectomy.html" class="cs-card rv d1" data-cat="pediatric" style="text-decoration:none">
+      <a href="case-pulpectomy.html" class="cs-card rv d1" data-cat="pediatric" data-dr="asmaa" style="text-decoration:none">
         <div class="cs-imgs"><div><img src="case-asmaa-pulpectomy-before.webp" alt="Before" loading="lazy"><span class="cs-lbl cs-lbl-b">Before</span></div><div><img src="case-asmaa-pulpectomy-after.webp" alt="After" loading="lazy"><span class="cs-lbl cs-lbl-a">After</span></div></div>
         <div class="cs-body">
           <h3>Pulpectomy — Without General Anesthesia</h3>
@@ -207,7 +213,7 @@ img{max-width:100%;height:auto;display:block}a{text-decoration:none;color:inheri
         </div>
       </a>
 
-      <a href="case-prosthodontic.html" class="cs-card rv d2" data-cat="cosmetic" style="text-decoration:none">
+      <a href="case-prosthodontic.html" class="cs-card rv d2" data-cat="cosmetic" data-dr="asmaa" style="text-decoration:none">
         <div class="cs-imgs"><div><img src="case-asmaa-prostho-before.webp" alt="Before" loading="lazy"><span class="cs-lbl cs-lbl-b">Before</span></div><div><img src="case-asmaa-prostho-after.webp" alt="After" loading="lazy"><span class="cs-lbl cs-lbl-a">After</span></div></div>
         <div class="cs-body">
           <h3>Single Tooth Restoration</h3>
@@ -217,7 +223,7 @@ img{max-width:100%;height:auto;display:block}a{text-decoration:none;color:inheri
         </div>
       </a>
 
-      <a href="case-whitening.html" class="cs-card rv" data-cat="cosmetic" style="text-decoration:none">
+      <a href="case-whitening.html" class="cs-card rv" data-cat="cosmetic" data-dr="asmaa" style="text-decoration:none">
         <div class="cs-imgs"><div><img src="case-asmaa-whitening-before.webp" alt="Before" loading="lazy"><span class="cs-lbl cs-lbl-b">Before</span></div><div><img src="case-asmaa-whitening-after.webp" alt="After" loading="lazy"><span class="cs-lbl cs-lbl-a">After</span></div></div>
         <div class="cs-body">
           <h3>Professional Teeth Whitening</h3>
@@ -227,7 +233,7 @@ img{max-width:100%;height:auto;display:block}a{text-decoration:none;color:inheri
         </div>
       </a>
 
-      <a href="case-restoration.html" class="cs-card rv d1" data-cat="cosmetic" style="text-decoration:none">
+      <a href="case-restoration.html" class="cs-card rv d1" data-cat="cosmetic" data-dr="asmaa" style="text-decoration:none">
         <div class="cs-imgs"><div><img src="case-asmaa-restoration-before.webp" alt="Before" loading="lazy"><span class="cs-lbl cs-lbl-b">Before</span></div><div><img src="case-asmaa-restoration-after.webp" alt="After" loading="lazy"><span class="cs-lbl cs-lbl-a">After</span></div></div>
         <div class="cs-body">
           <h3>Anterior Tooth Restoration</h3>
@@ -236,9 +242,8 @@ img{max-width:100%;height:auto;display:block}a{text-decoration:none;color:inheri
           <span class="cs-tag">Restoration</span><span class="cs-tag">Cosmetic</span>
         </div>
       </a>
-    </div>
 
-      <a href="case-amr-msyead.html" class="cs-card rv" data-cat="orthodontics" style="text-decoration:none">
+      <a href="case-amr-msyead.html" class="cs-card rv" data-cat="orthodontics" data-dr="amr" style="text-decoration:none">
         <div class="cs-imgs"><div><img src="ba-amr-msyead-before.webp" alt="Before" loading="lazy"><span class="cs-lbl cs-lbl-b">Before</span></div><div><img src="ba-amr-msyead-after.webp" alt="After" loading="lazy"><span class="cs-lbl cs-lbl-a">After</span></div></div>
         <div class="cs-body">
           <h3>Severe Crowding Correction</h3>
@@ -248,7 +253,7 @@ img{max-width:100%;height:auto;display:block}a{text-decoration:none;color:inheri
         </div>
       </a>
 
-      <a href="case-amr-manal.html" class="cs-card rv d1" data-cat="orthodontics" style="text-decoration:none">
+      <a href="case-amr-manal.html" class="cs-card rv d1" data-cat="orthodontics" data-dr="amr" style="text-decoration:none">
         <div class="cs-imgs"><div><img src="ba-amr-manal-before.webp" alt="Before" loading="lazy"><span class="cs-lbl cs-lbl-b">Before</span></div><div><img src="ba-amr-manal-after.webp" alt="After" loading="lazy"><span class="cs-lbl cs-lbl-a">After</span></div></div>
         <div class="cs-body">
           <h3>Orthodontic Alignment</h3>
@@ -258,7 +263,7 @@ img{max-width:100%;height:auto;display:block}a{text-decoration:none;color:inheri
         </div>
       </a>
 
-      <a href="case-amr-yani.html" class="cs-card rv d2" data-cat="orthodontics" style="text-decoration:none">
+      <a href="case-amr-yani.html" class="cs-card rv d2" data-cat="orthodontics" data-dr="amr" style="text-decoration:none">
         <div class="cs-imgs"><div><img src="ba-amr-yani-before.webp" alt="Before" loading="lazy"><span class="cs-lbl cs-lbl-b">Before</span></div><div><img src="ba-amr-yani-after.webp" alt="After" loading="lazy"><span class="cs-lbl cs-lbl-a">After</span></div></div>
         <div class="cs-body">
           <h3>Bite Correction &amp; Alignment</h3>
@@ -268,7 +273,7 @@ img{max-width:100%;height:auto;display:block}a{text-decoration:none;color:inheri
         </div>
       </a>
 
-      <a href="case-amr-manea.html" class="cs-card rv" data-cat="orthodontics" style="text-decoration:none">
+      <a href="case-amr-manea.html" class="cs-card rv" data-cat="orthodontics" data-dr="amr" style="text-decoration:none">
         <div class="cs-imgs"><div><img src="ba-amr-manea-before.webp" alt="Before" loading="lazy"><span class="cs-lbl cs-lbl-b">Before</span></div><div><img src="ba-amr-manea-after.webp" alt="After" loading="lazy"><span class="cs-lbl cs-lbl-a">After</span></div></div>
         <div class="cs-body">
           <h3>Complex Crowding &amp; Crossbite</h3>
@@ -278,7 +283,7 @@ img{max-width:100%;height:auto;display:block}a{text-decoration:none;color:inheri
         </div>
       </a>
 
-      <a href="case-amr-ivan.html" class="cs-card rv d1" data-cat="orthodontics" style="text-decoration:none">
+      <a href="case-amr-ivan.html" class="cs-card rv d1" data-cat="orthodontics" data-dr="amr" style="text-decoration:none">
         <div class="cs-imgs"><div><img src="ba-amr-ivan-before.webp" alt="Before" loading="lazy"><span class="cs-lbl cs-lbl-b">Before</span></div><div><img src="ba-amr-ivan-after.webp" alt="After" loading="lazy"><span class="cs-lbl cs-lbl-a">After</span></div></div>
         <div class="cs-body">
           <h3>Orthodontics with Implant for Missing Tooth</h3>
@@ -318,11 +323,26 @@ const hbg=document.getElementById('hbg'),mn=document.getElementById('mob-nav'),m
 const open=()=>{mn.classList.add('op');hbg.classList.add('op');document.body.style.overflow='hidden'};
 const close=()=>{mn.classList.remove('op');hbg.classList.remove('op');document.body.style.overflow=''};
 hbg.addEventListener('click',open);mx.addEventListener('click',close);mn.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
-document.querySelectorAll('.cs-f').forEach(b=>b.addEventListener('click',()=>{
-  const f=b.dataset.filter;
-  document.querySelectorAll('.cs-f').forEach(x=>x.classList.remove('ac'));b.classList.add('ac');
-  document.querySelectorAll('.cs-card').forEach(c=>{c.style.display=(f==='all'||c.dataset.cat===f)?'block':'none'});
+let activeCat='all',activeDr='all';
+function filterCards(){
+  document.querySelectorAll('.cs-card').forEach(c=>{
+    const catOk=activeCat==='all'||c.dataset.cat===activeCat;
+    const drOk=activeDr==='all'||c.dataset.dr===activeDr;
+    c.style.display=(catOk&&drOk)?'block':'none';
+  });
+}
+document.querySelectorAll('#cs-filters-cat .cs-f').forEach(b=>b.addEventListener('click',()=>{
+  activeCat=b.dataset.filter;
+  document.querySelectorAll('#cs-filters-cat .cs-f').forEach(x=>x.classList.remove('ac'));b.classList.add('ac');
+  filterCards();
 }));
+document.querySelectorAll('#cs-filters-dr .cs-f-dr').forEach(b=>b.addEventListener('click',()=>{
+  activeDr=b.dataset.dr;
+  document.querySelectorAll('#cs-filters-dr .cs-f-dr').forEach(x=>x.classList.remove('ac'));b.classList.add('ac');
+  filterCards();
+}));
+const h=window.location.hash.replace('#','');
+if(h){const drBtn=document.querySelector('.cs-f-dr[data-dr="'+h+'"]');if(drBtn){drBtn.click();}}
 const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}}),{threshold:.1,rootMargin:'0px 0px -28px 0px'});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 </script>
