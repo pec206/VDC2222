@@ -156,6 +156,19 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 .wa-float svg{width:28px;height:28px;fill:#fff}
 .wa-pulse{position:absolute;inset:0;border-radius:50%;background:rgba(37,211,102,.3);animation:wa-ring 2s ease-out infinite;pointer-events:none}
 @keyframes wa-ring{0%{transform:scale(1);opacity:1}100%{transform:scale(1.6);opacity:0}}
+.ct-form-wrap{margin-top:48px}
+.ct-form-title{font-family:var(--fd);font-size:clamp(24px,3vw,32px);color:var(--b900);margin-bottom:8px}
+.ct-form-sub{font-size:14px;color:var(--s600);margin-bottom:28px}
+.ct-form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.ct-form .full{grid-column:1/-1}
+.ct-field{display:flex;flex-direction:column;gap:6px}
+.ct-field label{font-size:12px;font-weight:700;color:var(--s600);text-transform:uppercase;letter-spacing:.05em}
+.ct-field input,.ct-field select,.ct-field textarea{font-family:var(--fb);font-size:14px;padding:12px 16px;border:1.5px solid var(--s200);border-radius:var(--r);background:var(--w);color:var(--s900);transition:border-color .2s;outline:none}
+.ct-field input:focus,.ct-field select:focus,.ct-field textarea:focus{border-color:var(--b700)}
+.ct-field textarea{resize:vertical;min-height:80px}
+.ct-form-submit{display:inline-flex;align-items:center;gap:8px;font-family:var(--fb);font-size:15px;font-weight:700;padding:14px 32px;border-radius:100px;border:none;background:var(--gg);color:var(--w);cursor:pointer;transition:all .25s;box-shadow:0 4px 18px rgba(90,159,42,.30)}
+.ct-form-submit:hover{transform:translateY(-2px);box-shadow:0 8px 26px rgba(90,159,42,.40)}
+@media(max-width:600px){.ct-form{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -253,6 +266,61 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 
     <div class="ct-map rv" style="margin-top:40px;border-radius:16px;overflow:hidden;border:1px solid var(--s200)">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.5!2d54.3773!3d24.4539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sVision+Dental+Clinic!5e0!3m2!1sen!2sae!4v1700000000000" width="100%" height="380" style="border:0;display:block" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Vision Dental Clinic Location"></iframe>
+    </div>
+
+    <div class="ct-form-wrap rv">
+      <h2 class="ct-form-title">Request a <em style="color:var(--g500);font-style:italic">Consultation</em></h2>
+      <p class="ct-form-sub">Fill in your details and we'll get back to you within a few hours.</p>
+      <form class="ct-form" action="https://formspree.io/f/placeholder" method="POST">
+        <div class="ct-field">
+          <label for="cf-name">Full Name *</label>
+          <input type="text" id="cf-name" name="name" required placeholder="Your full name">
+        </div>
+        <div class="ct-field">
+          <label for="cf-phone">Phone Number *</label>
+          <input type="tel" id="cf-phone" name="phone" required placeholder="+971 XX XXX XXXX">
+        </div>
+        <div class="ct-field">
+          <label for="cf-email">Email (Optional)</label>
+          <input type="email" id="cf-email" name="email" placeholder="your@email.com">
+        </div>
+        <div class="ct-field">
+          <label for="cf-service">Service</label>
+          <select id="cf-service" name="service">
+            <option value="">Select a service...</option>
+            <option>Dental Implants</option>
+            <option>Cosmetic Dentistry / Smile Design</option>
+            <option>Orthodontics &amp; Invisalign</option>
+            <option>Teeth Whitening</option>
+            <option>Oral Surgery</option>
+            <option>Prosthodontics</option>
+            <option>Root Canal Treatment</option>
+            <option>Scaling &amp; Polishing</option>
+            <option>Pediatric Dentistry</option>
+            <option>Teeth Restoration</option>
+            <option>General Consultation</option>
+          </select>
+        </div>
+        <div class="ct-field">
+          <label for="cf-doctor">Preferred Doctor</label>
+          <select id="cf-doctor" name="doctor">
+            <option value="">No preference</option>
+            <option>Dr. Hussien Tahoun</option>
+            <option>Prof. Amr Labib</option>
+            <option>Dr. Ammar Anbari</option>
+            <option>Dr. Asmaa Butt</option>
+            <option>Dr. Emad Sharqawi</option>
+            <option>Dr. Mohy El Din</option>
+          </select>
+        </div>
+        <div class="ct-field full">
+          <label for="cf-msg">Message (Optional)</label>
+          <textarea id="cf-msg" name="message" placeholder="Tell us about your dental concern..."></textarea>
+        </div>
+        <div class="full" style="margin-top:8px">
+          <button type="submit" class="ct-form-submit">Request Consultation →</button>
+        </div>
+      </form>
     </div>
 
     <div class="wa-cta rv">
