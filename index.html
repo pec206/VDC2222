@@ -194,7 +194,7 @@ ul{list-style:none}
 .srv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:20px}
 .srv-grid-2{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .sc{border-radius:var(--rl);overflow:hidden;border:1px solid var(--s100);
-  background:var(--w);transition:all .32s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column}
+  background:var(--w);transition:all .32s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;cursor:pointer}
 .sc:hover{box-shadow:var(--shl);transform:translateY(-6px);border-color:transparent}
 .sc-img{aspect-ratio:3/2;overflow:hidden;position:relative;background:var(--gcard);flex-shrink:0}
 .sc-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
@@ -348,7 +348,7 @@ ul{list-style:none}
 .ts-team-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:32px;flex-wrap:wrap;gap:12px}
 .team-strip{display:grid;grid-template-columns:repeat(7,1fr);gap:14px}
 .tc{border-radius:var(--rl);overflow:hidden;border:.5px solid var(--s100);
-  background:var(--w);transition:all .3s cubic-bezier(.4,0,.2,1)}
+  background:var(--w);transition:all .3s cubic-bezier(.4,0,.2,1);cursor:pointer}
 .tc:hover{box-shadow:var(--shl);transform:translateY(-5px);border-color:transparent}
 .tc-ph{height:180px;overflow:hidden;position:relative;
   background:linear-gradient(160deg,var(--b50),var(--g50))}
@@ -531,7 +531,7 @@ ul{list-style:none}
 <!-- HEADER -->
 <header id="hdr" role="banner">
   <div class="hdr-in">
-    <a href="/" class="hdr-logo">
+    <a href="index.html" class="hdr-logo">
       <img src="Logo_H_White.png" alt="Vision Dental Clinic"
         onerror="this.style.display='none';this.nextSibling.style.display='flex'"
       ><span style="display:none;align-items:center;gap:9px;color:white;font-size:15px;font-weight:800">Vision Dental</span>
@@ -743,14 +743,14 @@ ul{list-style:none}
           </div>
           <div class="ba-inf"><h4>Full Mouth Rehabilitation</h4><p>Dr. Ammar Anbari · Crowns + Implants</p></div>
         </div>
-        <div class="bac" data-cat="veneers">
+        <div class="bac" data-cat="implants">
           <div class="ba-slider" data-before="ba-ammar-3-before.webp" data-after="ba-ammar-3-after.webp">
-            <div class="ba-img-b"><img src="ba-ammar-3-before.webp" alt="Before — Crowns"></div>
-            <div class="ba-img-a"><img src="ba-ammar-3-after.webp" alt="After — Crowns"></div>
+            <div class="ba-img-b"><img src="ba-ammar-3-before.webp" alt="Before — Implants"></div>
+            <div class="ba-img-a"><img src="ba-ammar-3-after.webp" alt="After — Implants"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
-          <div class="ba-inf"><h4>Crowns &amp; Veneers</h4><p>Dr. Ammar Anbari · Shade correction</p></div>
+          <div class="ba-inf"><h4>Dental Implants</h4><p>Dr. Ammar Anbari · Implant-supported restoration</p></div>
         </div>
         <div class="bac" data-cat="veneers">
           <div class="ba-slider" data-before="ba-asmaa-1-before.webp" data-after="ba-asmaa-1-after.webp">
@@ -1550,6 +1550,8 @@ document.querySelectorAll('.ba-slider').forEach(slider=>{
 });
 const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}}),{threshold:.1,rootMargin:'0px 0px -28px 0px'});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+document.querySelectorAll('.sc').forEach(c=>{c.addEventListener('click',e=>{if(e.target.closest('a'))return;const a=c.querySelector('.sc-lnk');if(a)window.location.href=a.href;});});
+document.querySelectorAll('.tc').forEach(c=>{c.addEventListener('click',e=>{if(e.target.closest('a'))return;const a=c.querySelector('.tc-lnk');if(a)window.location.href=a.href;});});
 </script>
 
 <script type="application/ld+json">

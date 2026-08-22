@@ -106,7 +106,7 @@ ul{list-style:none}
 
 /* SERVICES GRID */
 .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.svc-card{border-radius:var(--rl);overflow:hidden;border:.5px solid var(--s100);background:var(--w);transition:all .28s;display:flex;flex-direction:column}
+.svc-card{border-radius:var(--rl);overflow:hidden;border:.5px solid var(--s100);background:var(--w);transition:all .28s;display:flex;flex-direction:column;cursor:pointer}
 .svc-card:hover{box-shadow:var(--shl);transform:translateY(-5px);border-color:transparent}
 .svc-img{height:200px;overflow:hidden;position:relative}
 .svc-img img{width:100%;height:100%;object-fit:cover;transition:transform .45s}
@@ -472,6 +472,7 @@ hbg.addEventListener('click',open);mx.addEventListener('click',close);
 mn.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
 const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}}),{threshold:.1,rootMargin:'0px 0px -28px 0px'});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+document.querySelectorAll('.svc-card').forEach(c=>{c.addEventListener('click',e=>{if(e.target.closest('.svc-book,.svc-cs'))return;const a=c.querySelector('.svc-lnk');if(a)window.location.href=a.href;});});
 </script>
 
 <div class="wa-float">
