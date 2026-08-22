@@ -11,6 +11,7 @@
 <meta property="og:locale" content="en_AE">
 <meta property="og:image" content="og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://visiondentalclinic.com/dental-implants.html">
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -150,15 +151,16 @@ ul{list-style:none}
 .tech-card-body p{font-size:13px;line-height:1.6;color:var(--s600)}
 
 /* FAQ */
-.faq-list{display:flex;flex-direction:column;gap:10px;max-width:840px;margin:0 auto}
-.faq-item{border:.5px solid var(--s200);border-radius:var(--r);overflow:hidden;background:var(--w)}
-.faq-q{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 22px;cursor:pointer;font-size:15px;font-weight:700;color:var(--b900);transition:background .2s}
-.faq-q:hover{background:var(--s50)}
-.faq-q svg{width:18px;height:18px;stroke:var(--g600);fill:none;stroke-width:2.5;flex-shrink:0;transition:transform .3s}
-.faq-item.open .faq-q svg{transform:rotate(45deg)}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .35s cubic-bezier(.4,0,.2,1)}
-.faq-item.open .faq-a{max-height:400px}
-.faq-a-in{padding:0 22px 18px;font-size:14px;line-height:1.75;color:var(--s600)}
+.faq-s{background:var(--s50);padding:clamp(60px,7vw,100px) 0}
+.faq-grid{max-width:800px;margin:0 auto}
+.faq-item{background:var(--w);border-radius:var(--rl);margin-bottom:12px;border:1px solid var(--s100);overflow:hidden;transition:all .2s}
+.faq-item:hover{border-color:var(--s200)}
+.faq-q{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;cursor:pointer;font-size:15px;font-weight:700;color:var(--b900);gap:16px}
+.faq-q svg{width:20px;height:20px;stroke:var(--s400);flex-shrink:0;transition:transform .3s}
+.faq-item.open .faq-q svg{transform:rotate(180deg);stroke:var(--g600)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.faq-item.open .faq-a{max-height:500px}
+.faq-a-in{padding:0 24px 20px;font-size:14px;line-height:1.8;color:var(--s600)}
 
 /* BA */
 .ba-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
@@ -474,36 +476,34 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 </section>
 
 <!-- FAQ -->
-<section class="S">
+<section class="faq-s" id="faq">
   <div class="W">
-    <div style="text-align:center;margin-bottom:44px">
-      <p class="eye eye--cx rv">Common Questions</p>
-      <h2 class="Hlg rv d1" style="text-align:center">Frequently Asked <em class="em">Questions</em></h2>
-    </div>
-    <div class="faq-list rv">
-      <div class="faq-item">
-        <div class="faq-q">Are dental implants painful?<svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
-        <div class="faq-a"><div class="faq-a-in">The procedure is performed under local anaesthesia, so you feel no pain during surgery. Most patients describe mild soreness for 2–3 days afterward, which is well managed with standard pain relief. Dr. Hussien's guided surgery technique is minimally invasive, meaning less trauma and faster recovery.</div></div>
+    <p class="eye eye--cx rv">Common Questions</p>
+    <h2 class="Hlg rv d1" style="text-align:center;margin-bottom:40px">Frequently Asked<br><em class="em">Questions</em></h2>
+    <div class="faq-grid">
+      <div class="faq-item rv d2">
+        <div class="faq-q">How much do dental implants cost in Abu Dhabi?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a"><div class="faq-a-in">At Vision Dental Clinic, dental implants start from 2,600 AED. The final cost depends on the type of implant, bone condition, and whether additional procedures like bone grafting or sinus lift are needed. We offer payment plans through Tabby and Tamara.</div></div>
       </div>
-      <div class="faq-item">
-        <div class="faq-q">How long does the whole treatment take?<svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
-        <div class="faq-a"><div class="faq-a-in">A single implant with a crown typically takes 3–4 months from surgery to final restoration. For cases with immediate loading (same-day teeth), the functional result can be achieved in 1–2 visits. Your exact timeline depends on bone density and the complexity of your case, which is assessed during your CBCT consultation.</div></div>
+      <div class="faq-item rv d2">
+        <div class="faq-q">Are dental implants painful?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a"><div class="faq-a-in">With our STA digital anesthesia system and optional Nitrous Oxide sedation, the procedure is virtually painless. Most patients report less discomfort than a simple extraction. Dr. Hussien's 35+ years of experience and CBCT-guided surgery ensure minimal tissue trauma.</div></div>
       </div>
-      <div class="faq-item">
-        <div class="faq-q">Am I a suitable candidate for implants?<svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
-        <div class="faq-a"><div class="faq-a-in">Most adults with good general health are suitable candidates. Adequate jawbone density is important, but even patients with bone loss may still qualify — bone grafting or sinus lift procedures can prepare the site. Uncontrolled diabetes or active smoking may affect healing. A full assessment including a CBCT scan gives a definitive answer for your specific case.</div></div>
+      <div class="faq-item rv d2">
+        <div class="faq-q">How long do dental implants last?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a"><div class="faq-a-in">Straumann® implants, which we exclusively use, have a documented success rate above 97% over 10 years. With proper oral hygiene and regular check-ups, implants can last a lifetime.</div></div>
       </div>
-      <div class="faq-item">
-        <div class="faq-q">Why Straumann® specifically?<svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
-        <div class="faq-a"><div class="faq-a-in">Straumann® is the world's most clinically documented implant system — used in over 100 countries with decades of peer-reviewed research supporting their outcomes. Their SLActive surface technology achieves osseointegration up to 40% faster than standard implants. Dr. Hussien personally visited Straumann's Switzerland headquarters before making them the exclusive choice at Vision Dental Clinic.</div></div>
+      <div class="faq-item rv d2">
+        <div class="faq-q">What is the recovery time after implant surgery?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a"><div class="faq-a-in">Most patients return to normal activities within 1-2 days. The implant integrates with the bone over 3-4 months. With immediate loading protocols, you can leave with a temporary crown the same day in qualifying cases.</div></div>
       </div>
-      <div class="faq-item">
-        <div class="faq-q">How long do dental implants last?<svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
-        <div class="faq-a"><div class="faq-a-in">With proper oral hygiene and regular dental check-ups, Straumann® implants are designed to last a lifetime. Clinical studies show a 98% success rate at 10 years. The crown attached to the implant may require replacement after 15–20 years with normal wear, but the implant post itself remains permanently integrated in the jawbone.</div></div>
+      <div class="faq-item rv d2">
+        <div class="faq-q">Am I a candidate for dental implants?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a"><div class="faq-a-in">Most adults with good general health are candidates. Even patients with bone loss can often receive implants after bone grafting. Dr. Hussien reviews every case with a CBCT 3D scan to create a precise treatment plan.</div></div>
       </div>
-      <div class="faq-item">
-        <div class="faq-q">What is All-on-X and who is it for?<svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
-        <div class="faq-a"><div class="faq-a-in">All-on-4 or All-on-6 (All-on-X) is a full-arch solution where an entire jaw of teeth is supported by just 4 to 6 strategically placed implants. It's designed for patients who have lost most or all of their teeth, or those with severely failing dentitions. Same-day loading is often possible, meaning you leave with functional teeth on the day of surgery.</div></div>
+      <div class="faq-item rv d2">
+        <div class="faq-q">What is All-on-4 / All-on-X?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a"><div class="faq-a-in">All-on-X is a technique that replaces an entire arch of teeth using just 4-6 strategically placed implants. It's ideal for patients with extensive tooth loss and can often be completed in a single day.</div></div>
       </div>
     </div>
   </div>
@@ -656,5 +656,94 @@ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
     <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 </div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalProcedure",
+  "name": "Dental Implants",
+  "description": "Straumann® dental implants in Abu Dhabi. Guided surgery, CBCT planning, immediate loading & All-on-X. Led by Dr. Hussien Tahoun with 5,000+ implants placed.",
+  "url": "https://visiondentalclinic.com/dental-implants.html",
+  "procedureType": "https://schema.org/NoninvasiveProcedure",
+  "howPerformed": "Straumann dental implants placed using guided surgery with CBCT planning, immediate loading, and All-on-X full-arch solutions.",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "AED",
+    "price": "2600",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "priceCurrency": "AED",
+      "price": "2600",
+      "description": "Starting from"
+    }
+  },
+  "provider": {
+    "@type": "Dentist",
+    "name": "Vision Dental Clinic",
+    "telephone": "+97123122777",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1302 Al Ansari Exchange Bldg, Khalifa Street",
+      "addressLocality": "Abu Dhabi",
+      "addressCountry": "AE"
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much do dental implants cost in Abu Dhabi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At Vision Dental Clinic, dental implants start from 2,600 AED. The final cost depends on the type of implant, bone condition, and whether additional procedures like bone grafting or sinus lift are needed. We offer payment plans through Tabby and Tamara."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are dental implants painful?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With our STA digital anesthesia system and optional Nitrous Oxide sedation, the procedure is virtually painless. Most patients report less discomfort than a simple extraction. Dr. Hussien's 35+ years of experience and CBCT-guided surgery ensure minimal tissue trauma."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long do dental implants last?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Straumann® implants, which we exclusively use, have a documented success rate above 97% over 10 years. With proper oral hygiene and regular check-ups, implants can last a lifetime."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the recovery time after implant surgery?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most patients return to normal activities within 1-2 days. The implant integrates with the bone over 3-4 months. With immediate loading protocols, you can leave with a temporary crown the same day in qualifying cases."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Am I a candidate for dental implants?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most adults with good general health are candidates. Even patients with bone loss can often receive implants after bone grafting. Dr. Hussien reviews every case with a CBCT 3D scan to create a precise treatment plan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is All-on-4 / All-on-X?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All-on-X is a technique that replaces an entire arch of teeth using just 4-6 strategically placed implants. It's ideal for patients with extensive tooth loss and can often be completed in a single day."
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>

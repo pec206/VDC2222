@@ -11,6 +11,7 @@
 <meta property="og:locale" content="en_AE">
 <meta property="og:image" content="og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://visiondentalclinic.com/root-canal.html">
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -212,6 +213,16 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 .wa-float svg{width:28px;height:28px;fill:#fff}
 .wa-pulse{position:absolute;inset:0;border-radius:50%;background:rgba(37,211,102,.3);animation:wa-ring 2s ease-out infinite;pointer-events:none}
 @keyframes wa-ring{0%{transform:scale(1);opacity:1}100%{transform:scale(1.6);opacity:0}}
+.faq-s{background:var(--s50);padding:clamp(60px,7vw,100px) 0}
+.faq-grid{max-width:800px;margin:0 auto}
+.faq-item{background:var(--w);border-radius:var(--rl);margin-bottom:12px;border:1px solid var(--s100);overflow:hidden;transition:all .2s}
+.faq-item:hover{border-color:var(--s200)}
+.faq-q{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;cursor:pointer;font-size:15px;font-weight:700;color:var(--b900);gap:16px}
+.faq-q svg{width:20px;height:20px;stroke:var(--s400);flex-shrink:0;transition:transform .3s}
+.faq-item.open .faq-q svg{transform:rotate(180deg);stroke:var(--g600)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.faq-item.open .faq-a{max-height:500px}
+.faq-a-in{padding:0 24px 20px;font-size:14px;line-height:1.8;color:var(--s600)}
 </style>
 </head>
 <body>
@@ -436,6 +447,35 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
   </div>
 </section>
 
+<section class="faq-s" id="faq">
+  <div class="W">
+    <p class="eye eye--cx rv">Common Questions</p>
+    <h2 class="Hlg rv d1" style="text-align:center;margin-bottom:40px">Frequently Asked<br><em class="em">Questions</em></h2>
+    <div class="faq-grid">
+      <div class="faq-item rv d2">
+        <div class="faq-q">Is root canal treatment painful?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a"><div class="faq-a-in">Modern root canal treatment is virtually painless. We use STA digital anesthesia for precise numbing and rotary Endomotor instruments for efficient, comfortable treatment.</div></div>
+      </div>
+      <div class="faq-item rv d2">
+        <div class="faq-q">How much does a root canal cost?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a"><div class="faq-a-in">Root canal treatment starts from 262 AED at Vision Dental. The cost varies based on the tooth location and number of canals.</div></div>
+      </div>
+      <div class="faq-item rv d2">
+        <div class="faq-q">How long does a root canal take?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a"><div class="faq-a-in">Most root canals are completed in a single visit of 45-90 minutes. Complex cases with multiple canals may require a second visit.</div></div>
+      </div>
+      <div class="faq-item rv d2">
+        <div class="faq-q">Do I need a crown after a root canal?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a"><div class="faq-a-in">In most cases, yes. A crown protects the treated tooth from fracture and restores its full function. We design crowns in our in-house digital lab for a perfect fit.</div></div>
+      </div>
+      <div class="faq-item rv d2">
+        <div class="faq-q">What are the signs I need a root canal?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a"><div class="faq-a-in">Common signs include severe toothache, prolonged sensitivity to hot or cold, darkening of the tooth, swelling, and tenderness in nearby gums. If you experience these, book a consultation promptly.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer id="ftr">
   <div class="ft">
@@ -506,5 +546,52 @@ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
     <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 </div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalProcedure",
+  "name": "Root Canal Treatment",
+  "description": "Advanced root canal treatment (endodontics) in Abu Dhabi. Precision endodontic motors, chairside X-ray, and STA digital anesthesia. Starting from 262 AED. Vision Dental Clinic.",
+  "url": "https://visiondentalclinic.com/root-canal.html",
+  "procedureType": "https://schema.org/NoninvasiveProcedure",
+  "howPerformed": "Advanced endodontic treatment using precision endodontic motors, chairside X-ray guidance, and STA digital anesthesia.",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "AED",
+    "price": "262",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "priceCurrency": "AED",
+      "price": "262",
+      "description": "Starting from"
+    }
+  },
+  "provider": {
+    "@type": "Dentist",
+    "name": "Vision Dental Clinic",
+    "telephone": "+97123122777",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1302 Al Ansari Exchange Bldg, Khalifa Street",
+      "addressLocality": "Abu Dhabi",
+      "addressCountry": "AE"
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Is root canal treatment painful?", "acceptedAnswer": {"@type": "Answer", "text": "Modern root canal treatment is virtually painless. We use STA digital anesthesia for precise numbing and rotary Endomotor instruments for efficient, comfortable treatment."}},
+    {"@type": "Question", "name": "How much does a root canal cost?", "acceptedAnswer": {"@type": "Answer", "text": "Root canal treatment starts from 262 AED at Vision Dental. The cost varies based on the tooth location and number of canals."}},
+    {"@type": "Question", "name": "How long does a root canal take?", "acceptedAnswer": {"@type": "Answer", "text": "Most root canals are completed in a single visit of 45-90 minutes. Complex cases with multiple canals may require a second visit."}},
+    {"@type": "Question", "name": "Do I need a crown after a root canal?", "acceptedAnswer": {"@type": "Answer", "text": "In most cases, yes. A crown protects the treated tooth from fracture and restores its full function. We design crowns in our in-house digital lab for a perfect fit."}},
+    {"@type": "Question", "name": "What are the signs I need a root canal?", "acceptedAnswer": {"@type": "Answer", "text": "Common signs include severe toothache, prolonged sensitivity to hot or cold, darkening of the tooth, swelling, and tenderness in nearby gums. If you experience these, book a consultation promptly."}}
+  ]
+}
+</script>
+<script>document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>{const item=q.parentElement;item.classList.toggle('open');}));</script>
 </body>
 </html>
