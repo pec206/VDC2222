@@ -30,7 +30,7 @@ img{max-width:100%;height:auto;display:block}a{text-decoration:none;color:inheri
 .btn--g{background:var(--gg);color:var(--w);box-shadow:0 4px 18px rgba(90,159,42,.30)}.btn--g:hover{transform:translateY(-2px);box-shadow:0 8px 26px rgba(90,159,42,.40)}
 .btn--gh{background:rgba(255,255,255,.1);color:var(--w);border:1.5px solid rgba(255,255,255,.28)}.btn--gh:hover{background:rgba(255,255,255,.18);transform:translateY(-2px)}
 .btn--lg{font-size:16px;padding:16px 36px}.btn--arr::after{content:'\2192';font-size:14px;transition:transform .2s}.btn--arr:hover::after{transform:translateX(4px)}
-.rv{opacity:0;transform:translateY(18px);transition:opacity .6s cubic-bezier(.4,0,.2,1),transform .6s cubic-bezier(.4,0,.2,1)}.rv.on{opacity:1;transform:none}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s cubic-bezier(.4,0,.2,1),transform .6s cubic-bezier(.4,0,.2,1)}.rv.on{opacity:1;transform:none}.cs-card.fv{opacity:1!important;transform:none!important}
 .d1{transition-delay:.1s}.d2{transition-delay:.18s}.d3{transition-delay:.26s}.d4{transition-delay:.34s}
 #hdr{position:fixed;top:0;left:0;right:0;z-index:1000;transition:background .3s,box-shadow .3s;padding:0 var(--px)}
 #hdr.on{background:rgba(10,22,36,.96);backdrop-filter:blur(24px);box-shadow:0 1px 0 rgba(255,255,255,.05),0 4px 24px rgba(0,0,0,.22)}
@@ -430,7 +430,9 @@ function filterCards(){
   document.querySelectorAll('.cs-card').forEach(c=>{
     const catOk=activeCat==='all'||c.dataset.cat===activeCat;
     const drOk=activeDr==='all'||c.dataset.dr===activeDr;
-    c.style.display=(catOk&&drOk)?'block':'none';
+    const show=catOk&&drOk;
+    c.style.display=show?'':'none';
+    if(show) c.classList.add('fv');
   });
 }
 document.querySelectorAll('#cs-filters-cat .cs-f').forEach(b=>b.addEventListener('click',()=>{
