@@ -70,6 +70,9 @@ img{max-width:100%;height:auto;display:block}a{text-decoration:none;color:inheri
 .gal-info-l h4{font-size:13.5px;font-weight:700;color:var(--w);margin-bottom:2px}
 .gal-info-l p{font-size:11.5px;color:rgba(255,255,255,.42)}
 .gal-dr-tag{font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:4px 10px;border-radius:100px;background:rgba(122,182,72,.12);color:var(--g400);border:1px solid rgba(122,182,72,.2)}
+.gal-case-btn{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;color:var(--g400);padding:5px 12px;border-radius:100px;border:1px solid rgba(122,182,72,.25);background:rgba(122,182,72,.08);transition:all .25s;text-decoration:none;margin-top:6px}
+.gal-case-btn:hover{background:rgba(122,182,72,.18);color:var(--w);transform:translateY(-1px)}
+.gal-case-btn::after{content:'\2192';font-size:10px;transition:transform .2s}.gal-case-btn:hover::after{transform:translateX(3px)}
 
 /* EMPTY STATE */
 .gal-empty{display:none;text-align:center;padding:60px 20px;color:rgba(255,255,255,.3)}
@@ -247,6 +250,21 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
         <div class="gal-info">
           <div class="gal-info-l"><h4>Cosmetic Smile Makeover</h4><p>Shape &amp; shade correction</p></div>
           <span class="gal-dr-tag">Dr. Asmaa</span>
+        </div>
+      </div>
+
+      <!-- DR SALIM — Case 2: Smile Rehab -->
+      <div class="gal-card show rv d3" data-cat="cosmetic" data-dr="salim">
+        <div class="gal-split">
+          <div class="gal-half"><img src="case-salim-smile-2.webp" alt="Before — Old amalgam filling" loading="lazy"></div>
+          <div class="gal-half"><img src="case-salim-smile-9.webp" alt="After — Final smile result" loading="lazy"></div>
+          <div class="gal-div"></div><div class="gal-arrow">↔</div>
+          <span class="gal-lbl gal-lb">Before</span><span class="gal-lbl gal-la">After</span>
+        </div>
+        <div class="gal-info">
+          <div class="gal-info-l"><h4>Endodontic &amp; Smile Rehabilitation</h4><p>Root canal · Crown replacement · Aesthetics</p>
+          <a href="case-salim-smile.html" class="gal-case-btn">View Case Study</a></div>
+          <span class="gal-dr-tag">Dr. Salim</span>
         </div>
       </div>
 
