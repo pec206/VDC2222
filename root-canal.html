@@ -135,7 +135,7 @@ ul{list-style:none}
 .tech-card-body h3{font-size:15px;font-weight:800;color:var(--b900);margin-bottom:6px}
 .tech-card-body p{font-size:13px;line-height:1.6;color:var(--s600)}
 
-/* CASE STUDIES */
+/* Cases */
 .cs-placeholder{text-align:center;padding:48px 24px;background:var(--w);border:.5px solid var(--s100);border-radius:var(--rl)}
 .cs-placeholder p{font-size:15px;font-weight:600;color:var(--s400)}
 
@@ -223,9 +223,11 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
 .faq-item.open .faq-a{max-height:500px}
 .faq-a-in{padding:0 24px 20px;font-size:14px;line-height:1.8;color:var(--s600)}
+.skip-link{position:absolute;top:-100%;left:16px;background:var(--b900);color:var(--w);padding:12px 24px;border-radius:0 0 8px 8px;font-size:14px;font-weight:700;z-index:9999;transition:top .2s}.skip-link:focus{top:0}
 </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to content</a>
 
 <nav class="mob-nav" id="mob-nav">
   <button class="mob-x" id="mob-x">&#10005;</button>
@@ -233,7 +235,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
   <a href="about-us.html">About Us</a>
   <a href="services.html">Services</a>
   <a href="index.html#trust-stack">Our Team</a>
-  <a href="gallery.html">Gallery</a><a href="case-studies.html">Case Studies</a><a href="blog.html">Blog</a>
+  <a href="gallery.html">Gallery</a><a href="case-studies.html">Cases</a><a href="blog.html">Blog</a>
   <a href="medical-tourism.html">Medical Tourism</a>
   <a href="contact.html">Contact</a>
   <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book Appointment</a>
@@ -242,7 +244,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 <header id="hdr">
   <div class="hdr-in">
     <a href="index.html" class="hdr-logo">
-      <img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none';this.nextSibling.style.display='block'">
+      <img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none';this.nextSibling.style.display='block'" loading="lazy">
       <span style="display:none">Vision Dental</span>
     </a>
     <nav class="hdr-nav">
@@ -251,7 +253,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
         <li><a href="about-us.html">About Us</a></li>
         <li><a href="services.html" class="ac">Services</a></li>
         <li><a href="index.html#trust-stack">Our Team</a></li>
-        <li><a href="gallery.html">Gallery</a></li><li><a href="case-studies.html">Case Studies</a></li><li><a href="blog.html">Blog</a></li>
+        <li><a href="gallery.html">Gallery</a></li><li><a href="case-studies.html">Cases</a></li><li><a href="blog.html">Blog</a></li>
         <li><a href="medical-tourism.html">Medical Tourism</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -265,7 +267,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 </header>
 
 <!-- HERO -->
-<section class="srv-hero">
+<section id="main-content" class="srv-hero">
   <div class="srv-hero-bg"></div>
   <div class="srv-hero-ov"></div>
   <div class="srv-hero-in">
@@ -367,11 +369,11 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
   </div>
 </section>
 
-<!-- CASE STUDIES -->
+<!-- Cases -->
 <section class="S S--lt">
   <div class="W">
     <div style="text-align:center;margin-bottom:40px">
-      <p class="eye eye--cx rv">Case Studies</p>
+      <p class="eye eye--cx rv">Cases</p>
       <h2 class="Hlg rv d1" style="text-align:center">Root Canal <em class="em">Results</em></h2>
     </div>
     <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px" class="rv">
@@ -389,12 +391,12 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
   </div>
 </section>
 
-<!-- RELATED CASE STUDIES -->
+<!-- RELATED Cases -->
 <section class="S S--lt">
   <div class="W">
     <div class="rv" style="text-align:center;margin-bottom:36px">
       <p class="eye eye--cx">Real Results</p>
-      <h2 class="Hmd">Related <em class="em">Case Studies</em></h2>
+      <h2 class="Hmd">Related <em class="em">Cases</em></h2>
     </div>
     <div style="display:grid;grid-template-columns:1fr;gap:20px;max-width:500px;margin:0 auto" class="rv d1">
       <a href="case-pulpectomy.html" style="border-radius:var(--rl);border:1px solid var(--s100);padding:22px 24px;background:var(--w);transition:all .28s;display:block;text-decoration:none" onmouseover="this.style.boxShadow='var(--shl)';this.style.transform='translateY(-4px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
@@ -404,7 +406,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
       </a>
     </div>
     <div style="text-align:center;margin-top:28px" class="rv d2">
-      <a href="case-studies.html" class="btn btn--od">View All Case Studies</a>
+      <a href="case-studies.html" class="btn btn--od">View All Cases</a>
     </div>
   </div>
 </section>
@@ -489,7 +491,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 <footer id="ftr">
   <div class="ft">
     <div class="fl">
-      <img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none'">
+      <img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none'" loading="lazy">
       <p class="fl-d">Abu Dhabi's centre of digital dentistry &mdash; six specialist clinics and a surgical team dedicated to changing lives.</p>
       <div class="fl-lic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>MOHAP Licensed &middot; No. 5889VHC5-110626</div>
     </div>
@@ -586,19 +588,6 @@ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
       "addressCountry": "AE"
     }
   }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "Is root canal treatment painful?", "acceptedAnswer": {"@type": "Answer", "text": "Modern root canal treatment is virtually painless. We use STA digital anesthesia for precise numbing and rotary Endomotor instruments for efficient, comfortable treatment."}},
-    {"@type": "Question", "name": "How much does a root canal cost?", "acceptedAnswer": {"@type": "Answer", "text": "Root canal treatment starts from 262 AED at Vision Dental. The cost varies based on the tooth location and number of canals."}},
-    {"@type": "Question", "name": "How long does a root canal take?", "acceptedAnswer": {"@type": "Answer", "text": "Most root canals are completed in a single visit of 45-90 minutes. Complex cases with multiple canals may require a second visit."}},
-    {"@type": "Question", "name": "Do I need a crown after a root canal?", "acceptedAnswer": {"@type": "Answer", "text": "In most cases, yes. A crown protects the treated tooth from fracture and restores its full function. We design crowns in our in-house digital lab for a perfect fit."}},
-    {"@type": "Question", "name": "What are the signs I need a root canal?", "acceptedAnswer": {"@type": "Answer", "text": "Common signs include severe toothache, prolonged sensitivity to hot or cold, darkening of the tooth, swelling, and tenderness in nearby gums. If you experience these, book a consultation promptly."}}
-  ]
 }
 </script>
 <script>document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>{const item=q.parentElement;item.classList.toggle('open');}));</script>

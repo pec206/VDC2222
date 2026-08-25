@@ -511,9 +511,11 @@ ul{list-style:none}
 .ins-logo:hover{filter:grayscale(0%)}
 
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+.skip-link{position:absolute;top:-100%;left:16px;background:var(--b900);color:var(--w);padding:12px 24px;border-radius:0 0 8px 8px;font-size:14px;font-weight:700;z-index:9999;transition:top .2s}.skip-link:focus{top:0}
 </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to content</a>
 
 <!-- MOB NAV -->
 <nav class="mob-nav" id="mob-nav">
@@ -522,7 +524,7 @@ ul{list-style:none}
   <a href="about-us.html">About Us</a>
   <a href="services.html">Services</a>
   <a href="#trust-stack">Our Team</a>
-  <a href="gallery.html">Gallery</a><a href="case-studies.html">Case Studies</a><a href="blog.html">Blog</a>
+  <a href="gallery.html">Gallery</a><a href="case-studies.html">Cases</a><a href="blog.html">Blog</a>
   <a href="medical-tourism.html">Medical Tourism</a>
   <a href="contact.html">Contact</a>
   <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book Appointment</a>
@@ -534,7 +536,7 @@ ul{list-style:none}
     <a href="index.html" class="hdr-logo">
       <img src="Logo_H_White.png" alt="Vision Dental Clinic"
         onerror="this.style.display='none';this.nextSibling.style.display='flex'"
-      ><span style="display:none;align-items:center;gap:9px;color:white;font-size:15px;font-weight:800">Vision Dental</span>
+       loading="lazy"><span style="display:none;align-items:center;gap:9px;color:white;font-size:15px;font-weight:800">Vision Dental</span>
     </a>
     <nav class="hdr-nav">
       <ul class="nav-ul">
@@ -542,7 +544,7 @@ ul{list-style:none}
         <li><a href="about-us.html">About Us</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="#trust-stack">Our Team</a></li>
-        <li><a href="gallery.html">Gallery</a></li><li><a href="case-studies.html">Case Studies</a></li><li><a href="blog.html">Blog</a></li>
+        <li><a href="gallery.html">Gallery</a></li><li><a href="case-studies.html">Cases</a></li><li><a href="blog.html">Blog</a></li>
         <li><a href="medical-tourism.html">Medical Tourism</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -634,17 +636,17 @@ ul{list-style:none}
     <p class="tb-lbl">Our Partners</p>
     <div class="tb-wrap">
       <div class="tb-track">
-        <div class="tlog"><img src="straumann.png" alt="Straumann" onerror="this.outerHTML='<span class=\'tlog-t\'>Straumann®</span>'"></div>
-        <div class="tlog"><img src="invisalign.png" alt="Invisalign" onerror="this.outerHTML='<span class=\'tlog-t\'>Invisalign®</span>'"></div>
-        <div class="tlog"><img src="Imes_icore.png" alt="imes-icore" onerror="this.outerHTML='<span class=\'tlog-t\'>imes-icore®</span>'"></div>
-        <div class="tlog"><img src="ivoclar.png" alt="Ivoclar" onerror="this.outerHTML='<span class=\'tlog-t\'>Ivoclar</span>'"></div>
-        <div class="tlog"><img src="3shape.png" alt="3Shape" onerror="this.outerHTML='<span class=\'tlog-t\'>3Shape</span>'"></div>
+        <div class="tlog"><img src="straumann.png" alt="Straumann" onerror="this.outerHTML='<span class=\'tlog-t\' loading="lazy">Straumann®</span>'"></div>
+        <div class="tlog"><img src="invisalign.png" alt="Invisalign" onerror="this.outerHTML='<span class=\'tlog-t\' loading="lazy">Invisalign®</span>'"></div>
+        <div class="tlog"><img src="Imes_icore.png" alt="imes-icore" onerror="this.outerHTML='<span class=\'tlog-t\' loading="lazy">imes-icore®</span>'"></div>
+        <div class="tlog"><img src="ivoclar.png" alt="Ivoclar" onerror="this.outerHTML='<span class=\'tlog-t\' loading="lazy">Ivoclar</span>'"></div>
+        <div class="tlog"><img src="3shape.png" alt="3Shape" onerror="this.outerHTML='<span class=\'tlog-t\' loading="lazy">3Shape</span>'"></div>
         <!-- Duplicate for loop -->
-        <div class="tlog"><img src="straumann.png" alt="" aria-hidden="true" onerror="this.outerHTML='<span class=\'tlog-t\'>Straumann®</span>'"></div>
-        <div class="tlog"><img src="invisalign.png" alt="" aria-hidden="true" onerror="this.outerHTML='<span class=\'tlog-t\'>Invisalign®</span>'"></div>
-        <div class="tlog"><img src="Imes_icore.png" alt="" aria-hidden="true" onerror="this.outerHTML='<span class=\'tlog-t\'>imes-icore®</span>'"></div>
-        <div class="tlog"><img src="ivoclar.png" alt="" aria-hidden="true" onerror="this.outerHTML='<span class=\'tlog-t\'>Ivoclar</span>'"></div>
-        <div class="tlog"><img src="3shape.png" alt="" aria-hidden="true" onerror="this.outerHTML='<span class=\'tlog-t\'>3Shape</span>'"></div>
+        <div class="tlog"><img src="straumann.png" alt="" aria-hidden="true" onerror="this.outerHTML='<span class=\'tlog-t\' loading="lazy">Straumann®</span>'"></div>
+        <div class="tlog"><img src="invisalign.png" alt="" aria-hidden="true" onerror="this.outerHTML='<span class=\'tlog-t\' loading="lazy">Invisalign®</span>'"></div>
+        <div class="tlog"><img src="Imes_icore.png" alt="" aria-hidden="true" onerror="this.outerHTML='<span class=\'tlog-t\' loading="lazy">imes-icore®</span>'"></div>
+        <div class="tlog"><img src="ivoclar.png" alt="" aria-hidden="true" onerror="this.outerHTML='<span class=\'tlog-t\' loading="lazy">Ivoclar</span>'"></div>
+        <div class="tlog"><img src="3shape.png" alt="" aria-hidden="true" onerror="this.outerHTML='<span class=\'tlog-t\' loading="lazy">3Shape</span>'"></div>
       </div>
     </div>
   </div>
@@ -654,26 +656,26 @@ ul{list-style:none}
 <div class="ins-bar" role="complementary" aria-label="Insurance & Payment">
   <div class="ins-track">
     <span class="ins-lbl">Accepted Insurance</span>
-    <img src="thiqa-logo.webp" alt="Thiqa" class="ins-logo">
-    <img src="daman-logo.webp" alt="Daman" class="ins-logo">
-    <img src="nextcare-logo.webp" alt="NextCare" class="ins-logo">
-    <img src="adnic-logo.webp" alt="ADNIC" class="ins-logo">
-    <img src="axa-logo.webp" alt="AXA" class="ins-logo">
+    <img src="thiqa-logo.webp" alt="Thiqa" class="ins-logo" loading="lazy">
+    <img src="daman-logo.webp" alt="Daman" class="ins-logo" loading="lazy">
+    <img src="nextcare-logo.webp" alt="NextCare" class="ins-logo" loading="lazy">
+    <img src="adnic-logo.webp" alt="ADNIC" class="ins-logo" loading="lazy">
+    <img src="axa-logo.webp" alt="AXA" class="ins-logo" loading="lazy">
     <span class="ins-sep">·</span>
     <span class="ins-lbl">Pay in Installments</span>
-    <img src="tabby-logo.webp" alt="Tabby" class="ins-logo">
-    <img src="tamara-logo.webp" alt="Tamara" class="ins-logo">
+    <img src="tabby-logo.webp" alt="Tabby" class="ins-logo" loading="lazy">
+    <img src="tamara-logo.webp" alt="Tamara" class="ins-logo" loading="lazy">
     <!-- Duplicate for seamless loop -->
     <span class="ins-lbl" aria-hidden="true">Accepted Insurance</span>
-    <img src="thiqa-logo.webp" alt="" aria-hidden="true" class="ins-logo">
-    <img src="daman-logo.webp" alt="" aria-hidden="true" class="ins-logo">
-    <img src="nextcare-logo.webp" alt="" aria-hidden="true" class="ins-logo">
-    <img src="adnic-logo.webp" alt="" aria-hidden="true" class="ins-logo">
-    <img src="axa-logo.webp" alt="" aria-hidden="true" class="ins-logo">
+    <img src="thiqa-logo.webp" alt="" aria-hidden="true" class="ins-logo" loading="lazy">
+    <img src="daman-logo.webp" alt="" aria-hidden="true" class="ins-logo" loading="lazy">
+    <img src="nextcare-logo.webp" alt="" aria-hidden="true" class="ins-logo" loading="lazy">
+    <img src="adnic-logo.webp" alt="" aria-hidden="true" class="ins-logo" loading="lazy">
+    <img src="axa-logo.webp" alt="" aria-hidden="true" class="ins-logo" loading="lazy">
     <span class="ins-sep" aria-hidden="true">·</span>
     <span class="ins-lbl" aria-hidden="true">Pay in Installments</span>
-    <img src="tabby-logo.webp" alt="" aria-hidden="true" class="ins-logo">
-    <img src="tamara-logo.webp" alt="" aria-hidden="true" class="ins-logo">
+    <img src="tabby-logo.webp" alt="" aria-hidden="true" class="ins-logo" loading="lazy">
+    <img src="tamara-logo.webp" alt="" aria-hidden="true" class="ins-logo" loading="lazy">
   </div>
 </div>
 
@@ -700,8 +702,8 @@ ul{list-style:none}
       <div class="ba-track" id="ba-track">
         <div class="bac" data-cat="veneers">
           <div class="ba-slider" data-before="ba-ammar-1-before.webp" data-after="ba-ammar-1-after.webp">
-            <div class="ba-img-b"><img src="ba-ammar-1-before.webp" alt="Before — Veneers"></div>
-            <div class="ba-img-a"><img src="ba-ammar-1-after.webp" alt="After — Veneers"></div>
+            <div class="ba-img-b"><img src="ba-ammar-1-before.webp" alt="Before — Veneers" loading="lazy"></div>
+            <div class="ba-img-a"><img src="ba-ammar-1-after.webp" alt="After — Veneers" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
@@ -709,8 +711,8 @@ ul{list-style:none}
         </div>
         <div class="bac" data-cat="veneers">
           <div class="ba-slider" data-before="ba-ammar-2-before.webp" data-after="ba-ammar-2-after.webp">
-            <div class="ba-img-b"><img src="ba-ammar-2-before.webp" alt="Before — Full Mouth"></div>
-            <div class="ba-img-a"><img src="ba-ammar-2-after.webp" alt="After — Full Mouth"></div>
+            <div class="ba-img-b"><img src="ba-ammar-2-before.webp" alt="Before — Full Mouth" loading="lazy"></div>
+            <div class="ba-img-a"><img src="ba-ammar-2-after.webp" alt="After — Full Mouth" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
@@ -718,8 +720,8 @@ ul{list-style:none}
         </div>
         <div class="bac" data-cat="implants">
           <div class="ba-slider" data-before="ba-ammar-3-before.webp" data-after="ba-ammar-3-after.webp">
-            <div class="ba-img-b"><img src="ba-ammar-3-before.webp" alt="Before — Implants"></div>
-            <div class="ba-img-a"><img src="ba-ammar-3-after.webp" alt="After — Implants"></div>
+            <div class="ba-img-b"><img src="ba-ammar-3-before.webp" alt="Before — Implants" loading="lazy"></div>
+            <div class="ba-img-a"><img src="ba-ammar-3-after.webp" alt="After — Implants" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
@@ -727,8 +729,8 @@ ul{list-style:none}
         </div>
         <div class="bac" data-cat="veneers">
           <div class="ba-slider" data-before="ba-asmaa-1-before.webp" data-after="ba-asmaa-1-after.webp">
-            <div class="ba-img-b"><img src="ba-asmaa-1-before.webp" alt="Before — Veneers"></div>
-            <div class="ba-img-a"><img src="ba-asmaa-1-after.webp" alt="After — Veneers"></div>
+            <div class="ba-img-b"><img src="ba-asmaa-1-before.webp" alt="Before — Veneers" loading="lazy"></div>
+            <div class="ba-img-a"><img src="ba-asmaa-1-after.webp" alt="After — Veneers" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
@@ -736,8 +738,8 @@ ul{list-style:none}
         </div>
         <div class="bac" data-cat="veneers">
           <div class="ba-slider" data-before="ba-asmaa-2-before.webp" data-after="ba-asmaa-2-after.webp">
-            <div class="ba-img-b"><img src="ba-asmaa-2-before.webp" alt="Before — Smile Design"></div>
-            <div class="ba-img-a"><img src="ba-asmaa-2-after.webp" alt="After — Smile Design"></div>
+            <div class="ba-img-b"><img src="ba-asmaa-2-before.webp" alt="Before — Smile Design" loading="lazy"></div>
+            <div class="ba-img-a"><img src="ba-asmaa-2-after.webp" alt="After — Smile Design" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
@@ -745,8 +747,8 @@ ul{list-style:none}
         </div>
         <div class="bac" data-cat="cosmetic">
           <div class="ba-slider" data-before="case-salim-endodontic-9.webp" data-after="case-salim-endodontic-8.webp">
-            <div class="ba-img-b"><img src="case-salim-endodontic-9.webp" alt="Before — Discolored teeth"></div>
-            <div class="ba-img-a"><img src="case-salim-endodontic-8.webp" alt="After — Restored smile"></div>
+            <div class="ba-img-b"><img src="case-salim-endodontic-9.webp" alt="Before — Discolored teeth" loading="lazy"></div>
+            <div class="ba-img-a"><img src="case-salim-endodontic-8.webp" alt="After — Restored smile" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
@@ -754,8 +756,8 @@ ul{list-style:none}
         </div>
         <div class="bac" data-cat="cosmetic">
           <div class="ba-slider" data-before="case-salim-smile-2.webp" data-after="case-salim-smile-9.webp">
-            <div class="ba-img-b"><img src="case-salim-smile-2.webp" alt="Before — Old amalgam filling"></div>
-            <div class="ba-img-a"><img src="case-salim-smile-9.webp" alt="After — Final smile result"></div>
+            <div class="ba-img-b"><img src="case-salim-smile-2.webp" alt="Before — Old amalgam filling" loading="lazy"></div>
+            <div class="ba-img-a"><img src="case-salim-smile-9.webp" alt="After — Final smile result" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
@@ -763,8 +765,8 @@ ul{list-style:none}
         </div>
         <div class="bac" data-cat="veneers">
           <div class="ba-slider" data-before="ba-salim-1-before.webp" data-after="ba-salim-1-after.webp">
-            <div class="ba-img-b"><img src="ba-salim-1-before.webp" alt="Before — Veneers"></div>
-            <div class="ba-img-a"><img src="ba-salim-1-after.webp" alt="After — Veneers"></div>
+            <div class="ba-img-b"><img src="ba-salim-1-before.webp" alt="Before — Veneers" loading="lazy"></div>
+            <div class="ba-img-a"><img src="ba-salim-1-after.webp" alt="After — Veneers" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
@@ -772,8 +774,8 @@ ul{list-style:none}
         </div>
         <div class="bac" data-cat="orthodontics">
           <div class="ba-slider" data-before="gallery-amr-msyead-before.webp" data-after="gallery-amr-msyead-after.webp">
-            <div class="ba-img-b"><img src="gallery-amr-msyead-before.webp" alt="Before — Orthodontics"></div>
-            <div class="ba-img-a"><img src="gallery-amr-msyead-after.webp" alt="After — Orthodontics"></div>
+            <div class="ba-img-b"><img src="gallery-amr-msyead-before.webp" alt="Before — Orthodontics" loading="lazy"></div>
+            <div class="ba-img-a"><img src="gallery-amr-msyead-after.webp" alt="After — Orthodontics" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
@@ -781,8 +783,8 @@ ul{list-style:none}
         </div>
         <div class="bac" data-cat="orthodontics">
           <div class="ba-slider" data-before="gallery-amr-manal-before.webp" data-after="gallery-amr-manal-after.webp">
-            <div class="ba-img-b"><img src="gallery-amr-manal-before.webp" alt="Before — Orthodontics"></div>
-            <div class="ba-img-a"><img src="gallery-amr-manal-after.webp" alt="After — Orthodontics"></div>
+            <div class="ba-img-b"><img src="gallery-amr-manal-before.webp" alt="Before — Orthodontics" loading="lazy"></div>
+            <div class="ba-img-a"><img src="gallery-amr-manal-after.webp" alt="After — Orthodontics" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
@@ -790,8 +792,8 @@ ul{list-style:none}
         </div>
         <div class="bac" data-cat="orthodontics">
           <div class="ba-slider" data-before="gallery-amr-yani-before.webp" data-after="gallery-amr-yani-after.webp">
-            <div class="ba-img-b"><img src="gallery-amr-yani-before.webp" alt="Before — Orthodontics"></div>
-            <div class="ba-img-a"><img src="gallery-amr-yani-after.webp" alt="After — Orthodontics"></div>
+            <div class="ba-img-b"><img src="gallery-amr-yani-before.webp" alt="Before — Orthodontics" loading="lazy"></div>
+            <div class="ba-img-a"><img src="gallery-amr-yani-after.webp" alt="After — Orthodontics" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
@@ -799,8 +801,8 @@ ul{list-style:none}
         </div>
         <div class="bac" data-cat="orthodontics">
           <div class="ba-slider" data-before="gallery-amr-manea-before.webp" data-after="gallery-amr-manea-after.webp">
-            <div class="ba-img-b"><img src="gallery-amr-manea-before.webp" alt="Before — Orthodontics"></div>
-            <div class="ba-img-a"><img src="gallery-amr-manea-after.webp" alt="After — Orthodontics"></div>
+            <div class="ba-img-b"><img src="gallery-amr-manea-before.webp" alt="Before — Orthodontics" loading="lazy"></div>
+            <div class="ba-img-a"><img src="gallery-amr-manea-after.webp" alt="After — Orthodontics" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
@@ -808,8 +810,8 @@ ul{list-style:none}
         </div>
         <div class="bac" data-cat="orthodontics">
           <div class="ba-slider" data-before="ba-amr-ivan-before.webp" data-after="ba-amr-ivan-after.webp">
-            <div class="ba-img-b"><img src="ba-amr-ivan-before.webp" alt="Before — Orthodontics"></div>
-            <div class="ba-img-a"><img src="ba-amr-ivan-after.webp" alt="After — Orthodontics"></div>
+            <div class="ba-img-b"><img src="ba-amr-ivan-before.webp" alt="Before — Orthodontics" loading="lazy"></div>
+            <div class="ba-img-a"><img src="ba-amr-ivan-after.webp" alt="After — Orthodontics" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
@@ -823,7 +825,7 @@ ul{list-style:none}
     </div>
     <div class="ba-ct rv">
       <a href="gallery.html" class="btn btn--g btn--arr">View Full Gallery</a>
-      <a href="case-studies.html" class="btn btn--gh" style="margin-left:10px">Case Studies</a>
+      <a href="case-studies.html" class="btn btn--gh" style="margin-left:10px">Cases</a>
     </div>
   </div>
 </section>
@@ -1400,7 +1402,7 @@ ul{list-style:none}
 <footer id="ftr" role="contentinfo">
   <div class="ft">
     <div class="fl">
-      <img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none'">
+      <img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none'" loading="lazy">
       <p class="fl-d">Abu Dhabi's centre of digital dentistry — six specialist clinics, an in-house lab, and a surgical team dedicated to changing lives.</p>
       <div class="fl-lic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>MOHAP Licensed · No. 5889VHC5-110626</div>
     </div>
@@ -1427,7 +1429,7 @@ ul{list-style:none}
         <li><a href="index.html#trust-stack">Our Specialists</a></li>
         <li><a href="#diff">Our Technology</a></li>
         <li><a href="gallery.html">Before &amp; After Gallery</a></li>
-        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="case-studies.html">Cases</a></li>
         <li><a href="medical-tourism.html">Medical Tourism</a></li>
         <li><a href="blog.html">Dental Blog</a></li>
         <li><a href="contact.html">Contact Us</a></li>

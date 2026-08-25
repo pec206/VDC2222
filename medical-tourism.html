@@ -14,6 +14,7 @@
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Medical Tourism Abu Dhabi | Vision Dental Clinic","description":"World-class dental care in Abu Dhabi. Vision Dental Clinic welcomes international patients for implants, full mouth rehabilitation, veneers, and smile design.","url":"https://www.visiondental.ae/medical-tourism.html","publisher":{"@type":"Organization","name":"Vision Dental Clinic","url":"https://www.visiondental.ae"}}</script>
 <style>
 /* ═══ UNIFIED TOKENS — same as index.html ═══ */
 :root{
@@ -197,9 +198,11 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 .wa-float svg{width:28px;height:28px;fill:#fff}
 .wa-pulse{position:absolute;inset:0;border-radius:50%;background:rgba(37,211,102,.3);animation:wa-ring 2s ease-out infinite;pointer-events:none}
 @keyframes wa-ring{0%{transform:scale(1);opacity:1}100%{transform:scale(1.6);opacity:0}}
+.skip-link{position:absolute;top:-100%;left:16px;background:var(--b900);color:var(--w);padding:12px 24px;border-radius:0 0 8px 8px;font-size:14px;font-weight:700;z-index:9999;transition:top .2s}.skip-link:focus{top:0}
 </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to content</a>
 
 <nav class="mob-nav" id="mob-nav">
   <button class="mob-x" id="mob-x">✕</button>
@@ -207,7 +210,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
   <a href="about-us.html">About Us</a>
   <a href="services.html">Services</a>
   <a href="index.html#trust-stack">Our Team</a>
-  <a href="gallery.html">Gallery</a><a href="case-studies.html">Case Studies</a><a href="blog.html">Blog</a>
+  <a href="gallery.html">Gallery</a><a href="case-studies.html">Cases</a><a href="blog.html">Blog</a>
   <a href="medical-tourism.html">Medical Tourism</a>
   <a href="contact.html">Contact</a>
   <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book Appointment</a>
@@ -216,7 +219,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 <header id="hdr" role="banner">
   <div class="hdr-in">
     <a href="index.html" class="hdr-logo">
-      <img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none';this.nextSibling.style.display='block'">
+      <img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none';this.nextSibling.style.display='block'" loading="lazy">
       <span style="display:none;font-size:15px;font-weight:800;color:white">Vision Dental</span>
     </a>
     <nav class="hdr-nav">
@@ -225,7 +228,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
         <li><a href="about-us.html">About Us</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="index.html#trust-stack">Our Team</a></li>
-        <li><a href="gallery.html">Gallery</a></li><li><a href="case-studies.html">Case Studies</a></li><li><a href="blog.html">Blog</a></li>
+        <li><a href="gallery.html">Gallery</a></li><li><a href="case-studies.html">Cases</a></li><li><a href="blog.html">Blog</a></li>
         <li><a href="medical-tourism.html" class="ac">Medical Tourism</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -239,13 +242,13 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 </header>
 
 <!-- HERO -->
-<section class="srv-hero">
+<section id="main-content" class="srv-hero">
   <div class="srv-hero-bg"></div>
   <div class="srv-hero-ov"></div>
   <div class="srv-hero-in">
     <div class="hero-tag">International Patients Welcome</div>
     <div class="mt-img-frame" style="margin-bottom:36px;border-radius:var(--rxl);overflow:hidden;border:3px solid var(--g500);box-shadow:0 16px 48px rgba(90,159,42,.18)">
-      <img src="medical-tourism-hero.webp" alt="Vision Dental Clinic — Medical Tourism Abu Dhabi">
+      <img src="medical-tourism-hero.webp" alt="Vision Dental Clinic — Medical Tourism Abu Dhabi" loading="lazy">
     </div>
     <h1>World-Class Dental Care.<br><em>Right in Abu Dhabi.</em></h1>
     <p class="srv-hero-sub">Thousands of patients travel from Europe, Asia, and the GCC to access Vision Dental Clinic's combination of specialist expertise, full digital workflow, and transparent pricing — all under one roof.</p>
@@ -389,7 +392,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 <footer id="ftr">
   <div class="ft">
     <div class="fl">
-      <img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none'">
+      <img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none'" loading="lazy">
       <p class="fl-d">Abu Dhabi's centre of digital dentistry — welcoming international patients for world-class care.</p>
       <div class="fl-lic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>MOHAP Licensed · No. 5889VHC5-110626</div>
     </div>

@@ -252,9 +252,11 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 .wa-float svg{width:28px;height:28px;fill:#fff}
 .wa-pulse{position:absolute;inset:0;border-radius:50%;background:rgba(37,211,102,.3);animation:wa-ring 2s ease-out infinite;pointer-events:none}
 @keyframes wa-ring{0%{transform:scale(1);opacity:1}100%{transform:scale(1.6);opacity:0}}
+.skip-link{position:absolute;top:-100%;left:16px;background:var(--b900);color:var(--w);padding:12px 24px;border-radius:0 0 8px 8px;font-size:14px;font-weight:700;z-index:9999;transition:top .2s}.skip-link:focus{top:0}
 </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to content</a>
 
 <nav class="mob-nav" id="mob-nav">
   <button class="mob-x" id="mob-x">✕</button>
@@ -262,7 +264,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
   <a href="about-us.html">About Us</a>
   <a href="services.html">Services</a>
   <a href="index.html#trust-stack">Our Team</a>
-  <a href="gallery.html">Gallery</a><a href="case-studies.html">Case Studies</a><a href="blog.html">Blog</a>
+  <a href="gallery.html">Gallery</a><a href="case-studies.html">Cases</a><a href="blog.html">Blog</a>
   <a href="medical-tourism.html">Medical Tourism</a>
   <a href="contact.html">Contact</a>
   <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book Appointment</a>
@@ -271,7 +273,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 <header id="hdr">
   <div class="hdr-in">
     <a href="index.html" class="hdr-logo">
-      <img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none';this.nextSibling.style.display='block'">
+      <img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none';this.nextSibling.style.display='block'" loading="lazy">
       <span style="display:none">Vision Dental</span>
     </a>
     <nav class="hdr-nav">
@@ -280,7 +282,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
         <li><a href="about-us.html">About Us</a></li>
         <li><a href="services.html" class="ac">Services</a></li>
         <li><a href="index.html#trust-stack">Our Team</a></li>
-        <li><a href="gallery.html">Gallery</a></li><li><a href="case-studies.html">Case Studies</a></li><li><a href="blog.html">Blog</a></li>
+        <li><a href="gallery.html">Gallery</a></li><li><a href="case-studies.html">Cases</a></li><li><a href="blog.html">Blog</a></li>
         <li><a href="medical-tourism.html">Medical Tourism</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -294,7 +296,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 </header>
 
 <!-- HERO -->
-<section class="srv-hero">
+<section id="main-content" class="srv-hero">
   <div class="srv-hero-bg"></div>
   <div class="srv-hero-ov"></div>
   <div class="srv-hero-in">
@@ -445,8 +447,8 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
     <div class="ba-grid">
       <div class="ba-card rv">
         <div class="ba-split">
-          <div class="ba-h"><img src="ba-ammar-3-before.webp" alt="Before — Dental Implants" style="width:100%;height:100%;object-fit:cover"></div>
-          <div class="ba-h"><img src="ba-ammar-3-after.webp" alt="After — Dental Implants" style="width:100%;height:100%;object-fit:cover"></div>
+          <div class="ba-h"><img src="ba-ammar-3-before.webp" alt="Before — Dental Implants" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div>
+          <div class="ba-h"><img src="ba-ammar-3-after.webp" alt="After — Dental Implants" style="width:100%;height:100%;object-fit:cover" loading="lazy"></div>
           <div class="ba-dv"></div><div class="ba-di">↔</div>
           <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
         </div>
@@ -490,12 +492,12 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
   </div>
 </section>
 
-<!-- RELATED CASE STUDIES -->
+<!-- RELATED Cases -->
 <section class="S S--lt">
   <div class="W">
     <div class="rv" style="text-align:center;margin-bottom:36px">
       <p class="eye eye--cx">Real Results</p>
-      <h2 class="Hmd">Related <em class="em">Case Studies</em></h2>
+      <h2 class="Hmd">Related <em class="em">Cases</em></h2>
     </div>
     <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px" class="rv d1">
       <a href="case-hussien-rehab.html" style="border-radius:var(--rl);border:1px solid var(--s100);padding:22px 24px;background:var(--w);transition:all .28s;display:block;text-decoration:none" onmouseover="this.style.boxShadow='var(--shl)';this.style.transform='translateY(-4px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
@@ -509,7 +511,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
       </a>
     </div>
     <div style="text-align:center;margin-top:28px" class="rv d2">
-      <a href="case-studies.html" class="btn btn--od">View All Case Studies</a>
+      <a href="case-studies.html" class="btn btn--od">View All Cases</a>
     </div>
   </div>
 </section>
@@ -565,7 +567,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 <footer id="ftr">
   <div class="ft">
     <div class="fl">
-      <img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none'">
+      <img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none'" loading="lazy">
       <p class="fl-d">Abu Dhabi's centre of digital dentistry — six specialist clinics and a surgical team dedicated to changing lives.</p>
       <div class="fl-lic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>MOHAP Licensed · No. 5889VHC5-110626</div>
     </div>
@@ -668,62 +670,6 @@ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
       "addressCountry": "AE"
     }
   }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How much do dental implants cost in Abu Dhabi?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "At Vision Dental Clinic, dental implants start from 2,600 AED. The final cost depends on the type of implant, bone condition, and whether additional procedures like bone grafting or sinus lift are needed. We offer payment plans through Tabby and Tamara."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are dental implants painful?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "With our STA digital anesthesia system and optional Nitrous Oxide sedation, the procedure is virtually painless. Most patients report less discomfort than a simple extraction. Dr. Hussien's 35+ years of experience and CBCT-guided surgery ensure minimal tissue trauma."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long do dental implants last?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Straumann® implants, which we exclusively use, have a documented success rate above 97% over 10 years. With proper oral hygiene and regular check-ups, implants can last a lifetime."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the recovery time after implant surgery?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most patients return to normal activities within 1-2 days. The implant integrates with the bone over 3-4 months. With immediate loading protocols, you can leave with a temporary crown the same day in qualifying cases."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Am I a candidate for dental implants?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most adults with good general health are candidates. Even patients with bone loss can often receive implants after bone grafting. Dr. Hussien reviews every case with a CBCT 3D scan to create a precise treatment plan."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is All-on-4 / All-on-X?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "All-on-X is a technique that replaces an entire arch of teeth using just 4-6 strategically placed implants. It's ideal for patients with extensive tooth loss and can often be completed in a single day."
-      }
-    }
-  ]
 }
 </script>
 </body>

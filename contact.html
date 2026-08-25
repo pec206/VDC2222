@@ -16,6 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Dentist","name":"Vision Dental Clinic","url":"https://www.visiondental.ae","description":"Contact Vision Dental Clinic Abu Dhabi. 1302 Al Ansari Exchange Bldg, Khalifa Street. Call +971 2 312 2777 or WhatsApp us. Open Sat-Thu 10:30 AM - 7:30 PM.","address":{"@type":"PostalAddress","addressLocality":"Abu Dhabi","addressCountry":"AE"},"telephone":"+971-2-000-0000","contactPoint":{"@type":"ContactPoint","telephone":"+971-2-000-0000","contactType":"customer service"}}</script>
 <style>
 :root{
   --b900:#1a3a52;--b800:#1e4a6e;--b700:#2D5F8A;--b50:#eaf4fb;
@@ -169,9 +170,11 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 .ct-form-submit{display:inline-flex;align-items:center;gap:8px;font-family:var(--fb);font-size:15px;font-weight:700;padding:14px 32px;border-radius:100px;border:none;background:var(--gg);color:var(--w);cursor:pointer;transition:all .25s;box-shadow:0 4px 18px rgba(90,159,42,.30)}
 .ct-form-submit:hover{transform:translateY(-2px);box-shadow:0 8px 26px rgba(90,159,42,.40)}
 @media(max-width:600px){.ct-form{grid-template-columns:1fr}}
+.skip-link{position:absolute;top:-100%;left:16px;background:var(--b900);color:var(--w);padding:12px 24px;border-radius:0 0 8px 8px;font-size:14px;font-weight:700;z-index:9999;transition:top .2s}.skip-link:focus{top:0}
 </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to content</a>
 
 <nav class="mob-nav" id="mob-nav">
   <button class="mob-x" id="mob-x">&#10005;</button>
@@ -179,7 +182,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
   <a href="about-us.html">About Us</a>
   <a href="services.html">Services</a>
   <a href="index.html#trust-stack">Our Team</a>
-  <a href="gallery.html">Gallery</a><a href="case-studies.html">Case Studies</a><a href="blog.html">Blog</a>
+  <a href="gallery.html">Gallery</a><a href="case-studies.html">Cases</a><a href="blog.html">Blog</a>
   <a href="medical-tourism.html">Medical Tourism</a>
   <a href="contact.html">Contact</a>
   <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book Appointment</a>
@@ -188,7 +191,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 <header id="hdr">
   <div class="hdr-in">
     <a href="index.html" class="hdr-logo">
-      <img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none';this.nextSibling.style.display='block'">
+      <img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none';this.nextSibling.style.display='block'" loading="lazy">
       <span style="display:none">Vision Dental</span>
     </a>
     <nav class="hdr-nav">
@@ -197,7 +200,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
         <li><a href="about-us.html">About Us</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="index.html#trust-stack">Our Team</a></li>
-        <li><a href="gallery.html">Gallery</a></li><li><a href="case-studies.html">Case Studies</a></li><li><a href="blog.html">Blog</a></li>
+        <li><a href="gallery.html">Gallery</a></li><li><a href="case-studies.html">Cases</a></li><li><a href="blog.html">Blog</a></li>
         <li><a href="medical-tourism.html">Medical Tourism</a></li>
         <li><a href="contact.html" class="ac">Contact</a></li>
       </ul>
@@ -211,7 +214,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 </header>
 
 <!-- HERO -->
-<section class="srv-hero">
+<section id="main-content" class="srv-hero">
   <div class="srv-hero-ov"></div>
   <div class="srv-hero-in">
     <div class="srv-breadcrumb">
@@ -337,7 +340,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 <footer id="ftr">
   <div class="ft">
     <div class="fl">
-      <img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none'">
+      <img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none'" loading="lazy">
       <p class="fl-d">Abu Dhabi's centre of digital dentistry — six specialist clinics and a surgical team dedicated to changing lives.</p>
       <div class="fl-lic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>MOHAP Licensed &middot; No. 5889VHC5-110626</div>
     </div>

@@ -57,29 +57,31 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
 .faq-item.open .faq-a{max-height:500px}
 .faq-a-in{padding:0 24px 20px;font-size:14px;line-height:1.8;color:var(--s600)}
+.skip-link{position:absolute;top:-100%;left:16px;background:var(--b900);color:var(--w);padding:12px 24px;border-radius:0 0 8px 8px;font-size:14px;font-weight:700;z-index:9999;transition:top .2s}.skip-link:focus{top:0}
 </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to content</a>
 <nav class="mob-nav" id="mob-nav"><button class="mob-x" id="mob-x">✕</button>
   <a href="index.html">Home</a>
   <a href="about-us.html">About Us</a>
   <a href="services.html">Services</a>
   <a href="index.html#trust-stack">Our Team</a>
-  <a href="gallery.html">Gallery</a><a href="case-studies.html">Case Studies</a><a href="blog.html">Blog</a>
+  <a href="gallery.html">Gallery</a><a href="case-studies.html">Cases</a><a href="blog.html">Blog</a>
   <a href="medical-tourism.html">Medical Tourism</a>
   <a href="contact.html">Contact</a>
   <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book Appointment</a></nav>
-<header id="hdr"><div class="hdr-in"><a href="index.html" class="hdr-logo"><img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none';this.nextSibling.style.display='block'"><span style="display:none">Vision Dental</span></a><nav class="hdr-nav"><ul class="nav-ul">
+<header id="hdr"><div class="hdr-in"><a href="index.html" class="hdr-logo"><img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none';this.nextSibling.style.display='block'" loading="lazy"><span style="display:none">Vision Dental</span></a><nav class="hdr-nav"><ul class="nav-ul">
         <li><a href="index.html">Home</a></li>
         <li><a href="about-us.html">About Us</a></li>
         <li><a href="services.html" class="ac">Services</a></li>
         <li><a href="index.html#trust-stack">Our Team</a></li>
-        <li><a href="gallery.html">Gallery</a></li><li><a href="case-studies.html">Case Studies</a></li><li><a href="blog.html">Blog</a></li>
+        <li><a href="gallery.html">Gallery</a></li><li><a href="case-studies.html">Cases</a></li><li><a href="blog.html">Blog</a></li>
         <li><a href="medical-tourism.html">Medical Tourism</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul></nav><div class="hdr-r"><div class="hdr-lic"><span>MOHAP Licensed</span><b>No. 5889VHC5-110626</b></div><a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g hdr-ct" style="font-size:12.5px;padding:9px 18px">Book Appointment</a><button class="hbg" id="hbg"><span></span><span></span><span></span></button></div></div></header>
 
-<section class="srv-hero"><div class="srv-hero-bg"></div><div class="srv-hero-ov"></div><div class="srv-hero-in">
+<section id="main-content" class="srv-hero"><div class="srv-hero-bg"></div><div class="srv-hero-ov"></div><div class="srv-hero-in">
   <div class="srv-breadcrumb"><a href="index.html">Home</a><span>/</span><a href="index.html#services">Services</a><span>/</span><span style="color:rgba(255,255,255,.7)">Teeth Whitening</span></div>
   <h1>Teeth Whitening<br><em>Abu Dhabi</em></h1>
   <p class="srv-hero-sub">Multiple whitening options — Nano, Philips Zoom, or take-home kits. Professional, supervised, and safe — packages available with consultation, X-ray &amp; scaling included.</p>
@@ -219,18 +221,18 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
   </div>
 </div></section>
 
-<!-- RELATED CASE STUDIES -->
+<!-- RELATED Cases -->
 <section class="S S--lt">
   <div class="W">
     <div class="rv" style="text-align:center;margin-bottom:36px">
       <p class="eye eye--cx">Real Results</p>
-      <h2 class="Hmd">Related <em class="em">Case Studies</em></h2>
+      <h2 class="Hmd">Related <em class="em">Cases</em></h2>
     </div>
     <div style="display:grid;grid-template-columns:1fr;gap:20px;max-width:500px;margin:0 auto" class="rv d1">
       <a href="case-whitening.html" style="border-radius:var(--rl);border:1px solid var(--s100);overflow:hidden;background:var(--w);transition:all .28s;display:block;text-decoration:none" onmouseover="this.style.boxShadow='var(--shl)';this.style.transform='translateY(-4px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
         <div style="display:grid;grid-template-columns:1fr 1fr;height:200px;position:relative">
-          <div style="overflow:hidden"><img src="case-asmaa-whitening-before.webp" alt="Before — Whitening" style="width:100%;height:100%;object-fit:cover"><span style="position:absolute;bottom:8px;left:8px;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:100px;background:rgba(0,0,0,.5);color:rgba(255,255,255,.7)">Before</span></div>
-          <div style="overflow:hidden"><img src="case-asmaa-whitening-after.webp" alt="After — Whitening" style="width:100%;height:100%;object-fit:cover"><span style="position:absolute;bottom:8px;right:8px;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:100px;background:var(--gg);color:var(--w)">After</span></div>
+          <div style="overflow:hidden"><img src="case-asmaa-whitening-before.webp" alt="Before — Whitening" style="width:100%;height:100%;object-fit:cover" loading="lazy"><span style="position:absolute;bottom:8px;left:8px;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:100px;background:rgba(0,0,0,.5);color:rgba(255,255,255,.7)">Before</span></div>
+          <div style="overflow:hidden"><img src="case-asmaa-whitening-after.webp" alt="After — Whitening" style="width:100%;height:100%;object-fit:cover" loading="lazy"><span style="position:absolute;bottom:8px;right:8px;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:100px;background:var(--gg);color:var(--w)">After</span></div>
         </div>
         <div style="padding:16px 22px">
           <h4 style="font-size:15px;font-weight:800;color:var(--b900);margin-bottom:4px">Professional Whitening Result</h4>
@@ -240,7 +242,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
       </a>
     </div>
     <div style="text-align:center;margin-top:28px" class="rv d2">
-      <a href="case-studies.html" class="btn btn--od">View All Case Studies</a>
+      <a href="case-studies.html" class="btn btn--od">View All Cases</a>
     </div>
   </div>
 </section>
@@ -284,7 +286,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
   </div>
 </section>
 
-<footer id="ftr"><div class="ft"><div class="fl"><img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none'"><p class="fl-d">Abu Dhabi's centre of digital dentistry.</p><div class="fl-lic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>MOHAP Licensed No. 5889VHC5-110626</div></div><div class="fcol"><h4>Services</h4><ul class="fls">
+<footer id="ftr"><div class="ft"><div class="fl"><img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none'" loading="lazy"><p class="fl-d">Abu Dhabi's centre of digital dentistry.</p><div class="fl-lic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>MOHAP Licensed No. 5889VHC5-110626</div></div><div class="fcol"><h4>Services</h4><ul class="fls">
         <li><a href="dental-implants.html">Dental Implants</a></li>
         <li><a href="smile-design.html">Cosmetic Dentistry / Smile Design</a></li>
         <li><a href="orthodontics.html">Orthodontics</a></li>
@@ -368,19 +370,6 @@ document.querySelectorAll(".rv").forEach(el=>io.observe(el));
       "addressCountry": "AE"
     }
   }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "How much does teeth whitening cost?", "acceptedAnswer": {"@type": "Answer", "text": "At Vision Dental, whitening starts from 580 AED. Packages include consultation, scaling, and the whitening session. Options include Nano whitening, Philips Zoom, and take-home kits."}},
-    {"@type": "Question", "name": "Is teeth whitening safe?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Professional whitening under dental supervision is completely safe for your enamel. We use clinically proven products and customize the treatment to your sensitivity level."}},
-    {"@type": "Question", "name": "How long do whitening results last?", "acceptedAnswer": {"@type": "Answer", "text": "Results typically last 1-2 years depending on your diet and habits. Avoiding coffee, tea, and smoking extends the results. Touch-up sessions are available."}},
-    {"@type": "Question", "name": "Does whitening cause sensitivity?", "acceptedAnswer": {"@type": "Answer", "text": "Some patients experience mild temporary sensitivity for 24-48 hours. We apply desensitizing agents and can adjust the concentration to minimize discomfort."}},
-    {"@type": "Question", "name": "What is the difference between Nano and Zoom whitening?", "acceptedAnswer": {"@type": "Answer", "text": "Nano whitening uses nanotechnology for gentle, effective results. Philips Zoom uses LED-activated gel for faster, more dramatic results in a single session. Both are safe and effective."}}
-  ]
 }
 </script>
 <script>document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>{const item=q.parentElement;item.classList.toggle('open');}));</script>

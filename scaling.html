@@ -218,9 +218,11 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
 .faq-item.open .faq-a{max-height:500px}
 .faq-a-in{padding:0 24px 20px;font-size:14px;line-height:1.8;color:var(--s600)}
+.skip-link{position:absolute;top:-100%;left:16px;background:var(--b900);color:var(--w);padding:12px 24px;border-radius:0 0 8px 8px;font-size:14px;font-weight:700;z-index:9999;transition:top .2s}.skip-link:focus{top:0}
 </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to content</a>
 
 <nav class="mob-nav" id="mob-nav">
   <button class="mob-x" id="mob-x">&#10005;</button>
@@ -228,7 +230,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
   <a href="about-us.html">About Us</a>
   <a href="services.html">Services</a>
   <a href="index.html#trust-stack">Our Team</a>
-  <a href="gallery.html">Gallery</a><a href="case-studies.html">Case Studies</a><a href="blog.html">Blog</a>
+  <a href="gallery.html">Gallery</a><a href="case-studies.html">Cases</a><a href="blog.html">Blog</a>
   <a href="medical-tourism.html">Medical Tourism</a>
   <a href="contact.html">Contact</a>
   <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book Appointment</a>
@@ -237,7 +239,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 <header id="hdr">
   <div class="hdr-in">
     <a href="index.html" class="hdr-logo">
-      <img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none';this.nextSibling.style.display='block'">
+      <img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none';this.nextSibling.style.display='block'" loading="lazy">
       <span style="display:none">Vision Dental</span>
     </a>
     <nav class="hdr-nav">
@@ -246,7 +248,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
         <li><a href="about-us.html">About Us</a></li>
         <li><a href="services.html" class="ac">Services</a></li>
         <li><a href="index.html#trust-stack">Our Team</a></li>
-        <li><a href="gallery.html">Gallery</a></li><li><a href="case-studies.html">Case Studies</a></li><li><a href="blog.html">Blog</a></li>
+        <li><a href="gallery.html">Gallery</a></li><li><a href="case-studies.html">Cases</a></li><li><a href="blog.html">Blog</a></li>
         <li><a href="medical-tourism.html">Medical Tourism</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -260,7 +262,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 </header>
 
 <!-- HERO -->
-<section class="srv-hero">
+<section id="main-content" class="srv-hero">
   <div class="srv-hero-bg"></div>
   <div class="srv-hero-ov"></div>
   <div class="srv-hero-in">
@@ -351,7 +353,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 <section class="S S--lt">
   <div class="W">
     <div style="text-align:center;margin-bottom:40px">
-      <p class="eye eye--cx rv">Case Studies</p>
+      <p class="eye eye--cx rv">Cases</p>
       <h2 class="Hlg rv d1" style="text-align:center">Scaling &amp; Polishing <em class="em">Results</em></h2>
     </div>
     <div style="max-width:500px;margin:0 auto" class="rv">
@@ -444,7 +446,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 <footer id="ftr">
   <div class="ft">
     <div class="fl">
-      <img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none'">
+      <img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none'" loading="lazy">
       <p class="fl-d">Abu Dhabi's centre of digital dentistry &mdash; six specialist clinics and a surgical team dedicated to changing lives.</p>
       <div class="fl-lic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>MOHAP Licensed &middot; No. 5889VHC5-110626</div>
     </div>
@@ -541,19 +543,6 @@ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
       "addressCountry": "AE"
     }
   }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "How much does dental cleaning cost?", "acceptedAnswer": {"@type": "Answer", "text": "Professional scaling and polishing at Vision Dental starts from 195 AED. This includes ultrasonic scaling, air polishing, and premium polishing."}},
-    {"@type": "Question", "name": "How often should I get a dental cleaning?", "acceptedAnswer": {"@type": "Answer", "text": "We recommend professional cleaning every 6 months. Patients with gum disease may need more frequent visits — every 3-4 months."}},
-    {"@type": "Question", "name": "Does scaling damage teeth?", "acceptedAnswer": {"@type": "Answer", "text": "No. Professional scaling removes hardened tartar that cannot be removed by brushing alone. It protects your teeth and gums from disease."}},
-    {"@type": "Question", "name": "Is scaling painful?", "acceptedAnswer": {"@type": "Answer", "text": "Most patients experience minimal discomfort. For sensitive patients, we can apply topical numbing. The ultrasonic scaler vibrations may feel unusual but are not painful."}},
-    {"@type": "Question", "name": "What is air polishing?", "acceptedAnswer": {"@type": "Answer", "text": "Air polishing uses a fine jet of water and powder to remove surface stains and plaque. It's gentle, effective, and leaves teeth feeling exceptionally smooth and clean."}}
-  ]
 }
 </script>
 <script>document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>{const item=q.parentElement;item.classList.toggle('open');}));</script>

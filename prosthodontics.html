@@ -56,29 +56,31 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
 .faq-item.open .faq-a{max-height:500px}
 .faq-a-in{padding:0 24px 20px;font-size:14px;line-height:1.8;color:var(--s600)}
+.skip-link{position:absolute;top:-100%;left:16px;background:var(--b900);color:var(--w);padding:12px 24px;border-radius:0 0 8px 8px;font-size:14px;font-weight:700;z-index:9999;transition:top .2s}.skip-link:focus{top:0}
 </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to content</a>
 <nav class="mob-nav" id="mob-nav"><button class="mob-x" id="mob-x">✕</button>
   <a href="index.html">Home</a>
   <a href="about-us.html">About Us</a>
   <a href="services.html">Services</a>
   <a href="index.html#trust-stack">Our Team</a>
-  <a href="gallery.html">Gallery</a><a href="case-studies.html">Case Studies</a><a href="blog.html">Blog</a>
+  <a href="gallery.html">Gallery</a><a href="case-studies.html">Cases</a><a href="blog.html">Blog</a>
   <a href="medical-tourism.html">Medical Tourism</a>
   <a href="contact.html">Contact</a>
   <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book Appointment</a></nav>
-<header id="hdr"><div class="hdr-in"><a href="index.html" class="hdr-logo"><img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none';this.nextSibling.style.display='block'"><span style="display:none">Vision Dental</span></a><nav class="hdr-nav"><ul class="nav-ul">
+<header id="hdr"><div class="hdr-in"><a href="index.html" class="hdr-logo"><img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none';this.nextSibling.style.display='block'" loading="lazy"><span style="display:none">Vision Dental</span></a><nav class="hdr-nav"><ul class="nav-ul">
         <li><a href="index.html">Home</a></li>
         <li><a href="about-us.html">About Us</a></li>
         <li><a href="services.html" class="ac">Services</a></li>
         <li><a href="index.html#trust-stack">Our Team</a></li>
-        <li><a href="gallery.html">Gallery</a></li><li><a href="case-studies.html">Case Studies</a></li><li><a href="blog.html">Blog</a></li>
+        <li><a href="gallery.html">Gallery</a></li><li><a href="case-studies.html">Cases</a></li><li><a href="blog.html">Blog</a></li>
         <li><a href="medical-tourism.html">Medical Tourism</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul></nav><div class="hdr-r"><div class="hdr-lic"><span>MOHAP Licensed</span><b>No. 5889VHC5-110626</b></div><a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g hdr-ct" style="font-size:12.5px;padding:9px 18px">Book Appointment</a><button class="hbg" id="hbg"><span></span><span></span><span></span></button></div></div></header>
 
-<section class="srv-hero"><div class="srv-hero-bg"></div><div class="srv-hero-ov"></div><div class="srv-hero-in">
+<section id="main-content" class="srv-hero"><div class="srv-hero-bg"></div><div class="srv-hero-ov"></div><div class="srv-hero-in">
   <div class="srv-breadcrumb"><a href="index.html">Home</a><span>/</span><a href="index.html#services">Services</a><span>/</span><span style="color:rgba(255,255,255,.7)">Prosthodontics</span></div>
   <h1>Prosthodontics<br><em>Abu Dhabi</em></h1>
   <p class="srv-hero-sub">Crowns, bridges, dentures, and implant-supported prosthetics — all designed with CAD/CAM software and milled in our in-house lab. Led by Dr. Emad El-Din Sharqawi, PhD and Dr. Mohy El Din, MSc.</p>
@@ -175,12 +177,12 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
   </div>
 </section>
 
-<!-- RELATED CASE STUDIES -->
+<!-- RELATED Cases -->
 <section class="S S--lt">
   <div class="W">
     <div class="rv" style="text-align:center;margin-bottom:36px">
       <p class="eye eye--cx">Real Results</p>
-      <h2 class="Hmd">Related <em class="em">Case Studies</em></h2>
+      <h2 class="Hmd">Related <em class="em">Cases</em></h2>
     </div>
     <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px" class="rv d1">
       <a href="case-prosthodontic.html" style="border-radius:var(--rl);border:1px solid var(--s100);padding:22px 24px;background:var(--w);transition:all .28s;display:block;text-decoration:none" onmouseover="this.style.boxShadow='var(--shl)';this.style.transform='translateY(-4px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
@@ -194,7 +196,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
       </a>
     </div>
     <div style="text-align:center;margin-top:28px" class="rv d2">
-      <a href="case-studies.html" class="btn btn--od">View All Case Studies</a>
+      <a href="case-studies.html" class="btn btn--od">View All Cases</a>
     </div>
   </div>
 </section>
@@ -242,7 +244,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
   </div>
 </section>
 
-<footer id="ftr"><div class="ft"><div class="fl"><img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none'"><p class="fl-d">Abu Dhabi's centre of digital dentistry.</p><div class="fl-lic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>MOHAP Licensed No. 5889VHC5-110626</div></div><div class="fcol"><h4>Services</h4><ul class="fls">
+<footer id="ftr"><div class="ft"><div class="fl"><img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none'" loading="lazy"><p class="fl-d">Abu Dhabi's centre of digital dentistry.</p><div class="fl-lic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>MOHAP Licensed No. 5889VHC5-110626</div></div><div class="fcol"><h4>Services</h4><ul class="fls">
         <li><a href="dental-implants.html">Dental Implants</a></li>
         <li><a href="smile-design.html">Cosmetic Dentistry / Smile Design</a></li>
         <li><a href="orthodontics.html">Orthodontics</a></li>
@@ -310,19 +312,6 @@ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
       "addressCountry": "AE"
     }
   }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "How much do dental crowns cost?", "acceptedAnswer": {"@type": "Answer", "text": "Dental crowns at Vision Dental start from 575 AED. We use premium materials milled in our in-house CAD/CAM laboratory using German IMES-icore technology."}},
-    {"@type": "Question", "name": "How long do dental crowns last?", "acceptedAnswer": {"@type": "Answer", "text": "High-quality crowns typically last 10-15 years or longer with proper care. Our crowns are designed digitally with 3Shape scanning for a precise fit."}},
-    {"@type": "Question", "name": "What is the difference between a crown and a veneer?", "acceptedAnswer": {"@type": "Answer", "text": "Crowns cover the entire tooth and are used for damaged or weakened teeth. Veneers cover only the front surface and are primarily cosmetic. Your prosthodontist will recommend the best option."}},
-    {"@type": "Question", "name": "Can a dental bridge replace a missing tooth?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A bridge uses adjacent teeth as anchors to replace one or more missing teeth. It's a fixed, non-removable option. Implants are another alternative your doctor may recommend."}},
-    {"@type": "Question", "name": "What materials are used for crowns?", "acceptedAnswer": {"@type": "Answer", "text": "We offer zirconia, porcelain-fused-to-metal, and full ceramic crowns. All are milled in our in-house digital lab using Exocad design software and IMES-icore milling machines."}}
-  ]
 }
 </script>
 <script>document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>{const item=q.parentElement;item.classList.toggle('open');}));</script>

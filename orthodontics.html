@@ -56,29 +56,31 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 .wa-float svg{width:28px;height:28px;fill:#fff}
 .wa-pulse{position:absolute;inset:0;border-radius:50%;background:rgba(37,211,102,.3);animation:wa-ring 2s ease-out infinite;pointer-events:none}
 @keyframes wa-ring{0%{transform:scale(1);opacity:1}100%{transform:scale(1.6);opacity:0}}
+.skip-link{position:absolute;top:-100%;left:16px;background:var(--b900);color:var(--w);padding:12px 24px;border-radius:0 0 8px 8px;font-size:14px;font-weight:700;z-index:9999;transition:top .2s}.skip-link:focus{top:0}
 </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to content</a>
 <nav class="mob-nav" id="mob-nav"><button class="mob-x" id="mob-x">✕</button>
   <a href="index.html">Home</a>
   <a href="about-us.html">About Us</a>
   <a href="services.html">Services</a>
   <a href="index.html#trust-stack">Our Team</a>
-  <a href="gallery.html">Gallery</a><a href="case-studies.html">Case Studies</a><a href="blog.html">Blog</a>
+  <a href="gallery.html">Gallery</a><a href="case-studies.html">Cases</a><a href="blog.html">Blog</a>
   <a href="medical-tourism.html">Medical Tourism</a>
   <a href="contact.html">Contact</a>
   <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book Appointment</a></nav>
-<header id="hdr"><div class="hdr-in"><a href="index.html" class="hdr-logo"><img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none';this.nextSibling.style.display='block'"><span style="display:none">Vision Dental</span></a><nav class="hdr-nav"><ul class="nav-ul">
+<header id="hdr"><div class="hdr-in"><a href="index.html" class="hdr-logo"><img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none';this.nextSibling.style.display='block'" loading="lazy"><span style="display:none">Vision Dental</span></a><nav class="hdr-nav"><ul class="nav-ul">
         <li><a href="index.html">Home</a></li>
         <li><a href="about-us.html">About Us</a></li>
         <li><a href="services.html" class="ac">Services</a></li>
         <li><a href="index.html#trust-stack">Our Team</a></li>
-        <li><a href="gallery.html">Gallery</a></li><li><a href="case-studies.html">Case Studies</a></li><li><a href="blog.html">Blog</a></li>
+        <li><a href="gallery.html">Gallery</a></li><li><a href="case-studies.html">Cases</a></li><li><a href="blog.html">Blog</a></li>
         <li><a href="medical-tourism.html">Medical Tourism</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul></nav><div class="hdr-r"><div class="hdr-lic"><span>MOHAP Licensed</span><b>No. 5889VHC5-110626</b></div><a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g hdr-ct" style="font-size:12.5px;padding:9px 18px">Book Appointment</a><button class="hbg" id="hbg"><span></span><span></span><span></span></button></div></div></header>
 
-<section class="srv-hero"><div class="srv-hero-bg"></div><div class="srv-hero-ov"></div><div class="srv-hero-in">
+<section id="main-content" class="srv-hero"><div class="srv-hero-bg"></div><div class="srv-hero-ov"></div><div class="srv-hero-in">
   <div class="srv-breadcrumb"><a href="index.html">Home</a><span>/</span><a href="index.html#services">Services</a><span>/</span><span style="color:rgba(255,255,255,.7)">Orthodontics & Invisalign®</span></div>
   <h1>Orthodontics &amp;<br><em>Invisalign®</em> Abu Dhabi</h1>
   <p class="srv-hero-sub">Certified Invisalign® provider. Clear aligners and traditional braces for children and adults — digitally planned by Prof. Amr Labib, Professor of Orthodontics.</p>
@@ -226,7 +228,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
   </div>
 </div></section>
 
-<footer id="ftr"><div class="ft"><div class="fl"><img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none'"><p class="fl-d">Abu Dhabi's centre of digital dentistry — six specialist clinics dedicated to changing lives.</p><div class="fl-lic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>MOHAP Licensed · No. 5889VHC5-110626</div></div><div class="fcol"><h4>Services</h4><ul class="fls">
+<footer id="ftr"><div class="ft"><div class="fl"><img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none'" loading="lazy"><p class="fl-d">Abu Dhabi's centre of digital dentistry — six specialist clinics dedicated to changing lives.</p><div class="fl-lic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>MOHAP Licensed · No. 5889VHC5-110626</div></div><div class="fcol"><h4>Services</h4><ul class="fls">
         <li><a href="dental-implants.html">Dental Implants</a></li>
         <li><a href="smile-design.html">Cosmetic Dentistry / Smile Design</a></li>
         <li><a href="orthodontics.html">Orthodontics</a></li>
@@ -294,62 +296,6 @@ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
       "addressCountry": "AE"
     }
   }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How much does Invisalign cost in Abu Dhabi?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Invisalign treatment at Vision Dental starts from 3,500 AED. The total cost depends on case complexity and treatment duration. We offer interest-free installments through Tabby and Tamara."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does orthodontic treatment take?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Treatment duration varies: mild cases may take 6-12 months, while complex cases can take 18-24 months. Prof. Amr Labib creates a personalized timeline using 3Shape digital scanning for precise planning."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Braces or Invisalign — which is better?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Both achieve excellent results. Invisalign offers invisible, removable aligners ideal for adults and teens who prefer discretion. Traditional braces may be more effective for severe cases. Prof. Amr Labib will recommend the best option during your consultation."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does orthodontic treatment hurt?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You may feel mild pressure for 2-3 days after each adjustment or aligner change. This is normal and manageable with over-the-counter pain relief. Modern techniques used by Prof. Amr Labib minimize discomfort significantly."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can adults get orthodontic treatment?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Absolutely. There is no age limit for orthodontics. Many of our patients are adults seeking treatment for the first time. Invisalign clear aligners are particularly popular with adult patients."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How often do I need to visit during treatment?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Typically every 4-6 weeks for adjustments or to receive new aligners. Each visit is brief, usually 15-30 minutes."
-      }
-    }
-  ]
 }
 </script>
 </body>

@@ -14,6 +14,7 @@
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ImageGallery","name":"Before & After Gallery | Vision Dental Clinic Abu Dhabi","description":"Real patient transformations at Vision Dental Clinic Abu Dhabi. Veneers, full mouth rehabilitation, and smile design before and after cases.","url":"https://www.visiondental.ae/gallery.html","provider":{"@type":"Dentist","name":"Vision Dental Clinic","url":"https://www.visiondental.ae"}}</script>
 <style>
 :root{--b900:#1a3a52;--b800:#1e4a6e;--b700:#2D5F8A;--b50:#eaf4fb;--g600:#5a9f2a;--g500:#7AB648;--g400:#93c96a;--g50:#f3fae8;--s900:#0f1923;--s800:#1c2b38;--s700:#263a4a;--s600:#3d5268;--s400:#7a95ab;--s200:#c8d8e4;--s100:#e8eff5;--s50:#f5f8fb;--w:#fff;--gg:linear-gradient(135deg,#5a9f2a,#7AB648);--gb:linear-gradient(135deg,#1e4a6e,#2D5F8A);--fd:'DM Serif Display',Georgia,serif;--fb:'Plus Jakarta Sans',system-ui,sans-serif;--shm:0 6px 24px rgba(15,25,35,.10);--shl:0 16px 48px rgba(15,25,35,.14);--cw:1160px;--px:clamp(20px,5vw,48px);--r:8px;--rl:22px}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}body{font-family:var(--fb);color:var(--s900);background:var(--s900);overflow-x:hidden;line-height:1.6}
@@ -110,9 +111,11 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 .wa-float svg{width:28px;height:28px;fill:#fff}
 .wa-pulse{position:absolute;inset:0;border-radius:50%;background:rgba(37,211,102,.3);animation:wa-ring 2s ease-out infinite;pointer-events:none}
 @keyframes wa-ring{0%{transform:scale(1);opacity:1}100%{transform:scale(1.6);opacity:0}}
+.skip-link{position:absolute;top:-100%;left:16px;background:var(--b900);color:var(--w);padding:12px 24px;border-radius:0 0 8px 8px;font-size:14px;font-weight:700;z-index:9999;transition:top .2s}.skip-link:focus{top:0}
 </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to content</a>
 
 <nav class="mob-nav" id="mob-nav">
   <button class="mob-x" id="mob-x">✕</button>
@@ -120,7 +123,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
   <a href="about-us.html">About Us</a>
   <a href="services.html">Services</a>
   <a href="index.html#trust-stack">Our Team</a>
-  <a href="gallery.html">Gallery</a><a href="case-studies.html">Case Studies</a><a href="blog.html">Blog</a>
+  <a href="gallery.html">Gallery</a><a href="case-studies.html">Cases</a><a href="blog.html">Blog</a>
   <a href="medical-tourism.html">Medical Tourism</a>
   <a href="contact.html">Contact</a>
   <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book Appointment</a>
@@ -128,14 +131,14 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 
 <header id="hdr">
   <div class="hdr-in">
-    <a href="index.html" class="hdr-logo"><img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none'"></a>
+    <a href="index.html" class="hdr-logo"><img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none'" loading="lazy"></a>
     <nav class="hdr-nav"><ul class="nav-ul">
         <li><a href="index.html">Home</a></li>
         <li><a href="about-us.html">About Us</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="index.html#trust-stack">Our Team</a></li>
         <li><a href="gallery.html" class="ac">Gallery</a></li>
-        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="case-studies.html">Cases</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="medical-tourism.html">Medical Tourism</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -410,7 +413,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
 <footer id="ftr">
   <div class="ft">
     <div class="fl">
-      <img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none'">
+      <img src="Logo_H_White.png" alt="Vision Dental Clinic" onerror="this.style.display='none'" loading="lazy">
       <p class="fl-lic">MOHAP Licensed · No. 5889VHC5-110626</p>
       <div class="fsoc">
         <a href="https://www.facebook.com/visiondentalcl/" target="_blank" rel="noopener" class="fsi" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
