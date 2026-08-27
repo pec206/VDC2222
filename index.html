@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vision Dental Clinic | Abu Dhabi's Centre of Digital Dentistry</title>
-<meta name="description" content="Vision Dental Clinic – 6 specialist clinics, in-house digital lab, 3D radiology, 35+ years of surgical excellence. Led by Dr. Hussien Tahoun. Abu Dhabi.">
+<meta name="description" content="Best dental clinic in Abu Dhabi — dental implants, veneers, Invisalign, teeth whitening & more. 6 specialist clinics, in-house digital lab, CBCT 3D imaging. Book now.">
 <meta property="og:title" content="Vision Dental Clinic | Abu Dhabi's Centre of Digital Dentistry">
-<meta property="og:description" content="6 specialist clinics, in-house digital lab, 3D radiology & 35+ years of surgical excellence in Abu Dhabi.">
+<meta property="og:description" content="Best dental clinic in Abu Dhabi — implants, veneers, Invisalign, whitening, oral surgery. 6 specialist clinics, digital lab & CBCT imaging.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_AE">
 <meta property="og:image" content="og-image.jpg">
@@ -108,7 +108,7 @@ ul{list-style:none}
 .hbg.op span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
 .hbg.op span:nth-child(2){opacity:0}
 .hbg.op span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
-.mob-nav{display:none;position:fixed;inset:0;z-index:999;background:rgba(10,22,36,.98);
+.mob-nav{display:none;position:fixed;inset:0;z-index:1001;background:rgba(10,22,36,.98);
   backdrop-filter:blur(24px);flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:80px 32px 40px}
 .mob-nav.op{display:flex}
 .mob-nav a{font-size:19px;font-weight:700;color:rgba(255,255,255,.7);padding:12px 40px;
@@ -479,6 +479,7 @@ ul{list-style:none}
   :root{--sy:52px}
   .hdr-nav,.hdr-lic,.hdr-ct{display:none}
   .hbg{display:flex}
+  .hdr-r{margin-left:auto}
   .srv-grid,.srv-grid-2{grid-template-columns:1fr!important}
   .team-strip{grid-template-columns:repeat(2,1fr)}
   .tc-ph{height:160px}
@@ -509,6 +510,17 @@ ul{list-style:none}
 .ins-sep{color:var(--s200);font-size:14px;flex-shrink:0}
 .ins-logo{height:28px;width:auto;object-fit:contain;filter:grayscale(30%);transition:filter .3s;flex-shrink:0}
 .ins-logo:hover{filter:grayscale(0%)}
+.ct-bar{background:var(--s900);padding:13px 0;overflow:hidden;position:relative;border-bottom:1px solid rgba(255,255,255,.06)}
+.ct-bar::before,.ct-bar::after{content:'';position:absolute;top:0;bottom:0;width:48px;z-index:2;pointer-events:none}
+.ct-bar::before{left:0;background:linear-gradient(to right,var(--s900),transparent)}
+.ct-bar::after{right:0;background:linear-gradient(to left,var(--s900),transparent)}
+.ct-track{display:flex;align-items:center;gap:36px;width:max-content}
+.ct-track:hover{animation-play-state:paused}
+.ct-item{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:rgba(255,255,255,.55);white-space:nowrap;flex-shrink:0}
+.ct-item svg{width:14px;height:14px;stroke:#93c96a;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.ct-item a{color:rgba(255,255,255,.55);transition:color .2s}
+.ct-item a:hover{color:var(--w)}
+.ct-sep{color:rgba(255,255,255,.15);font-size:14px;flex-shrink:0}
 
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 .skip-link{position:absolute;top:-100%;left:16px;background:var(--b900);color:var(--w);padding:12px 24px;border-radius:0 0 8px 8px;font-size:14px;font-weight:700;z-index:9999;transition:top .2s}.skip-link:focus{top:0}
@@ -679,6 +691,28 @@ ul{list-style:none}
   </div>
 </div>
 
+<!-- CONTACT INFO BAR -->
+<div class="ct-bar" role="complementary" aria-label="Contact Information">
+  <div class="ct-track">
+    <span class="ct-item"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.71A2 2 0 012.18 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.61-.61a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+97123122777">+971 2 312 2777</a></span>
+    <span class="ct-sep">·</span>
+    <span class="ct-item"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:info@visiondentalclinic.com">info@visiondentalclinic.com</a></span>
+    <span class="ct-sep">·</span>
+    <span class="ct-item"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>1302 Al Ansari Exchange Bldg, Khalifa Street, Abu Dhabi</span>
+    <span class="ct-sep">·</span>
+    <span class="ct-item"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Sat – Thu: 10:30 AM – 7:30 PM</span>
+    <!-- Duplicate for seamless loop -->
+    <span class="ct-sep" aria-hidden="true">·</span>
+    <span class="ct-item" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.71A2 2 0 012.18 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.61-.61a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+97123122777">+971 2 312 2777</a></span>
+    <span class="ct-sep" aria-hidden="true">·</span>
+    <span class="ct-item" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:info@visiondentalclinic.com">info@visiondentalclinic.com</a></span>
+    <span class="ct-sep" aria-hidden="true">·</span>
+    <span class="ct-item" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>1302 Al Ansari Exchange Bldg, Khalifa Street, Abu Dhabi</span>
+    <span class="ct-sep" aria-hidden="true">·</span>
+    <span class="ct-item" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Sat – Thu: 10:30 AM – 7:30 PM</span>
+  </div>
+</div>
+
 <!-- BEFORE / AFTER GALLERY -->
 <section id="ba" class="S" style="background:var(--s900)" aria-labelledby="ba-h">
   <div class="W">
@@ -702,8 +736,8 @@ ul{list-style:none}
       <div class="ba-track" id="ba-track">
         <div class="bac" data-cat="veneers">
           <div class="ba-slider" data-before="ba-ammar-1-before.webp" data-after="ba-ammar-1-after.webp">
-            <div class="ba-img-b"><img src="ba-ammar-1-before.webp" alt="Before — Veneers" loading="lazy"></div>
-            <div class="ba-img-a"><img src="ba-ammar-1-after.webp" alt="After — Veneers" loading="lazy"></div>
+            <div class="ba-img-b"><img src="ba-ammar-1-before.webp" alt="Before porcelain veneers treatment Abu Dhabi" loading="lazy"></div>
+            <div class="ba-img-a"><img src="ba-ammar-1-after.webp" alt="After porcelain veneers smile makeover Abu Dhabi" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
@@ -711,8 +745,8 @@ ul{list-style:none}
         </div>
         <div class="bac" data-cat="veneers">
           <div class="ba-slider" data-before="ba-ammar-2-before.webp" data-after="ba-ammar-2-after.webp">
-            <div class="ba-img-b"><img src="ba-ammar-2-before.webp" alt="Before — Full Mouth" loading="lazy"></div>
-            <div class="ba-img-a"><img src="ba-ammar-2-after.webp" alt="After — Full Mouth" loading="lazy"></div>
+            <div class="ba-img-b"><img src="ba-ammar-2-before.webp" alt="Before full mouth rehabilitation Abu Dhabi" loading="lazy"></div>
+            <div class="ba-img-a"><img src="ba-ammar-2-after.webp" alt="After full mouth dental rehabilitation Abu Dhabi" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
@@ -720,8 +754,8 @@ ul{list-style:none}
         </div>
         <div class="bac" data-cat="implants">
           <div class="ba-slider" data-before="ba-ammar-3-before.webp" data-after="ba-ammar-3-after.webp">
-            <div class="ba-img-b"><img src="ba-ammar-3-before.webp" alt="Before — Implants" loading="lazy"></div>
-            <div class="ba-img-a"><img src="ba-ammar-3-after.webp" alt="After — Implants" loading="lazy"></div>
+            <div class="ba-img-b"><img src="ba-ammar-3-before.webp" alt="Before dental implants treatment Abu Dhabi" loading="lazy"></div>
+            <div class="ba-img-a"><img src="ba-ammar-3-after.webp" alt="After dental implants restoration Abu Dhabi" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
@@ -729,8 +763,8 @@ ul{list-style:none}
         </div>
         <div class="bac" data-cat="veneers">
           <div class="ba-slider" data-before="ba-asmaa-1-before.webp" data-after="ba-asmaa-1-after.webp">
-            <div class="ba-img-b"><img src="ba-asmaa-1-before.webp" alt="Before — Veneers" loading="lazy"></div>
-            <div class="ba-img-a"><img src="ba-asmaa-1-after.webp" alt="After — Veneers" loading="lazy"></div>
+            <div class="ba-img-b"><img src="ba-asmaa-1-before.webp" alt="Before dental veneers cosmetic treatment" loading="lazy"></div>
+            <div class="ba-img-a"><img src="ba-asmaa-1-after.webp" alt="After dental veneers Hollywood Smile Abu Dhabi" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
@@ -738,8 +772,8 @@ ul{list-style:none}
         </div>
         <div class="bac" data-cat="veneers">
           <div class="ba-slider" data-before="ba-asmaa-2-before.webp" data-after="ba-asmaa-2-after.webp">
-            <div class="ba-img-b"><img src="ba-asmaa-2-before.webp" alt="Before — Smile Design" loading="lazy"></div>
-            <div class="ba-img-a"><img src="ba-asmaa-2-after.webp" alt="After — Smile Design" loading="lazy"></div>
+            <div class="ba-img-b"><img src="ba-asmaa-2-before.webp" alt="Before digital smile design Abu Dhabi" loading="lazy"></div>
+            <div class="ba-img-a"><img src="ba-asmaa-2-after.webp" alt="After digital smile design makeover Abu Dhabi" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
@@ -747,8 +781,8 @@ ul{list-style:none}
         </div>
         <div class="bac" data-cat="cosmetic">
           <div class="ba-slider" data-before="case-salim-endodontic-9.webp" data-after="case-salim-endodontic-8.webp">
-            <div class="ba-img-b"><img src="case-salim-endodontic-9.webp" alt="Before — Discolored teeth" loading="lazy"></div>
-            <div class="ba-img-a"><img src="case-salim-endodontic-8.webp" alt="After — Restored smile" loading="lazy"></div>
+            <div class="ba-img-b"><img src="case-salim-endodontic-9.webp" alt="Before endodontic treatment discolored teeth Abu Dhabi" loading="lazy"></div>
+            <div class="ba-img-a"><img src="case-salim-endodontic-8.webp" alt="After endodontic restoration and tooth whitening Abu Dhabi" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
@@ -756,8 +790,8 @@ ul{list-style:none}
         </div>
         <div class="bac" data-cat="cosmetic">
           <div class="ba-slider" data-before="case-salim-smile-2.webp" data-after="case-salim-smile-9.webp">
-            <div class="ba-img-b"><img src="case-salim-smile-2.webp" alt="Before — Old amalgam filling" loading="lazy"></div>
-            <div class="ba-img-a"><img src="case-salim-smile-9.webp" alt="After — Final smile result" loading="lazy"></div>
+            <div class="ba-img-b"><img src="case-salim-smile-2.webp" alt="Before composite restoration replacing old amalgam filling" loading="lazy"></div>
+            <div class="ba-img-a"><img src="case-salim-smile-9.webp" alt="After composite tooth restoration and smile design Abu Dhabi" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
@@ -765,8 +799,8 @@ ul{list-style:none}
         </div>
         <div class="bac" data-cat="veneers">
           <div class="ba-slider" data-before="ba-salim-1-before.webp" data-after="ba-salim-1-after.webp">
-            <div class="ba-img-b"><img src="ba-salim-1-before.webp" alt="Before — Veneers" loading="lazy"></div>
-            <div class="ba-img-a"><img src="ba-salim-1-after.webp" alt="After — Veneers" loading="lazy"></div>
+            <div class="ba-img-b"><img src="ba-salim-1-before.webp" alt="Before porcelain veneers cosmetic dentistry Abu Dhabi" loading="lazy"></div>
+            <div class="ba-img-a"><img src="ba-salim-1-after.webp" alt="After porcelain veneers smile transformation Abu Dhabi" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
@@ -774,8 +808,8 @@ ul{list-style:none}
         </div>
         <div class="bac" data-cat="orthodontics">
           <div class="ba-slider" data-before="gallery-amr-msyead-before.webp" data-after="gallery-amr-msyead-after.webp">
-            <div class="ba-img-b"><img src="gallery-amr-msyead-before.webp" alt="Before — Orthodontics" loading="lazy"></div>
-            <div class="ba-img-a"><img src="gallery-amr-msyead-after.webp" alt="After — Orthodontics" loading="lazy"></div>
+            <div class="ba-img-b"><img src="gallery-amr-msyead-before.webp" alt="Before orthodontic braces treatment Abu Dhabi" loading="lazy"></div>
+            <div class="ba-img-a"><img src="gallery-amr-msyead-after.webp" alt="After orthodontic teeth straightening result Abu Dhabi" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
@@ -783,8 +817,8 @@ ul{list-style:none}
         </div>
         <div class="bac" data-cat="orthodontics">
           <div class="ba-slider" data-before="gallery-amr-manal-before.webp" data-after="gallery-amr-manal-after.webp">
-            <div class="ba-img-b"><img src="gallery-amr-manal-before.webp" alt="Before — Orthodontics" loading="lazy"></div>
-            <div class="ba-img-a"><img src="gallery-amr-manal-after.webp" alt="After — Orthodontics" loading="lazy"></div>
+            <div class="ba-img-b"><img src="gallery-amr-manal-before.webp" alt="Before orthodontic treatment crowded teeth" loading="lazy"></div>
+            <div class="ba-img-a"><img src="gallery-amr-manal-after.webp" alt="After orthodontic treatment aligned smile Abu Dhabi" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
@@ -792,8 +826,8 @@ ul{list-style:none}
         </div>
         <div class="bac" data-cat="orthodontics">
           <div class="ba-slider" data-before="gallery-amr-yani-before.webp" data-after="gallery-amr-yani-after.webp">
-            <div class="ba-img-b"><img src="gallery-amr-yani-before.webp" alt="Before — Orthodontics" loading="lazy"></div>
-            <div class="ba-img-a"><img src="gallery-amr-yani-after.webp" alt="After — Orthodontics" loading="lazy"></div>
+            <div class="ba-img-b"><img src="gallery-amr-yani-before.webp" alt="Before Invisalign clear aligner treatment Abu Dhabi" loading="lazy"></div>
+            <div class="ba-img-a"><img src="gallery-amr-yani-after.webp" alt="After Invisalign teeth straightening Abu Dhabi" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
@@ -801,8 +835,8 @@ ul{list-style:none}
         </div>
         <div class="bac" data-cat="orthodontics">
           <div class="ba-slider" data-before="gallery-amr-manea-before.webp" data-after="gallery-amr-manea-after.webp">
-            <div class="ba-img-b"><img src="gallery-amr-manea-before.webp" alt="Before — Orthodontics" loading="lazy"></div>
-            <div class="ba-img-a"><img src="gallery-amr-manea-after.webp" alt="After — Orthodontics" loading="lazy"></div>
+            <div class="ba-img-b"><img src="gallery-amr-manea-before.webp" alt="Before orthodontic treatment open bite Abu Dhabi" loading="lazy"></div>
+            <div class="ba-img-a"><img src="gallery-amr-manea-after.webp" alt="After orthodontic bite correction Abu Dhabi" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
@@ -810,8 +844,8 @@ ul{list-style:none}
         </div>
         <div class="bac" data-cat="orthodontics">
           <div class="ba-slider" data-before="ba-amr-ivan-before.webp" data-after="ba-amr-ivan-after.webp">
-            <div class="ba-img-b"><img src="ba-amr-ivan-before.webp" alt="Before — Orthodontics" loading="lazy"></div>
-            <div class="ba-img-a"><img src="ba-amr-ivan-after.webp" alt="After — Orthodontics" loading="lazy"></div>
+            <div class="ba-img-b"><img src="ba-amr-ivan-before.webp" alt="Before orthodontic treatment misaligned teeth" loading="lazy"></div>
+            <div class="ba-img-a"><img src="ba-amr-ivan-after.webp" alt="After orthodontic treatment perfect alignment Abu Dhabi" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
@@ -844,7 +878,7 @@ ul{list-style:none}
     <!-- Row 1: 3 main -->
     <div class="srv-grid">
       <article class="sc rv">
-        <div class="sc-img"><img src="implants.jpg" alt="Dental Implants" loading="lazy"><span class="sc-bdg sc-bdg--g">Most Requested</span></div>
+        <div class="sc-img"><img src="implants-service.webp" alt="Dental implants Abu Dhabi — Straumann implant specialist at Vision Dental Clinic" loading="lazy"><span class="sc-bdg sc-bdg--g">Most Requested</span></div>
         <div class="sc-body">
           <h3>Dental Implants</h3>
           <p class="sc-prc">Starting from 2,600 AED</p>
@@ -858,7 +892,7 @@ ul{list-style:none}
         </div>
       </article>
       <article class="sc rv d1">
-        <div class="sc-img"><img src="Smile_design.jpg" alt="Cosmetic Dentistry / Smile Design" loading="lazy"><span class="sc-bdg sc-bdg--w">Cosmetic</span></div>
+        <div class="sc-img"><img src="smile-design-service.webp" alt="Cosmetic dentistry and Hollywood Smile design Abu Dhabi" loading="lazy"><span class="sc-bdg sc-bdg--w">Cosmetic</span></div>
         <div class="sc-body">
           <h3>Cosmetic Dentistry / Smile Design</h3>
           <p class="sc-prc">Starting from 9,700 AED</p>
@@ -872,7 +906,7 @@ ul{list-style:none}
         </div>
       </article>
       <article class="sc rv d2">
-        <div class="sc-img"><img src="ortho.jpg" alt="Orthodontics" loading="lazy"><span class="sc-bdg sc-bdg--w">Orthodontics</span></div>
+        <div class="sc-img"><img src="ortho-service.webp" alt="Orthodontics Invisalign and braces Abu Dhabi" loading="lazy"><span class="sc-bdg sc-bdg--w">Orthodontics</span></div>
         <div class="sc-body">
           <h3>Orthodontics &amp; Invisalign®</h3>
           <p class="sc-prc">Starting from 3,500 AED</p>
@@ -889,7 +923,7 @@ ul{list-style:none}
     <!-- Row 2: 3 secondary -->
     <div class="srv-grid-2" style="margin-top:20px">
       <article class="sc rv">
-        <div class="sc-img"><img src="whitning.jpg" alt="Teeth Whitening" loading="lazy"><span class="sc-bdg sc-bdg--w">Whitening</span></div>
+        <div class="sc-img"><img src="whitning.jpg" alt="Professional teeth whitening Abu Dhabi" loading="lazy"><span class="sc-bdg sc-bdg--w">Whitening</span></div>
         <div class="sc-body">
           <h3>Teeth Whitening</h3>
           <p class="sc-prc">Starting from 580 AED</p>
@@ -903,7 +937,7 @@ ul{list-style:none}
         </div>
       </article>
       <article class="sc rv d1">
-        <div class="sc-img"><img src="surgery-hero.png" alt="Oral Surgery" loading="lazy"><span class="sc-bdg sc-bdg--w">Oral Surgery</span></div>
+        <div class="sc-img"><img src="surgery-hero.png" alt="Oral surgery and wisdom tooth extraction Abu Dhabi" loading="lazy"><span class="sc-bdg sc-bdg--w">Oral Surgery</span></div>
         <div class="sc-body">
           <h3>Oral &amp; Maxillofacial Surgery</h3>
           <p>Complex extractions, bone grafting &amp; sinus lifts — led by Dr. Hussien, 35+ years.</p>
@@ -916,7 +950,7 @@ ul{list-style:none}
         </div>
       </article>
       <article class="sc rv d2">
-        <div class="sc-img"><img src="prosthodontics-hero.webp" alt="Prosthodontics" loading="lazy"><span class="sc-bdg sc-bdg--w">Prosthodontics</span></div>
+        <div class="sc-img"><img src="prosthodontics-hero.webp" alt="Prosthodontics dental crowns and bridges Abu Dhabi" loading="lazy"><span class="sc-bdg sc-bdg--w">Prosthodontics</span></div>
         <div class="sc-body">
           <h3>Prosthodontics</h3>
           <p class="sc-prc">Starting from 575 AED</p>
@@ -934,7 +968,7 @@ ul{list-style:none}
     <!-- Row 3: 4 additional specialties -->
     <div class="srv-grid" style="margin-top:20px;grid-template-columns:repeat(4,1fr)">
       <article class="sc rv">
-        <div class="sc-img"><img src="root-canal.webp" alt="Root Canal Treatment" loading="lazy"><span class="sc-bdg sc-bdg--w">Endodontics</span></div>
+        <div class="sc-img"><img src="root-canal.webp" alt="Root canal treatment endodontics Abu Dhabi" loading="lazy"><span class="sc-bdg sc-bdg--w">Endodontics</span></div>
         <div class="sc-body">
           <h3>Root Canal Treatment</h3>
           <p class="sc-prc">Starting from 262 AED</p>
@@ -961,7 +995,7 @@ ul{list-style:none}
         </div>
       </article>
       <article class="sc rv d2">
-        <div class="sc-img"><img src="restoration.webp" alt="Teeth Restoration" loading="lazy"><span class="sc-bdg sc-bdg--w">Restorative</span></div>
+        <div class="sc-img"><img src="restoration.webp" alt="Dental fillings and tooth restoration Abu Dhabi" loading="lazy"><span class="sc-bdg sc-bdg--w">Restorative</span></div>
         <div class="sc-body">
           <h3>Teeth Restoration</h3>
           <p class="sc-prc">Starting from 156 AED</p>
@@ -974,7 +1008,7 @@ ul{list-style:none}
         </div>
       </article>
       <article class="sc rv d3">
-        <div class="sc-img"><img src="pediatric.webp" alt="Pediatric Dentistry" loading="lazy"><span class="sc-bdg sc-bdg--g">Kids</span></div>
+        <div class="sc-img"><img src="pediatric.webp" alt="Pediatric dentist kids dental care Abu Dhabi" loading="lazy"><span class="sc-bdg sc-bdg--g">Kids</span></div>
         <div class="sc-body">
           <h3>Pediatric Dentistry</h3>
           <p class="sc-prc">Starting from 97 AED</p>
@@ -1033,49 +1067,49 @@ ul{list-style:none}
         <p class="eye d2" style="margin-bottom:18px">Our Technology</p>
         <div class="diff-tech">
           <div class="dtc rv d1">
-            <div class="dtc-img"><img src="tech-3shape-scanner.webp" alt="3Shape Intraoral Scanner" loading="lazy"></div>
+            <div class="dtc-img"><img src="tech-3shape-scanner.webp" alt="3Shape intraoral digital scanner for dental impressions Abu Dhabi" loading="lazy"></div>
             <h4>Intraoral Scanner</h4>
             <p>Digital impressions in under 2 mins</p>
             <span class="dtc-tag">Zero manual impressions</span>
           </div>
           <div class="dtc rv d2">
-            <div class="dtc-img"><img src="blog-cbct-scan.webp" alt="CBCT 3D Imaging" loading="lazy"></div>
+            <div class="dtc-img"><img src="blog-cbct-scan.webp" alt="CBCT 3D dental imaging and cone beam CT scan Abu Dhabi" loading="lazy"></div>
             <h4>CBCT 3D Radiology</h4>
             <p>Full bone map before any surgery</p>
             <span class="dtc-tag">3D planning</span>
           </div>
           <div class="dtc rv d2">
-            <div class="dtc-img"><img src="tech-lab.webp" alt="In-House Digital Lab" loading="lazy"></div>
+            <div class="dtc-img"><img src="tech-lab.webp" alt="In-house CAD/CAM digital dental lab Abu Dhabi" loading="lazy"></div>
             <h4>In-House Digital Lab</h4>
             <p>German IMES-icore milling + 3D printing</p>
             <span class="dtc-tag">Same-day restorations</span>
           </div>
           <div class="dtc rv d3">
-            <div class="dtc-img"><img src="tech-sta-anesthesia.webp" alt="STA Digital Anesthesia" loading="lazy"></div>
+            <div class="dtc-img"><img src="tech-sta-anesthesia.webp" alt="STA computer-controlled dental anesthesia for painless treatment Abu Dhabi" loading="lazy"></div>
             <h4>STA Digital Anesthesia</h4>
             <p>Computer-guided painless injection</p>
             <span class="dtc-tag">Targeted single-tooth anesthesia</span>
           </div>
           <div class="dtc rv d3">
-            <div class="dtc-img"><img src="Smile_design.jpg" alt="Digital Smile Design" loading="lazy"></div>
+            <div class="dtc-img"><img src="smile-design-service.webp" alt="Digital smile design technology for Hollywood Smile Abu Dhabi" loading="lazy"></div>
             <h4>Digital Smile Design</h4>
             <p>Preview result before treatment</p>
             <span class="dtc-tag">See before you start</span>
           </div>
           <div class="dtc rv d4">
-            <div class="dtc-img"><img src="tech-guided-surgery.jpg" alt="Guided Implant Surgery" loading="lazy"></div>
+            <div class="dtc-img"><img src="tech-guided-surgery.jpg" alt="CBCT guided dental implant surgery Abu Dhabi" loading="lazy"></div>
             <h4>Guided Implant Surgery</h4>
             <p>Exact position from CBCT plan</p>
             <span class="dtc-tag">Precision placement</span>
           </div>
           <div class="dtc rv d4">
-            <div class="dtc-img"><img src="tech-nitrous-oxide.webp" alt="Nitrous Oxide Sedation" loading="lazy"></div>
+            <div class="dtc-img"><img src="tech-nitrous-oxide.webp" alt="Nitrous oxide sedation for dental anxiety Abu Dhabi" loading="lazy"></div>
             <h4>Nitrous Oxide Sedation</h4>
             <p>Laughing gas for anxiety-free surgery</p>
             <span class="dtc-tag">Calm &amp; comfortable</span>
           </div>
           <div class="dtc rv d4">
-            <div class="dtc-img"><img src="tech-endo-motor.webp" alt="Endomotor" loading="lazy"></div>
+            <div class="dtc-img"><img src="tech-endo-motor.webp" alt="Endodontic motor for precision root canal treatment Abu Dhabi" loading="lazy"></div>
             <h4>Endomotor</h4>
             <p>Precise rotary root canal instrumentation</p>
             <span class="dtc-tag">Accurate &amp; efficient</span>
@@ -1287,7 +1321,7 @@ ul{list-style:none}
     </div>
     <div class="bl-grid">
       <article class="blc rv">
-        <div class="blc-img"><img src="blog-implants-guide.webp" alt="Complete Guide to Dental Implants" loading="lazy"><span class="blc-cat">Implants</span></div>
+        <div class="blc-img"><img src="blog-implants-guide.webp" alt="Complete guide to dental implants Abu Dhabi — cost, procedure, benefits" loading="lazy"><span class="blc-cat">Implants</span></div>
         <div class="blc-bd">
           <p class="blc-dt">December 2024</p>
           <h3>Complete Guide to Dental Implants in Abu Dhabi</h3>
@@ -1296,7 +1330,7 @@ ul{list-style:none}
         </div>
       </article>
       <article class="blc rv d1">
-        <div class="blc-img"><img src="blog-braces-vs-invisalign.webp" alt="Braces vs Invisalign" loading="lazy"><span class="blc-cat">Orthodontics</span></div>
+        <div class="blc-img"><img src="blog-braces-vs-invisalign.webp" alt="Braces vs Invisalign Abu Dhabi — orthodontic treatment comparison" loading="lazy"><span class="blc-cat">Orthodontics</span></div>
         <div class="blc-bd">
           <p class="blc-dt">November 2024</p>
           <h3>Braces vs Invisalign: Which Is Right for You?</h3>
@@ -1305,7 +1339,7 @@ ul{list-style:none}
         </div>
       </article>
       <article class="blc rv d2">
-        <div class="blc-img"><img src="blog-cbct-scan.webp" alt="CBCT Scan in Dentistry" loading="lazy"><span class="blc-cat">Technology</span></div>
+        <div class="blc-img"><img src="blog-cbct-scan.webp" alt="CBCT 3D dental scan technology Abu Dhabi" loading="lazy"><span class="blc-cat">Technology</span></div>
         <div class="blc-bd">
           <p class="blc-dt">October 2024</p>
           <h3>What Is a CBCT Scan and Why Does It Matter?</h3>
@@ -1314,7 +1348,7 @@ ul{list-style:none}
         </div>
       </article>
       <article class="blc rv">
-        <div class="blc-img"><img src="blog-root-canal-endocrown.webp" alt="Root Canal Treatment" loading="lazy"><span class="blc-cat">Endodontics</span></div>
+        <div class="blc-img"><img src="blog-root-canal-endocrown.webp" alt="Root canal treatment guide Abu Dhabi — painless endodontics" loading="lazy"><span class="blc-cat">Endodontics</span></div>
         <div class="blc-bd">
           <p class="blc-dt">October 2024</p>
           <h3>Root Canal Treatment: What to Expect</h3>
@@ -1323,7 +1357,7 @@ ul{list-style:none}
         </div>
       </article>
       <article class="blc rv d1">
-        <div class="blc-img"><img src="blog-space-maintainer.webp" alt="Space Maintainers for Children" loading="lazy"><span class="blc-cat">Pediatric</span></div>
+        <div class="blc-img"><img src="blog-space-maintainer.webp" alt="Space maintainers for children pediatric dentistry Abu Dhabi" loading="lazy"><span class="blc-cat">Pediatric</span></div>
         <div class="blc-bd">
           <p class="blc-dt">September 2024</p>
           <h3>Space Maintainers: Protecting Your Child's Smile</h3>
@@ -1341,7 +1375,7 @@ ul{list-style:none}
         </div>
       </article>
       <article class="blc rv">
-        <div class="blc-img"><img src="blog-calcification.webp" alt="Dental Calcification" loading="lazy"><span class="blc-cat">General</span></div>
+        <div class="blc-img"><img src="blog-calcification.webp" alt="Dental calcification causes and treatment Abu Dhabi" loading="lazy"><span class="blc-cat">General</span></div>
         <div class="blc-bd">
           <p class="blc-dt">August 2024</p>
           <h3>Understanding Dental Calcification</h3>
@@ -1350,7 +1384,7 @@ ul{list-style:none}
         </div>
       </article>
       <article class="blc rv d1">
-        <div class="blc-img"><img src="blog-gum-issues.webp" alt="Gum Disease" loading="lazy"><span class="blc-cat">Periodontics</span></div>
+        <div class="blc-img"><img src="blog-gum-issues.webp" alt="Gum disease treatment and prevention Abu Dhabi" loading="lazy"><span class="blc-cat">Periodontics</span></div>
         <div class="blc-bd">
           <p class="blc-dt">August 2024</p>
           <h3>Gum Disease: Signs, Causes &amp; Treatment</h3>
@@ -1359,7 +1393,7 @@ ul{list-style:none}
         </div>
       </article>
       <article class="blc rv d2">
-        <div class="blc-img"><img src="blog-smile-makeover.webp" alt="Smile Makeover" loading="lazy"><span class="blc-cat">Cosmetic</span></div>
+        <div class="blc-img"><img src="blog-smile-makeover.webp" alt="Smile makeover Hollywood Smile Abu Dhabi" loading="lazy"><span class="blc-cat">Cosmetic</span></div>
         <div class="blc-bd">
           <p class="blc-dt">July 2024</p>
           <h3>Smile Makeover: Transform Your Confidence</h3>
@@ -1368,7 +1402,7 @@ ul{list-style:none}
         </div>
       </article>
       <article class="blc rv">
-        <div class="blc-img"><img src="blog-implant-materials.webp" alt="Dental Implant Materials" loading="lazy"><span class="blc-cat">Implants</span></div>
+        <div class="blc-img"><img src="blog-implant-materials.webp" alt="Dental implant materials titanium vs zirconia Abu Dhabi" loading="lazy"><span class="blc-cat">Implants</span></div>
         <div class="blc-bd">
           <p class="blc-dt">December 2024</p>
           <h3>What Are Dental Implants Made Of?</h3>
@@ -1377,7 +1411,7 @@ ul{list-style:none}
         </div>
       </article>
       <article class="blc rv d1">
-        <div class="blc-img"><img src="blog-endocrown-vs-crown.webp" alt="Endocrown vs Crown" loading="lazy"><span class="blc-cat">Restorations</span></div>
+        <div class="blc-img"><img src="blog-endocrown-vs-crown.webp" alt="Endocrown vs dental crown comparison Abu Dhabi" loading="lazy"><span class="blc-cat">Restorations</span></div>
         <div class="blc-bd">
           <p class="blc-dt">December 2024</p>
           <h3>Endocrown vs Crown: What's the Difference?</h3>
@@ -1386,7 +1420,7 @@ ul{list-style:none}
         </div>
       </article>
       <article class="blc rv d2">
-        <div class="blc-img"><img src="blog-surgical-extraction.webp" alt="Surgical Tooth Extraction" loading="lazy"><span class="blc-cat">Surgery</span></div>
+        <div class="blc-img"><img src="blog-surgical-extraction.webp" alt="Surgical tooth extraction and wisdom tooth removal Abu Dhabi" loading="lazy"><span class="blc-cat">Surgery</span></div>
         <div class="blc-bd">
           <p class="blc-dt">September 2024</p>
           <h3>Surgical vs Non-Surgical Tooth Extraction</h3>
@@ -1505,15 +1539,16 @@ document.querySelectorAll('.ba-f').forEach(b=>b.addEventListener('click',()=>{
   if(next)next.disabled=visible.length<=vis;
 }));
 // Seamless marquee for partners & insurance
-document.querySelectorAll('.tb-track, .ins-track').forEach(track=>{
+document.querySelectorAll('.tb-track, .ins-track, .ct-track').forEach(track=>{
   const items=track.children;
   const half=items.length/2;
   let w=0;
   for(let i=0;i<half;i++){w+=items[i].offsetWidth}
-  w+=half*48;
+  const gap=parseFloat(getComputedStyle(track).gap)||48;
+  w+=half*gap;
   const name='mq_'+Math.random().toString(36).slice(2,8);
   const rev=track.classList.contains('ins-track');
-  const dur=rev?25:20;
+  const dur=track.classList.contains('ct-track')?30:rev?25:20;
   const sheet=document.createElement('style');
   if(rev){
     sheet.textContent=`@keyframes ${name}{0%{transform:translateX(-${w}px)}100%{transform:translateX(0)}}`;
