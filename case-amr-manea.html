@@ -63,8 +63,9 @@ img{max-width:100%;height:auto;display:block}a{text-decoration:none;color:inheri
 
 .cs-gallery{padding:clamp(48px,6vw,80px) 0;background:var(--s800)}
 .cs-gal-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;max-width:960px;margin:0 auto}
-.cs-gal-item{border-radius:var(--rl);overflow:hidden;border:2px solid rgba(122,182,72,.25);background:var(--s900)}
+.cs-gal-item{position:relative;border-radius:var(--rl);overflow:hidden;border:2px solid rgba(122,182,72,.25);background:var(--s900)}
 .cs-gal-item img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.cs-gal-item::after{content:'';position:absolute;inset:0;background:url('Logo_H_White.png') repeat;background-size:70px auto;opacity:.06;pointer-events:none}
 .cs-gal-cap{padding:12px 16px;font-size:12px;font-weight:600;color:rgba(255,255,255,.55);text-align:center}
 .cs-gal-title{text-align:center;margin-bottom:24px}
 .cs-gal-title .eye{justify-content:center}
