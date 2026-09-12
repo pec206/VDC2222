@@ -175,13 +175,13 @@ ul{list-style:none}
   .tech-grid{grid-template-columns:1fr}
   .ft{grid-template-columns:1fr;gap:24px}
 }
-.wa-float{position:fixed;bottom:24px;right:24px;z-index:900;display:flex;align-items:center;gap:10px}
-.wa-float a{display:flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;
-background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s;position:relative}
-.wa-float a:hover{transform:scale(1.1);box-shadow:0 6px 28px rgba(37,211,102,.55)}
-.wa-float svg{width:28px;height:28px;fill:#fff}
-.wa-pulse{position:absolute;inset:0;border-radius:50%;background:rgba(37,211,102,.3);animation:wa-ring 2s ease-out infinite;pointer-events:none}
-@keyframes wa-ring{0%{transform:scale(1);opacity:1}100%{transform:scale(1.6);opacity:0}}
+.ch-float{position:fixed;bottom:24px;right:24px;z-index:900;display:flex;align-items:center;gap:10px}
+.ch-float a{display:flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;
+background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;position:relative}
+.ch-float a:hover{transform:scale(1.1);box-shadow:0 6px 28px rgba(45,95,138,.55)}
+.ch-float svg{width:28px;height:28px;fill:#fff}
+.ch-pulse{position:absolute;inset:0;border-radius:50%;background:rgba(45,95,138,.3);animation:ch-ring 2s ease-out infinite;pointer-events:none}
+@keyframes ch-ring{0%{transform:scale(1);opacity:1}100%{transform:scale(1.6);opacity:0}}
 .skip-link{position:absolute;top:-100%;left:16px;background:var(--b900);color:var(--w);padding:12px 24px;border-radius:0 0 8px 8px;font-size:14px;font-weight:700;z-index:9999;transition:top .2s}.skip-link:focus{top:0}
 </style>
 </head>
@@ -197,7 +197,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
   <a href="gallery.html">Gallery</a><a href="case-studies.html">Cases</a><a href="blog.html">Blog</a>
   <a href="medical-tourism.html">Medical Tourism</a>
   <a href="contact.html">Contact</a>
-  <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book Appointment</a>
+  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book Appointment</a>
 </nav>
 
 <header id="hdr">
@@ -219,7 +219,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
     </nav>
     <div class="hdr-r">
       <div class="hdr-lic"><span>MOHAP Licensed</span><b>No. 5889VHC5-110626</b></div>
-      <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g hdr-ct" style="font-size:12.5px;padding:9px 18px">Book Appointment</a>
+      <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g hdr-ct" style="font-size:12.5px;padding:9px 18px">Book Appointment</a>
       <button class="hbg" id="hbg"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -358,7 +358,7 @@ background:#25d366;box-shadow:0 4px 16px rgba(37,211,102,.45);transition:all .3s
       <h2>Experience the <em class="em--lt">Vision Difference</em></h2>
       <p>Book a consultation and see for yourself why patients across the UAE and beyond choose Vision Dental Clinic Abu Dhabi.</p>
       <div class="srv-cta-btns">
-        <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" class="btn btn--g btn--lg btn--arr">Book Consultation</a>
+        <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--lg btn--arr">Book Consultation</a>
         <a href="tel:+97123122777" class="btn btn--gh btn--lg">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.71A2 2 0 012.18 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.61-.61a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
           02 666 6934
@@ -436,10 +436,10 @@ const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 </script>
 
-<div class="wa-float">
-  <a href="https://wa.link/08ys3l" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <div class="wa-pulse"></div>
-    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+<div class="ch-float">
+  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" aria-label="Book Appointment">
+    <div class="ch-pulse"></div>
+    <svg viewBox="0 0 24 24" fill="none"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" fill="#fff"/></svg>
   </a>
 </div>
 </body>
