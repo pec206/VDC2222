@@ -4,19 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact Us | Vision Dental Clinic Abu Dhabi</title>
-<meta name="description" content="Book a dental appointment in Abu Dhabi — Vision Dental Clinic, Khalifa Street. Call +971 2 312 2777 or WhatsApp. Implants, veneers, whitening & more. Sat-Thu 10:30-7:30.">
+<meta name="description" content="Book a dental appointment in Abu Dhabi — Vision Dental Clinic, Khalifa Street. Call +971 2 312 2777 or book online. Implants, veneers, whitening & more. Sat-Thu 10:30-7:30.">
 <meta property="og:title" content="Contact Us | Vision Dental Clinic Abu Dhabi">
-<meta property="og:description" content="Book your dental appointment at Vision Dental Clinic Abu Dhabi. Implants, cosmetic dentistry, orthodontics & emergency dental care. Call or WhatsApp now.">
+<meta property="og:description" content="Book your dental appointment at Vision Dental Clinic Abu Dhabi. Implants, cosmetic dentistry, orthodontics & emergency dental care. Call or book online now.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_AE">
 <meta property="og:image" content="og-image.webp">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://visiondentalclinic.com/contact.html">
+<link rel="canonical" href="https://www.visiondental.ae/contact.html">
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Dentist","name":"Vision Dental Clinic","url":"https://www.visiondental.ae","description":"Contact Vision Dental Clinic Abu Dhabi. 1302 Al Ansari Exchange Bldg, Khalifa Street. Call +971 2 312 2777 or WhatsApp us. Open Sat-Thu 10:30 AM - 7:30 PM.","address":{"@type":"PostalAddress","addressLocality":"Abu Dhabi","addressCountry":"AE"},"telephone":"+971-2-000-0000","contactPoint":{"@type":"ContactPoint","telephone":"+971-2-000-0000","contactType":"customer service"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Dentist","name":"Vision Dental Clinic","url":"https://www.visiondental.ae","description":"Contact Vision Dental Clinic Abu Dhabi. 1302 Al Ansari Exchange Bldg, Khalifa Street. Call +971 2 312 2777 or book online. Open Sat-Thu 10:30 AM - 7:30 PM.","address":{"@type":"PostalAddress","addressLocality":"Abu Dhabi","addressCountry":"AE"},"telephone":"+971-2-312-2777","contactPoint":{"@type":"ContactPoint","telephone":"+971-2-312-2777","contactType":"customer service"}}</script>
 <style>
 :root{
   --b900:#1a3a52;--b800:#1e4a6e;--b700:#2D5F8A;--b50:#eaf4fb;
@@ -275,7 +275,7 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
     <div class="ct-form-wrap rv">
       <h2 class="ct-form-title">Request a <em style="color:var(--g500);font-style:italic">Consultation</em></h2>
       <p class="ct-form-sub">Fill in your details and we'll get back to you within a few hours.</p>
-      <form class="ct-form" action="https://formspree.io/f/placeholder" method="POST">
+      <form class="ct-form" id="contact-form" onsubmit="return handleContactForm(event)">
         <div class="ct-field">
           <label for="cf-name">Full Name *</label>
           <input type="text" id="cf-name" name="name" required placeholder="Your full name">
@@ -324,13 +324,33 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
           <button type="submit" class="ct-form-submit">Request Consultation →</button>
         </div>
       </form>
+      <script>
+      function handleContactForm(e){
+        e.preventDefault();
+        var n=document.getElementById('cf-name').value.trim();
+        var p=document.getElementById('cf-phone').value.trim();
+        var em=document.getElementById('cf-email').value.trim();
+        var s=document.getElementById('cf-service').value;
+        var d=document.getElementById('cf-doctor').value;
+        var m=document.getElementById('cf-msg').value.trim();
+        var msg='Hi, I would like to request a consultation.\n';
+        msg+='Name: '+n+'\n';
+        msg+='Phone: '+p+'\n';
+        if(em) msg+='Email: '+em+'\n';
+        if(s) msg+='Service: '+s+'\n';
+        if(d) msg+='Preferred Doctor: '+d+'\n';
+        if(m) msg+='Message: '+m;
+        window.open('https://chattop.mysmyle.net/?msg='+encodeURIComponent(msg),'_blank');
+        return false;
+      }
+      </script>
     </div>
 
     <div class="wa-cta rv">
-      <p style="font-size:15px;color:var(--s600);margin-bottom:16px">Prefer WhatsApp? Message us directly for quick appointment booking.</p>
+      <p style="font-size:15px;color:var(--s600);margin-bottom:16px">Prefer online booking? Start a chat for quick appointment scheduling.</p>
       <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="wa-cta-btn">
         <svg viewBox="0 0 24 24" fill="none"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" fill="#fff"/></svg>
-        Chat on WhatsApp
+        Book Appointment
       </a>
     </div>
   </div>
