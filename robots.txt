@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.visiondental.ae/sitemap.xml
+Sitemap: https://visiondentalclinic.com/sitemap.xml
