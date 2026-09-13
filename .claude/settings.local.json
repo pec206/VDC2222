@@ -78,7 +78,14 @@
       "Bash(python \"C:\\\\Users\\\\Z8713~1.OBA\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Z-obaid-Downloads-vision-dental-v3-6-vision-dental\\\\8194e843-c7cc-418c-8ad6-30872bf7048a\\\\scratchpad\\\\wm3.py\")",
       "PowerShell(Remove-Item \"C:\\\\Users\\\\Z.obaid\\\\Downloads\\\\vision-dental-v3_6\\\\vision-dental\\\\dr-mohy.html\" -Confirm:$false)",
       "PowerShell(Remove-Item \"C:\\\\Users\\\\Z.obaid\\\\Downloads\\\\vision-dental-v3_6\\\\vision-dental\\\\dr-mohy.webp\" -Confirm:$false)",
-      "Bash(python \"C:\\\\Users\\\\Z8713~1.OBA\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Z-obaid-Downloads-vision-dental-v3-6-vision-dental\\\\8194e843-c7cc-418c-8ad6-30872bf7048a\\\\scratchpad\\\\replace_wa.py\")"
+      "Bash(python \"C:\\\\Users\\\\Z8713~1.OBA\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Z-obaid-Downloads-vision-dental-v3-6-vision-dental\\\\8194e843-c7cc-418c-8ad6-30872bf7048a\\\\scratchpad\\\\replace_wa.py\")",
+      "PowerShell(Set-Location \"C:\\\\Users\\\\Z.obaid\\\\Downloads\\\\vision-dental-v3_6\\\\vision-dental\"; Get-ChildItem -File | Where-Object { $_.Length -gt 500KB } | Sort-Object Length -Descending | ForEach-Object { \"$\\($_.Name\\) - $\\([math]::Round\\($_.Length/1KB\\)\\) KB\" })",
+      "Bash(netstat -ano)",
+      "Bash(findstr \":8080\")",
+      "PowerShell(Get-Process -Id 31292)",
+      "Bash(python \"C:\\\\Users\\\\Z8713~1.OBA\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Z-obaid-Downloads-vision-dental-v3-6-vision-dental\\\\8194e843-c7cc-418c-8ad6-30872bf7048a\\\\scratchpad\\\\fix_canonical.py\")",
+      "Bash(python \"C:\\\\Users\\\\Z8713~1.OBA\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Z-obaid-Downloads-vision-dental-v3-6-vision-dental\\\\8194e843-c7cc-418c-8ad6-30872bf7048a\\\\scratchpad\\\\fix_alts.py\")",
+      "Bash(python)"
     ]
   }
 }
