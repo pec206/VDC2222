@@ -236,6 +236,7 @@ ul{list-style:none}
   .ba-grid{grid-template-columns:repeat(2,1fr)}
   .rel-grid{grid-template-columns:repeat(2,1fr)}
   .ft{grid-template-columns:1fr 1fr;gap:28px}
+  .cluster-grid{grid-template-columns:repeat(2,1fr)!important}
 }
 @media(max-width:768px){
   .hdr-nav,.hdr-lic,.hdr-ct{display:none}
@@ -247,6 +248,7 @@ ul{list-style:none}
   .rel-grid{grid-template-columns:1fr}
   .ov-stats{grid-template-columns:repeat(3,1fr)}
   .ft{grid-template-columns:1fr;gap:24px}
+  .cluster-grid{grid-template-columns:1fr!important}
 }
 .ch-float{position:fixed;bottom:24px;right:24px;z-index:900;display:flex;align-items:center;gap:10px}
 .ch-float a{display:flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;
@@ -382,7 +384,7 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
         </div>
       </div>
       <div class="tech-card rv d1">
-        <div class="tech-card-img"><img src="tech-sta-anesthesia.webp" alt="STA computer-controlled painless dental anesthesia system" loading="lazy" onerror="this.parentElement.innerHTML='<div style=\'width:100%;height:100%;display:flex;align-items:center;justify-content:center\'><svg width=\'52\' height=\'52\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'var(--s200)\' stroke-width=\'1.2\'><path d=\'M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z\'/></svg></div>'"></div>
+        <div class="tech-card-img"><img src="tech-sta-anesthesia.webp" alt="STA computer-controlled digital dental anesthesia system" loading="lazy" onerror="this.parentElement.innerHTML='<div style=\'width:100%;height:100%;display:flex;align-items:center;justify-content:center\'><svg width=\'52\' height=\'52\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'var(--s200)\' stroke-width=\'1.2\'><path d=\'M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z\'/></svg></div>'"></div>
         <div class="tech-card-body">
           <h3>STA Digital Anesthesia</h3>
           <p>Computer-controlled anesthesia delivery system for a virtually pain-free numbing experience during implant surgery.</p>
@@ -495,7 +497,7 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
       </div>
       <div class="faq-item rv d2">
         <div class="faq-q">How long do dental implants last?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-        <div class="faq-a"><div class="faq-a-in">Straumann® implants, which we exclusively use, have a documented success rate above 97% over 10 years. With proper oral hygiene and regular check-ups, implants can last a lifetime.</div></div>
+        <div class="faq-a"><div class="faq-a-in">Straumann® implants, which we exclusively use, have a documented success rate above 97% over 10 years. With proper oral hygiene and regular check-ups, implants can last for decades.</div></div>
       </div>
       <div class="faq-item rv d2">
         <div class="faq-q">What is the recovery time after implant surgery?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
@@ -533,6 +535,51 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
     </div>
     <div style="text-align:center;margin-top:28px" class="rv d2">
       <a href="case-studies.html" class="btn btn--od">View All Cases</a>
+    </div>
+  </div>
+</section>
+
+<!-- IMPLANT TOPICS CLUSTER -->
+<section class="S">
+  <div class="W">
+    <div style="text-align:center;margin-bottom:44px">
+      <p class="eye eye--cx rv">In-Depth Guides</p>
+      <h2 class="Hlg rv d1" style="text-align:center">Explore Implant <em class="em">Topics</em></h2>
+      <p class="Blg rv d2" style="max-width:520px;margin:12px auto 0;text-align:center">Everything you need to know about dental implants — from costs and recovery to advanced surgical techniques.</p>
+    </div>
+    <div class="cluster-grid rv d2" style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px">
+      <a href="single-tooth-implant.html" style="background:var(--w);border:1px solid var(--s100);border-radius:var(--rl);padding:22px 20px;transition:all .28s;display:block" onmouseover="this.style.boxShadow='var(--shm)';this.style.transform='translateY(-4px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+        <h4 style="font-size:14px;font-weight:800;color:var(--b900);margin-bottom:6px">Single Tooth Implant</h4>
+        <p style="font-size:12px;color:var(--s600);line-height:1.6">Replace one missing tooth with a Straumann® implant and custom crown.</p>
+      </a>
+      <a href="full-arch-implants.html" style="background:var(--w);border:1px solid var(--s100);border-radius:var(--rl);padding:22px 20px;transition:all .28s;display:block" onmouseover="this.style.boxShadow='var(--shm)';this.style.transform='translateY(-4px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+        <h4 style="font-size:14px;font-weight:800;color:var(--b900);margin-bottom:6px">Full-Arch Implants</h4>
+        <p style="font-size:12px;color:var(--s600);line-height:1.6">All-on-4 and All-on-6 solutions for complete jaw rehabilitation.</p>
+      </a>
+      <a href="immediate-dental-implants.html" style="background:var(--w);border:1px solid var(--s100);border-radius:var(--rl);padding:22px 20px;transition:all .28s;display:block" onmouseover="this.style.boxShadow='var(--shm)';this.style.transform='translateY(-4px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+        <h4 style="font-size:14px;font-weight:800;color:var(--b900);margin-bottom:6px">Immediate Implants</h4>
+        <p style="font-size:12px;color:var(--s600);line-height:1.6">Extract a tooth and place an implant in the same visit.</p>
+      </a>
+      <a href="implant-vs-bridge.html" style="background:var(--w);border:1px solid var(--s100);border-radius:var(--rl);padding:22px 20px;transition:all .28s;display:block" onmouseover="this.style.boxShadow='var(--shm)';this.style.transform='translateY(-4px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+        <h4 style="font-size:14px;font-weight:800;color:var(--b900);margin-bottom:6px">Implant vs Bridge</h4>
+        <p style="font-size:12px;color:var(--s600);line-height:1.6">Compare implants and bridges — which option suits your case?</p>
+      </a>
+      <a href="implant-cost-abu-dhabi.html" style="background:var(--w);border:1px solid var(--s100);border-radius:var(--rl);padding:22px 20px;transition:all .28s;display:block" onmouseover="this.style.boxShadow='var(--shm)';this.style.transform='translateY(-4px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+        <h4 style="font-size:14px;font-weight:800;color:var(--b900);margin-bottom:6px">Implant Cost</h4>
+        <p style="font-size:12px;color:var(--s600);line-height:1.6">Pricing, what's included, and payment plan options.</p>
+      </a>
+      <a href="bone-grafting.html" style="background:var(--w);border:1px solid var(--s100);border-radius:var(--rl);padding:22px 20px;transition:all .28s;display:block" onmouseover="this.style.boxShadow='var(--shm)';this.style.transform='translateY(-4px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+        <h4 style="font-size:14px;font-weight:800;color:var(--b900);margin-bottom:6px">Bone Grafting</h4>
+        <p style="font-size:12px;color:var(--s600);line-height:1.6">Socket preservation, sinus lifts, and ridge augmentation.</p>
+      </a>
+      <a href="implant-recovery.html" style="background:var(--w);border:1px solid var(--s100);border-radius:var(--rl);padding:22px 20px;transition:all .28s;display:block" onmouseover="this.style.boxShadow='var(--shm)';this.style.transform='translateY(-4px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+        <h4 style="font-size:14px;font-weight:800;color:var(--b900);margin-bottom:6px">Recovery Guide</h4>
+        <p style="font-size:12px;color:var(--s600);line-height:1.6">Day-by-day recovery timeline, diet, and aftercare.</p>
+      </a>
+      <a href="cbct-guided-implant-surgery.html" style="background:var(--w);border:1px solid var(--s100);border-radius:var(--rl);padding:22px 20px;transition:all .28s;display:block" onmouseover="this.style.boxShadow='var(--shm)';this.style.transform='translateY(-4px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+        <h4 style="font-size:14px;font-weight:800;color:var(--b900);margin-bottom:6px">CBCT-Guided Surgery</h4>
+        <p style="font-size:12px;color:var(--s600);line-height:1.6">3D imaging and digital surgical guides for precision placement.</p>
+      </a>
     </div>
   </div>
 </section>
@@ -663,7 +710,7 @@ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://visiondentalclinic.com/"}, {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://visiondentalclinic.com/services.html"}, {"@type": "ListItem", "position": 3, "name": "Dental Implants"}]}
 </script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much do dental implants cost in Abu Dhabi?","acceptedAnswer":{"@type":"Answer","text":"At Vision Dental Clinic, dental implants start from 2,600 AED. The final cost depends on the type of implant, bone condition, and whether additional procedures like bone grafting or sinus lift are needed. We offer payment plans through Tabby and Tamara."}},{"@type":"Question","name":"Are dental implants painful?","acceptedAnswer":{"@type":"Answer","text":"With our STA digital anesthesia system and optional Nitrous Oxide sedation, the procedure is virtually painless. Most patients report less discomfort than a simple extraction. Dr. Hussien's 35+ years of experience and CBCT-guided surgery ensure minimal tissue trauma."}},{"@type":"Question","name":"How long do dental implants last?","acceptedAnswer":{"@type":"Answer","text":"Straumann® implants, which we exclusively use, have a documented success rate above 97% over 10 years. With proper oral hygiene and regular check-ups, implants can last a lifetime."}},{"@type":"Question","name":"What is the recovery time after implant surgery?","acceptedAnswer":{"@type":"Answer","text":"Most patients return to normal activities within 1-2 days. The implant integrates with the bone over 3-4 months. With immediate loading protocols, you can leave with a temporary crown the same day in qualifying cases."}},{"@type":"Question","name":"Am I a candidate for dental implants?","acceptedAnswer":{"@type":"Answer","text":"Most adults with good general health are candidates. Even patients with bone loss can often receive implants after bone grafting. Dr. Hussien reviews every case with a CBCT 3D scan to create a precise treatment plan."}},{"@type":"Question","name":"What is All-on-4 / All-on-X?","acceptedAnswer":{"@type":"Answer","text":"All-on-X is a technique that replaces an entire arch of teeth using just 4-6 strategically placed implants. It's ideal for patients with extensive tooth loss and can often be completed in a single day."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much do dental implants cost in Abu Dhabi?","acceptedAnswer":{"@type":"Answer","text":"At Vision Dental Clinic, dental implants start from 2,600 AED. The final cost depends on the type of implant, bone condition, and whether additional procedures like bone grafting or sinus lift are needed. We offer payment plans through Tabby and Tamara."}},{"@type":"Question","name":"Are dental implants painful?","acceptedAnswer":{"@type":"Answer","text":"With our STA digital anesthesia system and optional Nitrous Oxide sedation, the procedure is virtually painless. Most patients report less discomfort than a simple extraction. Dr. Hussien's 35+ years of experience and CBCT-guided surgery ensure minimal tissue trauma."}},{"@type":"Question","name":"How long do dental implants last?","acceptedAnswer":{"@type":"Answer","text":"Straumann® implants, which we exclusively use, have a documented success rate above 97% over 10 years. With proper oral hygiene and regular check-ups, implants can last for decades."}},{"@type":"Question","name":"What is the recovery time after implant surgery?","acceptedAnswer":{"@type":"Answer","text":"Most patients return to normal activities within 1-2 days. The implant integrates with the bone over 3-4 months. With immediate loading protocols, you can leave with a temporary crown the same day in qualifying cases."}},{"@type":"Question","name":"Am I a candidate for dental implants?","acceptedAnswer":{"@type":"Answer","text":"Most adults with good general health are candidates. Even patients with bone loss can often receive implants after bone grafting. Dr. Hussien reviews every case with a CBCT 3D scan to create a precise treatment plan."}},{"@type":"Question","name":"What is All-on-4 / All-on-X?","acceptedAnswer":{"@type":"Answer","text":"All-on-X is a technique that replaces an entire arch of teeth using just 4-6 strategically placed implants. It's ideal for patients with extensive tooth loss and can often be completed in a single day."}}]}</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

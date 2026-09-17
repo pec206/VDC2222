@@ -85,8 +85,14 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
 .ch-pulse{position:absolute;inset:0;border-radius:50%;background:rgba(45,95,138,.3);animation:ch-ring 2s ease-out infinite;pointer-events:none}
 @keyframes ch-ring{0%{transform:scale(1);opacity:1}100%{transform:scale(1.6);opacity:0}}
 .skip-link{position:absolute;top:-100%;left:16px;background:var(--b900);color:var(--w);padding:12px 24px;border-radius:0 0 8px 8px;font-size:14px;font-weight:700;z-index:9999;transition:top .2s}.skip-link:focus{top:0}
+.app-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.app-card{background:var(--s50);padding:28px 24px;border-radius:var(--rl)}.app-card .app-ico{width:48px;height:48px;border-radius:14px;background:var(--gb);display:flex;align-items:center;justify-content:center;margin-bottom:16px}.app-card .app-ico svg{width:24px;height:24px;fill:none;stroke:var(--w);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.app-card h3{font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px}.app-card p{font-size:13.5px;color:var(--s600);line-height:1.7}
+.tech-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.tech-item{background:var(--w);padding:20px;border-radius:var(--rl);border:.5px solid var(--s100)}.tech-item h4{font-size:14px;font-weight:700;color:var(--b900);margin-bottom:4px}.tech-item p{font-size:12.5px;color:var(--s600);line-height:1.6}
+.faq-list{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:10px}.faq-item{background:var(--w);border:.5px solid var(--s200);border-radius:var(--rl);overflow:hidden;transition:border-color .25s}.faq-item.open{border-color:var(--g500)}.faq-q{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 24px;cursor:pointer;font-size:15px;font-weight:700;color:var(--b900);line-height:1.4;user-select:none;-webkit-user-select:none}.faq-q::after{content:"+";font-size:22px;font-weight:300;color:var(--s400);transition:transform .3s;flex-shrink:0}.faq-item.open .faq-q::after{content:"−";color:var(--g600)}.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}.faq-a-in{padding:0 24px 20px;font-size:14px;color:var(--s600);line-height:1.78}
+@media(max-width:900px){.app-grid{grid-template-columns:1fr 1fr}.tech-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.app-grid{grid-template-columns:1fr}.tech-grid{grid-template-columns:1fr}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":["Dentist","Physician"],"name":"Dr. Emad El-Din Sharqawi","alternateName":"دكتور عماد الدين شرقاوي - تركيبات أسنان أبوظبي","description":"Dr. Emad El-Din Sharqawi — Prosthodontist with PhD at Vision Dental Clinic Abu Dhabi. Specialist in dental crowns, bridges, full mouth rehabilitation, and CAD/CAM prosthetics.","url":"https://visiondentalclinic.com/dr-emad.html","worksFor":{"@type":"Dentist","name":"Vision Dental Clinic","url":"https://visiondentalclinic.com","address":{"@type":"PostalAddress","addressLocality":"Abu Dhabi","addressCountry":"AE"}}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between E-max and zirconia crowns?","acceptedAnswer":{"@type":"Answer","text":"E-max (lithium disilicate) offers superior translucency and is ideal for front teeth where aesthetics matter most. Zirconia is stronger and better suited for back teeth that endure heavy biting forces. Dr. Emad recommends the appropriate material based on the tooth position and clinical requirements."}},{"@type":"Question","name":"How long do dental crowns last?","acceptedAnswer":{"@type":"Answer","text":"High-quality crowns typically last 10–20 years with proper oral hygiene and regular dental check-ups. The longevity depends on the material, location, and how well the patient maintains their oral health."}},{"@type":"Question","name":"What is full mouth rehabilitation?","acceptedAnswer":{"@type":"Answer","text":"A comprehensive treatment plan that addresses all teeth and supporting structures. It may include crowns, bridges, implant-supported prosthetics, and bite correction — designed as a coordinated sequence rather than isolated procedures. Dr. Hussien Tahoun (Medical Director) reviews complex rehabilitation cases."}},{"@type":"Question","name":"Do I need a crown after root canal treatment?","acceptedAnswer":{"@type":"Answer","text":"In most cases, yes. A root canal-treated tooth becomes more brittle over time. A crown protects the tooth from fracture and restores its full function. The crown is custom-designed to match your natural teeth."}},{"@type":"Question","name":"How many visits does a crown require?","acceptedAnswer":{"@type":"Answer","text":"Typically 2–3 visits: consultation and preparation, then fitting and cementation. With CAD/CAM technology, some cases can be completed faster. Digital impressions mean no uncomfortable traditional moulds."}}]}</script>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to content</a>
@@ -176,6 +182,60 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
   </div>
 </section>
 
+<!-- Clinical Approach -->
+<section class="S" id="approach">
+  <div class="W">
+    <p class="eye eye--cx rv">Clinical Approach</p>
+    <h2 class="Hlg rv d1" style="text-align:center;margin-bottom:42px">How Dr. Emad <em class="em">Works</em></h2>
+    <div class="app-grid">
+      <div class="app-card rv d1">
+        <div class="app-ico"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <h3>Precision Restorations</h3>
+        <p>Every crown, bridge, and prosthetic is planned for exact fit, function, and aesthetics. Digital impressions and CAD/CAM workflows eliminate the guesswork of traditional methods.</p>
+      </div>
+      <div class="app-card rv d2">
+        <div class="app-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>Material Expertise</h3>
+        <p>Selects the right material for each case — E-max for anterior aesthetics, zirconia for posterior strength, PFM for specific clinical requirements. The choice is driven by function and longevity, not one-size-fits-all.</p>
+      </div>
+      <div class="app-card rv d3">
+        <div class="app-ico"><svg viewBox="0 0 24 24"><path d="M3 3h7v7H3z"/><path d="M14 3h7v7h-7z"/><path d="M3 14h7v7H3z"/><path d="M14 14h7v7h-7z"/></svg></div>
+        <h3>Full Mouth Rehabilitation</h3>
+        <p>For patients with extensive dental problems, Dr. Emad designs a phased treatment plan that addresses every tooth systematically — restoring bite, function, and appearance together.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Technology -->
+<section class="S S--lt" id="technology">
+  <div class="W">
+    <p class="eye eye--cx rv">Technology</p>
+    <h2 class="Hlg rv d1" style="text-align:center;margin-bottom:42px">Advanced <em class="em">Equipment</em></h2>
+    <div class="tech-grid">
+      <div class="tech-item rv d1">
+        <h4>3Shape Intraoral Scanner</h4>
+        <p>Digital impressions for crowns, bridges, and prosthetics</p>
+      </div>
+      <div class="tech-item rv d2">
+        <h4>CAD/CAM Milling</h4>
+        <p>Digitally designed and milled restorations for precision fit</p>
+      </div>
+      <div class="tech-item rv d3">
+        <h4>Digital Smile Design</h4>
+        <p>Virtual treatment planning for complex rehabilitation cases</p>
+      </div>
+      <div class="tech-item rv d1">
+        <h4>CBCT 3D Imaging</h4>
+        <p>Volumetric assessment for implant-supported prosthetics planning</p>
+      </div>
+      <div class="tech-item rv d2">
+        <h4>Chairside X-ray</h4>
+        <p>Real-time verification during treatment procedures</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="gal-section">
   <div class="W">
@@ -186,6 +246,36 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
       <h3>Book a Consultation</h3>
       <p>Book directly with Dr. Emad for a personalised assessment.</p>
       <div class="cta-btns"><a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book Appointment</a><a href="tel:+97123122777" class="btn btn--gh">+971 2 312 2777</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="S S--lt" id="faq">
+  <div class="W">
+    <p class="eye eye--cx rv">FAQ</p>
+    <h2 class="Hlg rv d1" style="text-align:center;margin-bottom:42px">Frequently Asked <em class="em">Questions</em></h2>
+    <div class="faq-list">
+      <div class="faq-item rv d1">
+        <div class="faq-q">What is the difference between E-max and zirconia crowns?</div>
+        <div class="faq-a"><div class="faq-a-in">E-max (lithium disilicate) offers superior translucency and is ideal for front teeth where aesthetics matter most. Zirconia is stronger and better suited for back teeth that endure heavy biting forces. Dr. Emad recommends the appropriate material based on the tooth position and clinical requirements.</div></div>
+      </div>
+      <div class="faq-item rv d2">
+        <div class="faq-q">How long do dental crowns last?</div>
+        <div class="faq-a"><div class="faq-a-in">High-quality crowns typically last 10–20 years with proper oral hygiene and regular dental check-ups. The longevity depends on the material, location, and how well the patient maintains their oral health.</div></div>
+      </div>
+      <div class="faq-item rv d3">
+        <div class="faq-q">What is full mouth rehabilitation?</div>
+        <div class="faq-a"><div class="faq-a-in">A comprehensive treatment plan that addresses all teeth and supporting structures. It may include crowns, bridges, implant-supported prosthetics, and bite correction — designed as a coordinated sequence rather than isolated procedures. Dr. Hussien Tahoun (Medical Director) reviews complex rehabilitation cases.</div></div>
+      </div>
+      <div class="faq-item rv d1">
+        <div class="faq-q">Do I need a crown after root canal treatment?</div>
+        <div class="faq-a"><div class="faq-a-in">In most cases, yes. A root canal-treated tooth becomes more brittle over time. A crown protects the tooth from fracture and restores its full function. The crown is custom-designed to match your natural teeth.</div></div>
+      </div>
+      <div class="faq-item rv d2">
+        <div class="faq-q">How many visits does a crown require?</div>
+        <div class="faq-a"><div class="faq-a-in">Typically 2–3 visits: consultation and preparation, then fitting and cementation. With CAD/CAM technology, some cases can be completed faster. Digital impressions mean no uncomfortable traditional moulds.</div></div>
+      </div>
     </div>
   </div>
 </section>
@@ -220,6 +310,7 @@ const close=()=>{mn.classList.remove("op");hbg.classList.remove("op");document.b
 hbg.addEventListener("click",open);mx.addEventListener("click",close);mn.querySelectorAll("a").forEach(a=>a.addEventListener("click",close));
 const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add("on");io.unobserve(x.target)}}),{threshold:.1,rootMargin:"0px 0px -28px 0px"});
 document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+document.querySelectorAll('.faq-q').forEach(q=>{q.addEventListener('click',()=>{const item=q.parentElement;const a=q.nextElementSibling;if(item.classList.contains('open')){a.style.maxHeight=null;item.classList.remove('open')}else{document.querySelectorAll('.faq-item.open').forEach(o=>{o.classList.remove('open');o.querySelector('.faq-a').style.maxHeight=null});a.style.maxHeight=a.scrollHeight+'px';item.classList.add('open')}})});
 document.querySelectorAll('.gal-split').forEach(split=>{const after=split.querySelector('.gal-half:nth-child(2)');const divLine=split.querySelector('.gal-div');const arrow=split.querySelector('.gal-arrow');if(!after||!divLine)return;let dragging=false;function setPos(x){const rect=split.getBoundingClientRect();let pct=((x-rect.left)/rect.width)*100;pct=Math.max(5,Math.min(95,pct));after.style.clipPath='inset(0 0 0 '+pct+'%)';divLine.style.left=pct+'%';if(arrow)arrow.style.left=pct+'%'}split.addEventListener('mousedown',function(e){dragging=true;setPos(e.clientX);e.preventDefault()});window.addEventListener('mousemove',function(e){if(dragging)setPos(e.clientX)});window.addEventListener('mouseup',function(){dragging=false});split.addEventListener('touchstart',function(e){dragging=true;setPos(e.touches[0].clientX)},{passive:true});window.addEventListener('touchmove',function(e){if(dragging)setPos(e.touches[0].clientX)},{passive:true});window.addEventListener('touchend',function(){dragging=false})});
 </script>
 

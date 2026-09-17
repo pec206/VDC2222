@@ -85,8 +85,27 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
 .ch-pulse{position:absolute;inset:0;border-radius:50%;background:rgba(45,95,138,.3);animation:ch-ring 2s ease-out infinite;pointer-events:none}
 @keyframes ch-ring{0%{transform:scale(1);opacity:1}100%{transform:scale(1.6);opacity:0}}
 .skip-link{position:absolute;top:-100%;left:16px;background:var(--b900);color:var(--w);padding:12px 24px;border-radius:0 0 8px 8px;font-size:14px;font-weight:700;z-index:9999;transition:top .2s}.skip-link:focus{top:0}
+.ca-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:960px;margin:0 auto}
+.ca-card{background:var(--s50);padding:28px 24px;border-radius:var(--rl)}
+.ca-card h3{font-size:16px;font-weight:800;color:var(--b900);margin:14px 0 8px}
+.ca-card p{font-size:14px;color:var(--s600);line-height:1.7}
+.ca-card svg{flex-shrink:0}
+.tech-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:960px;margin:0 auto}
+.tech-item{background:var(--w);padding:20px;border-radius:var(--rl);border:.5px solid var(--s100);display:flex;align-items:flex-start;gap:14px}
+.tech-item h4{font-size:14px;font-weight:800;color:var(--b900);margin-bottom:4px}
+.tech-item p{font-size:13px;color:var(--s600);line-height:1.6}
+.faq-wrap{max-width:760px;margin:0 auto}
+.faq-item{border-bottom:.5px solid var(--s200)}
+.faq-q{width:100%;text-align:left;display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-size:15px;font-weight:700;color:var(--b900);background:none;border:none;cursor:pointer;font-family:var(--fb);line-height:1.5;gap:16px}
+.faq-q::after{content:"+";font-size:20px;font-weight:300;color:var(--s400);transition:transform .3s;flex-shrink:0}
+.faq-q.open::after{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-a-in{padding:0 0 20px;font-size:14px;color:var(--s600);line-height:1.78}
+@media(max-width:900px){.ca-grid{grid-template-columns:1fr}.tech-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.tech-grid{grid-template-columns:1fr}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":["Dentist","Physician"],"name":"Dr. Ammar Anbari","alternateName":"دكتور عمار عنبري - زراعة أسنان أبوظبي","description":"Dr. Ammar Anbari — Restorative Dentist and Implantologist at Vision Dental Clinic Abu Dhabi. Expert in dental implants, full-arch rehabilitation, porcelain veneers, and digital smile design using CBCT-guided surgery.","url":"https://visiondentalclinic.com/dr-ammar.html","worksFor":{"@type":"Dentist","name":"Vision Dental Clinic","url":"https://visiondentalclinic.com","address":{"@type":"PostalAddress","addressLocality":"Abu Dhabi","addressCountry":"AE"}}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What types of veneers does Dr. Ammar offer?","acceptedAnswer":{"@type":"Answer","text":"Both porcelain (E-max) and composite veneers. Porcelain veneers last 15–20 years and are custom-made. Composite veneers are applied in one visit and are suitable for minor corrections."}},{"@type":"Question","name":"Can Dr. Ammar handle both implants and cosmetic work?","acceptedAnswer":{"@type":"Answer","text":"Yes. He manages surgical placement and restorative design, providing continuity from implant to final crown without referral to another specialist."}},{"@type":"Question","name":"How does Dr. Ammar plan smile design cases?","acceptedAnswer":{"@type":"Answer","text":"Using Digital Smile Design software and 3Shape scanning, he creates a virtual preview of the final result. A physical mockup (trial smile) is then made so the patient can see and approve the design before any preparation begins. Unlimited adjustments are included."}},{"@type":"Question","name":"What implant system does the clinic use?","acceptedAnswer":{"@type":"Answer","text":"Straumann® implants, a Swiss system with over 60 years of research and a documented success rate above 97% over 10 years."}},{"@type":"Question","name":"How long does a full-arch rehabilitation take?","acceptedAnswer":{"@type":"Answer","text":"Typically 4–6 months from planning to final prosthetic delivery. With immediate loading protocols, temporary teeth can be placed the same day as implant surgery in qualifying cases."}}]}</script>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to content</a>
@@ -176,6 +195,60 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
   </div>
 </section>
 
+<!-- Clinical Approach -->
+<section class="S"><div class="W">
+  <p class="eye eye--cx rv">Methodology</p>
+  <h2 class="Hlg rv d1" style="text-align:center;font-size:clamp(24px,3vw,36px);margin-bottom:32px">Clinical <em class="em">Approach</em></h2>
+  <div class="ca-grid">
+    <div class="ca-card rv">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--b700)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+      <h3>Aesthetic Precision</h3>
+      <p>Every restoration is planned for both function and appearance. Digital smile design and shade matching ensure results that look natural and complement the patient's facial features.</p>
+    </div>
+    <div class="ca-card rv d1">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--b700)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      <h3>Digital Workflow</h3>
+      <p>From CBCT scanning to 3Shape digital impressions and CAD/CAM restorations, the entire treatment chain is digital — reducing chair time and improving accuracy.</p>
+    </div>
+    <div class="ca-card rv d2">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--b700)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      <h3>Comprehensive Treatment</h3>
+      <p>Handles both the surgical (implants, extractions, grafting) and restorative (veneers, crowns, bridges) phases, so patients benefit from one doctor managing the full case.</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- Technology -->
+<section class="S" style="background:var(--s50)"><div class="W">
+  <p class="eye eye--cx rv">Equipment</p>
+  <h2 class="Hlg rv d1" style="text-align:center;font-size:clamp(24px,3vw,36px);margin-bottom:32px">Technology & <em class="em">Tools</em></h2>
+  <div class="tech-grid">
+    <div class="tech-item rv">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--b700)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 12h10"/><path d="M12 7v10"/></svg>
+      <div><h4>CBCT 3D Imaging</h4><p>Full volumetric scan for surgical planning and diagnosis</p></div>
+    </div>
+    <div class="tech-item rv d1">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--b700)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M2 12h20"/></svg>
+      <div><h4>3Shape Intraoral Scanner</h4><p>Digital impressions for precise restorations</p></div>
+    </div>
+    <div class="tech-item rv d2">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--b700)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+      <div><h4>Digital Smile Design (DSD)</h4><p>Computer-guided smile planning for predictable aesthetics</p></div>
+    </div>
+    <div class="tech-item rv">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--b700)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+      <div><h4>STA Digital Anesthesia</h4><p>Computer-controlled delivery for comfortable numbing</p></div>
+    </div>
+    <div class="tech-item rv d1">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--b700)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 12h.01"/><path d="M17 12h.01"/><path d="M7 12h.01"/></svg>
+      <div><h4>CAD/CAM Restorations</h4><p>Same-day digitally milled crowns and restorations</p></div>
+    </div>
+    <div class="tech-item rv d2">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--b700)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+      <div><h4>Chairside X-ray</h4><p>Instant digital radiography during treatment</p></div>
+    </div>
+  </div>
+</div></section>
 
 <section class="S" style="background:var(--s50)">
   <div class="W">
@@ -256,6 +329,34 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
   </div>
 </section>
 
+<!-- FAQ Section -->
+<section class="S"><div class="W">
+  <p class="eye eye--cx rv">Common Questions</p>
+  <h2 class="Hlg rv d1" style="text-align:center;font-size:clamp(24px,3vw,36px);margin-bottom:40px">Frequently Asked <em class="em">Questions</em></h2>
+  <div class="faq-wrap">
+    <div class="faq-item rv">
+      <button class="faq-q" aria-expanded="false">What types of veneers does Dr. Ammar offer?</button>
+      <div class="faq-a"><div class="faq-a-in">Both porcelain (E-max) and composite veneers. Porcelain veneers last 15–20 years and are custom-made. Composite veneers are applied in one visit and are suitable for minor corrections.</div></div>
+    </div>
+    <div class="faq-item rv d1">
+      <button class="faq-q" aria-expanded="false">Can Dr. Ammar handle both implants and cosmetic work?</button>
+      <div class="faq-a"><div class="faq-a-in">Yes. He manages surgical placement and restorative design, providing continuity from implant to final crown without referral to another specialist.</div></div>
+    </div>
+    <div class="faq-item rv d1">
+      <button class="faq-q" aria-expanded="false">How does Dr. Ammar plan smile design cases?</button>
+      <div class="faq-a"><div class="faq-a-in">Using Digital Smile Design software and 3Shape scanning, he creates a virtual preview of the final result. A physical mockup (trial smile) is then made so the patient can see and approve the design before any preparation begins. Unlimited adjustments are included.</div></div>
+    </div>
+    <div class="faq-item rv d2">
+      <button class="faq-q" aria-expanded="false">What implant system does the clinic use?</button>
+      <div class="faq-a"><div class="faq-a-in">Straumann&reg; implants, a Swiss system with over 60 years of research and a documented success rate above 97% over 10 years.</div></div>
+    </div>
+    <div class="faq-item rv d2">
+      <button class="faq-q" aria-expanded="false">How long does a full-arch rehabilitation take?</button>
+      <div class="faq-a"><div class="faq-a-in">Typically 4–6 months from planning to final prosthetic delivery. With immediate loading protocols, temporary teeth can be placed the same day as implant surgery in qualifying cases.</div></div>
+    </div>
+  </div>
+</div></section>
+
 <footer id="ftr">
   <div class="ft">
     <div class="fl">
@@ -286,6 +387,7 @@ const close=()=>{mn.classList.remove("op");hbg.classList.remove("op");document.b
 hbg.addEventListener("click",open);mx.addEventListener("click",close);mn.querySelectorAll("a").forEach(a=>a.addEventListener("click",close));
 const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add("on");io.unobserve(x.target)}}),{threshold:.1,rootMargin:"0px 0px -28px 0px"});
 document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+document.querySelectorAll('.faq-q').forEach(btn=>{btn.addEventListener('click',()=>{const ans=btn.nextElementSibling;const isOpen=btn.classList.contains('open');document.querySelectorAll('.faq-q.open').forEach(ob=>{ob.classList.remove('open');ob.setAttribute('aria-expanded','false');ob.nextElementSibling.style.maxHeight=null});if(!isOpen){btn.classList.add('open');btn.setAttribute('aria-expanded','true');ans.style.maxHeight=ans.scrollHeight+'px'}})});
 document.querySelectorAll('.gal-split').forEach(split=>{const after=split.querySelector('.gal-half:nth-child(2)');const divLine=split.querySelector('.gal-div');const arrow=split.querySelector('.gal-arrow');if(!after||!divLine)return;let dragging=false;function setPos(x){const rect=split.getBoundingClientRect();let pct=((x-rect.left)/rect.width)*100;pct=Math.max(5,Math.min(95,pct));after.style.clipPath='inset(0 0 0 '+pct+'%)';divLine.style.left=pct+'%';if(arrow)arrow.style.left=pct+'%'}split.addEventListener('mousedown',function(e){dragging=true;setPos(e.clientX);e.preventDefault()});window.addEventListener('mousemove',function(e){if(dragging)setPos(e.clientX)});window.addEventListener('mouseup',function(){dragging=false});split.addEventListener('touchstart',function(e){dragging=true;setPos(e.touches[0].clientX)},{passive:true});window.addEventListener('touchmove',function(e){if(dragging)setPos(e.touches[0].clientX)},{passive:true});window.addEventListener('touchend',function(){dragging=false})});
 </script>
 

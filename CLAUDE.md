@@ -31,7 +31,7 @@ The user has granted blanket approval for all operations:
 
 ## Critical Rules
 - NEVER mention or show "portable X-ray" — Ministry of Health policy
-- Dr. Salim is NOT a clinic doctor
+- Dr. Salim Alhamadani — active clinic doctor (cosmetic dentist, 7+ years)
 - Dr. Amr Latif = Prof. Amr Labib (orthodontist at the clinic)
 - Chairside X-ray = during treatment ONLY; OPG Panorama = consultation ONLY
 - Case 3 (Chart 38989, Orthodontic + Wisdom Tooth) has no images — always remind user

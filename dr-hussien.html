@@ -85,6 +85,17 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
 .ch-pulse{position:absolute;inset:0;border-radius:50%;background:rgba(45,95,138,.3);animation:ch-ring 2s ease-out infinite;pointer-events:none}
 @keyframes ch-ring{0%{transform:scale(1);opacity:1}100%{transform:scale(1.6);opacity:0}}
 .skip-link{position:absolute;top:-100%;left:16px;background:var(--b900);color:var(--w);padding:12px 24px;border-radius:0 0 8px 8px;font-size:14px;font-weight:700;z-index:9999;transition:top .2s}.skip-link:focus{top:0}
+.faq-wrap{max-width:800px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--s100)}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-size:15px;font-weight:700;color:var(--b900);cursor:pointer;gap:16px}
+.faq-q svg{width:18px;height:18px;flex-shrink:0;transition:transform .3s;color:var(--s400)}
+.faq-item.active .faq-q svg{transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-item.active .faq-a{max-height:500px}
+.faq-a-in{padding:0 0 20px;font-size:14px;line-height:1.75;color:var(--s600)}
+@media(max-width:768px){.ca-grid{grid-template-columns:1fr!important}}
+@media(max-width:900px){.tech-grid{grid-template-columns:repeat(2,1fr)!important}}
+@media(max-width:600px){.tech-grid{grid-template-columns:1fr!important}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":["Dentist","Physician"],"name":"Dr. Hussien Salah Tahoun","alternateName":"دكتور حسين طحون - جراح فم أبوظبي","description":"Dr. Hussien Salah Tahoun — Oral and Maxillofacial Surgeon with 35+ years experience. Medical Director at Vision Dental Clinic Abu Dhabi. Specializes in dental implants, full-arch rehabilitation, sinus lift, bone grafting, and wisdom tooth extraction.","url":"https://visiondentalclinic.com/dr-hussien.html","worksFor":{"@type":"Dentist","name":"Vision Dental Clinic","url":"https://visiondentalclinic.com","address":{"@type":"PostalAddress","addressLocality":"Abu Dhabi","addressCountry":"AE"}}}</script>
 </head>
@@ -177,7 +188,72 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
   </div>
 </section>
 
+<!-- CLINICAL APPROACH -->
+<section class="S">
+  <div class="W">
+    <p class="eye eye--cx rv">Methodology</p>
+    <h2 class="Hlg rv d1" style="text-align:center;font-size:clamp(24px,3vw,36px);margin-bottom:32px">Clinical <em class="em">Approach</em></h2>
+    <div class="ca-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:960px;margin:0 auto">
+      <div class="rv" style="background:var(--s50);padding:28px 24px;border-radius:var(--rl)">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--b700)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:14px"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/><circle cx="12" cy="10" r="3"/></svg>
+        <h3 style="font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px">Digital-First Planning</h3>
+        <p style="font-size:13.5px;line-height:1.7;color:var(--s600)">Every procedure begins with a CBCT 3D scan for complete volumetric analysis. Custom surgical guides are designed digitally, ensuring precise implant positioning and predictable outcomes before treatment starts.</p>
+      </div>
+      <div class="rv d1" style="background:var(--s50);padding:28px 24px;border-radius:var(--rl)">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--b700)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:14px"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M8 12l2 2 4-4"/></svg>
+        <h3 style="font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px">Minimally Invasive Surgery</h3>
+        <p style="font-size:13.5px;line-height:1.7;color:var(--s600)">Piezoelectric instruments allow precise bone work while preserving surrounding soft tissue. This approach reduces post-operative discomfort, minimises swelling, and promotes significantly faster healing times.</p>
+      </div>
+      <div class="rv d2" style="background:var(--s50);padding:28px 24px;border-radius:var(--rl)">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--b700)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:14px"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        <h3 style="font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px">Medical Director Oversight</h3>
+        <p style="font-size:13.5px;line-height:1.7;color:var(--s600)">Dr. Hussien personally reviews every complex case across all departments. He sets and enforces clinical protocols — from infection control to digital workflows — ensuring consistent quality of care clinic-wide.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- TECHNOLOGY ARSENAL -->
+<section class="S" style="background:var(--s50)">
+  <div class="W">
+    <p class="eye eye--cx rv">Equipment</p>
+    <h2 class="Hlg rv d1" style="text-align:center;font-size:clamp(24px,3vw,36px);margin-bottom:32px">Technology <em class="em">Arsenal</em></h2>
+    <div class="tech-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:960px;margin:0 auto">
+      <div class="rv" style="background:var(--w);padding:20px;border-radius:var(--rl);border:.5px solid var(--s100)">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--g600)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:10px"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+        <h4 style="font-size:14px;font-weight:700;color:var(--b900);margin-bottom:4px">CBCT 3D Imaging</h4>
+        <p style="font-size:12.5px;line-height:1.65;color:var(--s600)">Volumetric scan for accurate diagnosis and surgical planning</p>
+      </div>
+      <div class="rv d1" style="background:var(--w);padding:20px;border-radius:var(--rl);border:.5px solid var(--s100)">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--g600)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:10px"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        <h4 style="font-size:14px;font-weight:700;color:var(--b900);margin-bottom:4px">Osstell ISQ</h4>
+        <p style="font-size:12.5px;line-height:1.65;color:var(--s600)">Implant stability measurement for optimal loading timing</p>
+      </div>
+      <div class="rv d2" style="background:var(--w);padding:20px;border-radius:var(--rl);border:.5px solid var(--s100)">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--g600)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:10px"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <h4 style="font-size:14px;font-weight:700;color:var(--b900);margin-bottom:4px">Implant Center 2 (Piezo)</h4>
+        <p style="font-size:12.5px;line-height:1.65;color:var(--s600)">Piezoelectric surgery for precise, tissue-preserving bone work</p>
+      </div>
+      <div class="rv" style="background:var(--w);padding:20px;border-radius:var(--rl);border:.5px solid var(--s100)">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--g600)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:10px"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <h4 style="font-size:14px;font-weight:700;color:var(--b900);margin-bottom:4px">STA Digital Anesthesia</h4>
+        <p style="font-size:12.5px;line-height:1.65;color:var(--s600)">Computer-controlled delivery for comfortable numbing</p>
+      </div>
+      <div class="rv d1" style="background:var(--w);padding:20px;border-radius:var(--rl);border:.5px solid var(--s100)">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--g600)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:10px"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+        <h4 style="font-size:14px;font-weight:700;color:var(--b900);margin-bottom:4px">3Shape Intraoral Scanner</h4>
+        <p style="font-size:12.5px;line-height:1.65;color:var(--s600)">Digital impressions — no traditional moulds required</p>
+      </div>
+      <div class="rv d2" style="background:var(--w);padding:20px;border-radius:var(--rl);border:.5px solid var(--s100)">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--g600)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:10px"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+        <h4 style="font-size:14px;font-weight:700;color:var(--b900);margin-bottom:4px">Chairside X-ray</h4>
+        <p style="font-size:12.5px;line-height:1.65;color:var(--s600)">Instant digital radiography during treatment verification</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLISHED CASES -->
 <section class="S" style="background:var(--s50)">
   <div class="W">
     <p class="eye eye--cx rv">Cases</p>
@@ -239,6 +315,38 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
   </div>
 </section>
 
+<!-- FAQ -->
+<section class="S">
+  <div class="W">
+    <p class="eye eye--cx rv">Common Questions</p>
+    <h2 class="Hlg rv d1" style="text-align:center;font-size:clamp(24px,3vw,36px);margin-bottom:32px">Frequently Asked <em class="em">Questions</em></h2>
+    <div class="faq-wrap">
+      <div class="faq-item rv">
+        <div class="faq-q">How many dental implants has Dr. Hussien placed?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a"><div class="faq-a-in">Over 5,000 implants across 35+ years of practice. He uses Straumann&reg; implants exclusively and CBCT-guided surgical protocols for every case, ensuring precise placement and predictable long-term outcomes.</div></div>
+      </div>
+      <div class="faq-item rv">
+        <div class="faq-q">Does Dr. Hussien treat patients with dental anxiety?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a"><div class="faq-a-in">Yes. He uses STA digital anesthesia for comfortable numbing and offers Nitrous Oxide sedation. His approach focuses on reducing anxiety through clear communication and gentle technique, making treatment virtually painless for anxious patients.</div></div>
+      </div>
+      <div class="faq-item rv">
+        <div class="faq-q">What is Dr. Hussien's role as Medical Director?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a"><div class="faq-a-in">He oversees clinical standards across all departments, reviews complex cases from every specialist, sets infection control and digital workflow protocols, and ensures consistent quality of care throughout the clinic.</div></div>
+      </div>
+      <div class="faq-item rv">
+        <div class="faq-q">Can Dr. Hussien perform bone grafting if I don't have enough bone?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a"><div class="faq-a-in">Yes. He performs lateral sinus lifts, bone augmentation, and guided bone regeneration to build sufficient bone for implant placement, even in complex cases where other clinics may have declined treatment.</div></div>
+      </div>
+      <div class="faq-item rv">
+        <div class="faq-q">What technology does Dr. Hussien use for implant surgery?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a"><div class="faq-a-in">Every case begins with a CBCT 3D scan. Surgical guides ensure precise implant positioning. Osstell ISQ measures implant stability for optimal loading timing, and piezoelectric instruments minimise tissue trauma during bone procedures.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How many dental implants has Dr. Hussien placed?","acceptedAnswer":{"@type":"Answer","text":"Over 5,000 implants across 35+ years of practice. He uses Straumann® implants exclusively and CBCT-guided surgical protocols for every case."}},{"@type":"Question","name":"Does Dr. Hussien treat patients with dental anxiety?","acceptedAnswer":{"@type":"Answer","text":"Yes. He uses STA digital anesthesia for comfortable numbing and offers Nitrous Oxide sedation. His approach focuses on reducing anxiety through clear communication and gentle technique."}},{"@type":"Question","name":"What is Dr. Hussien's role as Medical Director?","acceptedAnswer":{"@type":"Answer","text":"He oversees clinical standards across all departments, reviews complex cases from every specialist, sets infection control and digital workflow protocols, and ensures consistent quality of care."}},{"@type":"Question","name":"Can Dr. Hussien perform bone grafting if I don't have enough bone?","acceptedAnswer":{"@type":"Answer","text":"Yes. He performs lateral sinus lifts, bone augmentation, and guided bone regeneration to build sufficient bone for implant placement, even in complex cases."}},{"@type":"Question","name":"What technology does Dr. Hussien use for implant surgery?","acceptedAnswer":{"@type":"Answer","text":"Every case begins with a CBCT 3D scan. Surgical guides ensure precise implant positioning. Osstell ISQ measures implant stability, and piezoelectric instruments minimize tissue trauma."}}]}</script>
+
 <footer id="ftr">
   <div class="ft">
     <div class="fl">
@@ -270,6 +378,7 @@ hbg.addEventListener("click",open);mx.addEventListener("click",close);mn.querySe
 const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add("on");io.unobserve(x.target)}}),{threshold:.1,rootMargin:"0px 0px -28px 0px"});
 document.querySelectorAll(".rv").forEach(el=>io.observe(el));
 document.querySelectorAll('.gal-split').forEach(split=>{const after=split.querySelector('.gal-half:nth-child(2)');const divLine=split.querySelector('.gal-div');const arrow=split.querySelector('.gal-arrow');if(!after||!divLine)return;let dragging=false;function setPos(x){const rect=split.getBoundingClientRect();let pct=((x-rect.left)/rect.width)*100;pct=Math.max(5,Math.min(95,pct));after.style.clipPath='inset(0 0 0 '+pct+'%)';divLine.style.left=pct+'%';if(arrow)arrow.style.left=pct+'%'}split.addEventListener('mousedown',function(e){dragging=true;setPos(e.clientX);e.preventDefault()});window.addEventListener('mousemove',function(e){if(dragging)setPos(e.clientX)});window.addEventListener('mouseup',function(){dragging=false});split.addEventListener('touchstart',function(e){dragging=true;setPos(e.touches[0].clientX)},{passive:true});window.addEventListener('touchmove',function(e){if(dragging)setPos(e.touches[0].clientX)},{passive:true});window.addEventListener('touchend',function(){dragging=false})});
+document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>{const item=q.parentElement;item.classList.toggle('active');document.querySelectorAll('.faq-item').forEach(i=>{if(i!==item)i.classList.remove('active')})}));
 </script>
 
 <!-- FLOATING CHAT -->

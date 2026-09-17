@@ -85,7 +85,26 @@
       "PowerShell(Get-Process -Id 31292)",
       "Bash(python \"C:\\\\Users\\\\Z8713~1.OBA\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Z-obaid-Downloads-vision-dental-v3-6-vision-dental\\\\8194e843-c7cc-418c-8ad6-30872bf7048a\\\\scratchpad\\\\fix_canonical.py\")",
       "Bash(python \"C:\\\\Users\\\\Z8713~1.OBA\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Z-obaid-Downloads-vision-dental-v3-6-vision-dental\\\\8194e843-c7cc-418c-8ad6-30872bf7048a\\\\scratchpad\\\\fix_alts.py\")",
-      "Bash(python)"
+      "Bash(python)",
+      "Bash(sort -t: -k3)",
+      "Bash(uniq -f2 -c)",
+      "Bash(python \"C:\\\\Users\\\\Z8713~1.OBA\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Z-obaid-Downloads-vision-dental-v3-6-vision-dental\\\\8194e843-c7cc-418c-8ad6-30872bf7048a\\\\scratchpad\\\\add_arabic_keywords.py\")",
+      "Bash(python \"C:\\\\Users\\\\Z8713~1.OBA\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Z-obaid-Downloads-vision-dental-v3-6-vision-dental\\\\8194e843-c7cc-418c-8ad6-30872bf7048a\\\\scratchpad\\\\chatgpt_ads_fixes.py\")",
+      "Bash(python \"C:\\\\Users\\\\Z8713~1.OBA\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Z-obaid-Downloads-vision-dental-v3-6-vision-dental\\\\8194e843-c7cc-418c-8ad6-30872bf7048a\\\\scratchpad\\\\chatgpt_fixes_2.py\")",
+      "Bash(git reset *)",
+      "Bash(python \"C:\\\\Users\\\\Z8713~1.OBA\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Z-obaid-Downloads-vision-dental-v3-6-vision-dental\\\\8194e843-c7cc-418c-8ad6-30872bf7048a\\\\scratchpad\\\\cross_linking.py\")",
+      "WebFetch(domain:www.hsdc.ae)",
+      "WebFetch(domain:www.hsmcuae.ae)",
+      "WebFetch(domain:marigolddentaluae.com)",
+      "WebFetch(domain:truesmile.ae)",
+      "WebFetch(domain:www.gdcabudhabi.ae)",
+      "WebFetch(domain:www.perfectsmiledental.ae)",
+      "Bash(echo \"EXIT:$?\")",
+      "PowerShell(markitdown \"C:\\\\Users\\\\Z.obaid\\\\Downloads\\\\VDC_AEO_16_Full_Blogs.docx\")",
+      "PowerShell(pip install markitdown 2>&1)",
+      "PowerShell(pip install \"markitdown[docx]\" 2>&1)",
+      "PowerShell($output = markitdown \"C:\\\\Users\\\\Z.obaid\\\\Downloads\\\\VDC_AEO_16_Full_Blogs.docx\" 2>&1; $output | Out-File -Encoding utf8 \"C:\\\\Users\\\\Z8713~1.OBA\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Z-obaid-Downloads-vision-dental-v3-6-vision-dental\\\\8194e843-c7cc-418c-8ad6-30872bf7048a\\\\scratchpad\\\\blogs-content.md\"; Write-Host \"Done - $\\(\\($output | Measure-Object -Line\\).Lines\\) lines\")",
+      "Bash(python \"C:\\\\Users\\\\Z8713~1.OBA\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Z-obaid-Downloads-vision-dental-v3-6-vision-dental\\\\8194e843-c7cc-418c-8ad6-30872bf7048a\\\\scratchpad\\\\generate_blogs.py\")"
     ]
   }
 }

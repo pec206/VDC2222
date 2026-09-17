@@ -85,8 +85,20 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
 .ch-pulse{position:absolute;inset:0;border-radius:50%;background:rgba(45,95,138,.3);animation:ch-ring 2s ease-out infinite;pointer-events:none}
 @keyframes ch-ring{0%{transform:scale(1);opacity:1}100%{transform:scale(1.6);opacity:0}}
 .skip-link{position:absolute;top:-100%;left:16px;background:var(--b900);color:var(--w);padding:12px 24px;border-radius:0 0 8px 8px;font-size:14px;font-weight:700;z-index:9999;transition:top .2s}.skip-link:focus{top:0}
+.faq-wrap{max-width:800px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--s100)}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-size:15px;font-weight:700;color:var(--b900);cursor:pointer;gap:16px}
+.faq-q svg{width:18px;height:18px;flex-shrink:0;transition:transform .3s;color:var(--s400)}
+.faq-item.active .faq-q svg{transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-item.active .faq-a{max-height:500px}
+.faq-a-in{padding:0 0 20px;font-size:14px;line-height:1.75;color:var(--s600)}
+@media(max-width:768px){.ca-grid{grid-template-columns:1fr!important}}
+@media(max-width:900px){.tech-grid{grid-template-columns:repeat(2,1fr)!important}}
+@media(max-width:600px){.tech-grid{grid-template-columns:1fr!important}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":["Dentist","Physician"],"name":"Dr. Asmaa Butt","alternateName":"دكتورة أسماء بت - أسنان أطفال أبوظبي","description":"Dr. Asmaa Butt — Pediatric and Cosmetic Dentist at Vision Dental Clinic Abu Dhabi. Invisalign certified provider. Expert in children's dentistry, veneers, teeth whitening, and digital smile design.","url":"https://visiondentalclinic.com/dr-asmaa.html","worksFor":{"@type":"Dentist","name":"Vision Dental Clinic","url":"https://visiondentalclinic.com","address":{"@type":"PostalAddress","addressLocality":"Abu Dhabi","addressCountry":"AE"}}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Dr. Asmaa the Invisalign provider at Vision Dental?","acceptedAnswer":{"@type":"Answer","text":"Yes. Dr. Asmaa Butt is the clinic's certified Invisalign provider. She manages all clear aligner cases, from initial consultation and 3D scanning to treatment monitoring and final refinements."}},{"@type":"Question","name":"Can Dr. Asmaa treat my child?","acceptedAnswer":{"@type":"Answer","text":"Yes. She provides comprehensive pediatric dental care including check-ups, fluoride treatments, fissure sealants, restorations, and space maintainers. She uses child-friendly techniques with STA anesthesia and Nitrous Oxide sedation when needed."}},{"@type":"Question","name":"Which whitening treatment does Dr. Asmaa recommend?","acceptedAnswer":{"@type":"Answer","text":"She offers both Philips Zoom (1,299 AED) and Nano whitening (1,099 AED). Zoom delivers faster, more dramatic results in about 45 minutes. The best option depends on your sensitivity level and desired shade improvement — she'll recommend during consultation."}},{"@type":"Question","name":"How long does Invisalign treatment take?","acceptedAnswer":{"@type":"Answer","text":"Most cases take 6–18 months depending on complexity. Simple alignment cases may be completed in as few as 6 months, while more complex bite corrections take longer. A treatment timeline is provided after the initial scan."}},{"@type":"Question","name":"Does whitening damage tooth enamel?","acceptedAnswer":{"@type":"Answer","text":"Professional whitening under dental supervision is clinically safe for enamel when applied correctly. Dr. Asmaa customises the treatment to your sensitivity level and provides aftercare instructions to maintain results."}}]}</script>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to content</a>
@@ -176,6 +188,66 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
   </div>
 </section>
 
+<!-- CLINICAL APPROACH -->
+<section class="S">
+  <div class="W">
+    <p class="eye eye--cx rv">Methodology</p>
+    <h2 class="Hlg rv d1" style="text-align:center;font-size:clamp(24px,3vw,36px);margin-bottom:32px">Clinical <em class="em">Approach</em></h2>
+    <div class="ca-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:960px;margin:0 auto">
+      <div class="rv" style="background:var(--s50);padding:28px 24px;border-radius:var(--rl)">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--b700)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:14px"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        <h3 style="font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px">Gentle &amp; Patient-Centered</h3>
+        <p style="font-size:13.5px;line-height:1.7;color:var(--s600)">Known for her calm, reassuring manner with both adults and children. Uses STA digital anesthesia and Nitrous Oxide sedation to ensure a comfortable experience for anxious patients.</p>
+      </div>
+      <div class="rv d1" style="background:var(--s50);padding:28px 24px;border-radius:var(--rl)">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--b700)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:14px"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M8 12l2 2 4-4"/></svg>
+        <h3 style="font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px">Invisalign Expertise</h3>
+        <p style="font-size:13.5px;line-height:1.7;color:var(--s600)">As the clinic's certified Invisalign provider, she manages clear aligner cases from initial scanning to final refinements. Digital treatment planning ensures predictable tooth movement with each set of aligners.</p>
+      </div>
+      <div class="rv d2" style="background:var(--s50);padding:28px 24px;border-radius:var(--rl)">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--b700)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:14px"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <h3 style="font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px">Prevention First</h3>
+        <p style="font-size:13.5px;line-height:1.7;color:var(--s600)">Focuses on early detection and preventive care for children — fluoride treatments, fissure sealants, and space maintainers to protect developing teeth and avoid more complex treatment later.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECHNOLOGY -->
+<section class="S" style="background:var(--s50)">
+  <div class="W">
+    <p class="eye eye--cx rv">Equipment</p>
+    <h2 class="Hlg rv d1" style="text-align:center;font-size:clamp(24px,3vw,36px);margin-bottom:32px">Technology <em class="em">Arsenal</em></h2>
+    <div class="tech-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:960px;margin:0 auto">
+      <div class="rv" style="background:var(--w);padding:20px;border-radius:var(--rl);border:.5px solid var(--s100)">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--g600)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:10px"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+        <h4 style="font-size:14px;font-weight:700;color:var(--b900);margin-bottom:4px">3Shape Intraoral Scanner</h4>
+        <p style="font-size:12.5px;line-height:1.65;color:var(--s600)">Digital scanning for Invisalign and restoration planning</p>
+      </div>
+      <div class="rv d1" style="background:var(--w);padding:20px;border-radius:var(--rl);border:.5px solid var(--s100)">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--g600)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:10px"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <h4 style="font-size:14px;font-weight:700;color:var(--b900);margin-bottom:4px">Philips Zoom Whitening</h4>
+        <p style="font-size:12.5px;line-height:1.65;color:var(--s600)">In-office professional whitening with LED activation</p>
+      </div>
+      <div class="rv d2" style="background:var(--w);padding:20px;border-radius:var(--rl);border:.5px solid var(--s100)">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--g600)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:10px"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <h4 style="font-size:14px;font-weight:700;color:var(--b900);margin-bottom:4px">STA Digital Anesthesia</h4>
+        <p style="font-size:12.5px;line-height:1.65;color:var(--s600)">Computer-controlled for comfortable, precise numbing</p>
+      </div>
+      <div class="rv" style="background:var(--w);padding:20px;border-radius:var(--rl);border:.5px solid var(--s100)">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--g600)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:10px"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        <h4 style="font-size:14px;font-weight:700;color:var(--b900);margin-bottom:4px">Nitrous Oxide Sedation</h4>
+        <p style="font-size:12.5px;line-height:1.65;color:var(--s600)">Safe conscious sedation for anxious patients and children</p>
+      </div>
+      <div class="rv d1" style="background:var(--w);padding:20px;border-radius:var(--rl);border:.5px solid var(--s100)">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--g600)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:10px"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+        <h4 style="font-size:14px;font-weight:700;color:var(--b900);margin-bottom:4px">Digital Smile Design</h4>
+        <p style="font-size:12.5px;line-height:1.65;color:var(--s600)">Virtual smile planning with physical mockup for patient approval</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="S">
   <div class="W">
     <p class="eye rv">Published Cases</p>
@@ -222,6 +294,36 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
       <h3>Interested in a Similar Result?</h3>
       <p>Book a consultation and receive a digital preview of your potential outcome before any treatment begins.</p>
       <div class="cta-btns"><a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book Appointment</a><a href="tel:+97123122777" class="btn btn--gh">+971 2 312 2777</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="S">
+  <div class="W">
+    <p class="eye eye--cx rv">Common Questions</p>
+    <h2 class="Hlg rv d1" style="text-align:center;font-size:clamp(24px,3vw,36px);margin-bottom:40px">Frequently Asked <em class="em">Questions</em></h2>
+    <div class="faq-wrap">
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('active')">Is Dr. Asmaa the Invisalign provider at Vision Dental?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a"><div class="faq-a-in">Yes. Dr. Asmaa Butt is the clinic's certified Invisalign provider. She manages all clear aligner cases, from initial consultation and 3D scanning to treatment monitoring and final refinements.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('active')">Can Dr. Asmaa treat my child?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a"><div class="faq-a-in">Yes. She provides comprehensive pediatric dental care including check-ups, fluoride treatments, fissure sealants, restorations, and space maintainers. She uses child-friendly techniques with STA anesthesia and Nitrous Oxide sedation when needed.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('active')">Which whitening treatment does Dr. Asmaa recommend?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a"><div class="faq-a-in">She offers both Philips Zoom (1,299 AED) and Nano whitening (1,099 AED). Zoom delivers faster, more dramatic results in about 45 minutes. The best option depends on your sensitivity level and desired shade improvement — she'll recommend during consultation.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('active')">How long does Invisalign treatment take?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a"><div class="faq-a-in">Most cases take 6–18 months depending on complexity. Simple alignment cases may be completed in as few as 6 months, while more complex bite corrections take longer. A treatment timeline is provided after the initial scan.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('active')">Does whitening damage tooth enamel?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a"><div class="faq-a-in">Professional whitening under dental supervision is clinically safe for enamel when applied correctly. Dr. Asmaa customises the treatment to your sensitivity level and provides aftercare instructions to maintain results.</div></div>
+      </div>
     </div>
   </div>
 </section>

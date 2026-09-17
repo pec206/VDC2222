@@ -85,8 +85,19 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
 .ch-pulse{position:absolute;inset:0;border-radius:50%;background:rgba(45,95,138,.3);animation:ch-ring 2s ease-out infinite;pointer-events:none}
 @keyframes ch-ring{0%{transform:scale(1);opacity:1}100%{transform:scale(1.6);opacity:0}}
 .skip-link{position:absolute;top:-100%;left:16px;background:var(--b900);color:var(--w);padding:12px 24px;border-radius:0 0 8px 8px;font-size:14px;font-weight:700;z-index:9999;transition:top .2s}.skip-link:focus{top:0}
+@media(max-width:768px){.ca-grid{grid-template-columns:1fr!important}}
+@media(max-width:900px){.tech-grid{grid-template-columns:repeat(2,1fr)!important}}@media(max-width:600px){.tech-grid{grid-template-columns:1fr!important}}
+.faq-wrap{max-width:800px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--s100)}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-size:15px;font-weight:700;color:var(--b900);cursor:pointer;gap:16px}
+.faq-q svg{width:18px;height:18px;flex-shrink:0;transition:transform .3s;color:var(--s400)}
+.faq-item.active .faq-q svg{transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-item.active .faq-a{max-height:500px}
+.faq-a-in{padding:0 0 20px;font-size:14px;line-height:1.75;color:var(--s600)}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":["Dentist","Physician"],"name":"Dr. Salim Alhamadani","alternateName":"دكتور سليم الحمداني - تجميل أسنان أبوظبي","description":"Dr. Salim Alhamadani — Cosmetic Dentist and General Practitioner at Vision Dental Clinic Abu Dhabi. Expert in porcelain veneers, smile design, endodontic treatment, and full-mouth restorations.","url":"https://visiondentalclinic.com/dr-salim.html","worksFor":{"@type":"Dentist","name":"Vision Dental Clinic","url":"https://visiondentalclinic.com","address":{"@type":"PostalAddress","addressLocality":"Abu Dhabi","addressCountry":"AE"}}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What cosmetic treatments does Dr. Salim offer?","acceptedAnswer":{"@type":"Answer","text":"Dr. Salim offers composite bonding, porcelain veneers, teeth whitening (Zoom and Nano), gum contouring, and complete smile design. He works with each patient to find the most suitable approach based on their goals and budget."}},{"@type":"Question","name":"Does Dr. Salim do general dental check-ups?","acceptedAnswer":{"@type":"Answer","text":"Yes. Beyond cosmetic work, he provides comprehensive general dental care including examinations, fillings, scaling and cleaning, and preventive treatments. Regular check-ups with Dr. Salim cover both health and aesthetics."}},{"@type":"Question","name":"How does Dr. Salim approach smile design?","acceptedAnswer":{"@type":"Answer","text":"He begins with a thorough consultation to understand your goals, then uses Digital Smile Design software and 3Shape scanning to create a virtual preview. A physical mockup (trial smile) lets you see and approve the result before any preparation. Unlimited adjustments are included."}},{"@type":"Question","name":"What is the difference between composite bonding and porcelain veneers?","acceptedAnswer":{"@type":"Answer","text":"Composite bonding is applied directly in one visit with minimal enamel removal — it is reversible and more affordable. Porcelain veneers are custom-made in a lab, offering superior durability (15-20 years) and stain resistance. Dr. Salim recommends the best option based on your specific case."}},{"@type":"Question","name":"Is teeth whitening safe?","acceptedAnswer":{"@type":"Answer","text":"Professional whitening under dental supervision is clinically safe for enamel. Dr. Salim offers Philips Zoom (1,299 AED) and Nano whitening (1,099 AED), and customises the treatment to your sensitivity level with aftercare guidance."}}]}</script>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to content</a>
@@ -176,6 +187,59 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
   </div>
 </section>
 
+<section class="S"><div class="W">
+  <p class="eye eye--cx rv">Methodology</p>
+  <h2 class="Hlg rv d1" style="text-align:center;font-size:clamp(24px,3vw,36px);margin-bottom:32px">Clinical <em class="em">Approach</em></h2>
+  <div class="ca-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:960px;margin:0 auto">
+    <div style="background:var(--s50);padding:28px 24px;border-radius:var(--rl)" class="rv">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--b700)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+      <h3 style="font-size:16px;font-weight:800;color:var(--b900);margin:12px 0 8px">Patient-Centred Consultations</h3>
+      <p style="font-size:14px;color:var(--s600);line-height:1.7">Takes time to understand each patient's aesthetic goals, lifestyle, and expectations before designing any treatment plan. No rushed appointments — thorough assessment comes first.</p>
+    </div>
+    <div style="background:var(--s50);padding:28px 24px;border-radius:var(--rl)" class="rv d1">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--b700)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <h3 style="font-size:16px;font-weight:800;color:var(--b900);margin:12px 0 8px">Conservative Aesthetics</h3>
+      <p style="font-size:14px;color:var(--s600);line-height:1.7">Favours minimally invasive cosmetic approaches — composite bonding and whitening before veneers, preserving natural tooth structure wherever possible while achieving the desired aesthetic result.</p>
+    </div>
+    <div style="background:var(--s50);padding:28px 24px;border-radius:var(--rl)" class="rv d2">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--b700)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+      <h3 style="font-size:16px;font-weight:800;color:var(--b900);margin:12px 0 8px">Preventive Focus</h3>
+      <p style="font-size:14px;color:var(--s600);line-height:1.7">Believes the best dentistry is prevention. Regular check-ups, scaling, fluoride application, and patient education form the foundation of long-term oral health.</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="S S--lt"><div class="W">
+  <p class="eye eye--cx rv">Equipment</p>
+  <h2 class="Hlg rv d1" style="text-align:center;font-size:clamp(24px,3vw,36px);margin-bottom:32px">Technology <em class="em">& Tools</em></h2>
+  <div class="tech-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:960px;margin:0 auto">
+    <div style="background:var(--w);padding:20px;border-radius:var(--rl);border:.5px solid var(--s100)" class="rv">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--b700)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      <h4 style="font-size:14px;font-weight:700;color:var(--b900);margin:10px 0 4px">3Shape Intraoral Scanner</h4>
+      <p style="font-size:13px;color:var(--s600);line-height:1.6">Digital impressions for restorations and smile design</p>
+    </div>
+    <div style="background:var(--w);padding:20px;border-radius:var(--rl);border:.5px solid var(--s100)" class="rv d1">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--b700)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+      <h4 style="font-size:14px;font-weight:700;color:var(--b900);margin:10px 0 4px">Digital Smile Design (DSD)</h4>
+      <p style="font-size:13px;color:var(--s600);line-height:1.6">Virtual smile planning for predictable aesthetics</p>
+    </div>
+    <div style="background:var(--w);padding:20px;border-radius:var(--rl);border:.5px solid var(--s100)" class="rv d2">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--b700)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      <h4 style="font-size:14px;font-weight:700;color:var(--b900);margin:10px 0 4px">Philips Zoom Whitening</h4>
+      <p style="font-size:13px;color:var(--s600);line-height:1.6">Professional in-office LED-activated whitening</p>
+    </div>
+    <div style="background:var(--w);padding:20px;border-radius:var(--rl);border:.5px solid var(--s100)" class="rv">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--b700)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+      <h4 style="font-size:14px;font-weight:700;color:var(--b900);margin:10px 0 4px">STA Digital Anesthesia</h4>
+      <p style="font-size:13px;color:var(--s600);line-height:1.6">Computer-controlled for comfortable, precise numbing</p>
+    </div>
+    <div style="background:var(--w);padding:20px;border-radius:var(--rl);border:.5px solid var(--s100)" class="rv d1">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--b700)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 12h10"/><path d="M12 7v10"/></svg>
+      <h4 style="font-size:14px;font-weight:700;color:var(--b900);margin:10px 0 4px">OPG Panoramic Imaging</h4>
+      <p style="font-size:13px;color:var(--s600);line-height:1.6">Full jaw assessment during consultation</p>
+    </div>
+  </div>
+</div></section>
 
 <section class="gal-section">
   <div class="W">
@@ -224,6 +288,33 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
   </div>
 </section>
 
+<section class="S"><div class="W">
+  <p class="eye eye--cx rv">Common Questions</p>
+  <h2 class="Hlg rv d1" style="text-align:center;font-size:clamp(24px,3vw,36px);margin-bottom:32px">Frequently Asked <em class="em">Questions</em></h2>
+  <div class="faq-wrap">
+    <div class="faq-item rv">
+      <div class="faq-q">What cosmetic treatments does Dr. Salim offer?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+      <div class="faq-a"><div class="faq-a-in">Dr. Salim offers composite bonding, porcelain veneers, teeth whitening (Zoom and Nano), gum contouring, and complete smile design. He works with each patient to find the most suitable approach based on their goals and budget.</div></div>
+    </div>
+    <div class="faq-item rv d1">
+      <div class="faq-q">Does Dr. Salim do general dental check-ups?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+      <div class="faq-a"><div class="faq-a-in">Yes. Beyond cosmetic work, he provides comprehensive general dental care including examinations, fillings, scaling and cleaning, and preventive treatments. Regular check-ups with Dr. Salim cover both health and aesthetics.</div></div>
+    </div>
+    <div class="faq-item rv d1">
+      <div class="faq-q">How does Dr. Salim approach smile design?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+      <div class="faq-a"><div class="faq-a-in">He begins with a thorough consultation to understand your goals, then uses Digital Smile Design software and 3Shape scanning to create a virtual preview. A physical mockup (trial smile) lets you see and approve the result before any preparation. Unlimited adjustments are included.</div></div>
+    </div>
+    <div class="faq-item rv d2">
+      <div class="faq-q">What is the difference between composite bonding and porcelain veneers?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+      <div class="faq-a"><div class="faq-a-in">Composite bonding is applied directly in one visit with minimal enamel removal — it is reversible and more affordable. Porcelain veneers are custom-made in a lab, offering superior durability (15-20 years) and stain resistance. Dr. Salim recommends the best option based on your specific case.</div></div>
+    </div>
+    <div class="faq-item rv d2">
+      <div class="faq-q">Is teeth whitening safe?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+      <div class="faq-a"><div class="faq-a-in">Professional whitening under dental supervision is clinically safe for enamel. Dr. Salim offers Philips Zoom (1,299 AED) and Nano whitening (1,099 AED), and customises the treatment to your sensitivity level with aftercare guidance.</div></div>
+    </div>
+  </div>
+</div></section>
+
 <footer id="ftr">
   <div class="ft">
     <div class="fl">
@@ -255,6 +346,7 @@ hbg.addEventListener("click",open);mx.addEventListener("click",close);mn.querySe
 const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add("on");io.unobserve(x.target)}}),{threshold:.1,rootMargin:"0px 0px -28px 0px"});
 document.querySelectorAll(".rv").forEach(el=>io.observe(el));
 document.querySelectorAll('.gal-split').forEach(split=>{const after=split.querySelector('.gal-half:nth-child(2)');const divLine=split.querySelector('.gal-div');const arrow=split.querySelector('.gal-arrow');if(!after||!divLine)return;let dragging=false;function setPos(x){const rect=split.getBoundingClientRect();let pct=((x-rect.left)/rect.width)*100;pct=Math.max(5,Math.min(95,pct));after.style.clipPath='inset(0 0 0 '+pct+'%)';divLine.style.left=pct+'%';if(arrow)arrow.style.left=pct+'%'}split.addEventListener('mousedown',function(e){dragging=true;setPos(e.clientX);e.preventDefault()});window.addEventListener('mousemove',function(e){if(dragging)setPos(e.clientX)});window.addEventListener('mouseup',function(){dragging=false});split.addEventListener('touchstart',function(e){dragging=true;setPos(e.touches[0].clientX)},{passive:true});window.addEventListener('touchmove',function(e){if(dragging)setPos(e.touches[0].clientX)},{passive:true});window.addEventListener('touchend',function(){dragging=false})});
+document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>{const item=q.parentElement;item.classList.toggle('active');document.querySelectorAll('.faq-item').forEach(i=>{if(i!==item)i.classList.remove('active')})}));
 </script>
 
 <!-- FLOATING CHAT -->

@@ -77,6 +77,11 @@ a.spec-tag{text-decoration:none;transition:all .2s}a.spec-tag:hover{background:v
 @media(max-width:900px){.dr-hero-in{grid-template-columns:220px 1fr;gap:36px}.bio-grid{grid-template-columns:1fr;gap:36px}.gal-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:768px){.hdr-nav,.hdr-lic,.hdr-ct{display:none}.hbg{display:flex}
   .hdr-r{margin-left:auto}.dr-hero-in{grid-template-columns:1fr;text-align:center}.dr-hero-img{max-width:240px;margin:0 auto}.dr-hero-badges,.dr-acts{justify-content:center}.dr-stats{grid-template-columns:repeat(3,1fr)}.gal-grid{grid-template-columns:1fr}}
+.appr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.appr-card{background:var(--s50);padding:28px 24px;border-radius:var(--rl)}.appr-card svg{margin-bottom:14px;flex-shrink:0}.appr-card h3{font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px}.appr-card p{font-size:14px;line-height:1.7;color:var(--s600)}
+@media(max-width:768px){.appr-grid{grid-template-columns:1fr}}
+.tech-grid-sm{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.tech-item{background:var(--w);padding:20px;border-radius:var(--rl);border:.5px solid var(--s100)}.tech-item h4{font-size:15px;font-weight:700;color:var(--b900);margin-bottom:4px}.tech-item p{font-size:13px;line-height:1.6;color:var(--s600)}
+@media(max-width:600px){.tech-grid-sm{grid-template-columns:1fr}}
+.faq-list{max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:10px}.faq-item{background:var(--w);border:.5px solid var(--s200);border-radius:var(--rl);overflow:hidden;transition:border-color .25s}.faq-item.open{border-color:var(--g500)}.faq-q{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 24px;cursor:pointer;font-size:15px;font-weight:700;color:var(--b900);background:none;border:none;width:100%;text-align:left;font-family:var(--fb);line-height:1.4}.faq-q:hover{color:var(--g600)}.faq-q svg{flex-shrink:0;transition:transform .3s}.faq-item.open .faq-q svg{transform:rotate(180deg)}.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}.faq-a-in{padding:0 24px 18px;font-size:14px;line-height:1.78;color:var(--s600)}
 .ch-float{position:fixed;bottom:24px;right:24px;z-index:900;display:flex;align-items:center;gap:10px}
 .ch-float a{display:flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;
 background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;position:relative}
@@ -87,6 +92,7 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
 .skip-link{position:absolute;top:-100%;left:16px;background:var(--b900);color:var(--w);padding:12px 24px;border-radius:0 0 8px 8px;font-size:14px;font-weight:700;z-index:9999;transition:top .2s}.skip-link:focus{top:0}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":["Dentist","Physician"],"name":"Prof. Amr Labib","alternateName":"بروفيسور عمرو لبيب - تقويم أسنان أبوظبي","description":"Prof. Amr Labib — Orthodontist at Vision Dental Clinic Abu Dhabi. Specialist in Invisalign clear aligners, traditional braces, and complex orthodontic cases for children and adults.","url":"https://visiondentalclinic.com/dr-amr.html","worksFor":{"@type":"Dentist","name":"Vision Dental Clinic","url":"https://visiondentalclinic.com","address":{"@type":"PostalAddress","addressLocality":"Abu Dhabi","addressCountry":"AE"}}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does Prof. Amr Labib offer Invisalign?","acceptedAnswer":{"@type":"Answer","text":"Prof. Labib specialises in fixed braces (metal, ceramic, and self-ligating systems). For Invisalign clear aligner treatment, the clinic's certified provider is Dr. Asmaa Butt. Both work within the same clinic, so referral is seamless."}},{"@type":"Question","name":"At what age should my child see an orthodontist?","acceptedAnswer":{"@type":"Answer","text":"The American Association of Orthodontists recommends a first assessment by age 7. At this age, enough permanent teeth have erupted to identify developing issues. Early evaluation does not mean immediate treatment — in many cases, Prof. Labib simply monitors growth."}},{"@type":"Question","name":"How long does braces treatment typically take?","acceptedAnswer":{"@type":"Answer","text":"Most cases take 12–24 months. Simple alignment cases may take less, while complex bite corrections can take longer. Prof. Labib provides a clear timeline at the initial consultation based on your specific case."}},{"@type":"Question","name":"Are ceramic braces less visible than metal?","acceptedAnswer":{"@type":"Answer","text":"Yes. Ceramic (tooth-coloured) brackets blend with the natural tooth colour and are significantly less noticeable. They function identically to metal braces and are popular with adult patients."}},{"@type":"Question","name":"Will my child need a retainer after braces?","acceptedAnswer":{"@type":"Answer","text":"Yes. Retainers are essential to maintain the corrected tooth positions. Prof. Labib provides both fixed (bonded wire) and removable retainer options and monitors retention at follow-up visits."}}]}</script>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to content</a>
@@ -177,6 +183,60 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
   </div>
 </section>
 
+<!-- Clinical Approach -->
+<section class="S" id="approach">
+  <div class="W">
+    <div style="text-align:center;margin-bottom:40px" class="rv">
+      <p class="eye eye--cx">Approach</p>
+      <h2 class="Hlg">Clinical <em class="em">Approach</em></h2>
+    </div>
+    <div class="appr-grid">
+      <div class="appr-card rv">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--g600)" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        <h3>Evidence-Based Orthodontics</h3>
+        <p>Treatment decisions are guided by cephalometric analysis and digital records, not trends. Every case follows established orthodontic principles refined through decades of academic and clinical practice.</p>
+      </div>
+      <div class="appr-card rv d1">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--g600)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <h3>Growth-Guided Treatment</h3>
+        <p>For children, timing is everything. Phase 1 interceptive treatment addresses jaw growth and space management while the patient is still developing — often simplifying or eliminating the need for later treatment.</p>
+      </div>
+      <div class="appr-card rv d2">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--g600)" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        <h3>Clear Communication</h3>
+        <p>Explains every step to both parents and children. Makes adjustment visits efficient and comfortable, and sets realistic expectations for treatment duration and outcomes from the first consultation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Technology -->
+<section class="S S--lt" id="technology">
+  <div class="W">
+    <div style="text-align:center;margin-bottom:40px" class="rv">
+      <p class="eye eye--cx">Technology</p>
+      <h2 class="Hlg">Treatment <em class="em">Technology</em></h2>
+    </div>
+    <div class="tech-grid-sm">
+      <div class="tech-item rv">
+        <h4>3Shape Intraoral Scanner</h4>
+        <p>Digital impressions for precise bracket placement planning.</p>
+      </div>
+      <div class="tech-item rv d1">
+        <h4>Cephalometric Analysis</h4>
+        <p>Digital X-ray analysis for growth prediction and treatment planning.</p>
+      </div>
+      <div class="tech-item rv d1">
+        <h4>Self-Ligating Brackets</h4>
+        <p>Low-friction system for efficient tooth movement and fewer adjustments.</p>
+      </div>
+      <div class="tech-item rv d2">
+        <h4>OPG Panoramic Imaging</h4>
+        <p>Full jaw assessment during consultation for comprehensive diagnosis.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="gal-section">
   <div class="W">
@@ -228,6 +288,38 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
   </div>
 </section>
 
+<!-- FAQ -->
+<section class="S" id="faq">
+  <div class="W">
+    <div style="text-align:center;margin-bottom:40px" class="rv">
+      <p class="eye eye--cx">FAQ</p>
+      <h2 class="Hlg">Frequently Asked <em class="em">Questions</em></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item rv">
+        <button class="faq-q" aria-expanded="false">Does Prof. Amr Labib offer Invisalign?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><div class="faq-a-in">Prof. Labib specialises in fixed braces (metal, ceramic, and self-ligating systems). For Invisalign clear aligner treatment, the clinic's certified provider is <a href="dr-asmaa.html" style="color:var(--b700);font-weight:600">Dr. Asmaa Butt</a>. Both work within the same clinic, so referral is seamless.</div></div>
+      </div>
+      <div class="faq-item rv d1">
+        <button class="faq-q" aria-expanded="false">At what age should my child see an orthodontist?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><div class="faq-a-in">The American Association of Orthodontists recommends a first assessment by age 7. At this age, enough permanent teeth have erupted to identify developing issues. Early evaluation does not mean immediate treatment — in many cases, Prof. Labib simply monitors growth.</div></div>
+      </div>
+      <div class="faq-item rv d1">
+        <button class="faq-q" aria-expanded="false">How long does braces treatment typically take?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><div class="faq-a-in">Most cases take 12–24 months. Simple alignment cases may take less, while complex bite corrections can take longer. Prof. Labib provides a clear timeline at the initial consultation based on your specific case.</div></div>
+      </div>
+      <div class="faq-item rv d2">
+        <button class="faq-q" aria-expanded="false">Are ceramic braces less visible than metal?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><div class="faq-a-in">Yes. Ceramic (tooth-coloured) brackets blend with the natural tooth colour and are significantly less noticeable. They function identically to metal braces and are popular with adult patients.</div></div>
+      </div>
+      <div class="faq-item rv d2">
+        <button class="faq-q" aria-expanded="false">Will my child need a retainer after braces?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><div class="faq-a-in">Yes. Retainers are essential to maintain the corrected tooth positions. Prof. Labib provides both fixed (bonded wire) and removable retainer options and monitors retention at follow-up visits.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer id="ftr">
   <div class="ft">
     <div class="fl">
@@ -258,6 +350,7 @@ const close=()=>{mn.classList.remove("op");hbg.classList.remove("op");document.b
 hbg.addEventListener("click",open);mx.addEventListener("click",close);mn.querySelectorAll("a").forEach(a=>a.addEventListener("click",close));
 const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add("on");io.unobserve(x.target)}}),{threshold:.1,rootMargin:"0px 0px -28px 0px"});
 document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+document.querySelectorAll('.faq-q').forEach(btn=>{btn.addEventListener('click',()=>{const item=btn.parentElement;const isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item.open').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-a').style.maxHeight=null;i.querySelector('.faq-q').setAttribute('aria-expanded','false')});if(!isOpen){item.classList.add('open');const ans=item.querySelector('.faq-a');ans.style.maxHeight=ans.scrollHeight+'px';btn.setAttribute('aria-expanded','true')}})});
 document.querySelectorAll('.gal-split').forEach(split=>{const after=split.querySelector('.gal-half:nth-child(2)');const divLine=split.querySelector('.gal-div');const arrow=split.querySelector('.gal-arrow');if(!after||!divLine)return;let dragging=false;function setPos(x){const rect=split.getBoundingClientRect();let pct=((x-rect.left)/rect.width)*100;pct=Math.max(5,Math.min(95,pct));after.style.clipPath='inset(0 0 0 '+pct+'%)';divLine.style.left=pct+'%';if(arrow)arrow.style.left=pct+'%'}split.addEventListener('mousedown',function(e){dragging=true;setPos(e.clientX);e.preventDefault()});window.addEventListener('mousemove',function(e){if(dragging)setPos(e.clientX)});window.addEventListener('mouseup',function(){dragging=false});split.addEventListener('touchstart',function(e){dragging=true;setPos(e.touches[0].clientX)},{passive:true});window.addEventListener('touchmove',function(e){if(dragging)setPos(e.touches[0].clientX)},{passive:true});window.addEventListener('touchend',function(){dragging=false})});
 </script>
 
