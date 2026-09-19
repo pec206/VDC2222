@@ -44,7 +44,7 @@ a{text-decoration:none;color:inherit}
 
 /* LAYOUT */
 .wrap{max-width:var(--cw);margin:0 auto;padding:0 var(--px)}
-section{padding:var(--sy) 0}
+section{padding:clamp(40px,5vw,64px) 0}
 
 /* BUTTONS */
 .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:var(--r);font-family:var(--fb);font-size:15px;font-weight:700;transition:all .3s ease;cursor:pointer;border:none}
@@ -91,7 +91,7 @@ section{padding:var(--sy) 0}
 @keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 
 /* ─── B/A GALLERY (matches homepage) ─── */
-.lp-gallery{background:var(--s50)}
+.lp-gallery{background:var(--b900)}.lp-gallery .eye{color:var(--g400)}.lp-gallery .Hlg{color:var(--w)}.lp-gallery .ba-inf h4{color:var(--w)}.lp-gallery .ba-inf p{color:var(--s300)}.lp-gallery .ba-arr{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:var(--w)}.lp-gallery .ba-arr:hover{background:var(--gg);border-color:transparent}.lp-gallery .ba-arr:disabled{opacity:.3;background:rgba(255,255,255,.05)}.lp-gallery .bac{background:var(--b800)}
 .ba-carousel{position:relative;overflow:hidden}
 .ba-track{display:flex;gap:16px;transition:transform .4s ease}
 .ba-track .bac{min-width:calc(33.333% - 11px);flex-shrink:0}
@@ -121,13 +121,10 @@ section{padding:var(--sy) 0}
 
 /* ─── TRIAL SMILE STEPS ─── */
 .ts-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:40px}
-.ts-step{background:var(--w);border-radius:var(--rl);padding:32px 24px;text-align:center;box-shadow:var(--sh);position:relative;border:1px solid var(--s100);transition:transform .3s,box-shadow .3s}
-.ts-step:hover{transform:translateY(-4px);box-shadow:var(--shm)}
-.ts-num{width:44px;height:44px;border-radius:50%;background:var(--gg);color:var(--w);font-weight:800;font-size:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;box-shadow:0 4px 12px rgba(90,159,42,.25)}
-.ts-step h3{font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px}
-.ts-step p{font-size:14px;color:var(--s600);line-height:1.6}
-.ts-note{text-align:center;margin-top:28px;font-size:15px;font-weight:700;color:var(--g700);background:var(--g50);display:inline-block;padding:10px 24px;border-radius:var(--rxl);margin-right:auto;margin-left:auto}
-.ts-note-wrap{text-align:center}
+.ts-step{background:var(--w);border-radius:var(--rm);padding:20px 16px;text-align:center;box-shadow:var(--sh);border:1px solid var(--s100)}
+.ts-num{width:36px;height:36px;border-radius:50%;background:var(--gg);color:var(--w);font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;margin:0 auto 10px}
+.ts-step h3{font-family:var(--fd);font-size:16px;color:var(--b900);margin-bottom:4px}
+.ts-step p{font-size:13px;color:var(--s600);line-height:1.5}
 @media(max-width:900px){.ts-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.ts-grid{grid-template-columns:1fr}}
 
@@ -233,41 +230,7 @@ section{padding:var(--sy) 0}
   </div>
 </section>
 
-<!-- ② TRIAL SMILE — الابتسامة التجريبية -->
-<section aria-labelledby="ts-h">
-  <div class="wrap">
-    <div class="sec-hdr rv">
-      <span class="eye">الابتسامة التجريبية</span>
-      <h2 class="Hlg" id="ts-h">جرّب ابتسامتك قبل القرار النهائي</h2>
-      <p class="Blg" style="max-width:680px;margin:12px auto 0">أربع خطوات فقط — من التصميم الرقمي إلى ابتسامة حقيقية تجربها على أسنانك قبل أن نبدأ.</p>
-    </div>
-    <div class="ts-grid">
-      <div class="ts-step rv">
-        <div class="ts-num">١</div>
-        <h3>التصوير الرقمي</h3>
-        <p>مسح رقمي ثلاثي الأبعاد لأسنانك ووجهك باستخدام تقنية 3Shape.</p>
-      </div>
-      <div class="ts-step rv">
-        <div class="ts-num">٢</div>
-        <h3>التصميم الرقمي (DSD)</h3>
-        <p>نصمم ابتسامتك الجديدة رقمياً بما يتناسب مع ملامح وجهك.</p>
-      </div>
-      <div class="ts-step rv">
-        <div class="ts-num">٣</div>
-        <h3>الابتسامة التجريبية</h3>
-        <p>نموذج حقيقي يُركّب على أسنانك لتراه وتقيّمه قبل أي إجراء نهائي.</p>
-      </div>
-      <div class="ts-step rv">
-        <div class="ts-num">٤</div>
-        <h3>الفينير النهائي</h3>
-        <p>بعد موافقتك الكاملة، نبدأ بتصنيع الفينير النهائي في مختبرنا الداخلي.</p>
-      </div>
-    </div>
-    <div class="ts-note-wrap rv"><p class="ts-note">✦ تعديلات غير محدودة حتى تصل إلى النتيجة المثالية</p></div>
-  </div>
-</section>
-
-<!-- ③ BEFORE / AFTER GALLERY -->
+<!-- ② BEFORE / AFTER GALLERY -->
 <section class="lp-gallery" aria-labelledby="gallery-h">
   <div class="wrap">
     <div class="sec-hdr rv">
@@ -330,12 +293,34 @@ section{padding:var(--sy) 0}
   </div>
 </section>
 
-<!-- ④ PRICING -->
+<!-- ③ STEPS + PRICING -->
 <section aria-labelledby="price-h">
   <div class="wrap">
     <div class="sec-hdr rv">
-      <span class="eye">باقات الأسعار</span>
-      <h2 class="Hlg" id="price-h">خيارات تناسب احتياجاتك</h2>
+      <span class="eye">كيف نعمل</span>
+      <h2 class="Hlg" id="price-h">٤ خطوات لابتسامتك الجديدة</h2>
+    </div>
+    <div class="ts-grid rv" style="margin-top:24px;margin-bottom:40px">
+      <div class="ts-step">
+        <div class="ts-num">١</div>
+        <h3>التصوير الرقمي</h3>
+        <p>مسح 3D لأسنانك بتقنية 3Shape</p>
+      </div>
+      <div class="ts-step">
+        <div class="ts-num">٢</div>
+        <h3>التصميم (DSD)</h3>
+        <p>تصميم رقمي يتناسب مع ملامح وجهك</p>
+      </div>
+      <div class="ts-step">
+        <div class="ts-num">٣</div>
+        <h3>ابتسامة تجريبية</h3>
+        <p>نموذج حقيقي تجربه قبل أي إجراء</p>
+      </div>
+      <div class="ts-step">
+        <div class="ts-num">٤</div>
+        <h3>الفينير النهائي</h3>
+        <p>تصنيع في مختبرنا الرقمي الداخلي</p>
+      </div>
     </div>
     <div class="price-grid">
 
