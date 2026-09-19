@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>إعادة تأهيل الفم الكامل في أبوظبي | Vision Dental Clinic</title>
+<meta name="description" content="إعادة تأهيل شاملة للفم بتخطيط رقمي متكامل — فريق متعدد التخصصات ومختبر رقمي داخلي. احجز استشارتك اليوم.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --b950:#0f2236;--b900:#1a3a52;--b800:#1e4a6e;--b700:#2D5F8A;--b600:#3a74a8;
+  --b400:#5b9cc9;--b200:#b8d9ef;--b100:#d9edf8;--b50:#eaf4fb;
+  --g700:#4a8a1f;--g600:#5a9f2a;--g500:#7AB648;--g400:#93c96a;
+  --g200:#c5e49a;--g100:#e8f5d8;--g50:#f3fae8;
+  --s950:#080f16;--s900:#0f1923;--s800:#1c2b38;--s700:#263a4a;
+  --s600:#3d5268;--s400:#7a95ab;--s300:#a8bfce;--s200:#c8d8e4;
+  --s100:#e8eff5;--s50:#f5f8fb;--w:#ffffff;
+  --gg:linear-gradient(135deg,#5a9f2a 0%,#7AB648 100%);
+  --gb:linear-gradient(135deg,#1e4a6e 0%,#2D5F8A 100%);
+  --gcard:linear-gradient(150deg,#eaf4fb 0%,#f3fae8 100%);
+  --fd:'DM Serif Display',Georgia,serif;
+  --fb:'Plus Jakarta Sans',system-ui,sans-serif;
+  --sh:0 2px 8px rgba(15,25,35,.08);--shm:0 6px 24px rgba(15,25,35,.10);
+  --shl:0 16px 48px rgba(15,25,35,.14);
+  --sy:clamp(64px,7vw,100px);--cw:1200px;--px:clamp(20px,5vw,48px);
+  --r:8px;--rm:14px;--rl:22px;--rxl:32px;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--fb);color:var(--s900);background:var(--w);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+
+/* TYPOGRAPHY */
+.Hxl{font-family:var(--fd);font-size:clamp(32px,5vw,56px);line-height:1.15;color:var(--b900)}
+.Hlg{font-family:var(--fd);font-size:clamp(26px,3.5vw,42px);line-height:1.2;color:var(--b900)}
+.Hmd{font-family:var(--fd);font-size:clamp(20px,2.5vw,30px);line-height:1.3;color:var(--b900)}
+.Blg{font-size:clamp(16px,1.3vw,20px);line-height:1.7;color:var(--s600)}
+.Bmd{font-size:clamp(14px,1vw,17px);line-height:1.7;color:var(--s600)}
+.eye{font-family:var(--fb);font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--g600)}
+
+/* LAYOUT */
+.wrap{max-width:var(--cw);margin:0 auto;padding:0 var(--px)}
+section{padding:var(--sy) 0}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:var(--r);font-family:var(--fb);font-size:15px;font-weight:700;transition:all .3s ease;cursor:pointer;border:none}
+.btn--g{background:var(--gg);color:var(--w);box-shadow:0 4px 16px rgba(90,159,42,.3)}
+.btn--g:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(90,159,42,.4)}
+.btn--b{background:var(--gb);color:var(--w);box-shadow:0 4px 16px rgba(30,74,110,.25)}
+.btn--b:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(30,74,110,.35)}
+.btn--od{background:transparent;color:var(--b700);border:2px solid var(--b200)}
+.btn--od:hover{border-color:var(--b700);background:var(--b50)}
+.btn--arr::after{content:'→';margin-right:-4px;transition:transform .3s}
+.btn--arr:hover::after{transform:translateX(-4px)}
+
+/* REVEAL */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.rv.on{opacity:1;transform:translateY(0)}
+
+/* ─── MINI HEADER ─── */
+.lp-hdr{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--s100);transition:box-shadow .3s}
+.lp-hdr.on{box-shadow:var(--shm)}
+.lp-hdr-in{max-width:var(--cw);margin:0 auto;padding:12px var(--px);display:flex;align-items:center;justify-content:space-between}
+.lp-hdr-logo img{height:36px;width:auto}
+.lp-hdr-logo span{display:none;align-items:center;gap:8px;font-weight:800;font-size:15px;color:var(--b900)}
+.lp-hdr-r{display:flex;align-items:center;gap:12px}
+.lp-hdr-ph{display:flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;background:var(--b50);color:var(--b700);transition:background .3s}
+.lp-hdr-ph:hover{background:var(--b100)}
+.lp-hdr-ph svg{width:20px;height:20px}
+
+/* ─── HERO ─── */
+.lp-hero{padding:120px 0 var(--sy);position:relative;overflow:hidden;text-align:center;background:var(--w)}
+.lp-hero::before{content:'';position:absolute;inset:0;background:url('hero-bg.webp') center/cover no-repeat;opacity:.06;z-index:0}
+.lp-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:120px;background:linear-gradient(to top,var(--w),transparent);z-index:1}
+.lp-hero .wrap{position:relative;z-index:2}
+.lp-hero .Hxl{margin-bottom:16px}
+.lp-hero .Blg{max-width:640px;margin:0 auto 32px}
+.hero-trust{display:flex;flex-wrap:wrap;justify-content:center;gap:24px;margin-top:32px}
+.hero-trust-i{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--s700);background:rgba(255,255,255,.7);backdrop-filter:blur(4px);padding:8px 16px;border-radius:var(--rxl);border:1px solid var(--s100)}
+.hero-trust-i svg{width:20px;height:20px;color:var(--g600);flex-shrink:0}
+.lp-hero .eye{animation:fadeInDown .8s ease both}
+.lp-hero .Hxl{animation:fadeInDown .8s ease .15s both}
+.lp-hero .Blg{animation:fadeInDown .8s ease .3s both}
+.lp-hero .btn{animation:fadeInUp .8s ease .45s both}
+.lp-hero .hero-trust{animation:fadeInUp .8s ease .6s both}
+@keyframes fadeInDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
+/* ─── B/A GALLERY ─── */
+.lp-gallery{background:var(--s50)}
+.ba-carousel{position:relative;overflow:hidden}
+.ba-track{display:flex;gap:16px;transition:transform .4s ease}
+.ba-track .bac{min-width:calc(50% - 8px);flex-shrink:0}
+.ba-arrows{display:flex;gap:8px;margin-top:24px;justify-content:center}
+.ba-arr{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--s200);background:var(--w);color:var(--s700);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.ba-arr:hover{background:var(--gg);border-color:transparent;color:var(--w)}
+.ba-arr:disabled{opacity:.3;cursor:default;background:var(--w);border-color:var(--s200)}
+.ba-slider{position:relative;height:260px;overflow:hidden;cursor:ew-resize;user-select:none;-webkit-user-select:none;border-radius:var(--rm)}
+.ba-slider .ba-img-b,.ba-slider .ba-img-a{position:absolute;inset:0}
+.ba-slider .ba-img-b img,.ba-slider .ba-img-a img{width:100%;height:100%;object-fit:cover}
+.ba-slider .ba-img-a{clip-path:inset(0 0 0 50%)}
+.ba-slider .ba-handle{position:absolute;top:0;bottom:0;left:50%;width:3px;background:rgba(255,255,255,.9);box-shadow:0 0 6px rgba(0,0,0,.3);pointer-events:none}
+.ba-slider .ba-handle-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:32px;height:32px;border-radius:50%;background:var(--w);box-shadow:0 2px 8px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--s700);pointer-events:none}
+.ba-lbl{position:absolute;bottom:10px;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--w);background:rgba(0,0,0,.45);padding:4px 10px;border-radius:4px;pointer-events:none}
+.ba-lb{left:10px}.ba-la{right:10px}
+.ba-inf{padding:14px 0 4px}
+.ba-inf h4{font-family:var(--fd);font-size:16px;color:var(--b900)}
+.ba-inf p{font-size:13px;color:var(--s400);margin-top:2px}
+.bac{background:var(--w);border-radius:var(--rm);overflow:hidden;padding:12px 12px 16px;box-shadow:var(--sh)}
+@media(max-width:600px){.ba-track .bac{min-width:100%}}
+
+/* ─── PROCESS STEPS ─── */
+.ts-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:40px}
+.ts-step{background:var(--w);border-radius:var(--rl);padding:32px 24px;text-align:center;box-shadow:var(--sh);position:relative;border:1px solid var(--s100)}
+.ts-num{width:40px;height:40px;border-radius:50%;background:var(--gg);color:var(--w);font-weight:800;font-size:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+.ts-step h3{font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px}
+.ts-step p{font-size:14px;color:var(--s600);line-height:1.6}
+.ts-note{text-align:center;margin-top:24px;font-size:15px;font-weight:700;color:var(--g700)}
+@media(max-width:900px){.ts-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.ts-grid{grid-template-columns:1fr}}
+
+/* ─── TECH CARDS ─── */
+.tech-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+.tech-card{background:var(--w);border:1px solid var(--s100);border-radius:var(--rl);padding:32px 24px;text-align:center;box-shadow:var(--sh);transition:transform .3s,box-shadow .3s}
+.tech-card:hover{transform:translateY(-4px);box-shadow:var(--shm)}
+.tech-ico{width:56px;height:56px;border-radius:var(--rm);background:var(--b50);display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+.tech-ico svg{width:28px;height:28px;color:var(--b700)}
+.tech-card h3{font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px}
+.tech-card p{font-size:14px;color:var(--s600);line-height:1.6}
+@media(max-width:600px){.tech-grid{grid-template-columns:1fr}}
+
+/* ─── PRICING ─── */
+.price-cta-box{max-width:600px;margin:40px auto 0;background:var(--gcard);border:1px solid var(--s100);border-radius:var(--rl);padding:40px 32px;text-align:center;box-shadow:var(--sh)}
+.price-cta-box h3{font-family:var(--fd);font-size:22px;color:var(--b900);margin-bottom:8px}
+.price-cta-box p{font-size:15px;color:var(--s600);line-height:1.7;margin-bottom:24px}
+
+/* ─── OBJECTION HANDLING ─── */
+.obj-list{max-width:740px;margin:40px auto 0;display:flex;flex-direction:column;gap:24px}
+.obj-item{background:var(--s50);border-radius:var(--rl);padding:28px 32px;border-right:4px solid var(--b400)}
+.obj-item h3{font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px}
+.obj-item p{font-size:15px;color:var(--s600);line-height:1.7}
+
+/* ─── FINAL CTA ─── */
+.lp-cta{background:var(--gb);padding:var(--sy) 0;text-align:center}
+.lp-cta .Hlg{color:var(--w);margin-bottom:12px}
+.lp-cta .Blg{color:rgba(255,255,255,.8);max-width:540px;margin:0 auto 32px}
+.lp-cta .btn--g{font-size:17px;padding:16px 40px}
+
+/* ─── FOOTER ─── */
+.lp-ft{background:var(--s50);padding:24px 0;text-align:center}
+.lp-ft p{font-size:13px;color:var(--s400)}
+.lp-ft a{color:var(--b700)}
+
+/* ─── STICKY BOTTOM CTA (mobile) ─── */
+.sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:90;background:var(--w);padding:12px var(--px);box-shadow:0 -4px 20px rgba(0,0,0,.08);border-top:1px solid var(--s100)}
+.sticky-cta .btn{width:100%;justify-content:center;font-size:16px;padding:14px}
+@media(max-width:768px){.sticky-cta{display:block}}
+
+/* ─── FLOATING CHAT ─── */
+.ch-float{position:fixed;bottom:24px;left:24px;z-index:900}
+.ch-float a{display:flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:var(--gb);box-shadow:0 4px 20px rgba(30,74,110,.4);transition:transform .3s,box-shadow .3s;position:relative}
+.ch-float a:hover{transform:scale(1.1);box-shadow:0 6px 28px rgba(45,95,138,.55)}
+.ch-float svg{width:28px;height:28px;fill:#fff}
+.ch-pulse{position:absolute;inset:0;border-radius:50%;background:rgba(45,95,138,.3);animation:ch-ring 2s ease-out infinite;pointer-events:none}
+@keyframes ch-ring{0%{transform:scale(1);opacity:1}100%{transform:scale(1.6);opacity:0}}
+
+/* ─── SECTION HEADERS ─── */
+.sec-hdr{text-align:center;margin-bottom:8px}
+.sec-hdr .eye{margin-bottom:8px;display:block}
+
+@media(max-width:768px){
+  .lp-hdr-ph span{display:none}
+  .sticky-cta ~ .ch-float{bottom:80px}
+}
+</style>
+</head>
+<body>
+
+<!-- MINI HEADER -->
+<header class="lp-hdr" id="lp-hdr">
+  <div class="lp-hdr-in">
+    <a href="index.html" class="lp-hdr-logo">
+      <img src="Logo_H_White.webp" alt="Vision Dental Clinic" style="filter:brightness(0) saturate(100%) invert(15%) sepia(30%) saturate(700%) hue-rotate(170deg)"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <span style="display:none;align-items:center;gap:8px;font-weight:800;font-size:15px;color:var(--b900)">Vision Dental</span>
+    </a>
+    <div class="lp-hdr-r">
+      <a href="tel:+97123122777" class="lp-hdr-ph" aria-label="اتصل بنا">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ① HERO -->
+<section class="lp-hero" id="hero" aria-labelledby="lp-h1">
+  <div class="wrap">
+    <span class="eye rv">إعادة تأهيل الفم الكامل في أبوظبي</span>
+    <h1 class="Hxl rv" id="lp-h1">أعد بناء ابتسامتك<br>بالكامل</h1>
+    <p class="Blg rv">تخطيط رقمي شامل مع فريق متعدد التخصصات — نعالج جميع المشاكل دفعة واحدة لاستعادة الوظيفة والمظهر والراحة.</p>
+    <div class="rv">
+      <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز استشارتك الآن</a>
+    </div>
+    <div class="hero-trust rv">
+      <div class="hero-trust-i">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <span>فريق متعدد التخصصات</span>
+      </div>
+      <div class="hero-trust-i">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <span>تخطيط رقمي DSD + CBCT</span>
+      </div>
+      <div class="hero-trust-i">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <span>مختبر رقمي داخلي</span>
+      </div>
+      <div class="hero-trust-i">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <span>علاج مرحلي ومنظّم</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ② BEFORE / AFTER GALLERY -->
+<section class="lp-gallery" aria-labelledby="gallery-h">
+  <div class="wrap">
+    <div class="sec-hdr rv">
+      <span class="eye">نتائج حقيقية</span>
+      <h2 class="Hlg" id="gallery-h">قبل وبعد — حالات إعادة تأهيل</h2>
+    </div>
+    <div class="ba-carousel rv" id="ba-carousel">
+      <div class="ba-track" id="ba-track">
+
+        <div class="bac">
+          <div class="ba-slider">
+            <div class="ba-img-b"><img src="ba-ammar-2-before.webp" alt="قبل إعادة تأهيل الفم الكامل" loading="lazy"></div>
+            <div class="ba-img-a"><img src="ba-ammar-2-after.webp" alt="بعد إعادة تأهيل الفم الكامل" loading="lazy"></div>
+            <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
+            <span class="ba-lbl ba-lb">قبل</span><span class="ba-lbl ba-la">بعد</span>
+          </div>
+          <div class="ba-inf"><h4>إعادة تأهيل كامل</h4><p>تيجان وفينير — تحول شامل</p></div>
+        </div>
+
+        <div class="bac">
+          <div class="ba-slider">
+            <div class="ba-img-b"><img src="ba-hussien-1-before.webp" alt="قبل إعادة بناء الابتسامة" loading="lazy"></div>
+            <div class="ba-img-a"><img src="ba-hussien-1-after.webp" alt="بعد إعادة بناء الابتسامة" loading="lazy"></div>
+            <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
+            <span class="ba-lbl ba-lb">قبل</span><span class="ba-lbl ba-la">بعد</span>
+          </div>
+          <div class="ba-inf"><h4>إعادة بناء شاملة</h4><p>زراعة وتركيبات — استعادة كاملة</p></div>
+        </div>
+
+      </div>
+      <div class="ba-arrows">
+        <button class="ba-arr" id="ba-prev" aria-label="السابق" disabled>→</button>
+        <button class="ba-arr" id="ba-next" aria-label="التالي">←</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ③ PHASED TREATMENT PROCESS -->
+<section aria-labelledby="ts-h">
+  <div class="wrap">
+    <div class="sec-hdr rv">
+      <span class="eye">مراحل العلاج</span>
+      <h2 class="Hlg" id="ts-h">خطة علاجية مرحلية ومنظّمة</h2>
+      <p class="Blg" style="max-width:680px;margin:12px auto 0">من التشخيص الرقمي إلى الابتسامة النهائية — كل مرحلة مخططة بعناية مع فريق متكامل.</p>
+    </div>
+    <div class="ts-grid">
+      <div class="ts-step rv">
+        <div class="ts-num">١</div>
+        <h3>التشخيص الشامل</h3>
+        <p>فحص كامل مع تصوير CBCT ومسح رقمي ثلاثي الأبعاد لتقييم جميع جوانب صحة الفم.</p>
+      </div>
+      <div class="ts-step rv">
+        <div class="ts-num">٢</div>
+        <h3>التخطيط الرقمي</h3>
+        <p>تصميم رقمي باستخدام DSD يُظهر لك النتيجة المتوقعة — مع خطة علاجية مفصلة بالتسلسل والمدة.</p>
+      </div>
+      <div class="ts-step rv">
+        <div class="ts-num">٣</div>
+        <h3>العلاج المرحلي</h3>
+        <p>تنفيذ العلاج على مراحل منظّمة — من الأساسيات إلى التجميل — بإشراف فريق متعدد التخصصات.</p>
+      </div>
+      <div class="ts-step rv">
+        <div class="ts-num">٤</div>
+        <h3>الابتسامة النهائية</h3>
+        <p>تركيب التركيبات النهائية المصنّعة في مختبرنا الرقمي الداخلي — نتيجة متكاملة ودائمة.</p>
+      </div>
+    </div>
+    <p class="ts-note rv">✦ فريق متعدد التخصصات يعمل معاً تحت سقف واحد لنتائج متكاملة</p>
+  </div>
+</section>
+
+<!-- ④ TECHNOLOGY -->
+<section style="background:var(--s50)" aria-labelledby="tech-h">
+  <div class="wrap">
+    <div class="sec-hdr rv">
+      <span class="eye">التقنيات المستخدمة</span>
+      <h2 class="Hlg" id="tech-h">تكنولوجيا تصنع الفرق</h2>
+    </div>
+    <div class="tech-grid">
+      <div class="tech-card rv">
+        <div class="tech-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3>Digital Smile Design</h3>
+        <p>تصميم رقمي متكامل يُظهر لك ابتسامتك المستقبلية بدقة عالية — ترى النتيجة قبل البدء بأي إجراء.</p>
+      </div>
+      <div class="tech-card rv">
+        <div class="tech-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>3Shape Scanner</h3>
+        <p>ماسح ضوئي رقمي ثلاثي الأبعاد للحصول على قياسات دقيقة دون الحاجة لقوالب تقليدية مزعجة.</p>
+      </div>
+      <div class="tech-card rv">
+        <div class="tech-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+        </div>
+        <h3>مختبر رقمي داخلي</h3>
+        <p>تصنيع جميع التركيبات داخل العيادة باستخدام أجهزة imes-icore وخامات Ivoclar — دقة أعلى ووقت أقل.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑤ PRICING -->
+<section aria-labelledby="price-h">
+  <div class="wrap">
+    <div class="sec-hdr rv">
+      <span class="eye">التكلفة</span>
+      <h2 class="Hlg" id="price-h">خطة علاجية مخصصة لحالتك</h2>
+    </div>
+    <div class="price-cta-box rv">
+      <h3>يعتمد السعر على خطة العلاج الفردية</h3>
+      <p>كل حالة فريدة — نقدم لك تقييماً رقمياً شاملاً مع خطة علاجية مفصّلة تشمل التكلفة والجدول الزمني قبل البدء بأي إجراء.</p>
+      <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز استشارتك الآن</a>
+    </div>
+    <p class="Bmd rv" style="text-align:center;margin-top:20px">تقسيط بدون فوائد عبر Tabby و Tamara</p>
+  </div>
+</section>
+
+<!-- ⑥ OBJECTION HANDLING -->
+<section style="background:var(--s50)" aria-labelledby="obj-h">
+  <div class="wrap">
+    <div class="sec-hdr rv">
+      <span class="eye">أسئلة شائعة</span>
+      <h2 class="Hlg" id="obj-h">ما يهمك معرفته</h2>
+    </div>
+    <div class="obj-list">
+      <div class="obj-item rv">
+        <h3>كم جلسة يحتاج العلاج الشامل؟</h3>
+        <p>يعتمد على الحالة، لكن عادةً من 6-12 جلسة موزعة على عدة أشهر. نضع خطة علاجية مفصلة بالتسلسل والمدة الزمنية قبل البدء.</p>
+      </div>
+      <div class="obj-item rv">
+        <h3>هل النتيجة تستحق الوقت والتكلفة؟</h3>
+        <p>إعادة تأهيل الفم الكامل تعالج جميع المشاكل دفعة واحدة — الوظيفة والمظهر والراحة. التخطيط الرقمي يُظهر لك النتيجة المتوقعة قبل البدء.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div style="text-align:center;padding:0 0 24px">
+  <a href="full-mouth-rehabilitation.html" target="_blank" rel="noopener" style="font-size:13px;color:var(--s400);transition:color .3s">تعرّف أكثر على إعادة تأهيل الفم الكامل ←</a>
+</div>
+
+<!-- ⑦ FINAL CTA -->
+<section class="lp-cta" aria-labelledby="cta-h">
+  <div class="wrap rv">
+    <h2 class="Hlg" id="cta-h">ابتسامتك الجديدة تبدأ من هنا</h2>
+    <p class="Blg">احجز استشارتك واحصل على تقييم رقمي شامل وخطة علاجية مفصلة مع فريقنا المتخصص.</p>
+    <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعدك الآن</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="lp-ft">
+  <div class="wrap">
+    <p>Vision Dental Clinic · شارع خليفة، أبوظبي · <a href="tel:+97123122777" dir="ltr">02 312 2777</a></p>
+    <p style="margin-top:6px">السبت — الخميس: ١٠:٣٠ ص – ٧:٣٠ م · الجمعة: مغلق</p>
+    <p style="margin-top:6px">MOHAP Licensed No. 5889VHC5-110626</p>
+  </div>
+</footer>
+
+<!-- STICKY BOTTOM CTA (mobile) -->
+<div class="sticky-cta">
+  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز استشارتك الآن</a>
+</div>
+
+<!-- FLOATING CHAT -->
+<div class="ch-float">
+  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" aria-label="احجز موعد">
+    <div class="ch-pulse"></div>
+    <svg viewBox="0 0 24 24" fill="none"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" fill="#fff"/></svg>
+  </a>
+</div>
+
+<script>
+// Header scroll effect
+const hdr=document.getElementById('lp-hdr');
+window.addEventListener('scroll',()=>hdr.classList.toggle('on',scrollY>50),{passive:true});
+
+// B/A Carousel
+(function(){
+  const track=document.getElementById('ba-track');
+  const prev=document.getElementById('ba-prev');
+  const next=document.getElementById('ba-next');
+  if(!track||!prev||!next) return;
+  let pos=0;
+  function getVisible(){return window.innerWidth<600?1:2}
+  function getCardW(){const c=track.querySelector('.bac');if(!c)return 0;return c.offsetWidth+16}
+  function update(){
+    const max=track.children.length-getVisible();
+    if(pos>max)pos=max;if(pos<0)pos=0;
+    track.style.transform='translateX('+pos*getCardW()+'px)';
+    prev.disabled=pos<=0;next.disabled=pos>=max;
+  }
+  prev.addEventListener('click',()=>{pos--;update()});
+  next.addEventListener('click',()=>{pos++;update()});
+  window.addEventListener('resize',update);update();
+})();
+
+// B/A draggable slider
+document.querySelectorAll('.ba-slider').forEach(slider=>{
+  let dragging=false;
+  function setPos(x){
+    const rect=slider.getBoundingClientRect();
+    let pct=((x-rect.left)/rect.width)*100;
+    pct=Math.max(5,Math.min(95,pct));
+    slider.querySelector('.ba-img-a').style.clipPath='inset(0 0 0 '+pct+'%)';
+    slider.querySelector('.ba-handle').style.left=pct+'%';
+    slider.querySelector('.ba-handle-btn').style.left=pct+'%';
+  }
+  slider.addEventListener('mousedown',e=>{dragging=true;setPos(e.clientX);e.preventDefault()});
+  document.addEventListener('mousemove',e=>{if(dragging)setPos(e.clientX)});
+  document.addEventListener('mouseup',()=>{dragging=false});
+  slider.addEventListener('touchstart',e=>{dragging=true;setPos(e.touches[0].clientX)},{passive:true});
+  document.addEventListener('touchmove',e=>{if(dragging)setPos(e.touches[0].clientX)},{passive:true});
+  document.addEventListener('touchend',()=>{dragging=false});
+});
+
+// Reveal animations
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}}),{threshold:.1,rootMargin:'0px 0px -28px 0px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+
+</body>
+</html>
