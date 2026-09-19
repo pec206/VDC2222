@@ -90,15 +90,6 @@ section{padding:var(--sy) 0}
 @media(max-width:900px){.ts-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.ts-grid{grid-template-columns:1fr}}
 
-.tech-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
-.tech-card{background:var(--w);border:1px solid var(--s100);border-radius:var(--rl);padding:32px 24px;text-align:center;box-shadow:var(--sh);transition:transform .3s,box-shadow .3s}
-.tech-card:hover{transform:translateY(-4px);box-shadow:var(--shm)}
-.tech-ico{width:56px;height:56px;border-radius:var(--rm);background:var(--b50);display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
-.tech-ico svg{width:28px;height:28px;color:var(--b700)}
-.tech-card h3{font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px}
-.tech-card p{font-size:14px;color:var(--s600);line-height:1.6}
-@media(max-width:600px){.tech-grid{grid-template-columns:1fr}}
-
 .price-card-single{max-width:420px;margin:40px auto 0;background:var(--w);border:2px solid var(--g500);border-radius:var(--rl);padding:40px 32px;text-align:center;box-shadow:0 6px 32px rgba(122,182,72,.15)}
 .price-card-single h3{font-family:var(--fd);font-size:22px;color:var(--b900);margin-bottom:4px}
 .price-from{font-size:13px;color:var(--s400);margin-bottom:12px}
@@ -108,11 +99,6 @@ section{padding:var(--sy) 0}
 .price-feats li{font-size:14px;color:var(--s700);display:flex;align-items:flex-start;gap:8px}
 .price-feats li svg{width:18px;height:18px;color:var(--g600);flex-shrink:0;margin-top:2px}
 .price-divider{width:100%;height:1px;background:var(--s100);margin:16px 0}
-
-.obj-list{max-width:740px;margin:40px auto 0;display:flex;flex-direction:column;gap:24px}
-.obj-item{background:var(--s50);border-radius:var(--rl);padding:28px 32px;border-right:4px solid var(--b400)}
-.obj-item h3{font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px}
-.obj-item p{font-size:15px;color:var(--s600);line-height:1.7}
 
 .lp-cta{background:var(--gb);padding:var(--sy) 0;text-align:center}
 .lp-cta .Hlg{color:var(--w);margin-bottom:12px}
@@ -204,55 +190,22 @@ section{padding:var(--sy) 0}
       <div class="ts-step rv">
         <div class="ts-num">١</div>
         <h3>علاج فوري في نفس اليوم</h3>
-        <p>لا حاجة للانتظار — نستقبلك فوراً ونبدأ بتخفيف الألم من الدقيقة الأولى.</p>
+        <p>نبدأ بتخفيف الألم من الدقيقة الأولى.</p>
       </div>
       <div class="ts-step rv">
         <div class="ts-num">٢</div>
         <h3>بدون موعد مسبق</h3>
-        <p>نرحب بالحالات الطارئة بدون موعد خلال ساعات العمل — فقط توجه إلينا مباشرة.</p>
+        <p>توجّه إلينا مباشرة خلال ساعات العمل.</p>
       </div>
       <div class="ts-step rv">
         <div class="ts-num">٣</div>
         <h3>تشخيص رقمي شامل</h3>
-        <p>أشعة رقمية وتصوير ثلاثي الأبعاد CBCT لتشخيص دقيق وسريع لحالتك.</p>
+        <p>أشعة رقمية وتصوير CBCT ثلاثي الأبعاد لتشخيص دقيق.</p>
       </div>
       <div class="ts-step rv">
         <div class="ts-num">٤</div>
         <h3>رعاية شاملة</h3>
-        <p>من السن المكسور إلى الالتهاب الحاد — نعالج جميع حالات الطوارئ تحت سقف واحد.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TECHNOLOGY -->
-<section style="background:var(--s50)" aria-labelledby="tech-h">
-  <div class="wrap">
-    <div class="sec-hdr rv">
-      <span class="eye">التقنيات المستخدمة</span>
-      <h2 class="Hlg" id="tech-h">تشخيص دقيق وعلاج سريع</h2>
-    </div>
-    <div class="tech-grid">
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-        </div>
-        <h3>CBCT 3D Scanner</h3>
-        <p>تصوير ثلاثي الأبعاد يكشف المشاكل المخفية بدقة عالية — كسور الجذور، الخراجات، ومشاكل العظم.</p>
-      </div>
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-        </div>
-        <h3>Digital X-ray</h3>
-        <p>أشعة رقمية فورية بإشعاع منخفض — نتائج في ثوانٍ لتشخيص سريع ودقيق.</p>
-      </div>
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        </div>
-        <h3>Same-Day Treatment</h3>
-        <p>بروتوكول علاج طوارئ متكامل — من التشخيص إلى العلاج في زيارة واحدة لأغلب الحالات.</p>
+        <p>نعالج جميع حالات الطوارئ تحت سقف واحد.</p>
       </div>
     </div>
   </div>
@@ -290,16 +243,10 @@ section{padding:var(--sy) 0}
       <span class="eye">أسئلة شائعة</span>
       <h2 class="Hlg" id="obj-h">ما يهمك معرفته</h2>
     </div>
-    <div class="obj-list">
-      <div class="obj-item rv">
-        <h3>هل تستقبلون حالات بدون موعد؟</h3>
-        <p>نعم، نستقبل الحالات الطارئة بدون موعد مسبق خلال ساعات العمل. نعطي الأولوية لتخفيف الألم والتشخيص السريع.</p>
-      </div>
-      <div class="obj-item rv">
-        <h3>ماذا أفعل إذا انكسر سني؟</h3>
-        <p>احتفظ بالقطعة المكسورة في حليب أو محلول ملحي وتوجه إلينا فوراً. كلما كان العلاج أسرع، زادت فرص إنقاذ السن.</p>
-      </div>
-    </div>
+    <ul class="rv" style="max-width:740px;margin:32px auto 0;list-style:none;padding:0;display:flex;flex-direction:column;gap:16px">
+      <li style="font-size:15px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">هل تستقبلون حالات بدون موعد؟</strong> — نعم، خلال ساعات العمل مع أولوية لتخفيف الألم فوراً.</li>
+      <li style="font-size:15px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">ماذا أفعل إذا انكسر سني؟</strong> — احفظ القطعة في حليب وتوجّه إلينا فوراً لأفضل فرصة إنقاذ.</li>
+    </ul>
   </div>
 </section>
 
@@ -330,7 +277,7 @@ section{padding:var(--sy) 0}
 
 <!-- STICKY BOTTOM CTA -->
 <div class="sticky-cta">
-  <a href="tel:+97123122777" class="btn btn--g">اتصل الآن: 02 312 2777</a>
+  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعدك الآن</a>
 </div>
 
 <!-- FLOATING CHAT -->

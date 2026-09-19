@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>فينير الأسنان في أبوظبي | Vision Dental Clinic</title>
-<meta name="description" content="فينير بورسلين بتصميم رقمي وابتسامة تجريبية قبل القرار النهائي. تعديلات غير محدودة. أسعار تبدأ من 800 درهم.">
+<meta name="description" content="فينير بورسلين بتصميم رقمي وابتسامة تجريبية قبل القرار النهائي. تعديلات غير محدودة. باقات تبدأ من 9,700 درهم لـ 16 سن.">
 <meta name="robots" content="noindex,nofollow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -131,18 +131,8 @@ section{padding:var(--sy) 0}
 @media(max-width:900px){.ts-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.ts-grid{grid-template-columns:1fr}}
 
-/* ─── TECH CARDS ─── */
-.tech-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
-.tech-card{background:var(--w);border:1px solid var(--s100);border-radius:var(--rl);padding:32px 24px;text-align:center;box-shadow:var(--sh);transition:transform .3s,box-shadow .3s}
-.tech-card:hover{transform:translateY(-4px);box-shadow:var(--shm)}
-.tech-ico{width:56px;height:56px;border-radius:var(--rm);background:var(--b50);display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
-.tech-ico svg{width:28px;height:28px;color:var(--b700)}
-.tech-card h3{font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px}
-.tech-card p{font-size:14px;color:var(--s600);line-height:1.6}
-@media(max-width:600px){.tech-grid{grid-template-columns:1fr}}
-
 /* ─── PRICING ─── */
-.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+.price-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px}
 .price-card{background:var(--w);border:1px solid var(--s100);border-radius:var(--rl);padding:32px 24px;text-align:center;box-shadow:var(--sh);transition:transform .3s,box-shadow .3s}
 .price-card.featured{border-color:var(--g500);box-shadow:0 6px 32px rgba(122,182,72,.15);background:linear-gradient(180deg,var(--g50) 0%,var(--w) 40%);position:relative}
 .price-card.featured::before{content:'الأكثر طلباً';position:absolute;top:-12px;right:50%;transform:translateX(50%);background:var(--gg);color:var(--w);font-size:12px;font-weight:700;padding:4px 16px;border-radius:20px;white-space:nowrap}
@@ -156,13 +146,10 @@ section{padding:var(--sy) 0}
 .price-feats li svg{width:18px;height:18px;color:var(--g600);flex-shrink:0;margin-top:2px}
 .price-divider{width:100%;height:1px;background:var(--s100);margin:16px 0}
 .price-pay{font-size:12px;color:var(--s400)}
+@media(max-width:900px){.price-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.price-grid{grid-template-columns:1fr}}
 
-/* ─── OBJECTION HANDLING ─── */
-.obj-list{max-width:740px;margin:40px auto 0;display:flex;flex-direction:column;gap:24px}
-.obj-item{background:var(--s50);border-radius:var(--rl);padding:28px 32px;border-right:4px solid var(--b400)}
-.obj-item h3{font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px}
-.obj-item p{font-size:15px;color:var(--s600);line-height:1.7}
+/* ─── FAQ LIST ─── */
 
 /* ─── FINAL CTA ─── */
 .lp-cta{background:var(--gb);padding:var(--sy) 0;text-align:center}
@@ -223,7 +210,7 @@ section{padding:var(--sy) 0}
     <h1 class="Hxl rv" id="lp-h1">جرّب ابتسامتك الجديدة<br>قبل أن تقرر</h1>
     <p class="Blg rv">ابتسامة تجريبية حقيقية تُركّب على أسنانك للتقييم، مع تعديلات غير محدودة حتى تصل إلى النتيجة المثالية — ثم نبدأ بالفينير النهائي.</p>
     <div class="rv">
-      <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز استشارتك الآن</a>
+      <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعدك الآن</a>
     </div>
     <div class="hero-trust rv">
       <div class="hero-trust-i">
@@ -246,76 +233,7 @@ section{padding:var(--sy) 0}
   </div>
 </section>
 
-<!-- ② BEFORE / AFTER GALLERY -->
-<section class="lp-gallery" aria-labelledby="gallery-h">
-  <div class="wrap">
-    <div class="sec-hdr rv">
-      <span class="eye">نتائج حقيقية</span>
-      <h2 class="Hlg" id="gallery-h">قبل وبعد — حالات فينير</h2>
-    </div>
-    <div class="ba-carousel rv" id="ba-carousel">
-      <div class="ba-track" id="ba-track">
-
-        <div class="bac">
-          <div class="ba-slider">
-            <div class="ba-img-b"><img src="ba-salim-1-before.webp" alt="قبل تركيب فينير بورسلين" loading="lazy"></div>
-            <div class="ba-img-a"><img src="ba-salim-1-after.webp" alt="بعد تركيب فينير بورسلين" loading="lazy"></div>
-            <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
-            <span class="ba-lbl ba-lb">قبل</span><span class="ba-lbl ba-la">بعد</span>
-          </div>
-          <div class="ba-inf"><h4>فينير بورسلين</h4><p>نتيجة طبيعية — تصميم رقمي</p></div>
-        </div>
-
-        <div class="bac">
-          <div class="ba-slider">
-            <div class="ba-img-b"><img src="ba-ammar-1-before.webp" alt="قبل ابتسامة هوليوود" loading="lazy"></div>
-            <div class="ba-img-a"><img src="ba-ammar-1-after.webp" alt="بعد ابتسامة هوليوود" loading="lazy"></div>
-            <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
-            <span class="ba-lbl ba-lb">قبل</span><span class="ba-lbl ba-la">بعد</span>
-          </div>
-          <div class="ba-inf"><h4>تصميم ابتسامة</h4><p>Smile Design — فينير E-max</p></div>
-        </div>
-
-        <div class="bac">
-          <div class="ba-slider">
-            <div class="ba-img-b"><img src="ba-asmaa-1-before.webp" alt="قبل فينير تجميلي" loading="lazy"></div>
-            <div class="ba-img-a"><img src="ba-asmaa-1-after.webp" alt="بعد فينير تجميلي" loading="lazy"></div>
-            <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
-            <span class="ba-lbl ba-lb">قبل</span><span class="ba-lbl ba-la">بعد</span>
-          </div>
-          <div class="ba-inf"><h4>فينير تجميلي</h4><p>تصحيح الشكل واللون</p></div>
-        </div>
-
-        <div class="bac">
-          <div class="ba-slider">
-            <div class="ba-img-b"><img src="ba-asmaa-2-before.webp" alt="قبل تصميم ابتسامة رقمي" loading="lazy"></div>
-            <div class="ba-img-a"><img src="ba-asmaa-2-after.webp" alt="بعد تصميم ابتسامة رقمي" loading="lazy"></div>
-            <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
-            <span class="ba-lbl ba-lb">قبل</span><span class="ba-lbl ba-la">بعد</span>
-          </div>
-          <div class="ba-inf"><h4>تصميم ابتسامة رقمي</h4><p>Cosmetic Smile Makeover</p></div>
-        </div>
-
-        <div class="bac">
-          <div class="ba-slider">
-            <div class="ba-img-b"><img src="ba-ammar-2-before.webp" alt="قبل إعادة تأهيل الابتسامة" loading="lazy"></div>
-            <div class="ba-img-a"><img src="ba-ammar-2-after.webp" alt="بعد إعادة تأهيل الابتسامة" loading="lazy"></div>
-            <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
-            <span class="ba-lbl ba-lb">قبل</span><span class="ba-lbl ba-la">بعد</span>
-          </div>
-          <div class="ba-inf"><h4>إعادة تأهيل كامل</h4><p>تيجان وفينير — تحول شامل</p></div>
-        </div>
-
-      </div>
-      <div class="ba-arrows">
-        <button class="ba-arr" id="ba-prev" aria-label="السابق" disabled>→</button>
-        <button class="ba-arr" id="ba-next" aria-label="التالي">←</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ③ TRIAL SMILE — الابتسامة التجريبية -->
+<!-- ② TRIAL SMILE — الابتسامة التجريبية -->
 <section aria-labelledby="ts-h">
   <div class="wrap">
     <div class="sec-hdr rv">
@@ -327,62 +245,92 @@ section{padding:var(--sy) 0}
       <div class="ts-step rv">
         <div class="ts-num">١</div>
         <h3>التصوير الرقمي</h3>
-        <p>نأخذ صوراً ومسحاً رقمياً ثلاثي الأبعاد لأسنانك ووجهك باستخدام تقنية 3Shape.</p>
+        <p>مسح رقمي ثلاثي الأبعاد لأسنانك ووجهك باستخدام تقنية 3Shape.</p>
       </div>
       <div class="ts-step rv">
         <div class="ts-num">٢</div>
         <h3>التصميم الرقمي (DSD)</h3>
-        <p>نصمم ابتسامتك الجديدة رقمياً بما يتناسب مع ملامح وجهك ونناقش معك كل التفاصيل.</p>
+        <p>نصمم ابتسامتك الجديدة رقمياً بما يتناسب مع ملامح وجهك.</p>
       </div>
       <div class="ts-step rv">
         <div class="ts-num">٣</div>
         <h3>الابتسامة التجريبية</h3>
-        <p>نركّب نموذجاً حقيقياً على أسنانك لتراه وتقيّمه — ابتسامتك الجديدة قبل أي إجراء نهائي.</p>
+        <p>نموذج حقيقي يُركّب على أسنانك لتراه وتقيّمه قبل أي إجراء نهائي.</p>
       </div>
       <div class="ts-step rv">
         <div class="ts-num">٤</div>
         <h3>الفينير النهائي</h3>
-        <p>بعد موافقتك الكاملة، نبدأ بتصنيع الفينير النهائي في مختبرنا الرقمي الداخلي.</p>
+        <p>بعد موافقتك الكاملة، نبدأ بتصنيع الفينير النهائي في مختبرنا الداخلي.</p>
       </div>
     </div>
-    <div class="ts-note-wrap rv"><p class="ts-note">✦ تعديلات غير محدودة على الابتسامة التجريبية حتى تصل إلى النتيجة المثالية</p></div>
+    <div class="ts-note-wrap rv"><p class="ts-note">✦ تعديلات غير محدودة حتى تصل إلى النتيجة المثالية</p></div>
   </div>
 </section>
 
-<!-- ④ TECHNOLOGY -->
-<section style="background:var(--s50)" aria-labelledby="tech-h">
+<!-- ③ BEFORE / AFTER GALLERY -->
+<section class="lp-gallery" aria-labelledby="gallery-h">
   <div class="wrap">
     <div class="sec-hdr rv">
-      <span class="eye">التقنيات المستخدمة</span>
-      <h2 class="Hlg" id="tech-h">تكنولوجيا تصنع الفرق</h2>
+      <span class="eye">نتائج حقيقية</span>
+      <h2 class="Hlg" id="gallery-h">قبل وبعد — حالات فينير</h2>
     </div>
-    <div class="tech-grid">
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+    <div class="ba-carousel rv" id="ba-carousel">
+      <div class="ba-track" id="ba-track">
+        <div class="bac">
+          <div class="ba-slider">
+            <div class="ba-img-b"><img src="ba-salim-1-before.webp" alt="قبل تركيب فينير بورسلين" loading="lazy"></div>
+            <div class="ba-img-a"><img src="ba-salim-1-after.webp" alt="بعد تركيب فينير بورسلين" loading="lazy"></div>
+            <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
+            <span class="ba-lbl ba-lb">قبل</span><span class="ba-lbl ba-la">بعد</span>
+          </div>
+          <div class="ba-inf"><h4>فينير بورسلين</h4><p>نتيجة طبيعية — تصميم رقمي</p></div>
         </div>
-        <h3>Digital Smile Design</h3>
-        <p>تصميم رقمي متكامل يُظهر لك ابتسامتك المستقبلية بدقة عالية قبل البدء بأي إجراء.</p>
+        <div class="bac">
+          <div class="ba-slider">
+            <div class="ba-img-b"><img src="ba-ammar-1-before.webp" alt="قبل تصميم ابتسامة" loading="lazy"></div>
+            <div class="ba-img-a"><img src="ba-ammar-1-after.webp" alt="بعد تصميم ابتسامة" loading="lazy"></div>
+            <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
+            <span class="ba-lbl ba-lb">قبل</span><span class="ba-lbl ba-la">بعد</span>
+          </div>
+          <div class="ba-inf"><h4>تصميم ابتسامة</h4><p>Smile Design — فينير E-max</p></div>
+        </div>
+        <div class="bac">
+          <div class="ba-slider">
+            <div class="ba-img-b"><img src="ba-asmaa-1-before.webp" alt="قبل فينير تجميلي" loading="lazy"></div>
+            <div class="ba-img-a"><img src="ba-asmaa-1-after.webp" alt="بعد فينير تجميلي" loading="lazy"></div>
+            <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
+            <span class="ba-lbl ba-lb">قبل</span><span class="ba-lbl ba-la">بعد</span>
+          </div>
+          <div class="ba-inf"><h4>فينير تجميلي</h4><p>تصحيح الشكل واللون</p></div>
+        </div>
+        <div class="bac">
+          <div class="ba-slider">
+            <div class="ba-img-b"><img src="ba-asmaa-2-before.webp" alt="قبل تصميم ابتسامة رقمي" loading="lazy"></div>
+            <div class="ba-img-a"><img src="ba-asmaa-2-after.webp" alt="بعد تصميم ابتسامة رقمي" loading="lazy"></div>
+            <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
+            <span class="ba-lbl ba-lb">قبل</span><span class="ba-lbl ba-la">بعد</span>
+          </div>
+          <div class="ba-inf"><h4>تصميم ابتسامة رقمي</h4><p>Cosmetic Smile Makeover</p></div>
+        </div>
+        <div class="bac">
+          <div class="ba-slider">
+            <div class="ba-img-b"><img src="ba-ammar-2-before.webp" alt="قبل إعادة تأهيل الابتسامة" loading="lazy"></div>
+            <div class="ba-img-a"><img src="ba-ammar-2-after.webp" alt="بعد إعادة تأهيل الابتسامة" loading="lazy"></div>
+            <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
+            <span class="ba-lbl ba-lb">قبل</span><span class="ba-lbl ba-la">بعد</span>
+          </div>
+          <div class="ba-inf"><h4>إعادة تأهيل كامل</h4><p>تيجان وفينير — تحول شامل</p></div>
+        </div>
       </div>
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-        </div>
-        <h3>3Shape Scanner</h3>
-        <p>ماسح ضوئي رقمي ثلاثي الأبعاد للحصول على قياسات دقيقة دون الحاجة لقوالب تقليدية.</p>
-      </div>
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
-        </div>
-        <h3>مختبر رقمي داخلي</h3>
-        <p>تصنيع الفينير بالكامل داخل العيادة باستخدام أجهزة imes-icore وخامات Ivoclar — دقة أعلى ووقت أقل.</p>
+      <div class="ba-arrows">
+        <button class="ba-arr" id="ba-prev" aria-label="السابق" disabled>→</button>
+        <button class="ba-arr" id="ba-next" aria-label="التالي">←</button>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ⑤ PRICING -->
+<!-- ④ PRICING -->
 <section aria-labelledby="price-h">
   <div class="wrap">
     <div class="sec-hdr rv">
@@ -392,84 +340,85 @@ section{padding:var(--sy) 0}
     <div class="price-grid">
 
       <div class="price-card rv">
-        <h3>Composite Veneers</h3>
-        <p class="price-from">فينير كمبوزيت</p>
-        <div class="price-val">800 AED</div>
-        <p class="price-unit">يبدأ من — للسن الواحد</p>
+        <h3>Empress</h3>
+        <p class="price-from">فينير إمبرس</p>
+        <div class="price-val">9,700</div>
+        <p class="price-unit">AED — ١٦ سن</p>
         <div class="price-divider"></div>
         <ul class="price-feats">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>نتيجة فورية بجلسة واحدة</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>نحت محدود للأسنان</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>مناسب للتصحيحات البسيطة</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>بورسلين طبيعي المظهر</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>تصميم DSD + ابتسامة تجريبية</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>تعديلات غير محدودة</li>
         </ul>
       </div>
 
       <div class="price-card featured rv">
-        <h3>E-max Veneers</h3>
+        <h3>E-max</h3>
         <p class="price-from">فينير إي ماكس</p>
-        <div class="price-val">1,400 AED</div>
-        <p class="price-unit">يبدأ من — للسن الواحد</p>
+        <div class="price-val">11,900</div>
+        <p class="price-unit">AED — ١٦ سن</p>
         <div class="price-divider"></div>
         <ul class="price-feats">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>بورسلين شفاف يشبه الأسنان الطبيعية</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>متانة عالية ومقاومة للتصبّغ</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>تصميم رقمي + ابتسامة تجريبية</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>تصنيع في المختبر الداخلي</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>شفافية عالية تشبه الأسنان الطبيعية</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>متانة ومقاومة للتصبّغ</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>تصميم DSD + ابتسامة تجريبية</li>
         </ul>
       </div>
 
       <div class="price-card rv">
-        <h3>Hollywood Smile</h3>
-        <p class="price-from">ابتسامة هوليوود كاملة</p>
-        <div class="price-val">9,700 AED</div>
-        <p class="price-unit">يبدأ من — ١٦ سن</p>
+        <h3>Zirconia</h3>
+        <p class="price-from">فينير زركونيا</p>
+        <div class="price-val">14,700</div>
+        <p class="price-unit">AED — ١٦ سن</p>
         <div class="price-divider"></div>
         <ul class="price-feats">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>فينير E-max لكامل الأسنان الأمامية</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>أقوى أنواع الفينير</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>مقاومة عالية للكسر</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>تصميم DSD + ابتسامة تجريبية</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>تعديلات غير محدودة</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>نتيجة شاملة ومتكاملة</li>
+        </ul>
+      </div>
+
+      <div class="price-card rv">
+        <h3>Multi-layer Zirconia</h3>
+        <p class="price-from">زركونيا متعددة الطبقات</p>
+        <div class="price-val">23,000</div>
+        <p class="price-unit">AED — ١٦ سن</p>
+        <div class="price-divider"></div>
+        <ul class="price-feats">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>أعلى جودة — طبقات متدرجة</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>مظهر طبيعي مع متانة فائقة</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>تصميم DSD + ابتسامة تجريبية</li>
         </ul>
       </div>
 
     </div>
-    <p class="Bmd rv" style="text-align:center;margin-top:20px">تقسيط بدون فوائد عبر Tabby و Tamara</p>
+    <p class="Bmd rv" style="text-align:center;margin-top:20px">تقسيط بدون فوائد عبر Tabby و Tamara · فينير السن الواحد يبدأ من 839 AED</p>
   </div>
 </section>
 
-<!-- ⑥ OBJECTION HANDLING -->
+<!-- ⑤ FAQ -->
 <section style="background:var(--s50)" aria-labelledby="obj-h">
   <div class="wrap">
     <div class="sec-hdr rv">
       <span class="eye">أسئلة شائعة</span>
       <h2 class="Hlg" id="obj-h">ما يهمك معرفته</h2>
     </div>
-    <div class="obj-list">
-      <div class="obj-item rv">
-        <h3>هل الفينير يضر الأسنان؟</h3>
-        <p>في حالة فينير E-max، يتم نحت طبقة رقيقة جداً من سطح السن. التقنية الرقمية تتيح لنا تحديد أقل كمية نحت ممكنة للحفاظ على بنية السن الطبيعية. وفي بعض الحالات البسيطة يمكن تركيب فينير بدون نحت.</p>
-      </div>
-      <div class="obj-item rv">
-        <h3>كم جلسة يحتاج الفينير؟</h3>
-        <p>عادةً من جلستين إلى ثلاث جلسات: الأولى للفحص والتصميم الرقمي، الثانية للابتسامة التجريبية والتحضير، والثالثة لتركيب الفينير النهائي. وجود المختبر الرقمي داخل العيادة يختصر الوقت بشكل ملحوظ.</p>
-      </div>
-      <div class="obj-item rv">
-        <h3>ماذا لو لم تعجبني النتيجة؟</h3>
-        <p>لهذا السبب نقدم الابتسامة التجريبية — نموذج حقيقي يُركّب على أسنانك قبل أي إجراء نهائي. يمكنك طلب تعديلات غير محدودة على الشكل واللون حتى تكون راضياً تماماً عن النتيجة قبل أن نبدأ.</p>
-      </div>
+    <ul class="rv" style="max-width:740px;margin:32px auto 0;list-style:none;padding:0;display:flex;flex-direction:column;gap:16px">
+      <li style="font-size:15px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">هل الفينير يضر الأسنان؟</strong> — يتم نحت طبقة رقيقة جداً من سطح السن. التقنية الرقمية تحدد أقل كمية نحت ممكنة، وفي بعض الحالات يمكن تركيب فينير بدون نحت.</li>
+      <li style="font-size:15px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">كم جلسة يحتاج الفينير؟</strong> — من جلستين إلى ثلاث: فحص وتصميم رقمي، ابتسامة تجريبية وتحضير، ثم تركيب نهائي.</li>
+      <li style="font-size:15px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">ماذا لو لم تعجبني النتيجة؟</strong> — الابتسامة التجريبية نموذج حقيقي يُركّب قبل أي إجراء نهائي، مع تعديلات غير محدودة.</li>
+    </ul>
+    <div style="text-align:center;margin-top:20px">
+      <a href="porcelain-veneers.html" target="_blank" rel="noopener" style="font-size:13px;color:var(--s400);transition:color .3s">تعرّف أكثر على فينير الأسنان ←</a>
     </div>
   </div>
 </section>
 
-<div style="text-align:center;padding:0 0 24px">
-  <a href="porcelain-veneers.html" target="_blank" rel="noopener" style="font-size:13px;color:var(--s400);transition:color .3s">تعرّف أكثر على فينير الأسنان ←</a>
-</div>
-
-<!-- ⑦ FINAL CTA -->
+<!-- ⑥ FINAL CTA -->
 <section class="lp-cta" aria-labelledby="cta-h">
   <div class="wrap rv">
     <h2 class="Hlg" id="cta-h">ابتسامتك الجديدة تبدأ من هنا</h2>
-    <p class="Blg">احجز استشارتك واحصل على تصميم رقمي لابتسامتك — اكتشف كيف ستبدو قبل أن تقرر.</p>
+    <p class="Blg">احصل على تصميم رقمي لابتسامتك — اكتشف كيف ستبدو قبل أن تقرر.</p>
     <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعدك الآن</a>
   </div>
 </section>
@@ -485,7 +434,7 @@ section{padding:var(--sy) 0}
 
 <!-- STICKY BOTTOM CTA (mobile) -->
 <div class="sticky-cta">
-  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز استشارتك الآن</a>
+  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعدك الآن</a>
 </div>
 
 <!-- FLOATING CHAT -->

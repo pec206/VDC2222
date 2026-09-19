@@ -91,14 +91,6 @@ section{padding:var(--sy) 0}
 @media(max-width:900px){.ts-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.ts-grid{grid-template-columns:1fr}}
 
-.tech-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
-.tech-card{background:var(--w);border:1px solid var(--s100);border-radius:var(--rl);padding:32px 24px;text-align:center;box-shadow:var(--sh);transition:transform .3s,box-shadow .3s}
-.tech-card:hover{transform:translateY(-4px);box-shadow:var(--shm)}
-.tech-ico{width:56px;height:56px;border-radius:var(--rm);background:var(--b50);display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
-.tech-ico svg{width:28px;height:28px;color:var(--b700)}
-.tech-card h3{font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px}
-.tech-card p{font-size:14px;color:var(--s600);line-height:1.6}
-@media(max-width:600px){.tech-grid{grid-template-columns:1fr}}
 
 .price-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:40px}
 .price-card{background:var(--w);border:1px solid var(--s100);border-radius:var(--rl);padding:32px 24px;text-align:center;box-shadow:var(--sh);transition:transform .3s,box-shadow .3s}
@@ -114,10 +106,6 @@ section{padding:var(--sy) 0}
 .price-divider{width:100%;height:1px;background:var(--s100);margin:16px 0}
 @media(max-width:600px){.price-grid{grid-template-columns:1fr}}
 
-.obj-list{max-width:740px;margin:40px auto 0;display:flex;flex-direction:column;gap:24px}
-.obj-item{background:var(--s50);border-radius:var(--rl);padding:28px 32px;border-right:4px solid var(--b400)}
-.obj-item h3{font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px}
-.obj-item p{font-size:15px;color:var(--s600);line-height:1.7}
 
 .lp-cta{background:var(--gb);padding:var(--sy) 0;text-align:center}
 .lp-cta .Hlg{color:var(--w);margin-bottom:12px}
@@ -173,7 +161,7 @@ section{padding:var(--sy) 0}
     <h1 class="Hxl rv" id="lp-h1">ابتسامة أكثر إشراقاً<br>بجلسة واحدة</h1>
     <p class="Blg rv">باقة Bright Smile — تنظيف وتلميع احترافي مع تبييض بتقنية Zoom أو Nano في جلسة واحدة. حتى ثمان درجات أفتح بإشراف طبي كامل.</p>
     <div class="rv">
-      <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز جلستك الآن</a>
+      <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعدك الآن</a>
     </div>
     <div class="hero-trust rv">
       <div class="hero-trust-i">
@@ -210,58 +198,25 @@ section{padding:var(--sy) 0}
       <div class="ts-step rv">
         <div class="ts-num">١</div>
         <h3>الفحص المبدئي</h3>
-        <p>فحص سريع للتأكد من صحة الأسنان واللثة وملاءمتها للتبييض.</p>
+        <p>فحص سريع لصحة الأسنان واللثة وملاءمتها للتبييض.</p>
       </div>
       <div class="ts-step rv">
         <div class="ts-num">٢</div>
         <h3>التنظيف والتلميع</h3>
-        <p>إزالة الجير والتصبّغات السطحية بالكامل — أسنان نظيفة جاهزة للتبييض.</p>
+        <p>إزالة الجير والتصبّغات — أسنان نظيفة جاهزة للتبييض.</p>
       </div>
       <div class="ts-step rv">
         <div class="ts-num">٣</div>
         <h3>التبييض الاحترافي</h3>
-        <p>تطبيق مادة التبييض مع تقنية Zoom أو Nano لتفتيح اللون حتى ثمان درجات.</p>
+        <p>تطبيق مادة التبييض بتقنية Zoom أو Nano — حتى ثمان درجات أفتح.</p>
       </div>
       <div class="ts-step rv">
         <div class="ts-num">٤</div>
         <h3>النتيجة الفورية</h3>
-        <p>ابتسامة أكثر إشراقاً من نفس الجلسة — مع نصائح للحفاظ على النتيجة لأطول فترة.</p>
+        <p>ابتسامة مشرقة من نفس الجلسة مع نصائح للحفاظ على النتيجة.</p>
       </div>
     </div>
     <p class="ts-note rv">✦ حتى ثمان درجات أفتح بجلسة واحدة</p>
-  </div>
-</section>
-
-<!-- TECHNOLOGY -->
-<section style="background:var(--s50)" aria-labelledby="tech-h">
-  <div class="wrap">
-    <div class="sec-hdr rv">
-      <span class="eye">التقنيات المستخدمة</span>
-      <h2 class="Hlg" id="tech-h">تكنولوجيا تصنع الفرق</h2>
-    </div>
-    <div class="tech-grid">
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-        </div>
-        <h3>Zoom Advanced Power</h3>
-        <p>تقنية تبييض متقدمة بالضوء تفتّح لون الأسنان حتى ثمان درجات بجلسة واحدة بإشراف طبي.</p>
-      </div>
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-        </div>
-        <h3>Nano Whitening</h3>
-        <p>تقنية تبييض بجزيئات النانو توفر نتائج فعّالة مع حساسية أقل بعد الجلسة.</p>
-      </div>
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
-        </div>
-        <h3>Professional Scaling</h3>
-        <p>تنظيف احترافي بالموجات فوق الصوتية لإزالة الجير والتصبّغات قبل التبييض للحصول على أفضل نتيجة.</p>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -344,16 +299,10 @@ section{padding:var(--sy) 0}
       <span class="eye">أسئلة شائعة</span>
       <h2 class="Hlg" id="obj-h">ما يهمك معرفته</h2>
     </div>
-    <div class="obj-list">
-      <div class="obj-item rv">
-        <h3>هل التبييض يضر المينا؟</h3>
-        <p>التبييض الاحترافي في العيادة آمن على المينا عند إجرائه بإشراف طبي. نستخدم تركيزات مدروسة ونحمي اللثة أثناء الجلسة.</p>
-      </div>
-      <div class="obj-item rv">
-        <h3>كم تدوم النتيجة؟</h3>
-        <p>تعتمد على عاداتك الغذائية والعناية بالأسنان. عادةً من 6 أشهر إلى سنتين. تجنب القهوة والشاي والتدخين يطيل مدة النتيجة.</p>
-      </div>
-    </div>
+    <ul class="rv" style="max-width:740px;margin:32px auto 0;list-style:none;padding:0;display:flex;flex-direction:column;gap:16px">
+      <li style="font-size:15px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">هل التبييض يضر المينا؟</strong> — آمن بإشراف طبي. نستخدم تركيزات مدروسة ونحمي اللثة أثناء الجلسة.</li>
+      <li style="font-size:15px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">كم تدوم النتيجة؟</strong> — من 6 أشهر إلى سنتين حسب العناية. تجنّب القهوة والتدخين يطيل النتيجة.</li>
+    </ul>
   </div>
 </section>
 
@@ -381,7 +330,7 @@ section{padding:var(--sy) 0}
 
 <!-- STICKY BOTTOM CTA (mobile) -->
 <div class="sticky-cta">
-  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز جلستك الآن</a>
+  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعدك الآن</a>
 </div>
 
 <!-- FLOATING CHAT -->

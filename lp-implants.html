@@ -124,16 +124,6 @@ section{padding:var(--sy) 0}
 @media(max-width:900px){.ts-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.ts-grid{grid-template-columns:1fr}}
 
-/* ─── TECH CARDS ─── */
-.tech-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
-.tech-card{background:var(--w);border:1px solid var(--s100);border-radius:var(--rl);padding:32px 24px;text-align:center;box-shadow:var(--sh);transition:transform .3s,box-shadow .3s}
-.tech-card:hover{transform:translateY(-4px);box-shadow:var(--shm)}
-.tech-ico{width:56px;height:56px;border-radius:var(--rm);background:var(--b50);display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
-.tech-ico svg{width:28px;height:28px;color:var(--b700)}
-.tech-card h3{font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px}
-.tech-card p{font-size:14px;color:var(--s600);line-height:1.6}
-@media(max-width:600px){.tech-grid{grid-template-columns:1fr}}
-
 /* ─── PRICING ─── */
 .price-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:40px;max-width:700px;margin-left:auto;margin-right:auto}
 .price-card{background:var(--w);border:1px solid var(--s100);border-radius:var(--rl);padding:32px 24px;text-align:center;box-shadow:var(--sh);transition:transform .3s,box-shadow .3s}
@@ -148,12 +138,6 @@ section{padding:var(--sy) 0}
 .price-feats li svg{width:18px;height:18px;color:var(--g600);flex-shrink:0;margin-top:2px}
 .price-divider{width:100%;height:1px;background:var(--s100);margin:16px 0}
 @media(max-width:600px){.price-grid{grid-template-columns:1fr}}
-
-/* ─── OBJECTION HANDLING ─── */
-.obj-list{max-width:740px;margin:40px auto 0;display:flex;flex-direction:column;gap:24px}
-.obj-item{background:var(--s50);border-radius:var(--rl);padding:28px 32px;border-right:4px solid var(--b400)}
-.obj-item h3{font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px}
-.obj-item p{font-size:15px;color:var(--s600);line-height:1.7}
 
 /* ─── FINAL CTA ─── */
 .lp-cta{background:var(--gb);padding:var(--sy) 0;text-align:center}
@@ -214,7 +198,7 @@ section{padding:var(--sy) 0}
     <h1 class="Hxl rv" id="lp-h1">زراعة أسنان رقمية<br>بدقة متناهية</h1>
     <p class="Blg rv">تخطيط رقمي ثلاثي الأبعاد مع دليل جراحي مطبوع وزرعات Straumann السويسرية — وتقنية Triple Tech لأقل درجة ألم ممكنة.</p>
     <div class="rv">
-      <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز استشارتك الآن</a>
+      <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعدك الآن</a>
     </div>
     <div class="hero-trust rv">
       <div class="hero-trust-i">
@@ -298,17 +282,17 @@ section{padding:var(--sy) 0}
       <div class="ts-step rv">
         <div class="ts-num">١</div>
         <h3>تصوير CBCT ثلاثي الأبعاد</h3>
-        <p>مسح شامل للفك والعظم لتقييم الحالة بدقة وتحديد أفضل موقع للزرعة.</p>
+        <p>مسح شامل للفك والعظم لتحديد أفضل موقع للزرعة بدقة.</p>
       </div>
       <div class="ts-step rv">
         <div class="ts-num">٢</div>
         <h3>التخطيط الرقمي</h3>
-        <p>تصميم خطة الزراعة رقمياً باستخدام البرامج المتقدمة لتحديد الزاوية والعمق المثاليين.</p>
+        <p>تصميم خطة الزراعة رقمياً لتحديد الزاوية والعمق المثاليين.</p>
       </div>
       <div class="ts-step rv">
         <div class="ts-num">٣</div>
         <h3>الدليل الجراحي</h3>
-        <p>طباعة دليل جراحي مخصص يضمن وضع الزرعة في المكان المحدد بدقة متناهية.</p>
+        <p>قالب مطبوع ثلاثي الأبعاد يوجّه الزرعة إلى موقعها بدقة متناهية.</p>
       </div>
       <div class="ts-step rv">
         <div class="ts-num">٤</div>
@@ -318,7 +302,7 @@ section{padding:var(--sy) 0}
       <div class="ts-step rv">
         <div class="ts-num">٥</div>
         <h3>جراحة Piezotome</h3>
-        <p>جراحة دقيقة بالموجات فوق الصوتية تحافظ على الأنسجة الرخوة وتقلل التورم بشكل ملحوظ.</p>
+        <p>جراحة بالموجات فوق الصوتية تحافظ على الأنسجة الرخوة وتقلل التورم.</p>
       </div>
       <div class="ts-step rv">
         <div class="ts-num">٦</div>
@@ -337,40 +321,7 @@ section{padding:var(--sy) 0}
   </div>
 </section>
 
-<!-- ④ TECHNOLOGY -->
-<section style="background:var(--s50)" aria-labelledby="tech-h">
-  <div class="wrap">
-    <div class="sec-hdr rv">
-      <span class="eye">التقنيات المستخدمة</span>
-      <h2 class="Hlg" id="tech-h">تكنولوجيا تصنع الفرق</h2>
-    </div>
-    <div class="tech-grid">
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/><path d="M2 12h20"/></svg>
-        </div>
-        <h3>CBCT 3D Scanner</h3>
-        <p>تصوير مقطعي ثلاثي الأبعاد يوفر رؤية شاملة للعظم والأعصاب والجيوب الأنفية لتخطيط دقيق وآمن.</p>
-      </div>
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-        </div>
-        <h3>الدليل الجراحي الرقمي</h3>
-        <p>قالب مطبوع ثلاثي الأبعاد يوجّه الزرعة بدقة إلى الموقع المخطط له مسبقاً — لنتائج أكثر أماناً وسرعة.</p>
-      </div>
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-        </div>
-        <h3>Piezotome</h3>
-        <p>جهاز جراحة بالموجات فوق الصوتية يقطع العظم بدقة دون المساس بالأنسجة الرخوة — أقل تورم وتعافٍ أسرع.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ⑤ PRICING -->
+<!-- ④ PRICING -->
 <section aria-labelledby="price-h">
   <div class="wrap">
     <div class="sec-hdr rv">
@@ -418,20 +369,11 @@ section{padding:var(--sy) 0}
       <span class="eye">أسئلة شائعة</span>
       <h2 class="Hlg" id="obj-h">ما يهمك معرفته</h2>
     </div>
-    <div class="obj-list">
-      <div class="obj-item rv">
-        <h3>هل زراعة الأسنان مؤلمة؟</h3>
-        <p>نستخدم تقنية Triple Tech (غاز الاسترخاء + التخدير الرقمي STA + جهاز Piezotome) لضمان أقل درجة ألم ممكنة. معظم المرضى يصفون التجربة بأنها أسهل مما توقعوا.</p>
-      </div>
-      <div class="obj-item rv">
-        <h3>كم تستغرق عملية الزراعة؟</h3>
-        <p>الزراعة نفسها تستغرق 30-60 دقيقة للسن الواحد. بعدها فترة التئام 3-4 أشهر قبل تركيب التاج النهائي. التخطيط الرقمي يختصر الوقت ويزيد الدقة.</p>
-      </div>
-      <div class="obj-item rv">
-        <h3>هل الزرعة تدوم طويلاً؟</h3>
-        <p>زرعات Straumann مصممة لتدوم سنوات طويلة مع العناية المناسبة. المتابعة الدورية والنظافة الجيدة هي مفتاح النجاح طويل الأمد.</p>
-      </div>
-    </div>
+    <ul class="rv" style="max-width:740px;margin:32px auto 0;list-style:none;padding:0;display:flex;flex-direction:column;gap:16px">
+      <li style="font-size:15px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">هل زراعة الأسنان مؤلمة؟</strong> — نستخدم تقنية Triple Tech (غاز الاسترخاء + التخدير الرقمي STA + Piezotome) لأقل ألم ممكن. معظم المرضى يصفون التجربة بأنها أسهل مما توقعوا.</li>
+      <li style="font-size:15px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">كم تستغرق عملية الزراعة؟</strong> — 30-60 دقيقة للسن الواحد، ثم فترة التئام 3-4 أشهر قبل تركيب التاج النهائي.</li>
+      <li style="font-size:15px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">هل الزرعة تدوم طويلاً؟</strong> — زرعات Straumann مصممة لتدوم سنوات طويلة مع العناية المناسبة والمتابعة الدورية.</li>
+    </ul>
   </div>
 </section>
 
@@ -459,7 +401,7 @@ section{padding:var(--sy) 0}
 
 <!-- STICKY BOTTOM CTA (mobile) -->
 <div class="sticky-cta">
-  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز استشارتك الآن</a>
+  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعدك الآن</a>
 </div>
 
 <!-- FLOATING CHAT -->

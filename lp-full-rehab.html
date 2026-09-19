@@ -123,26 +123,10 @@ section{padding:var(--sy) 0}
 @media(max-width:900px){.ts-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.ts-grid{grid-template-columns:1fr}}
 
-/* ─── TECH CARDS ─── */
-.tech-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
-.tech-card{background:var(--w);border:1px solid var(--s100);border-radius:var(--rl);padding:32px 24px;text-align:center;box-shadow:var(--sh);transition:transform .3s,box-shadow .3s}
-.tech-card:hover{transform:translateY(-4px);box-shadow:var(--shm)}
-.tech-ico{width:56px;height:56px;border-radius:var(--rm);background:var(--b50);display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
-.tech-ico svg{width:28px;height:28px;color:var(--b700)}
-.tech-card h3{font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px}
-.tech-card p{font-size:14px;color:var(--s600);line-height:1.6}
-@media(max-width:600px){.tech-grid{grid-template-columns:1fr}}
-
 /* ─── PRICING ─── */
 .price-cta-box{max-width:600px;margin:40px auto 0;background:var(--gcard);border:1px solid var(--s100);border-radius:var(--rl);padding:40px 32px;text-align:center;box-shadow:var(--sh)}
 .price-cta-box h3{font-family:var(--fd);font-size:22px;color:var(--b900);margin-bottom:8px}
 .price-cta-box p{font-size:15px;color:var(--s600);line-height:1.7;margin-bottom:24px}
-
-/* ─── OBJECTION HANDLING ─── */
-.obj-list{max-width:740px;margin:40px auto 0;display:flex;flex-direction:column;gap:24px}
-.obj-item{background:var(--s50);border-radius:var(--rl);padding:28px 32px;border-right:4px solid var(--b400)}
-.obj-item h3{font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px}
-.obj-item p{font-size:15px;color:var(--s600);line-height:1.7}
 
 /* ─── FINAL CTA ─── */
 .lp-cta{background:var(--gb);padding:var(--sy) 0;text-align:center}
@@ -203,7 +187,7 @@ section{padding:var(--sy) 0}
     <h1 class="Hxl rv" id="lp-h1">أعد بناء ابتسامتك<br>بالكامل</h1>
     <p class="Blg rv">تخطيط رقمي شامل مع فريق متعدد التخصصات — نعالج جميع المشاكل دفعة واحدة لاستعادة الوظيفة والمظهر والراحة.</p>
     <div class="rv">
-      <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز استشارتك الآن</a>
+      <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعدك الآن</a>
     </div>
     <div class="hero-trust rv">
       <div class="hero-trust-i">
@@ -277,62 +261,29 @@ section{padding:var(--sy) 0}
       <div class="ts-step rv">
         <div class="ts-num">١</div>
         <h3>التشخيص الشامل</h3>
-        <p>فحص كامل مع تصوير CBCT ومسح رقمي ثلاثي الأبعاد لتقييم جميع جوانب صحة الفم.</p>
+        <p>فحص كامل مع تصوير CBCT ومسح رقمي لتقييم صحة الفم.</p>
       </div>
       <div class="ts-step rv">
         <div class="ts-num">٢</div>
         <h3>التخطيط الرقمي</h3>
-        <p>تصميم رقمي باستخدام DSD يُظهر لك النتيجة المتوقعة — مع خطة علاجية مفصلة بالتسلسل والمدة.</p>
+        <p>تصميم DSD يُظهر النتيجة المتوقعة مع خطة مفصلة بالتسلسل والمدة.</p>
       </div>
       <div class="ts-step rv">
         <div class="ts-num">٣</div>
         <h3>العلاج المرحلي</h3>
-        <p>تنفيذ العلاج على مراحل منظّمة — من الأساسيات إلى التجميل — بإشراف فريق متعدد التخصصات.</p>
+        <p>تنفيذ مرحلي منظّم — من الأساسيات إلى التجميل — بإشراف فريق متكامل.</p>
       </div>
       <div class="ts-step rv">
         <div class="ts-num">٤</div>
         <h3>الابتسامة النهائية</h3>
-        <p>تركيب التركيبات النهائية المصنّعة في مختبرنا الرقمي الداخلي — نتيجة متكاملة ودائمة.</p>
+        <p>تركيب التركيبات النهائية من مختبرنا الرقمي الداخلي — نتيجة دائمة.</p>
       </div>
     </div>
     <p class="ts-note rv">✦ فريق متعدد التخصصات يعمل معاً تحت سقف واحد لنتائج متكاملة</p>
   </div>
 </section>
 
-<!-- ④ TECHNOLOGY -->
-<section style="background:var(--s50)" aria-labelledby="tech-h">
-  <div class="wrap">
-    <div class="sec-hdr rv">
-      <span class="eye">التقنيات المستخدمة</span>
-      <h2 class="Hlg" id="tech-h">تكنولوجيا تصنع الفرق</h2>
-    </div>
-    <div class="tech-grid">
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-        </div>
-        <h3>Digital Smile Design</h3>
-        <p>تصميم رقمي متكامل يُظهر لك ابتسامتك المستقبلية بدقة عالية — ترى النتيجة قبل البدء بأي إجراء.</p>
-      </div>
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-        </div>
-        <h3>3Shape Scanner</h3>
-        <p>ماسح ضوئي رقمي ثلاثي الأبعاد للحصول على قياسات دقيقة دون الحاجة لقوالب تقليدية مزعجة.</p>
-      </div>
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
-        </div>
-        <h3>مختبر رقمي داخلي</h3>
-        <p>تصنيع جميع التركيبات داخل العيادة باستخدام أجهزة imes-icore وخامات Ivoclar — دقة أعلى ووقت أقل.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ⑤ PRICING -->
+<!-- ④ PRICING -->
 <section aria-labelledby="price-h">
   <div class="wrap">
     <div class="sec-hdr rv">
@@ -342,7 +293,7 @@ section{padding:var(--sy) 0}
     <div class="price-cta-box rv">
       <h3>يعتمد السعر على خطة العلاج الفردية</h3>
       <p>كل حالة فريدة — نقدم لك تقييماً رقمياً شاملاً مع خطة علاجية مفصّلة تشمل التكلفة والجدول الزمني قبل البدء بأي إجراء.</p>
-      <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز استشارتك الآن</a>
+      <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعدك الآن</a>
     </div>
     <p class="Bmd rv" style="text-align:center;margin-top:20px">تقسيط بدون فوائد عبر Tabby و Tamara</p>
   </div>
@@ -355,16 +306,10 @@ section{padding:var(--sy) 0}
       <span class="eye">أسئلة شائعة</span>
       <h2 class="Hlg" id="obj-h">ما يهمك معرفته</h2>
     </div>
-    <div class="obj-list">
-      <div class="obj-item rv">
-        <h3>كم جلسة يحتاج العلاج الشامل؟</h3>
-        <p>يعتمد على الحالة، لكن عادةً من 6-12 جلسة موزعة على عدة أشهر. نضع خطة علاجية مفصلة بالتسلسل والمدة الزمنية قبل البدء.</p>
-      </div>
-      <div class="obj-item rv">
-        <h3>هل النتيجة تستحق الوقت والتكلفة؟</h3>
-        <p>إعادة تأهيل الفم الكامل تعالج جميع المشاكل دفعة واحدة — الوظيفة والمظهر والراحة. التخطيط الرقمي يُظهر لك النتيجة المتوقعة قبل البدء.</p>
-      </div>
-    </div>
+    <ul class="rv" style="max-width:740px;margin:32px auto 0;list-style:none;padding:0;display:flex;flex-direction:column;gap:16px">
+      <li style="font-size:15px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">كم جلسة يحتاج العلاج الشامل؟</strong> — عادةً 6-12 جلسة على عدة أشهر، مع خطة مفصلة بالتسلسل والمدة قبل البدء.</li>
+      <li style="font-size:15px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">هل النتيجة تستحق الوقت والتكلفة؟</strong> — نعالج جميع المشاكل دفعة واحدة، والتخطيط الرقمي يُظهر لك النتيجة المتوقعة قبل البدء.</li>
+    </ul>
   </div>
 </section>
 
@@ -392,7 +337,7 @@ section{padding:var(--sy) 0}
 
 <!-- STICKY BOTTOM CTA (mobile) -->
 <div class="sticky-cta">
-  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز استشارتك الآن</a>
+  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعدك الآن</a>
 </div>
 
 <!-- FLOATING CHAT -->

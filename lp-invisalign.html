@@ -124,15 +124,6 @@ section{padding:var(--sy) 0}
 @media(max-width:900px){.ts-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.ts-grid{grid-template-columns:1fr}}
 
-/* ─── TECH CARDS ─── */
-.tech-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
-.tech-card{background:var(--w);border:1px solid var(--s100);border-radius:var(--rl);padding:32px 24px;text-align:center;box-shadow:var(--sh);transition:transform .3s,box-shadow .3s}
-.tech-card:hover{transform:translateY(-4px);box-shadow:var(--shm)}
-.tech-ico{width:56px;height:56px;border-radius:var(--rm);background:var(--b50);display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
-.tech-ico svg{width:28px;height:28px;color:var(--b700)}
-.tech-card h3{font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px}
-.tech-card p{font-size:14px;color:var(--s600);line-height:1.6}
-@media(max-width:600px){.tech-grid{grid-template-columns:1fr}}
 
 /* ─── PRICING ─── */
 .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
@@ -150,11 +141,6 @@ section{padding:var(--sy) 0}
 .price-pay{font-size:12px;color:var(--s400)}
 @media(max-width:600px){.price-grid{grid-template-columns:1fr}}
 
-/* ─── OBJECTION HANDLING ─── */
-.obj-list{max-width:740px;margin:40px auto 0;display:flex;flex-direction:column;gap:24px}
-.obj-item{background:var(--s50);border-radius:var(--rl);padding:28px 32px;border-right:4px solid var(--b400)}
-.obj-item h3{font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px}
-.obj-item p{font-size:15px;color:var(--s600);line-height:1.7}
 
 /* ─── FINAL CTA ─── */
 .lp-cta{background:var(--gb);padding:var(--sy) 0;text-align:center}
@@ -215,7 +201,7 @@ section{padding:var(--sy) 0}
     <h1 class="Hxl rv" id="lp-h1">قوّم أسنانك<br>بدون أن يلاحظ أحد</h1>
     <p class="Blg rv">تقويم شفاف بتقنية Invisalign مع معاينة رقمية ClinCheck — شاهد نتيجتك المتوقعة قبل بدء العلاج، وقوّم أسنانك بقوالب شفافة لا يراها أحد.</p>
     <div class="rv">
-      <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز استشارتك الآن</a>
+      <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعدك الآن</a>
     </div>
     <div class="hero-trust rv">
       <div class="hero-trust-i">
@@ -235,6 +221,40 @@ section{padding:var(--sy) 0}
         <span>معتمد من Invisalign</span>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- USP / PROCESS -->
+<section aria-labelledby="ts-h">
+  <div class="wrap">
+    <div class="sec-hdr rv">
+      <span class="eye">كيف يعمل الإنفزلاين</span>
+      <h2 class="Hlg" id="ts-h">أربع خطوات نحو ابتسامة مستقيمة</h2>
+      <p class="Blg" style="max-width:680px;margin:12px auto 0">من المسح الرقمي إلى النتيجة النهائية — خطة واضحة بدون أسلاك.</p>
+    </div>
+    <div class="ts-grid">
+      <div class="ts-step rv">
+        <div class="ts-num">١</div>
+        <h3>المسح الرقمي</h3>
+        <p>مسح ثلاثي الأبعاد بتقنية 3Shape — بدون قوالب تقليدية.</p>
+      </div>
+      <div class="ts-step rv">
+        <div class="ts-num">٢</div>
+        <h3>معاينة ClinCheck</h3>
+        <p>محاكاة رقمية لحركة أسنانك والنتيجة المتوقعة قبل البدء.</p>
+      </div>
+      <div class="ts-step rv">
+        <div class="ts-num">٣</div>
+        <h3>القوالب الشفافة</h3>
+        <p>قوالب مخصصة تغيّرها كل أسبوعين — شفافة ومريحة وقابلة للإزالة.</p>
+      </div>
+      <div class="ts-step rv">
+        <div class="ts-num">٤</div>
+        <h3>المتابعة والتثبيت</h3>
+        <p>متابعة دورية للتقدم، ثم مثبّتات Vivera للحفاظ على النتيجة.</p>
+      </div>
+    </div>
+    <p class="ts-note rv">✦ شاهد نتيجتك المتوقعة رقمياً قبل أن تبدأ</p>
   </div>
 </section>
 
@@ -262,73 +282,6 @@ section{padding:var(--sy) 0}
       <div class="ba-arrows">
         <button class="ba-arr" id="ba-prev" aria-label="السابق" disabled>→</button>
         <button class="ba-arr" id="ba-next" aria-label="التالي" disabled>←</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- USP / PROCESS -->
-<section aria-labelledby="ts-h">
-  <div class="wrap">
-    <div class="sec-hdr rv">
-      <span class="eye">كيف يعمل الإنفزلاين</span>
-      <h2 class="Hlg" id="ts-h">أربع خطوات نحو ابتسامة مستقيمة</h2>
-      <p class="Blg" style="max-width:680px;margin:12px auto 0">من المسح الرقمي إلى النتيجة النهائية — خطة علاج واضحة ومريحة بدون أسلاك.</p>
-    </div>
-    <div class="ts-grid">
-      <div class="ts-step rv">
-        <div class="ts-num">١</div>
-        <h3>المسح الرقمي</h3>
-        <p>مسح ثلاثي الأبعاد لأسنانك باستخدام 3Shape Scanner — بدون قوالب تقليدية.</p>
-      </div>
-      <div class="ts-step rv">
-        <div class="ts-num">٢</div>
-        <h3>معاينة ClinCheck</h3>
-        <p>نعرض لك محاكاة رقمية لحركة أسنانك والنتيجة المتوقعة قبل بدء العلاج.</p>
-      </div>
-      <div class="ts-step rv">
-        <div class="ts-num">٣</div>
-        <h3>القوالب الشفافة</h3>
-        <p>تستلم مجموعة قوالب مخصصة تغيّرها كل أسبوعين — شفافة ومريحة وقابلة للإزالة.</p>
-      </div>
-      <div class="ts-step rv">
-        <div class="ts-num">٤</div>
-        <h3>المتابعة والتثبيت</h3>
-        <p>متابعة دورية للتأكد من التقدم، ثم مثبّتات Vivera للحفاظ على النتيجة.</p>
-      </div>
-    </div>
-    <p class="ts-note rv">✦ شاهد نتيجتك المتوقعة رقمياً قبل أن تبدأ</p>
-  </div>
-</section>
-
-<!-- TECHNOLOGY -->
-<section style="background:var(--s50)" aria-labelledby="tech-h">
-  <div class="wrap">
-    <div class="sec-hdr rv">
-      <span class="eye">التقنيات المستخدمة</span>
-      <h2 class="Hlg" id="tech-h">تكنولوجيا تصنع الفرق</h2>
-    </div>
-    <div class="tech-grid">
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-        </div>
-        <h3>ClinCheck Preview</h3>
-        <p>محاكاة رقمية ثلاثية الأبعاد تُظهر لك كل مرحلة من مراحل تحرك أسنانك والنتيجة النهائية.</p>
-      </div>
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-        </div>
-        <h3>3Shape Scanner</h3>
-        <p>ماسح ضوئي رقمي ثلاثي الأبعاد للحصول على قياسات دقيقة دون الحاجة لقوالب تقليدية.</p>
-      </div>
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
-        </div>
-        <h3>Vivera Retainers</h3>
-        <p>مثبّتات شفافة من Invisalign تُصنع خصيصاً للحفاظ على نتيجة التقويم بعد انتهاء العلاج.</p>
       </div>
     </div>
   </div>
@@ -403,16 +356,10 @@ section{padding:var(--sy) 0}
       <span class="eye">أسئلة شائعة</span>
       <h2 class="Hlg" id="obj-h">ما يهمك معرفته</h2>
     </div>
-    <div class="obj-list">
-      <div class="obj-item rv">
-        <h3>هل الإنفزلاين فعّال مثل التقويم التقليدي؟</h3>
-        <p>نعم، الإنفزلاين يعالج معظم حالات التقويم بفعالية. تقنية ClinCheck تتيح لنا تخطيط كل مرحلة رقمياً لضمان النتيجة. بعض الحالات المعقدة جداً قد تحتاج تقويماً تقليدياً — نحدد ذلك في الاستشارة.</p>
-      </div>
-      <div class="obj-item rv">
-        <h3>كم يستغرق العلاج؟</h3>
-        <p>يعتمد على الحالة: 6-9 أشهر للحالات البسيطة، وحتى 15 شهراً أو أكثر للحالات المعقدة. ستعرف المدة المتوقعة من خلال المعاينة الرقمية ClinCheck قبل البدء.</p>
-      </div>
-    </div>
+    <ul class="rv" style="max-width:740px;margin:32px auto 0;list-style:none;padding:0;display:flex;flex-direction:column;gap:16px">
+      <li style="font-size:15px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">هل الإنفزلاين فعّال مثل التقويم التقليدي؟</strong> — نعم، يعالج معظم الحالات بفعالية. تقنية ClinCheck تضمن تخطيط كل مرحلة رقمياً. الحالات المعقدة جداً نحددها في الاستشارة.</li>
+      <li style="font-size:15px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">كم يستغرق العلاج؟</strong> — من 6 إلى 9 أشهر للحالات البسيطة، وحتى 15 شهراً للمعقدة. المدة تُحدَّد عبر معاينة ClinCheck قبل البدء.</li>
+    </ul>
   </div>
 </section>
 
@@ -424,7 +371,7 @@ section{padding:var(--sy) 0}
 <section class="lp-cta" aria-labelledby="cta-h">
   <div class="wrap rv">
     <h2 class="Hlg" id="cta-h">ابتسامة مستقيمة تبدأ من هنا</h2>
-    <p class="Blg">احجز استشارتك واحصل على معاينة ClinCheck رقمية — شاهد نتيجتك المتوقعة قبل أن تبدأ.</p>
+    <p class="Blg">احجز موعدك واحصل على معاينة ClinCheck رقمية — شاهد نتيجتك المتوقعة قبل أن تبدأ.</p>
     <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعدك الآن</a>
   </div>
 </section>
@@ -440,7 +387,7 @@ section{padding:var(--sy) 0}
 
 <!-- STICKY BOTTOM CTA (mobile) -->
 <div class="sticky-cta">
-  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز استشارتك الآن</a>
+  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعدك الآن</a>
 </div>
 
 <!-- FLOATING CHAT -->

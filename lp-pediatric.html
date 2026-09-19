@@ -90,15 +90,6 @@ section{padding:var(--sy) 0}
 @media(max-width:900px){.ts-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.ts-grid{grid-template-columns:1fr}}
 
-.tech-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
-.tech-card{background:var(--w);border:1px solid var(--s100);border-radius:var(--rl);padding:32px 24px;text-align:center;box-shadow:var(--sh);transition:transform .3s,box-shadow .3s}
-.tech-card:hover{transform:translateY(-4px);box-shadow:var(--shm)}
-.tech-ico{width:56px;height:56px;border-radius:var(--rm);background:var(--b50);display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
-.tech-ico svg{width:28px;height:28px;color:var(--b700)}
-.tech-card h3{font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px}
-.tech-card p{font-size:14px;color:var(--s600);line-height:1.6}
-@media(max-width:600px){.tech-grid{grid-template-columns:1fr}}
-
 .price-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:40px}
 .price-card{background:var(--w);border:1px solid var(--s100);border-radius:var(--rl);padding:32px 24px;text-align:center;box-shadow:var(--sh);transition:transform .3s,box-shadow .3s}
 .price-card.featured{border-color:var(--g500);box-shadow:0 6px 32px rgba(122,182,72,.15)}
@@ -113,11 +104,6 @@ section{padding:var(--sy) 0}
 .price-divider{width:100%;height:1px;background:var(--s100);margin:16px 0}
 @media(max-width:900px){.price-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.price-grid{grid-template-columns:1fr}}
-
-.obj-list{max-width:740px;margin:40px auto 0;display:flex;flex-direction:column;gap:24px}
-.obj-item{background:var(--s50);border-radius:var(--rl);padding:28px 32px;border-right:4px solid var(--b400)}
-.obj-item h3{font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px}
-.obj-item p{font-size:15px;color:var(--s600);line-height:1.7}
 
 .lp-cta{background:var(--gb);padding:var(--sy) 0;text-align:center}
 .lp-cta .Hlg{color:var(--w);margin-bottom:12px}
@@ -173,7 +159,7 @@ section{padding:var(--sy) 0}
     <h1 class="Hxl rv" id="lp-h1">طب أسنان أطفال<br>بأجواء مريحة وآمنة</h1>
     <p class="Blg rv">بيئة مهيأة خصيصاً للأطفال مع غاز الاسترخاء والتخدير الرقمي — لتجربة علاج هادئة وبدون خوف.</p>
     <div class="rv">
-      <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعد طفلك الآن</a>
+      <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعدك الآن</a>
     </div>
     <div class="hero-trust rv">
       <div class="hero-trust-i">
@@ -208,55 +194,22 @@ section{padding:var(--sy) 0}
       <div class="ts-step rv">
         <div class="ts-num">١</div>
         <h3>غاز الاسترخاء</h3>
-        <p>يساعد الطفل على الاسترخاء والهدوء أثناء العلاج دون تخدير كامل — آمن ومعتمد عالمياً.</p>
+        <p>آمن ومعتمد عالمياً — يهدّئ الطفل دون تخدير كامل.</p>
       </div>
       <div class="ts-step rv">
         <div class="ts-num">٢</div>
         <h3>تخدير رقمي STA</h3>
-        <p>حقن بدون الإبرة المخيفة التقليدية — تخدير دقيق ولطيف مناسب للأطفال.</p>
+        <p>تخدير دقيق ولطيف بدون الإبرة المخيفة.</p>
       </div>
       <div class="ts-step rv">
         <div class="ts-num">٣</div>
         <h3>بيئة صديقة للطفل</h3>
-        <p>أجواء مصممة لتخفيف التوتر وبناء علاقة إيجابية بين الطفل وطبيب الأسنان.</p>
+        <p>أجواء تبني ثقة الطفل بطبيب الأسنان.</p>
       </div>
       <div class="ts-step rv">
         <div class="ts-num">٤</div>
         <h3>وقاية قبل العلاج</h3>
-        <p>فلورايد، حشوات وقائية، وتثقيف صحي — نركّز على حماية أسنان طفلك قبل حدوث المشاكل.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TECHNOLOGY -->
-<section style="background:var(--s50)" aria-labelledby="tech-h">
-  <div class="wrap">
-    <div class="sec-hdr rv">
-      <span class="eye">التقنيات المستخدمة</span>
-      <h2 class="Hlg" id="tech-h">تقنيات حديثة لراحة طفلك</h2>
-    </div>
-    <div class="tech-grid">
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
-        </div>
-        <h3>غاز الاسترخاء (Nitrous Oxide)</h3>
-        <p>غاز آمن يُستنشق أثناء العلاج يساعد الطفل على الاسترخاء التام. يزول تأثيره خلال دقائق بعد الجلسة.</p>
-      </div>
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-        <h3>STA Digital Anesthesia</h3>
-        <p>تخدير رقمي محكوم إلكترونياً — بدون الإبرة التقليدية المخيفة للأطفال، وبفعالية تخدير أعلى.</p>
-      </div>
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
-        </div>
-        <h3>فلورايد وحشوات وقائية</h3>
-        <p>علاجات وقائية تحمي أسنان الطفل من التسوس — فلورايد موضعي وحشوات سيلانت للأسطح الماضغة.</p>
+        <p>فلورايد وحشوات وقائية لحماية الأسنان مبكراً.</p>
       </div>
     </div>
   </div>
@@ -331,16 +284,10 @@ section{padding:var(--sy) 0}
       <span class="eye">أسئلة شائعة</span>
       <h2 class="Hlg" id="obj-h">ما يهم الأهل معرفته</h2>
     </div>
-    <div class="obj-list">
-      <div class="obj-item rv">
-        <h3>هل غاز الاسترخاء آمن للأطفال؟</h3>
-        <p>نعم، غاز الاسترخاء (أكسيد النيتروس) آمن تماماً ومعتمد عالمياً لطب أسنان الأطفال. يساعد الطفل على الاسترخاء أثناء العلاج دون تخدير كامل، ويزول تأثيره خلال دقائق بعد الجلسة.</p>
-      </div>
-      <div class="obj-item rv">
-        <h3>من أي عمر يجب زيارة طبيب الأسنان؟</h3>
-        <p>يُنصح بزيارة طبيب الأسنان مع ظهور أول سن (حوالي عمر سنة). الزيارات المبكرة تساعد على بناء علاقة إيجابية مع طبيب الأسنان والوقاية من المشاكل مبكراً.</p>
-      </div>
-    </div>
+    <ul class="rv" style="max-width:740px;margin:32px auto 0;list-style:none;padding:0;display:flex;flex-direction:column;gap:16px">
+      <li style="font-size:15px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">هل غاز الاسترخاء آمن للأطفال؟</strong> — نعم، آمن ومعتمد عالمياً ويزول تأثيره خلال دقائق.</li>
+      <li style="font-size:15px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">من أي عمر يجب زيارة طبيب الأسنان؟</strong> — مع ظهور أول سن (حوالي عمر سنة) لبناء عادة صحية مبكرة.</li>
+    </ul>
   </div>
 </section>
 
@@ -352,8 +299,8 @@ section{padding:var(--sy) 0}
 <section class="lp-cta" aria-labelledby="cta-h">
   <div class="wrap rv">
     <h2 class="Hlg" id="cta-h">ابتسامة صحية لطفلك تبدأ من هنا</h2>
-    <p class="Blg">احجز موعد طفلك الآن واحصل على فحص شامل مع خطة وقائية مخصصة.</p>
-    <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعد طفلك</a>
+    <p class="Blg">احجز موعدك الآن واحصل على فحص شامل مع خطة وقائية مخصصة.</p>
+    <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعدك الآن</a>
   </div>
 </section>
 
@@ -368,7 +315,7 @@ section{padding:var(--sy) 0}
 
 <!-- STICKY BOTTOM CTA -->
 <div class="sticky-cta">
-  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعد طفلك الآن</a>
+  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعدك الآن</a>
 </div>
 
 <!-- FLOATING CHAT -->

@@ -97,16 +97,6 @@ section{padding:var(--sy) 0}
 @media(max-width:900px){.ts-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.ts-grid{grid-template-columns:1fr}}
 
-/* TECH CARDS */
-.tech-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
-.tech-card{background:var(--w);border:1px solid var(--s100);border-radius:var(--rl);padding:32px 24px;text-align:center;box-shadow:var(--sh);transition:transform .3s,box-shadow .3s}
-.tech-card:hover{transform:translateY(-4px);box-shadow:var(--shm)}
-.tech-ico{width:56px;height:56px;border-radius:var(--rm);background:var(--b50);display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
-.tech-ico svg{width:28px;height:28px;color:var(--b700)}
-.tech-card h3{font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px}
-.tech-card p{font-size:14px;color:var(--s600);line-height:1.6}
-@media(max-width:600px){.tech-grid{grid-template-columns:1fr}}
-
 /* PRICING */
 .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
 .price-card{background:var(--w);border:1px solid var(--s100);border-radius:var(--rl);padding:32px 24px;text-align:center;box-shadow:var(--sh);transition:transform .3s,box-shadow .3s}
@@ -122,12 +112,6 @@ section{padding:var(--sy) 0}
 .price-divider{width:100%;height:1px;background:var(--s100);margin:16px 0}
 @media(max-width:900px){.price-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.price-grid{grid-template-columns:1fr}}
-
-/* OBJECTION HANDLING */
-.obj-list{max-width:740px;margin:40px auto 0;display:flex;flex-direction:column;gap:24px}
-.obj-item{background:var(--s50);border-radius:var(--rl);padding:28px 32px;border-right:4px solid var(--b400)}
-.obj-item h3{font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px}
-.obj-item p{font-size:15px;color:var(--s600);line-height:1.7}
 
 /* FINAL CTA */
 .lp-cta{background:var(--gb);padding:var(--sy) 0;text-align:center}
@@ -223,55 +207,22 @@ section{padding:var(--sy) 0}
       <div class="ts-step rv">
         <div class="ts-num">١</div>
         <h3>التخدير الرقمي STA</h3>
-        <p>حقن دقيق ومحكوم إلكترونياً بدون ألم الإبرة التقليدية — تخدير فعّال من أول لحظة.</p>
+        <p>حقن محكوم إلكترونياً بدون ألم الإبرة التقليدية.</p>
       </div>
       <div class="ts-step rv">
         <div class="ts-num">٢</div>
         <h3>غاز الاسترخاء</h3>
-        <p>استنشاق غاز الاسترخاء (أكسيد النيتروس) يساعدك على الشعور بالهدوء والراحة طوال الجلسة.</p>
+        <p>أكسيد النيتروس يمنحك هدوءاً وراحة طوال الجلسة.</p>
       </div>
       <div class="ts-step rv">
         <div class="ts-num">٣</div>
         <h3>أدوات دوّارة حديثة</h3>
-        <p>أدوات متطورة تنظّف القنوات بدقة وسرعة أكبر مقارنة بالأدوات اليدوية التقليدية.</p>
+        <p>تنظيف القنوات بدقة وسرعة أكبر من الأدوات التقليدية.</p>
       </div>
       <div class="ts-step rv">
         <div class="ts-num">٤</div>
         <h3>علاج سريع ودقيق</h3>
-        <p>جلسة إلى جلستين في معظم الحالات — بأقل وقت ممكن وبأعلى معايير الجودة.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TECHNOLOGY -->
-<section style="background:var(--s50)" aria-labelledby="tech-h">
-  <div class="wrap">
-    <div class="sec-hdr rv">
-      <span class="eye">التقنيات المستخدمة</span>
-      <h2 class="Hlg" id="tech-h">تكنولوجيا تصنع الفرق</h2>
-    </div>
-    <div class="tech-grid">
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-        <h3>STA Digital Anesthesia</h3>
-        <p>جهاز تخدير رقمي يوصل المخدر بدقة محكومة إلكترونياً — بدون ألم الإبرة التقليدية وبفعالية أعلى.</p>
-      </div>
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
-        </div>
-        <h3>غاز الاسترخاء (Nitrous Oxide)</h3>
-        <p>غاز آمن ومعتمد عالمياً يساعد على الاسترخاء أثناء العلاج دون تخدير كامل، ويزول تأثيره خلال دقائق.</p>
-      </div>
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-        </div>
-        <h3>Digital X-ray</h3>
-        <p>تصوير رقمي فوري بإشعاع منخفض يتيح تشخيصاً دقيقاً لقنوات العصب وتخطيطاً محكماً للعلاج.</p>
+        <p>جلسة إلى جلستين بأعلى معايير الجودة.</p>
       </div>
     </div>
   </div>
@@ -351,20 +302,11 @@ section{padding:var(--sy) 0}
       <span class="eye">أسئلة شائعة</span>
       <h2 class="Hlg" id="obj-h">ما يهمك معرفته</h2>
     </div>
-    <div class="obj-list">
-      <div class="obj-item rv">
-        <h3>هل علاج العصب مؤلم؟</h3>
-        <p>نستخدم جهاز التخدير الرقمي STA الذي يوفر تخديراً دقيقاً وبدون ألم الإبرة التقليدية. مع غاز الاسترخاء، معظم المرضى يصفون التجربة بأنها مريحة وهادئة.</p>
-      </div>
-      <div class="obj-item rv">
-        <h3>هل الأفضل خلع السن أم علاج العصب؟</h3>
-        <p>الحفاظ على السن الطبيعي هو الخيار الأفضل دائماً عندما يكون ممكناً. علاج العصب يحافظ على السن ويمنع مشاكل مستقبلية في الإطباق وصحة الفم.</p>
-      </div>
-      <div class="obj-item rv">
-        <h3>كم جلسة يحتاج علاج العصب؟</h3>
-        <p>عادةً جلسة إلى جلستين حسب تعقيد الحالة وعدد القنوات. نستخدم أدوات دوّارة حديثة تختصر الوقت وتزيد الدقة.</p>
-      </div>
-    </div>
+    <ul class="rv" style="max-width:740px;margin:32px auto 0;list-style:none;padding:0;display:flex;flex-direction:column;gap:16px">
+      <li style="font-size:15px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">هل علاج العصب مؤلم؟</strong> — نستخدم التخدير الرقمي STA مع غاز الاسترخاء، فتكون التجربة مريحة وهادئة.</li>
+      <li style="font-size:15px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">هل الأفضل خلع السن أم علاج العصب؟</strong> — الحفاظ على السن الطبيعي أفضل دائماً لصحة الفم والإطباق.</li>
+      <li style="font-size:15px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">كم جلسة يحتاج علاج العصب؟</strong> — جلسة إلى جلستين عادةً بأدوات دوّارة حديثة تختصر الوقت.</li>
+    </ul>
   </div>
 </section>
 

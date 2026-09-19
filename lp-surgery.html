@@ -100,16 +100,6 @@ section{padding:var(--sy) 0}
 @media(max-width:900px){.ts-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.ts-grid{grid-template-columns:1fr}}
 
-/* ─── TECH CARDS ─── */
-.tech-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
-.tech-card{background:var(--w);border:1px solid var(--s100);border-radius:var(--rl);padding:32px 24px;text-align:center;box-shadow:var(--sh);transition:transform .3s,box-shadow .3s}
-.tech-card:hover{transform:translateY(-4px);box-shadow:var(--shm)}
-.tech-ico{width:56px;height:56px;border-radius:var(--rm);background:var(--b50);display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
-.tech-ico svg{width:28px;height:28px;color:var(--b700)}
-.tech-card h3{font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px}
-.tech-card p{font-size:14px;color:var(--s600);line-height:1.6}
-@media(max-width:600px){.tech-grid{grid-template-columns:1fr}}
-
 /* ─── PRICING ─── */
 .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
 .price-card{background:var(--w);border:1px solid var(--s100);border-radius:var(--rl);padding:32px 24px;text-align:center;box-shadow:var(--sh);transition:transform .3s,box-shadow .3s}
@@ -124,12 +114,6 @@ section{padding:var(--sy) 0}
 .price-feats li svg{width:18px;height:18px;color:var(--g600);flex-shrink:0;margin-top:2px}
 .price-divider{width:100%;height:1px;background:var(--s100);margin:16px 0}
 @media(max-width:600px){.price-grid{grid-template-columns:1fr}}
-
-/* ─── OBJECTION HANDLING ─── */
-.obj-list{max-width:740px;margin:40px auto 0;display:flex;flex-direction:column;gap:24px}
-.obj-item{background:var(--s50);border-radius:var(--rl);padding:28px 32px;border-right:4px solid var(--b400)}
-.obj-item h3{font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px}
-.obj-item p{font-size:15px;color:var(--s600);line-height:1.7}
 
 /* ─── FINAL CTA ─── */
 .lp-cta{background:var(--gb);padding:var(--sy) 0;text-align:center}
@@ -190,7 +174,7 @@ section{padding:var(--sy) 0}
     <h1 class="Hxl rv" id="lp-h1">جراحة فم متقدمة<br>براحة تامة</h1>
     <p class="Blg rv">خلع ضرس العقل، تطعيم العظم، ورفع الجيب الأنفي — بتقنية Triple Tech التي تجمع غاز الاسترخاء والتخدير الرقمي وجهاز Piezotome لأقل ألم ممكن.</p>
     <div class="rv">
-      <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز استشارتك الآن</a>
+      <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعدك الآن</a>
     </div>
     <div class="hero-trust rv">
       <div class="hero-trust-i">
@@ -225,17 +209,17 @@ section{padding:var(--sy) 0}
       <div class="ts-step rv">
         <div class="ts-num">١</div>
         <h3>غاز الاسترخاء</h3>
-        <p>يُستنشق عبر قناع أنفي لتخفيف التوتر والقلق — يبقى المريض واعياً ومسترخياً طوال الإجراء.</p>
+        <p>يُستنشق عبر قناع أنفي لتخفيف التوتر — يبقى المريض واعياً ومسترخياً.</p>
       </div>
       <div class="ts-step rv">
         <div class="ts-num">٢</div>
         <h3>التخدير الرقمي STA</h3>
-        <p>جهاز تخدير محوسب يوفر حقنة دقيقة وبطيئة — يقضي على ألم الإبرة التقليدية بشكل كامل.</p>
+        <p>جهاز تخدير محوسب يوفر حقنة دقيقة وبطيئة — بدون ألم الإبرة التقليدية.</p>
       </div>
       <div class="ts-step rv">
         <div class="ts-num">٣</div>
         <h3>جهاز Piezotome</h3>
-        <p>جراحة بالموجات فوق الصوتية تقطع العظم بدقة دون المساس بالأنسجة الرخوة — أقل تورم وتعافٍ أسرع.</p>
+        <p>موجات فوق صوتية تقطع العظم بدقة دون المساس بالأنسجة الرخوة — تعافٍ أسرع.</p>
       </div>
     </div>
     <p class="ts-note rv">✦ تخطيط CBCT ثلاثي الأبعاد لكل حالة جراحية معقدة</p>
@@ -249,40 +233,7 @@ section{padding:var(--sy) 0}
   </div>
 </section>
 
-<!-- ③ TECHNOLOGY -->
-<section style="background:var(--s50)" aria-labelledby="tech-h">
-  <div class="wrap">
-    <div class="sec-hdr rv">
-      <span class="eye">التقنيات المستخدمة</span>
-      <h2 class="Hlg" id="tech-h">تكنولوجيا تصنع الفرق</h2>
-    </div>
-    <div class="tech-grid">
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/><path d="M2 12h20"/></svg>
-        </div>
-        <h3>CBCT 3D Scanner</h3>
-        <p>تصوير مقطعي ثلاثي الأبعاد يكشف موقع الأعصاب والجذور بدقة لتخطيط جراحي آمن ومدروس.</p>
-      </div>
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-        <h3>STA Digital Anesthesia</h3>
-        <p>نظام تخدير محوسب يحقن المخدر بسرعة وضغط محسوبين — تجربة بدون ألم الإبرة التقليدية.</p>
-      </div>
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-        </div>
-        <h3>Piezotome</h3>
-        <p>جهاز جراحة بالموجات فوق الصوتية يقطع العظم بدقة دون المساس بالأنسجة الرخوة — أقل تورم وتعافٍ أسرع.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ④ PRICING -->
+<!-- ③ PRICING -->
 <section aria-labelledby="price-h">
   <div class="wrap">
     <div class="sec-hdr rv">
@@ -343,16 +294,10 @@ section{padding:var(--sy) 0}
       <span class="eye">أسئلة شائعة</span>
       <h2 class="Hlg" id="obj-h">ما يهمك معرفته</h2>
     </div>
-    <div class="obj-list">
-      <div class="obj-item rv">
-        <h3>هل خلع ضرس العقل مؤلم؟</h3>
-        <p>نستخدم Triple Tech لضمان راحتك الكاملة أثناء العملية. غاز الاسترخاء يخفف التوتر، والتخدير الرقمي STA يوفر تخديراً دقيقاً بدون ألم الإبرة التقليدية.</p>
-      </div>
-      <div class="obj-item rv">
-        <h3>كم يستغرق التعافي؟</h3>
-        <p>عادةً 3-7 أيام حسب تعقيد الحالة. استخدام جهاز Piezotome يقلل التورم ويسرّع التعافي مقارنة بالطرق التقليدية.</p>
-      </div>
-    </div>
+    <ul class="rv" style="max-width:740px;margin:32px auto 0;list-style:none;padding:0;display:flex;flex-direction:column;gap:16px">
+      <li style="font-size:15px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">هل خلع ضرس العقل مؤلم؟</strong> — نستخدم Triple Tech (غاز الاسترخاء + STA + Piezotome) لضمان راحتك الكاملة أثناء العملية.</li>
+      <li style="font-size:15px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">كم يستغرق التعافي؟</strong> — عادةً 3-7 أيام حسب الحالة. Piezotome يقلل التورم ويسرّع التعافي.</li>
+    </ul>
   </div>
 </section>
 
@@ -380,7 +325,7 @@ section{padding:var(--sy) 0}
 
 <!-- STICKY BOTTOM CTA (mobile) -->
 <div class="sticky-cta">
-  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز استشارتك الآن</a>
+  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعدك الآن</a>
 </div>
 
 <!-- FLOATING CHAT -->

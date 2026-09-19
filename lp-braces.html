@@ -114,14 +114,6 @@ section{padding:var(--sy) 0}
 @media(max-width:900px){.ts-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.ts-grid{grid-template-columns:1fr}}
 
-.tech-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
-.tech-card{background:var(--w);border:1px solid var(--s100);border-radius:var(--rl);padding:32px 24px;text-align:center;box-shadow:var(--sh);transition:transform .3s,box-shadow .3s}
-.tech-card:hover{transform:translateY(-4px);box-shadow:var(--shm)}
-.tech-ico{width:56px;height:56px;border-radius:var(--rm);background:var(--b50);display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
-.tech-ico svg{width:28px;height:28px;color:var(--b700)}
-.tech-card h3{font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px}
-.tech-card p{font-size:14px;color:var(--s600);line-height:1.6}
-@media(max-width:600px){.tech-grid{grid-template-columns:1fr}}
 
 .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
 .price-card{background:var(--w);border:1px solid var(--s100);border-radius:var(--rl);padding:32px 24px;text-align:center;box-shadow:var(--sh);transition:transform .3s,box-shadow .3s}
@@ -138,10 +130,6 @@ section{padding:var(--sy) 0}
 .price-pay{font-size:12px;color:var(--s400)}
 @media(max-width:600px){.price-grid{grid-template-columns:1fr}}
 
-.obj-list{max-width:740px;margin:40px auto 0;display:flex;flex-direction:column;gap:24px}
-.obj-item{background:var(--s50);border-radius:var(--rl);padding:28px 32px;border-right:4px solid var(--b400)}
-.obj-item h3{font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px}
-.obj-item p{font-size:15px;color:var(--s600);line-height:1.7}
 
 .lp-cta{background:var(--gb);padding:var(--sy) 0;text-align:center}
 .lp-cta .Hlg{color:var(--w);margin-bottom:12px}
@@ -205,7 +193,7 @@ section{padding:var(--sy) 0}
     <h1 class="Hxl rv" id="lp-h1">ابتسامة مستقيمة<br>تدوم مدى الحياة</h1>
     <p class="Blg rv">تقويم أسنان بإشراف أخصائي تقويم — خيارات معدنية وخزفية لعلاج الازدحام وسوء الإطباق لجميع الأعمار، مع متابعة شهرية حتى تصل إلى النتيجة المطلوبة.</p>
     <div class="rv">
-      <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز استشارتك الآن</a>
+      <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعدك الآن</a>
     </div>
     <div class="hero-trust rv">
       <div class="hero-trust-i">
@@ -225,6 +213,40 @@ section{padding:var(--sy) 0}
         <span>مناسب لجميع الأعمار</span>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- USP / PROCESS -->
+<section aria-labelledby="ts-h">
+  <div class="wrap">
+    <div class="sec-hdr rv">
+      <span class="eye">خطوات العلاج</span>
+      <h2 class="Hlg" id="ts-h">رحلة تقويمك خطوة بخطوة</h2>
+      <p class="Blg" style="max-width:680px;margin:12px auto 0">من الاستشارة إلى ابتسامة مستقيمة — خطة مدروسة بإشراف أخصائي تقويم.</p>
+    </div>
+    <div class="ts-grid">
+      <div class="ts-step rv">
+        <div class="ts-num">١</div>
+        <h3>الاستشارة والتشخيص</h3>
+        <p>فحص شامل وصور رقمية لتحديد الحالة ووضع خطة العلاج.</p>
+      </div>
+      <div class="ts-step rv">
+        <div class="ts-num">٢</div>
+        <h3>التخطيط الرقمي</h3>
+        <p>تخطيط رقمي واختيار نوع التقويم الأنسب — معدني أو خزفي أو 3D Ortholine.</p>
+      </div>
+      <div class="ts-step rv">
+        <div class="ts-num">٣</div>
+        <h3>تركيب التقويم</h3>
+        <p>تركيب الأقواس بدقة مع شرح طريقة العناية والتنظيف اليومي.</p>
+      </div>
+      <div class="ts-step rv">
+        <div class="ts-num">٤</div>
+        <h3>المتابعة الشهرية</h3>
+        <p>زيارات شهرية لتعديل الأسلاك ومتابعة التقدم حتى النتيجة المطلوبة.</p>
+      </div>
+    </div>
+    <p class="ts-note rv">✦ نتائج مثبتة لجميع الأعمار — أطفال ومراهقين وبالغين</p>
   </div>
 </section>
 
@@ -282,73 +304,6 @@ section{padding:var(--sy) 0}
       <div class="ba-arrows">
         <button class="ba-arr" id="ba-prev" aria-label="السابق" disabled>→</button>
         <button class="ba-arr" id="ba-next" aria-label="التالي">←</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- USP / PROCESS -->
-<section aria-labelledby="ts-h">
-  <div class="wrap">
-    <div class="sec-hdr rv">
-      <span class="eye">خطوات العلاج</span>
-      <h2 class="Hlg" id="ts-h">رحلة تقويمك خطوة بخطوة</h2>
-      <p class="Blg" style="max-width:680px;margin:12px auto 0">من الاستشارة الأولى إلى ابتسامة مستقيمة — خطة علاج مدروسة بإشراف أخصائي تقويم.</p>
-    </div>
-    <div class="ts-grid">
-      <div class="ts-step rv">
-        <div class="ts-num">١</div>
-        <h3>الاستشارة والتشخيص</h3>
-        <p>فحص شامل وصور رقمية لتحديد نوع الحالة ووضع خطة العلاج المناسبة.</p>
-      </div>
-      <div class="ts-step rv">
-        <div class="ts-num">٢</div>
-        <h3>التخطيط الرقمي</h3>
-        <p>تخطيط رقمي لحركة الأسنان واختيار نوع التقويم الأنسب — معدني أو خزفي أو 3D Ortholine.</p>
-      </div>
-      <div class="ts-step rv">
-        <div class="ts-num">٣</div>
-        <h3>تركيب التقويم</h3>
-        <p>تركيب الأقواس بدقة مع شرح كامل لطريقة العناية والتنظيف اليومي.</p>
-      </div>
-      <div class="ts-step rv">
-        <div class="ts-num">٤</div>
-        <h3>المتابعة الشهرية</h3>
-        <p>زيارات شهرية لتعديل الأسلاك ومتابعة تقدم العلاج حتى الوصول إلى النتيجة المطلوبة.</p>
-      </div>
-    </div>
-    <p class="ts-note rv">✦ نتائج مثبتة لجميع الأعمار — أطفال ومراهقين وبالغين</p>
-  </div>
-</section>
-
-<!-- TECHNOLOGY -->
-<section style="background:var(--s50)" aria-labelledby="tech-h">
-  <div class="wrap">
-    <div class="sec-hdr rv">
-      <span class="eye">التقنيات المستخدمة</span>
-      <h2 class="Hlg" id="tech-h">تكنولوجيا تصنع الفرق</h2>
-    </div>
-    <div class="tech-grid">
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-        </div>
-        <h3>Digital Treatment Planning</h3>
-        <p>تخطيط رقمي لمسار حركة الأسنان يُمكّن الطبيب من تحديد مدة العلاج والنتيجة بدقة عالية.</p>
-      </div>
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-        </div>
-        <h3>3D Ortholine</h3>
-        <p>نظام تقويم ذاتي الربط يقلل الاحتكاك ويسرّع حركة الأسنان مع ألم أقل وزيارات أقل.</p>
-      </div>
-      <div class="tech-card rv">
-        <div class="tech-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
-        </div>
-        <h3>Monthly Monitoring</h3>
-        <p>متابعة شهرية منتظمة مع تعديلات دقيقة لضمان تقدم العلاج وفق الخطة الموضوعة.</p>
       </div>
     </div>
   </div>
@@ -442,16 +397,10 @@ section{padding:var(--sy) 0}
       <span class="eye">أسئلة شائعة</span>
       <h2 class="Hlg" id="obj-h">ما يهمك معرفته</h2>
     </div>
-    <div class="obj-list">
-      <div class="obj-item rv">
-        <h3>هل التقويم للأطفال فقط؟</h3>
-        <p>لا، التقويم مناسب لجميع الأعمار. كثير من المرضى البالغين يبدؤون التقويم لتحسين الإطباق والمظهر. التقويم الخزفي (السيراميك) يكون أقل وضوحاً للبالغين.</p>
-      </div>
-      <div class="obj-item rv">
-        <h3>هل التقويم مؤلم؟</h3>
-        <p>قد تشعر بضغط خفيف في الأيام الأولى بعد كل تعديل، وهذا طبيعي ويزول سريعاً. الألم الشديد غير متوقع مع التقنيات الحديثة.</p>
-      </div>
-    </div>
+    <ul class="rv" style="max-width:740px;margin:32px auto 0;list-style:none;padding:0;display:flex;flex-direction:column;gap:16px">
+      <li style="font-size:15px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">هل التقويم للأطفال فقط؟</strong> — لا، مناسب لجميع الأعمار. التقويم الخزفي خيار أقل وضوحاً للبالغين.</li>
+      <li style="font-size:15px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">هل التقويم مؤلم؟</strong> — ضغط خفيف بعد كل تعديل يزول سريعاً. الألم الشديد غير متوقع مع التقنيات الحديثة.</li>
+    </ul>
   </div>
 </section>
 
@@ -463,7 +412,7 @@ section{padding:var(--sy) 0}
 <section class="lp-cta" aria-labelledby="cta-h">
   <div class="wrap rv">
     <h2 class="Hlg" id="cta-h">ابتسامتك المستقيمة تبدأ من هنا</h2>
-    <p class="Blg">احجز استشارتك مع أخصائي التقويم — خطة علاج مخصصة لحالتك ونتائج مثبتة.</p>
+    <p class="Blg">احجز موعدك مع أخصائي التقويم — خطة علاج مخصصة لحالتك ونتائج مثبتة.</p>
     <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعدك الآن</a>
   </div>
 </section>
@@ -479,7 +428,7 @@ section{padding:var(--sy) 0}
 
 <!-- STICKY BOTTOM CTA (mobile) -->
 <div class="sticky-cta">
-  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز استشارتك الآن</a>
+  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعدك الآن</a>
 </div>
 
 <!-- FLOATING CHAT -->
