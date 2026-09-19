@@ -21,67 +21,55 @@
   --s100:#e8eff5;--s50:#f5f8fb;--w:#ffffff;
   --gg:linear-gradient(135deg,#5a9f2a 0%,#7AB648 100%);
   --gb:linear-gradient(135deg,#1e4a6e 0%,#2D5F8A 100%);
-  --gcard:linear-gradient(150deg,#eaf4fb 0%,#f3fae8 100%);
   --fd:'DM Serif Display',Georgia,serif;
   --fb:'Plus Jakarta Sans',system-ui,sans-serif;
   --sh:0 2px 8px rgba(15,25,35,.08);--shm:0 6px 24px rgba(15,25,35,.10);
-  --shl:0 16px 48px rgba(15,25,35,.14);
-  --sy:clamp(64px,7vw,100px);--cw:1200px;--px:clamp(20px,5vw,48px);
+  --cw:1200px;--px:clamp(20px,5vw,48px);
   --r:8px;--rm:14px;--rl:22px;--rxl:32px;
 }
 html{scroll-behavior:smooth}
 body{font-family:var(--fb);color:var(--s900);background:var(--w);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
 a{text-decoration:none;color:inherit}
-
-/* TYPOGRAPHY */
-.Hxl{font-family:var(--fd);font-size:clamp(32px,5vw,56px);line-height:1.15;color:var(--b900)}
-.Hlg{font-family:var(--fd);font-size:clamp(26px,3.5vw,42px);line-height:1.2;color:var(--b900)}
-.Hmd{font-family:var(--fd);font-size:clamp(20px,2.5vw,30px);line-height:1.3;color:var(--b900)}
-.Blg{font-size:clamp(16px,1.3vw,20px);line-height:1.7;color:var(--s600)}
-.Bmd{font-size:clamp(14px,1vw,17px);line-height:1.7;color:var(--s600)}
-.eye{font-family:var(--fb);font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--g600)}
-
-/* LAYOUT */
+.Hxl{font-family:var(--fd);font-size:clamp(30px,5vw,52px);line-height:1.15;color:var(--b900)}
+.Hlg{font-family:var(--fd);font-size:clamp(24px,3.5vw,38px);line-height:1.2;color:var(--b900)}
+.Blg{font-size:clamp(15px,1.3vw,18px);line-height:1.7;color:var(--s600)}
+.Bmd{font-size:clamp(13px,1vw,16px);line-height:1.7;color:var(--s600)}
+.eye{font-family:var(--fb);font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--g600)}
 .wrap{max-width:var(--cw);margin:0 auto;padding:0 var(--px)}
-section{padding:clamp(40px,5vw,64px) 0}
-
-/* BUTTONS */
+section{padding:clamp(36px,4.5vw,56px) 0}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:var(--r);font-family:var(--fb);font-size:15px;font-weight:700;transition:all .3s ease;cursor:pointer;border:none}
 .btn--g{background:var(--gg);color:var(--w);box-shadow:0 4px 16px rgba(90,159,42,.3)}
 .btn--g:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(90,159,42,.4)}
-.btn--b{background:var(--gb);color:var(--w);box-shadow:0 4px 16px rgba(30,74,110,.25)}
-.btn--b:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(30,74,110,.35)}
-.btn--od{background:transparent;color:var(--b700);border:2px solid var(--b200)}
+.btn--od{background:transparent;color:var(--b700);border:2px solid var(--b200);padding:10px 24px;font-size:14px}
 .btn--od:hover{border-color:var(--b700);background:var(--b50)}
 .btn--arr::after{content:'→';margin-right:-4px;transition:transform .3s}
 .btn--arr:hover::after{transform:translateX(-4px)}
-
-/* REVEAL */
 .rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
 .rv.on{opacity:1;transform:translateY(0)}
+.sec-hdr{text-align:center;margin-bottom:8px}
+.sec-hdr .eye{margin-bottom:8px;display:block}
 
 /* ─── MINI HEADER ─── */
 .lp-hdr{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--s100);transition:box-shadow .3s}
 .lp-hdr.on{box-shadow:var(--shm)}
 .lp-hdr-in{max-width:var(--cw);margin:0 auto;padding:12px var(--px);display:flex;align-items:center;justify-content:space-between}
 .lp-hdr-logo img{height:36px;width:auto}
-.lp-hdr-logo span{display:none;align-items:center;gap:8px;font-weight:800;font-size:15px;color:var(--b900)}
 .lp-hdr-r{display:flex;align-items:center;gap:12px}
 .lp-hdr-ph{display:flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;background:var(--b50);color:var(--b700);transition:background .3s}
 .lp-hdr-ph:hover{background:var(--b100)}
 .lp-hdr-ph svg{width:20px;height:20px}
 
 /* ─── HERO ─── */
-.lp-hero{padding:120px 0 var(--sy);position:relative;overflow:hidden;text-align:center;background:var(--w)}
+.lp-hero{padding:110px 0 clamp(40px,5vw,64px);position:relative;overflow:hidden;text-align:center;background:var(--w)}
 .lp-hero::before{content:'';position:absolute;inset:0;background:url('hero-bg.webp') center/cover no-repeat;opacity:.06;z-index:0}
-.lp-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:120px;background:linear-gradient(to top,var(--w),transparent);z-index:1}
+.lp-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:80px;background:linear-gradient(to top,var(--w),transparent);z-index:1}
 .lp-hero .wrap{position:relative;z-index:2}
-.lp-hero .Hxl{margin-bottom:16px}
-.lp-hero .Blg{max-width:640px;margin:0 auto 32px}
-.hero-trust{display:flex;flex-wrap:wrap;justify-content:center;gap:24px;margin-top:32px}
-.hero-trust-i{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--s700);background:rgba(255,255,255,.7);backdrop-filter:blur(4px);padding:8px 16px;border-radius:var(--rxl);border:1px solid var(--s100)}
-.hero-trust-i svg{width:20px;height:20px;color:var(--g600);flex-shrink:0}
+.lp-hero .Hxl{margin-bottom:12px}
+.lp-hero .Blg{max-width:580px;margin:0 auto 24px}
+.hero-trust{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:24px}
+.hero-trust-i{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--s700);background:rgba(255,255,255,.7);backdrop-filter:blur(4px);padding:6px 12px;border-radius:var(--rxl);border:1px solid var(--s100)}
+.hero-trust-i svg{width:16px;height:16px;color:var(--g600);flex-shrink:0}
 .lp-hero .eye{animation:fadeInDown .8s ease both}
 .lp-hero .Hxl{animation:fadeInDown .8s ease .15s both}
 .lp-hero .Blg{animation:fadeInDown .8s ease .3s both}
@@ -90,96 +78,85 @@ section{padding:clamp(40px,5vw,64px) 0}
 @keyframes fadeInDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
 @keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 
-/* ─── B/A GALLERY (matches homepage) ─── */
-.lp-gallery{background:var(--b900)}.lp-gallery .eye{color:var(--g400)}.lp-gallery .Hlg{color:var(--w)}.lp-gallery .ba-inf h4{color:var(--w)}.lp-gallery .ba-inf p{color:var(--s300)}.lp-gallery .ba-arr{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:var(--w)}.lp-gallery .ba-arr:hover{background:var(--gg);border-color:transparent}.lp-gallery .ba-arr:disabled{opacity:.3;background:rgba(255,255,255,.05)}.lp-gallery .bac{background:var(--b800)}
+/* ─── GALLERY (homepage dark style) ─── */
+.lp-gallery{background:var(--b950)}
+.lp-gallery .eye{color:var(--g400)}
+.lp-gallery .Hlg{color:var(--w)}
+.lp-gallery .bac{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:var(--rm);overflow:hidden;padding:10px 10px 14px}
+.lp-gallery .ba-inf h4{font-family:var(--fd);font-size:13px;font-weight:700;color:var(--w);margin-bottom:2px}
+.lp-gallery .ba-inf p{font-size:11px;color:rgba(255,255,255,.42)}
+.lp-gallery .ba-inf{padding:12px 6px 0}
 .ba-carousel{position:relative;overflow:hidden}
 .ba-track{display:flex;gap:16px;transition:transform .4s ease}
 .ba-track .bac{min-width:calc(33.333% - 11px);flex-shrink:0}
-.ba-arrows{display:flex;gap:8px;margin-top:24px;justify-content:center}
-.ba-arr{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--s200);background:var(--w);color:var(--s700);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.ba-arrows{display:flex;gap:8px;margin-top:20px;justify-content:center}
+.ba-arr{width:40px;height:40px;border-radius:50%;border:1.5px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:rgba(255,255,255,.7);font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
 .ba-arr:hover{background:var(--gg);border-color:transparent;color:var(--w)}
-.ba-arr:disabled{opacity:.3;cursor:default;background:var(--w);border-color:var(--s200)}
-.ba-slider{position:relative;height:260px;overflow:hidden;cursor:ew-resize;user-select:none;-webkit-user-select:none;border-radius:var(--rm)}
+.ba-arr:disabled{opacity:.3;cursor:default;background:transparent;border-color:rgba(255,255,255,.08)}
+.ba-slider{position:relative;height:220px;overflow:hidden;cursor:ew-resize;user-select:none;-webkit-user-select:none;border-radius:var(--r)}
 .ba-slider .ba-img-b,.ba-slider .ba-img-a{position:absolute;inset:0}
 .ba-slider .ba-img-b img,.ba-slider .ba-img-a img{width:100%;height:100%;object-fit:cover}
 .ba-slider .ba-img-a{clip-path:inset(0 0 0 50%)}
-.ba-slider .ba-handle{position:absolute;top:0;bottom:0;left:50%;width:3px;background:rgba(255,255,255,.9);box-shadow:0 0 6px rgba(0,0,0,.3);pointer-events:none}
-.ba-slider .ba-handle-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:32px;height:32px;border-radius:50%;background:var(--w);box-shadow:0 2px 8px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--s700);pointer-events:none}
-.ba-lbl{position:absolute;bottom:10px;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--w);background:rgba(0,0,0,.45);padding:4px 10px;border-radius:4px;pointer-events:none}
-.ba-lb{left:10px}.ba-la{right:10px}
-.ba-inf{padding:14px 0 4px}
-.ba-inf h4{font-family:var(--fd);font-size:16px;color:var(--b900)}
-.ba-inf p{font-size:13px;color:var(--s400);margin-top:2px}
-.bac{background:var(--w);border-radius:var(--rm);overflow:hidden;padding:12px 12px 16px;box-shadow:var(--sh)}
+.ba-slider .ba-handle{position:absolute;top:0;bottom:0;left:50%;width:2px;background:rgba(255,255,255,.85);transform:translateX(-50%);z-index:4;pointer-events:none}
+.ba-slider .ba-handle-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:28px;height:28px;border-radius:50%;background:var(--w);z-index:5;display:flex;align-items:center;justify-content:center;box-shadow:var(--shm);font-size:10px;font-weight:800;color:var(--s900);pointer-events:none}
+.ba-lbl{position:absolute;bottom:8px;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;pointer-events:none}
+.ba-lb{left:8px;background:rgba(0,0,0,.5);color:rgba(255,255,255,.6);padding:3px 8px;border-radius:4px}
+.ba-la{right:8px;background:var(--gg);color:var(--w);padding:3px 8px;border-radius:4px}
 @media(max-width:900px){.ba-track .bac{min-width:calc(50% - 8px)}}
-@media(max-width:600px){.ba-track .bac{min-width:100%}}
+@media(max-width:600px){.ba-track .bac{min-width:100%} .ba-slider{height:200px}}
 
-/* ─── SECTION WAVE DIVIDER ─── */
-.wave-div{position:relative;margin-top:-1px}
-.wave-div svg{display:block;width:100%;height:40px}
-.wave-div--flip{transform:scaleY(-1)}
+/* ─── STEPS STRIP ─── */
+.steps-strip{display:flex;gap:0;margin-bottom:32px;border:1px solid var(--s100);border-radius:var(--rm);overflow:hidden;background:var(--w)}
+.steps-strip .ss-item{flex:1;display:flex;align-items:center;gap:10px;padding:16px 14px;border-left:1px solid var(--s100);position:relative}
+.steps-strip .ss-item:last-child{border-left:none}
+.ss-num{width:30px;height:30px;border-radius:50%;background:var(--gg);color:var(--w);font-weight:800;font-size:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ss-txt h3{font-family:var(--fd);font-size:14px;color:var(--b900);line-height:1.2}
+.ss-txt p{font-size:11px;color:var(--s400);line-height:1.3;margin-top:1px}
+@media(max-width:768px){
+  .steps-strip{flex-wrap:wrap}
+  .steps-strip .ss-item{flex:1 1 50%;min-width:0;border-left:none;border-bottom:1px solid var(--s100)}
+  .steps-strip .ss-item:nth-last-child(-n+2){border-bottom:none}
+}
 
-/* ─── TRIAL SMILE STEPS ─── */
-.ts-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:40px}
-.ts-step{background:var(--w);border-radius:var(--rm);padding:20px 16px;text-align:center;box-shadow:var(--sh);border:1px solid var(--s100)}
-.ts-num{width:36px;height:36px;border-radius:50%;background:var(--gg);color:var(--w);font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;margin:0 auto 10px}
-.ts-step h3{font-family:var(--fd);font-size:16px;color:var(--b900);margin-bottom:4px}
-.ts-step p{font-size:13px;color:var(--s600);line-height:1.5}
-@media(max-width:900px){.ts-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:600px){.ts-grid{grid-template-columns:1fr}}
+/* ─── PRICING TABLE ─── */
+.price-tbl{width:100%;border-collapse:collapse;margin-top:24px;border:1px solid var(--s100);border-radius:var(--rm);overflow:hidden}
+.price-tbl th,.price-tbl td{padding:14px 16px;text-align:right;font-size:14px}
+.price-tbl thead{background:var(--b950)}
+.price-tbl thead th{color:var(--w);font-weight:700;font-size:13px}
+.price-tbl tbody tr{border-bottom:1px solid var(--s100);transition:background .2s}
+.price-tbl tbody tr:last-child{border-bottom:none}
+.price-tbl tbody tr:hover{background:var(--s50)}
+.price-tbl .pt-name{font-family:var(--fd);font-size:15px;color:var(--b900)}
+.price-tbl .pt-name small{display:block;font-family:var(--fb);font-size:12px;color:var(--s400);font-weight:400;margin-top:2px}
+.price-tbl .pt-price{font-size:18px;font-weight:800;color:var(--g700);white-space:nowrap}
+.price-tbl .pt-feat{font-size:13px;color:var(--s600)}
+.price-tbl .pt-pop{position:relative}
+.price-tbl .pt-pop td{background:var(--g50);border-top:2px solid var(--g500);border-bottom:2px solid var(--g500)}
+.pt-badge{display:inline-block;background:var(--gg);color:var(--w);font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;margin-right:6px;vertical-align:middle}
+@media(max-width:600px){
+  .price-tbl th,.price-tbl td{padding:10px 12px;font-size:13px}
+  .price-tbl .pt-price{font-size:16px}
+  .price-tbl .pt-feat{display:none}
+}
 
-/* ─── PRICING ─── */
-.price-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px}
-.price-card{background:var(--w);border:1px solid var(--s100);border-radius:var(--rl);padding:32px 24px;text-align:center;box-shadow:var(--sh);transition:transform .3s,box-shadow .3s}
-.price-card.featured{border-color:var(--g500);box-shadow:0 6px 32px rgba(122,182,72,.15);background:linear-gradient(180deg,var(--g50) 0%,var(--w) 40%);position:relative}
-.price-card.featured::before{content:'الأكثر طلباً';position:absolute;top:-12px;right:50%;transform:translateX(50%);background:var(--gg);color:var(--w);font-size:12px;font-weight:700;padding:4px 16px;border-radius:20px;white-space:nowrap}
-.price-card:hover{transform:translateY(-4px);box-shadow:var(--shm)}
-.price-card h3{font-family:var(--fd);font-size:20px;color:var(--b900);margin-bottom:4px}
-.price-from{font-size:13px;color:var(--s400);margin-bottom:12px}
-.price-val{font-size:clamp(28px,3vw,36px);font-weight:800;color:var(--g700);margin-bottom:4px}
-.price-unit{font-size:13px;color:var(--s400)}
-.price-feats{list-style:none;text-align:right;margin:20px 0;padding:0;display:flex;flex-direction:column;gap:10px}
-.price-feats li{font-size:14px;color:var(--s700);display:flex;align-items:flex-start;gap:8px}
-.price-feats li svg{width:18px;height:18px;color:var(--g600);flex-shrink:0;margin-top:2px}
-.price-divider{width:100%;height:1px;background:var(--s100);margin:16px 0}
-.price-pay{font-size:12px;color:var(--s400)}
-@media(max-width:900px){.price-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:600px){.price-grid{grid-template-columns:1fr}}
-
-/* ─── FAQ LIST ─── */
-
-/* ─── FINAL CTA ─── */
-.lp-cta{background:var(--gb);padding:var(--sy) 0;text-align:center}
-.lp-cta .Hlg{color:var(--w);margin-bottom:12px}
-.lp-cta .Blg{color:rgba(255,255,255,.8);max-width:540px;margin:0 auto 32px}
-.lp-cta .btn--g{font-size:17px;padding:16px 40px}
-
-/* ─── FOOTER ─── */
-.lp-ft{background:var(--s50);padding:24px 0;text-align:center}
-.lp-ft p{font-size:13px;color:var(--s400)}
+/* ─── CTA / FOOTER / STICKY ─── */
+.lp-cta{background:var(--gb);padding:clamp(40px,5vw,56px) 0;text-align:center}
+.lp-cta .Hlg{color:var(--w);margin-bottom:10px}
+.lp-cta .Blg{color:rgba(255,255,255,.8);max-width:500px;margin:0 auto 24px}
+.lp-cta .btn--g{font-size:16px;padding:14px 36px}
+.lp-ft{background:var(--s50);padding:20px 0;text-align:center}
+.lp-ft p{font-size:12px;color:var(--s400)}
 .lp-ft a{color:var(--b700)}
-
-/* ─── STICKY BOTTOM CTA (mobile) ─── */
-.sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:90;background:var(--w);padding:12px var(--px);box-shadow:0 -4px 20px rgba(0,0,0,.08);border-top:1px solid var(--s100)}
-.sticky-cta .btn{width:100%;justify-content:center;font-size:16px;padding:14px}
+.sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:90;background:var(--w);padding:10px var(--px);box-shadow:0 -4px 20px rgba(0,0,0,.08);border-top:1px solid var(--s100)}
+.sticky-cta .btn{width:100%;justify-content:center;font-size:15px;padding:12px}
 @media(max-width:768px){.sticky-cta{display:block}}
-
-/* ─── FLOATING CHAT ─── */
 .ch-float{position:fixed;bottom:24px;left:24px;z-index:900}
-.ch-float a{display:flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:var(--gb);box-shadow:0 4px 20px rgba(30,74,110,.4);transition:transform .3s,box-shadow .3s;position:relative}
+.ch-float a{display:flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:50%;background:var(--gb);box-shadow:0 4px 20px rgba(30,74,110,.4);transition:transform .3s,box-shadow .3s;position:relative}
 .ch-float a:hover{transform:scale(1.1);box-shadow:0 6px 28px rgba(45,95,138,.55)}
-.ch-float svg{width:28px;height:28px;fill:#fff}
+.ch-float svg{width:26px;height:26px;fill:#fff}
 .ch-pulse{position:absolute;inset:0;border-radius:50%;background:rgba(45,95,138,.3);animation:ch-ring 2s ease-out infinite;pointer-events:none}
 @keyframes ch-ring{0%{transform:scale(1);opacity:1}100%{transform:scale(1.6);opacity:0}}
-
-/* ─── SECTION HEADERS ─── */
-.sec-hdr{text-align:center;margin-bottom:8px}
-.sec-hdr .eye{margin-bottom:8px;display:block}
-
-@media(max-width:768px){
-  .lp-hdr-ph span{display:none}
-  .sticky-cta ~ .ch-float{bottom:80px}
-}
+@media(max-width:768px){.sticky-cta ~ .ch-float{bottom:76px}}
 </style>
 </head>
 <body>
@@ -205,37 +182,25 @@ section{padding:clamp(40px,5vw,64px) 0}
   <div class="wrap">
     <span class="eye rv">فينير الأسنان في أبوظبي</span>
     <h1 class="Hxl rv" id="lp-h1">جرّب ابتسامتك الجديدة<br>قبل أن تقرر</h1>
-    <p class="Blg rv">ابتسامة تجريبية حقيقية تُركّب على أسنانك للتقييم، مع تعديلات غير محدودة حتى تصل إلى النتيجة المثالية — ثم نبدأ بالفينير النهائي.</p>
+    <p class="Blg rv">ابتسامة تجريبية حقيقية على أسنانك، تعديلات غير محدودة — ثم الفينير النهائي.</p>
     <div class="rv">
       <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعدك الآن</a>
     </div>
     <div class="hero-trust rv">
-      <div class="hero-trust-i">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-        <span>تصميم رقمي بتقنية DSD</span>
-      </div>
-      <div class="hero-trust-i">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-        <span>ابتسامة تجريبية قبل القرار</span>
-      </div>
-      <div class="hero-trust-i">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-        <span>تعديلات غير محدودة</span>
-      </div>
-      <div class="hero-trust-i">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-        <span>مختبر رقمي داخلي</span>
-      </div>
+      <div class="hero-trust-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>تصميم DSD</span></div>
+      <div class="hero-trust-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>ابتسامة تجريبية</span></div>
+      <div class="hero-trust-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>تعديلات غير محدودة</span></div>
+      <div class="hero-trust-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>مختبر داخلي</span></div>
     </div>
   </div>
 </section>
 
-<!-- ② BEFORE / AFTER GALLERY -->
+<!-- ② GALLERY -->
 <section class="lp-gallery" aria-labelledby="gallery-h">
   <div class="wrap">
     <div class="sec-hdr rv">
       <span class="eye">نتائج حقيقية</span>
-      <h2 class="Hlg" id="gallery-h">قبل وبعد — حالات فينير</h2>
+      <h2 class="Hlg" id="gallery-h">قبل وبعد</h2>
     </div>
     <div class="ba-carousel rv" id="ba-carousel">
       <div class="ba-track" id="ba-track">
@@ -246,7 +211,7 @@ section{padding:clamp(40px,5vw,64px) 0}
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">قبل</span><span class="ba-lbl ba-la">بعد</span>
           </div>
-          <div class="ba-inf"><h4>فينير بورسلين</h4><p>نتيجة طبيعية — تصميم رقمي</p></div>
+          <div class="ba-inf"><h4>فينير بورسلين</h4><p>تصميم رقمي</p></div>
         </div>
         <div class="bac">
           <div class="ba-slider">
@@ -255,7 +220,7 @@ section{padding:clamp(40px,5vw,64px) 0}
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">قبل</span><span class="ba-lbl ba-la">بعد</span>
           </div>
-          <div class="ba-inf"><h4>تصميم ابتسامة</h4><p>Smile Design — فينير E-max</p></div>
+          <div class="ba-inf"><h4>Smile Design</h4><p>فينير E-max</p></div>
         </div>
         <div class="bac">
           <div class="ba-slider">
@@ -273,7 +238,7 @@ section{padding:clamp(40px,5vw,64px) 0}
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">قبل</span><span class="ba-lbl ba-la">بعد</span>
           </div>
-          <div class="ba-inf"><h4>تصميم ابتسامة رقمي</h4><p>Cosmetic Smile Makeover</p></div>
+          <div class="ba-inf"><h4>Cosmetic Makeover</h4><p>تصميم ابتسامة رقمي</p></div>
         </div>
         <div class="bac">
           <div class="ba-slider">
@@ -282,7 +247,7 @@ section{padding:clamp(40px,5vw,64px) 0}
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
             <span class="ba-lbl ba-lb">قبل</span><span class="ba-lbl ba-la">بعد</span>
           </div>
-          <div class="ba-inf"><h4>إعادة تأهيل كامل</h4><p>تيجان وفينير — تحول شامل</p></div>
+          <div class="ba-inf"><h4>تأهيل كامل</h4><p>تيجان وفينير</p></div>
         </div>
       </div>
       <div class="ba-arrows">
@@ -298,112 +263,81 @@ section{padding:clamp(40px,5vw,64px) 0}
   <div class="wrap">
     <div class="sec-hdr rv">
       <span class="eye">كيف نعمل</span>
-      <h2 class="Hlg" id="price-h">٤ خطوات لابتسامتك الجديدة</h2>
+      <h2 class="Hlg" id="price-h">٤ خطوات لابتسامتك</h2>
     </div>
-    <div class="ts-grid rv" style="margin-top:24px;margin-bottom:40px">
-      <div class="ts-step">
-        <div class="ts-num">١</div>
-        <h3>التصوير الرقمي</h3>
-        <p>مسح 3D لأسنانك بتقنية 3Shape</p>
+    <div class="steps-strip rv">
+      <div class="ss-item">
+        <div class="ss-num">١</div>
+        <div class="ss-txt"><h3>التصوير الرقمي</h3><p>مسح 3D بتقنية 3Shape</p></div>
       </div>
-      <div class="ts-step">
-        <div class="ts-num">٢</div>
-        <h3>التصميم (DSD)</h3>
-        <p>تصميم رقمي يتناسب مع ملامح وجهك</p>
+      <div class="ss-item">
+        <div class="ss-num">٢</div>
+        <div class="ss-txt"><h3>التصميم (DSD)</h3><p>تصميم رقمي لابتسامتك</p></div>
       </div>
-      <div class="ts-step">
-        <div class="ts-num">٣</div>
-        <h3>ابتسامة تجريبية</h3>
-        <p>نموذج حقيقي تجربه قبل أي إجراء</p>
+      <div class="ss-item">
+        <div class="ss-num">٣</div>
+        <div class="ss-txt"><h3>ابتسامة تجريبية</h3><p>نموذج حقيقي تجربه</p></div>
       </div>
-      <div class="ts-step">
-        <div class="ts-num">٤</div>
-        <h3>الفينير النهائي</h3>
-        <p>تصنيع في مختبرنا الرقمي الداخلي</p>
+      <div class="ss-item">
+        <div class="ss-num">٤</div>
+        <div class="ss-txt"><h3>الفينير النهائي</h3><p>تصنيع بالمختبر الداخلي</p></div>
       </div>
     </div>
-    <div class="price-grid">
 
-      <div class="price-card rv">
-        <h3>Empress</h3>
-        <p class="price-from">فينير إمبرس</p>
-        <div class="price-val">9,700</div>
-        <p class="price-unit">AED — ١٦ سن</p>
-        <div class="price-divider"></div>
-        <ul class="price-feats">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>بورسلين طبيعي المظهر</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>تصميم DSD + ابتسامة تجريبية</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>تعديلات غير محدودة</li>
-        </ul>
-      </div>
-
-      <div class="price-card featured rv">
-        <h3>E-max</h3>
-        <p class="price-from">فينير إي ماكس</p>
-        <div class="price-val">11,900</div>
-        <p class="price-unit">AED — ١٦ سن</p>
-        <div class="price-divider"></div>
-        <ul class="price-feats">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>شفافية عالية تشبه الأسنان الطبيعية</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>متانة ومقاومة للتصبّغ</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>تصميم DSD + ابتسامة تجريبية</li>
-        </ul>
-      </div>
-
-      <div class="price-card rv">
-        <h3>Zirconia</h3>
-        <p class="price-from">فينير زركونيا</p>
-        <div class="price-val">14,700</div>
-        <p class="price-unit">AED — ١٦ سن</p>
-        <div class="price-divider"></div>
-        <ul class="price-feats">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>أقوى أنواع الفينير</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>مقاومة عالية للكسر</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>تصميم DSD + ابتسامة تجريبية</li>
-        </ul>
-      </div>
-
-      <div class="price-card rv">
-        <h3>Multi-layer Zirconia</h3>
-        <p class="price-from">زركونيا متعددة الطبقات</p>
-        <div class="price-val">23,000</div>
-        <p class="price-unit">AED — ١٦ سن</p>
-        <div class="price-divider"></div>
-        <ul class="price-feats">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>أعلى جودة — طبقات متدرجة</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>مظهر طبيعي مع متانة فائقة</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>تصميم DSD + ابتسامة تجريبية</li>
-        </ul>
-      </div>
-
+    <table class="price-tbl rv">
+      <thead>
+        <tr><th>المادة</th><th>السعر (١٦ سن)</th><th>المميزات</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="pt-name">Empress<small>فينير إمبرس</small></td>
+          <td class="pt-price">9,700 AED</td>
+          <td class="pt-feat">بورسلين طبيعي المظهر · تعديلات غير محدودة</td>
+        </tr>
+        <tr class="pt-pop">
+          <td class="pt-name"><span class="pt-badge">الأكثر طلباً</span>E-max<small>فينير إي ماكس</small></td>
+          <td class="pt-price">11,900 AED</td>
+          <td class="pt-feat">شفافية عالية · متانة ومقاومة للتصبّغ</td>
+        </tr>
+        <tr>
+          <td class="pt-name">Zirconia<small>فينير زركونيا</small></td>
+          <td class="pt-price">14,700 AED</td>
+          <td class="pt-feat">أقوى أنواع الفينير · مقاومة عالية للكسر</td>
+        </tr>
+        <tr>
+          <td class="pt-name">Multi-layer Zirconia<small>زركونيا متعددة الطبقات</small></td>
+          <td class="pt-price">23,000 AED</td>
+          <td class="pt-feat">أعلى جودة · طبقات متدرجة طبيعية</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="Bmd rv" style="text-align:center;margin-top:16px">فينير السن الواحد من 839 AED · تقسيط بدون فوائد عبر Tabby و Tamara</p>
+    <div style="text-align:center;margin-top:16px" class="rv">
+      <a href="porcelain-veneers.html" target="_blank" rel="noopener" class="btn btn--od">تعرّف أكثر على فينير الأسنان ←</a>
     </div>
-    <p class="Bmd rv" style="text-align:center;margin-top:20px">تقسيط بدون فوائد عبر Tabby و Tamara · فينير السن الواحد يبدأ من 839 AED</p>
   </div>
 </section>
 
-<!-- ⑤ FAQ -->
-<section style="background:var(--s50)" aria-labelledby="obj-h">
+<!-- ④ FAQ -->
+<section style="background:var(--s50)" aria-labelledby="faq-h">
   <div class="wrap">
     <div class="sec-hdr rv">
       <span class="eye">أسئلة شائعة</span>
-      <h2 class="Hlg" id="obj-h">ما يهمك معرفته</h2>
+      <h2 class="Hlg" id="faq-h">ما يهمك معرفته</h2>
     </div>
-    <ul class="rv" style="max-width:740px;margin:32px auto 0;list-style:none;padding:0;display:flex;flex-direction:column;gap:16px">
-      <li style="font-size:15px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">هل الفينير يضر الأسنان؟</strong> — يتم نحت طبقة رقيقة جداً من سطح السن. التقنية الرقمية تحدد أقل كمية نحت ممكنة، وفي بعض الحالات يمكن تركيب فينير بدون نحت.</li>
-      <li style="font-size:15px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">كم جلسة يحتاج الفينير؟</strong> — من جلستين إلى ثلاث: فحص وتصميم رقمي، ابتسامة تجريبية وتحضير، ثم تركيب نهائي.</li>
-      <li style="font-size:15px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">ماذا لو لم تعجبني النتيجة؟</strong> — الابتسامة التجريبية نموذج حقيقي يُركّب قبل أي إجراء نهائي، مع تعديلات غير محدودة.</li>
+    <ul class="rv" style="max-width:700px;margin:24px auto 0;list-style:none;padding:0;display:flex;flex-direction:column;gap:14px">
+      <li style="font-size:14px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">هل الفينير يضر الأسنان؟</strong> — نحت طبقة رقيقة جداً. التقنية الرقمية تحدد أقل كمية نحت ممكنة، وأحياناً بدون نحت.</li>
+      <li style="font-size:14px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">كم جلسة يحتاج؟</strong> — من جلستين إلى ثلاث: فحص وتصميم، ابتسامة تجريبية، ثم تركيب نهائي.</li>
+      <li style="font-size:14px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">ماذا لو لم تعجبني النتيجة؟</strong> — الابتسامة التجريبية نموذج حقيقي قبل أي إجراء نهائي، مع تعديلات غير محدودة.</li>
     </ul>
-    <div style="text-align:center;margin-top:20px">
-      <a href="porcelain-veneers.html" target="_blank" rel="noopener" style="font-size:13px;color:var(--s400);transition:color .3s">تعرّف أكثر على فينير الأسنان ←</a>
-    </div>
   </div>
 </section>
 
-<!-- ⑥ FINAL CTA -->
+<!-- ⑤ FINAL CTA -->
 <section class="lp-cta" aria-labelledby="cta-h">
   <div class="wrap rv">
     <h2 class="Hlg" id="cta-h">ابتسامتك الجديدة تبدأ من هنا</h2>
-    <p class="Blg">احصل على تصميم رقمي لابتسامتك — اكتشف كيف ستبدو قبل أن تقرر.</p>
+    <p class="Blg">تصميم رقمي لابتسامتك — اكتشف كيف ستبدو قبل أن تقرر.</p>
     <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعدك الآن</a>
   </div>
 </section>
@@ -412,8 +346,8 @@ section{padding:clamp(40px,5vw,64px) 0}
 <footer class="lp-ft">
   <div class="wrap">
     <p>Vision Dental Clinic · شارع خليفة، أبوظبي · <a href="tel:+97123122777" dir="ltr">02 312 2777</a></p>
-    <p style="margin-top:6px">السبت — الخميس: ١٠:٣٠ ص – ٧:٣٠ م · الجمعة: مغلق</p>
-    <p style="margin-top:6px">MOHAP Licensed No. 5889VHC5-110626</p>
+    <p style="margin-top:4px">السبت — الخميس: ١٠:٣٠ ص – ٧:٣٠ م · الجمعة: مغلق</p>
+    <p style="margin-top:4px">MOHAP Licensed No. 5889VHC5-110626</p>
   </div>
 </footer>
 
@@ -431,53 +365,29 @@ section{padding:clamp(40px,5vw,64px) 0}
 </div>
 
 <script>
-// Header scroll effect
 const hdr=document.getElementById('lp-hdr');
 window.addEventListener('scroll',()=>hdr.classList.toggle('on',scrollY>50),{passive:true});
-
-// B/A Carousel
 (function(){
-  const track=document.getElementById('ba-track');
-  const prev=document.getElementById('ba-prev');
-  const next=document.getElementById('ba-next');
-  if(!track||!prev||!next) return;
+  const track=document.getElementById('ba-track'),prev=document.getElementById('ba-prev'),next=document.getElementById('ba-next');
+  if(!track||!prev||!next)return;
   let pos=0;
-  function getVisible(){return window.innerWidth<600?1:window.innerWidth<900?2:3}
-  function getCardW(){const c=track.querySelector('.bac');if(!c)return 0;return c.offsetWidth+16}
-  function update(){
-    const max=track.children.length-getVisible();
-    if(pos>max)pos=max;if(pos<0)pos=0;
-    track.style.transform='translateX('+pos*getCardW()+'px)';
-    prev.disabled=pos<=0;next.disabled=pos>=max;
-  }
-  prev.addEventListener('click',()=>{pos--;update()});
-  next.addEventListener('click',()=>{pos++;update()});
-  window.addEventListener('resize',update);update();
+  function getV(){return innerWidth<600?1:innerWidth<900?2:3}
+  function getW(){const c=track.querySelector('.bac');return c?c.offsetWidth+16:0}
+  function upd(){const m=track.children.length-getV();if(pos>m)pos=m;if(pos<0)pos=0;track.style.transform='translateX('+pos*getW()+'px)';prev.disabled=pos<=0;next.disabled=pos>=m}
+  prev.addEventListener('click',()=>{pos--;upd()});next.addEventListener('click',()=>{pos++;upd()});
+  addEventListener('resize',upd);upd();
 })();
-
-// B/A draggable slider
-document.querySelectorAll('.ba-slider').forEach(slider=>{
-  let dragging=false;
-  function setPos(x){
-    const rect=slider.getBoundingClientRect();
-    let pct=((x-rect.left)/rect.width)*100;
-    pct=Math.max(5,Math.min(95,pct));
-    slider.querySelector('.ba-img-a').style.clipPath='inset(0 0 0 '+pct+'%)';
-    slider.querySelector('.ba-handle').style.left=pct+'%';
-    slider.querySelector('.ba-handle-btn').style.left=pct+'%';
-  }
-  slider.addEventListener('mousedown',e=>{dragging=true;setPos(e.clientX);e.preventDefault()});
-  document.addEventListener('mousemove',e=>{if(dragging)setPos(e.clientX)});
-  document.addEventListener('mouseup',()=>{dragging=false});
-  slider.addEventListener('touchstart',e=>{dragging=true;setPos(e.touches[0].clientX)},{passive:true});
-  document.addEventListener('touchmove',e=>{if(dragging)setPos(e.touches[0].clientX)},{passive:true});
-  document.addEventListener('touchend',()=>{dragging=false});
+document.querySelectorAll('.ba-slider').forEach(s=>{
+  let d=false;
+  function sp(x){const r=s.getBoundingClientRect();let p=((x-r.left)/r.width)*100;p=Math.max(5,Math.min(95,p));s.querySelector('.ba-img-a').style.clipPath='inset(0 0 0 '+p+'%)';s.querySelector('.ba-handle').style.left=p+'%';s.querySelector('.ba-handle-btn').style.left=p+'%'}
+  s.addEventListener('mousedown',e=>{d=true;sp(e.clientX);e.preventDefault()});
+  document.addEventListener('mousemove',e=>{if(d)sp(e.clientX)});document.addEventListener('mouseup',()=>{d=false});
+  s.addEventListener('touchstart',e=>{d=true;sp(e.touches[0].clientX)},{passive:true});
+  document.addEventListener('touchmove',e=>{if(d)sp(e.touches[0].clientX)},{passive:true});
+  document.addEventListener('touchend',()=>{d=false});
 });
-
-// Reveal animations
 const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}}),{threshold:.1,rootMargin:'0px 0px -28px 0px'});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 </script>
-
 </body>
 </html>
