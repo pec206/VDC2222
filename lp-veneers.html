@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>فينير الأسنان في أبوظبي | Vision Dental Clinic</title>
-<meta name="description" content="فينير بورسلين بتصميم رقمي وابتسامة تجريبية قبل القرار النهائي. تعديلات غير محدودة. باقات تبدأ من 9,700 درهم لـ 16 سن.">
+<title>فينير الأسنان في أبوظبي | Veneers in Abu Dhabi</title>
+<meta name="description" content="Porcelain veneers with digital design and a trial smile before your final decision. Unlimited adjustments. Packages from AED 9,700 for 16 teeth.">
 <meta name="robots" content="noindex,nofollow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,6 +31,11 @@ html{scroll-behavior:smooth}
 body{font-family:var(--fb);color:var(--s900);background:var(--w);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
 a{text-decoration:none;color:inherit}
+
+/* ─── LANGUAGE TOGGLE ─── */
+html[lang="ar"] .en{display:none!important}
+html[lang="en"] .ar{display:none!important}
+
 .Hxl{font-family:var(--fd);font-size:clamp(30px,5vw,52px);line-height:1.15;color:var(--b900)}
 .Hlg{font-family:var(--fd);font-size:clamp(24px,3.5vw,38px);line-height:1.2;color:var(--b900)}
 .Blg{font-size:clamp(15px,1.3vw,18px);line-height:1.7;color:var(--s600)}
@@ -43,7 +48,9 @@ section{padding:clamp(36px,4.5vw,56px) 0}
 .btn--g:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(90,159,42,.4)}
 .btn--od{background:transparent;color:var(--b700);border:2px solid var(--b200);padding:10px 24px;font-size:14px}
 .btn--od:hover{border-color:var(--b700);background:var(--b50)}
-.btn--arr::after{content:'→';margin-right:-4px;transition:transform .3s}
+.btn--arr::after{content:'→';transition:transform .3s}
+html[lang="ar"] .btn--arr::after{margin-right:-4px}
+html[lang="en"] .btn--arr::after{margin-left:-4px}
 .btn--arr:hover::after{transform:translateX(-4px)}
 .rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
 .rv.on{opacity:1;transform:translateY(0)}
@@ -59,6 +66,8 @@ section{padding:clamp(36px,4.5vw,56px) 0}
 .lp-hdr-ph{display:flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;background:var(--b50);color:var(--b700);transition:background .3s}
 .lp-hdr-ph:hover{background:var(--b100)}
 .lp-hdr-ph svg{width:20px;height:20px}
+.lang-btn{display:flex;align-items:center;justify-content:center;height:34px;padding:0 12px;border-radius:var(--rxl);border:1.5px solid var(--s200);background:var(--w);font-family:var(--fb);font-size:12px;font-weight:700;color:var(--s700);cursor:pointer;transition:all .2s;letter-spacing:.5px}
+.lang-btn:hover{border-color:var(--b700);color:var(--b700);background:var(--b50)}
 
 /* ─── HERO ─── */
 .lp-hero{padding:110px 0 clamp(40px,5vw,64px);position:relative;overflow:hidden;text-align:center;background:var(--w)}
@@ -73,12 +82,11 @@ section{padding:clamp(36px,4.5vw,56px) 0}
 .lp-hero .eye{animation:fadeInDown .8s ease both}
 .lp-hero .Hxl{animation:fadeInDown .8s ease .15s both}
 .lp-hero .Blg{animation:fadeInDown .8s ease .3s both}
-.lp-hero .btn{animation:fadeInUp .8s ease .45s both}
 .lp-hero .hero-trust{animation:fadeInUp .8s ease .6s both}
 @keyframes fadeInDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
 @keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 
-/* ─── GALLERY (homepage dark style) ─── */
+/* ─── GALLERY ─── */
 .lp-gallery{background:var(--b950)}
 .lp-gallery .eye{color:var(--g400)}
 .lp-gallery .Hlg{color:var(--w)}
@@ -107,37 +115,40 @@ section{padding:clamp(36px,4.5vw,56px) 0}
 
 /* ─── STEPS STRIP ─── */
 .steps-strip{display:flex;gap:0;margin-bottom:32px;border:1px solid var(--s100);border-radius:var(--rm);overflow:hidden;background:var(--w)}
-.steps-strip .ss-item{flex:1;display:flex;align-items:center;gap:10px;padding:16px 14px;border-left:1px solid var(--s100);position:relative}
-.steps-strip .ss-item:last-child{border-left:none}
+.steps-strip .ss-item{flex:1;display:flex;align-items:center;gap:10px;padding:16px 14px;position:relative}
+html[lang="ar"] .steps-strip .ss-item{border-left:1px solid var(--s100)}
+html[lang="ar"] .steps-strip .ss-item:last-child{border-left:none}
+html[lang="en"] .steps-strip .ss-item{border-right:1px solid var(--s100)}
+html[lang="en"] .steps-strip .ss-item:last-child{border-right:none}
 .ss-num{width:30px;height:30px;border-radius:50%;background:var(--gg);color:var(--w);font-weight:800;font-size:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .ss-txt h3{font-family:var(--fd);font-size:14px;color:var(--b900);line-height:1.2}
 .ss-txt p{font-size:11px;color:var(--s400);line-height:1.3;margin-top:1px}
 @media(max-width:768px){
   .steps-strip{flex-wrap:wrap}
-  .steps-strip .ss-item{flex:1 1 50%;min-width:0;border-left:none;border-bottom:1px solid var(--s100)}
+  .steps-strip .ss-item{flex:1 1 50%;min-width:0;border-left:none!important;border-right:none!important;border-bottom:1px solid var(--s100)}
   .steps-strip .ss-item:nth-last-child(-n+2){border-bottom:none}
 }
 
 /* ─── PRICING TABLE ─── */
-.price-tbl{width:100%;border-collapse:collapse;margin-top:24px;border:1px solid var(--s100);border-radius:var(--rm);overflow:hidden}
-.price-tbl th,.price-tbl td{padding:14px 16px;text-align:right;font-size:14px}
+.price-tbl{width:100%;max-width:480px;margin:0 auto;border-collapse:collapse;border:1px solid var(--s100);border-radius:var(--rm);overflow:hidden}
+.price-tbl th,.price-tbl td{padding:10px 14px;font-size:13px}
+html[lang="ar"] .price-tbl th,html[lang="ar"] .price-tbl td{text-align:right}
+html[lang="en"] .price-tbl th,html[lang="en"] .price-tbl td{text-align:left}
 .price-tbl thead{background:var(--b950)}
-.price-tbl thead th{color:var(--w);font-weight:700;font-size:13px}
-.price-tbl tbody tr{border-bottom:1px solid var(--s100);transition:background .2s}
+.price-tbl thead th{color:var(--w);font-weight:700;font-size:12px}
+.price-tbl tbody tr{border-bottom:1px solid var(--s100)}
 .price-tbl tbody tr:last-child{border-bottom:none}
-.price-tbl tbody tr:hover{background:var(--s50)}
-.price-tbl .pt-name{font-family:var(--fd);font-size:15px;color:var(--b900)}
-.price-tbl .pt-name small{display:block;font-family:var(--fb);font-size:12px;color:var(--s400);font-weight:400;margin-top:2px}
-.price-tbl .pt-price{font-size:18px;font-weight:800;color:var(--g700);white-space:nowrap}
-.price-tbl .pt-feat{font-size:13px;color:var(--s600)}
-.price-tbl .pt-pop{position:relative}
-.price-tbl .pt-pop td{background:var(--g50);border-top:2px solid var(--g500);border-bottom:2px solid var(--g500)}
-.pt-badge{display:inline-block;background:var(--gg);color:var(--w);font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;margin-right:6px;vertical-align:middle}
+.price-tbl .pt-name{font-family:var(--fd);font-size:13px;color:var(--b900)}
+.price-tbl .pt-price{font-size:14px;font-weight:800;color:var(--g700);white-space:nowrap}
 @media(max-width:600px){
-  .price-tbl th,.price-tbl td{padding:10px 12px;font-size:13px}
-  .price-tbl .pt-price{font-size:16px}
-  .price-tbl .pt-feat{display:none}
+  .price-tbl th,.price-tbl td{padding:8px 10px;font-size:12px}
+  .price-tbl .pt-price{font-size:13px}
 }
+
+/* ─── FAQ ─── */
+.faq-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:10px}
+.faq-list li{font-size:13px;color:var(--s700);line-height:1.6}
+.faq-list strong{color:var(--b900)}
 
 /* ─── CTA / FOOTER / STICKY ─── */
 .lp-cta{background:var(--gb);padding:clamp(40px,5vw,56px) 0;text-align:center}
@@ -161,7 +172,7 @@ section{padding:clamp(36px,4.5vw,56px) 0}
 </head>
 <body>
 
-<!-- MINI HEADER -->
+<!-- HEADER -->
 <header class="lp-hdr" id="lp-hdr">
   <div class="lp-hdr-in">
     <a href="index.html" class="lp-hdr-logo">
@@ -170,221 +181,276 @@ section{padding:clamp(36px,4.5vw,56px) 0}
       <span style="display:none;align-items:center;gap:8px;font-weight:800;font-size:15px;color:var(--b900)">Vision Dental</span>
     </a>
     <div class="lp-hdr-r">
-      <a href="tel:+97123122777" class="lp-hdr-ph" aria-label="اتصل بنا">
+      <button class="lang-btn" id="lang-btn" aria-label="Switch language">
+        <span class="ar">EN</span><span class="en">عربي</span>
+      </button>
+      <a href="tel:+97123122777" class="lp-hdr-ph">
+        <span class="ar" style="display:contents" aria-label="اتصل بنا"></span>
+        <span class="en" style="display:contents" aria-label="Call us"></span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
       </a>
     </div>
   </div>
 </header>
 
-<!-- ① HERO -->
-<section class="lp-hero" id="hero" aria-labelledby="lp-h1">
+<!-- HERO -->
+<section class="lp-hero" id="hero">
   <div class="wrap">
-    <span class="eye rv">فينير الأسنان في أبوظبي</span>
-    <h1 class="Hxl rv" id="lp-h1">جرّب ابتسامتك الجديدة<br>قبل أن تقرر</h1>
-    <p class="Blg rv">ابتسامة تجريبية حقيقية على أسنانك، تعديلات غير محدودة — ثم الفينير النهائي.</p>
+    <span class="eye rv">
+      <span class="ar">فينير الأسنان في أبوظبي</span>
+      <span class="en">Porcelain Veneers in Abu Dhabi</span>
+    </span>
+    <h1 class="Hxl rv">
+      <span class="ar">جرّب ابتسامتك الجديدة<br>قبل أن تقرر</span>
+      <span class="en">Try Your New Smile<br>Before You Decide</span>
+    </h1>
+    <p class="Blg rv">
+      <span class="ar">ابتسامة تجريبية حقيقية على أسنانك، تعديلات غير محدودة — ثم الفينير النهائي.</span>
+      <span class="en">A real trial smile on your teeth, unlimited adjustments — then your final veneers.</span>
+    </p>
     <div class="hero-trust rv">
-      <div class="hero-trust-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>تصميم DSD</span></div>
-      <div class="hero-trust-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>ابتسامة تجريبية</span></div>
-      <div class="hero-trust-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>تعديلات غير محدودة</span></div>
-      <div class="hero-trust-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>مختبر داخلي</span></div>
+      <div class="hero-trust-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="ar">تصميم رقمي</span><span class="en">Digital Design</span></div>
+      <div class="hero-trust-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="ar">ابتسامة تجريبية</span><span class="en">Trial Smile</span></div>
+      <div class="hero-trust-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="ar">تعديلات غير محدودة</span><span class="en">Unlimited Adjustments</span></div>
+      <div class="hero-trust-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="ar">مختبر داخلي</span><span class="en">In-house Lab</span></div>
     </div>
   </div>
 </section>
 
-<!-- ② GALLERY -->
-<section class="lp-gallery" aria-labelledby="gallery-h">
+<!-- GALLERY -->
+<section class="lp-gallery">
   <div class="wrap">
     <div class="sec-hdr rv">
-      <span class="eye">نتائج حقيقية</span>
-      <h2 class="Hlg" id="gallery-h">قبل وبعد</h2>
+      <span class="eye"><span class="ar">نتائج حقيقية</span><span class="en">Real Results</span></span>
+      <h2 class="Hlg"><span class="ar">قبل وبعد</span><span class="en">Before &amp; After</span></h2>
     </div>
     <div class="ba-carousel rv" id="ba-carousel">
       <div class="ba-track" id="ba-track">
         <div class="bac">
           <div class="ba-slider">
-            <div class="ba-img-b"><img src="ba-salim-1-before.webp" alt="قبل تركيب فينير بورسلين" loading="lazy"></div>
-            <div class="ba-img-a"><img src="ba-salim-1-after.webp" alt="بعد تركيب فينير بورسلين" loading="lazy"></div>
+            <div class="ba-img-b"><img src="ba-salim-1-before.webp" alt="Before porcelain veneers" loading="lazy"></div>
+            <div class="ba-img-a"><img src="ba-salim-1-after.webp" alt="After porcelain veneers" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
-            <span class="ba-lbl ba-lb">قبل</span><span class="ba-lbl ba-la">بعد</span>
+            <span class="ba-lbl ba-lb"><span class="ar">قبل</span><span class="en">Before</span></span>
+            <span class="ba-lbl ba-la"><span class="ar">بعد</span><span class="en">After</span></span>
           </div>
-          <div class="ba-inf"><h4>فينير بورسلين</h4><p>تصميم رقمي</p></div>
+          <div class="ba-inf"><h4><span class="ar">فينير بورسلين</span><span class="en">Porcelain Veneers</span></h4><p><span class="ar">تصميم رقمي</span><span class="en">Digital design</span></p></div>
         </div>
         <div class="bac">
           <div class="ba-slider">
-            <div class="ba-img-b"><img src="ba-ammar-1-before.webp" alt="قبل تصميم ابتسامة" loading="lazy"></div>
-            <div class="ba-img-a"><img src="ba-ammar-1-after.webp" alt="بعد تصميم ابتسامة" loading="lazy"></div>
+            <div class="ba-img-b"><img src="ba-ammar-1-before.webp" alt="Before smile design" loading="lazy"></div>
+            <div class="ba-img-a"><img src="ba-ammar-1-after.webp" alt="After smile design" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
-            <span class="ba-lbl ba-lb">قبل</span><span class="ba-lbl ba-la">بعد</span>
+            <span class="ba-lbl ba-lb"><span class="ar">قبل</span><span class="en">Before</span></span>
+            <span class="ba-lbl ba-la"><span class="ar">بعد</span><span class="en">After</span></span>
           </div>
-          <div class="ba-inf"><h4>Smile Design</h4><p>فينير E-max</p></div>
+          <div class="ba-inf"><h4>Smile Design</h4><p><span class="ar">فينير E-max</span><span class="en">E-max veneers</span></p></div>
         </div>
         <div class="bac">
           <div class="ba-slider">
-            <div class="ba-img-b"><img src="ba-asmaa-1-before.webp" alt="قبل فينير تجميلي" loading="lazy"></div>
-            <div class="ba-img-a"><img src="ba-asmaa-1-after.webp" alt="بعد فينير تجميلي" loading="lazy"></div>
+            <div class="ba-img-b"><img src="ba-asmaa-1-before.webp" alt="Before cosmetic veneers" loading="lazy"></div>
+            <div class="ba-img-a"><img src="ba-asmaa-1-after.webp" alt="After cosmetic veneers" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
-            <span class="ba-lbl ba-lb">قبل</span><span class="ba-lbl ba-la">بعد</span>
+            <span class="ba-lbl ba-lb"><span class="ar">قبل</span><span class="en">Before</span></span>
+            <span class="ba-lbl ba-la"><span class="ar">بعد</span><span class="en">After</span></span>
           </div>
-          <div class="ba-inf"><h4>فينير تجميلي</h4><p>تصحيح الشكل واللون</p></div>
+          <div class="ba-inf"><h4><span class="ar">فينير تجميلي</span><span class="en">Cosmetic Veneers</span></h4><p><span class="ar">تصحيح الشكل واللون</span><span class="en">Shape &amp; color correction</span></p></div>
         </div>
         <div class="bac">
           <div class="ba-slider">
-            <div class="ba-img-b"><img src="ba-asmaa-2-before.webp" alt="قبل تصميم ابتسامة رقمي" loading="lazy"></div>
-            <div class="ba-img-a"><img src="ba-asmaa-2-after.webp" alt="بعد تصميم ابتسامة رقمي" loading="lazy"></div>
+            <div class="ba-img-b"><img src="ba-asmaa-2-before.webp" alt="Before digital smile design" loading="lazy"></div>
+            <div class="ba-img-a"><img src="ba-asmaa-2-after.webp" alt="After digital smile design" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
-            <span class="ba-lbl ba-lb">قبل</span><span class="ba-lbl ba-la">بعد</span>
+            <span class="ba-lbl ba-lb"><span class="ar">قبل</span><span class="en">Before</span></span>
+            <span class="ba-lbl ba-la"><span class="ar">بعد</span><span class="en">After</span></span>
           </div>
-          <div class="ba-inf"><h4>Cosmetic Makeover</h4><p>تصميم ابتسامة رقمي</p></div>
+          <div class="ba-inf"><h4>Cosmetic Makeover</h4><p><span class="ar">تصميم ابتسامة رقمي</span><span class="en">Digital smile design</span></p></div>
         </div>
         <div class="bac">
           <div class="ba-slider">
-            <div class="ba-img-b"><img src="ba-ammar-2-before.webp" alt="قبل إعادة تأهيل الابتسامة" loading="lazy"></div>
-            <div class="ba-img-a"><img src="ba-ammar-2-after.webp" alt="بعد إعادة تأهيل الابتسامة" loading="lazy"></div>
+            <div class="ba-img-b"><img src="ba-ammar-2-before.webp" alt="Before full rehabilitation" loading="lazy"></div>
+            <div class="ba-img-a"><img src="ba-ammar-2-after.webp" alt="After full rehabilitation" loading="lazy"></div>
             <div class="ba-handle"></div><div class="ba-handle-btn">↔</div>
-            <span class="ba-lbl ba-lb">قبل</span><span class="ba-lbl ba-la">بعد</span>
+            <span class="ba-lbl ba-lb"><span class="ar">قبل</span><span class="en">Before</span></span>
+            <span class="ba-lbl ba-la"><span class="ar">بعد</span><span class="en">After</span></span>
           </div>
-          <div class="ba-inf"><h4>تأهيل كامل</h4><p>تيجان وفينير</p></div>
+          <div class="ba-inf"><h4><span class="ar">تأهيل كامل</span><span class="en">Full Rehabilitation</span></h4><p><span class="ar">تيجان وفينير</span><span class="en">Crowns &amp; veneers</span></p></div>
         </div>
       </div>
       <div class="ba-arrows">
-        <button class="ba-arr" id="ba-prev" aria-label="السابق" disabled>→</button>
-        <button class="ba-arr" id="ba-next" aria-label="التالي">←</button>
+        <button class="ba-arr" id="ba-prev" disabled>→</button>
+        <button class="ba-arr" id="ba-next">←</button>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ③ STEPS + PRICING -->
-<section aria-labelledby="price-h">
+<!-- STEPS + FAQ + PRICING -->
+<section>
   <div class="wrap">
     <div class="sec-hdr rv">
-      <span class="eye">كيف نعمل</span>
-      <h2 class="Hlg" id="price-h">٤ خطوات لابتسامتك</h2>
+      <span class="eye"><span class="ar">كيف نعمل</span><span class="en">How It Works</span></span>
+      <h2 class="Hlg"><span class="ar">٤ خطوات لابتسامتك</span><span class="en">4 Steps to Your Smile</span></h2>
     </div>
     <div class="steps-strip rv">
       <div class="ss-item">
-        <div class="ss-num">١</div>
-        <div class="ss-txt"><h3>التصوير الرقمي</h3><p>مسح 3D بتقنية 3Shape</p></div>
+        <div class="ss-num"><span class="ar">١</span><span class="en">1</span></div>
+        <div class="ss-txt"><h3><span class="ar">التصوير الرقمي</span><span class="en">Digital Scan</span></h3><p><span class="ar">مسح ثلاثي الأبعاد</span><span class="en">3D intraoral scan</span></p></div>
       </div>
       <div class="ss-item">
-        <div class="ss-num">٢</div>
-        <div class="ss-txt"><h3>التصميم (DSD)</h3><p>تصميم رقمي لابتسامتك</p></div>
+        <div class="ss-num"><span class="ar">٢</span><span class="en">2</span></div>
+        <div class="ss-txt"><h3><span class="ar">التصميم الرقمي</span><span class="en">Digital Design</span></h3><p><span class="ar">تصميم ابتسامتك رقمياً</span><span class="en">Your smile designed digitally</span></p></div>
       </div>
       <div class="ss-item">
-        <div class="ss-num">٣</div>
-        <div class="ss-txt"><h3>ابتسامة تجريبية</h3><p>نموذج حقيقي تجربه</p></div>
+        <div class="ss-num"><span class="ar">٣</span><span class="en">3</span></div>
+        <div class="ss-txt"><h3><span class="ar">ابتسامة تجريبية</span><span class="en">Trial Smile</span></h3><p><span class="ar">نموذج حقيقي تجربه</span><span class="en">A real mockup you try on</span></p></div>
       </div>
       <div class="ss-item">
-        <div class="ss-num">٤</div>
-        <div class="ss-txt"><h3>الفينير النهائي</h3><p>تصنيع بالمختبر الداخلي</p></div>
+        <div class="ss-num"><span class="ar">٤</span><span class="en">4</span></div>
+        <div class="ss-txt"><h3><span class="ar">الفينير النهائي</span><span class="en">Final Veneers</span></h3><p><span class="ar">تصنيع بالمختبر الداخلي</span><span class="en">Crafted in our in-house lab</span></p></div>
       </div>
     </div>
 
+    <!-- FAQ -->
+    <div class="rv" style="max-width:700px;margin:0 auto 32px;padding:0">
+      <ul class="faq-list">
+        <li class="ar"><strong>هل الفينير يضر الأسنان؟</strong> — نحت طبقة رقيقة جداً. التقنية الرقمية تحدد أقل كمية نحت ممكنة، وأحياناً بدون نحت.</li>
+        <li class="en"><strong>Does it damage my teeth?</strong> — Only a very thin layer is removed. Digital technology determines the minimum prep needed — sometimes none at all.</li>
+        <li class="ar"><strong>كم جلسة يحتاج؟</strong> — من جلستين إلى ثلاث: فحص وتصميم، ابتسامة تجريبية، ثم تركيب نهائي.</li>
+        <li class="en"><strong>How many visits?</strong> — Two to three: exam &amp; design, trial smile, then final placement.</li>
+        <li class="ar"><strong>ماذا لو لم تعجبني النتيجة؟</strong> — الابتسامة التجريبية نموذج حقيقي قبل أي إجراء نهائي، مع تعديلات غير محدودة.</li>
+        <li class="en"><strong>What if I don't like the result?</strong> — The trial smile is a real mockup before any permanent work, with unlimited adjustments.</li>
+      </ul>
+    </div>
+
+    <!-- PRICING -->
     <table class="price-tbl rv">
       <thead>
-        <tr><th>المادة</th><th>السعر (١٦ سن)</th><th>المميزات</th></tr>
+        <tr><th><span class="ar">المادة</span><span class="en">Material</span></th><th><span class="ar">١٦ سن</span><span class="en">16 Teeth</span></th></tr>
       </thead>
       <tbody>
-        <tr>
-          <td class="pt-name">Empress<small>فينير إمبرس</small></td>
-          <td class="pt-price">9,700 AED</td>
-          <td class="pt-feat">بورسلين طبيعي المظهر · تعديلات غير محدودة</td>
-        </tr>
-        <tr>
-          <td class="pt-name">E-max<small>فينير إي ماكس</small></td>
-          <td class="pt-price">11,900 AED</td>
-          <td class="pt-feat">شفافية عالية · متانة ومقاومة للتصبّغ</td>
-        </tr>
-        <tr>
-          <td class="pt-name">Zirconia<small>فينير زركونيا</small></td>
-          <td class="pt-price">14,700 AED</td>
-          <td class="pt-feat">أقوى أنواع الفينير · مقاومة عالية للكسر</td>
-        </tr>
-        <tr>
-          <td class="pt-name">Multi-layer Zirconia<small>زركونيا متعددة الطبقات</small></td>
-          <td class="pt-price">23,000 AED</td>
-          <td class="pt-feat">أعلى جودة · طبقات متدرجة طبيعية</td>
-        </tr>
+        <tr><td class="pt-name">Empress</td><td class="pt-price">9,700 AED</td></tr>
+        <tr><td class="pt-name">E-max</td><td class="pt-price">11,900 AED</td></tr>
+        <tr><td class="pt-name">Zirconia</td><td class="pt-price">14,700 AED</td></tr>
+        <tr><td class="pt-name">Multi-layer Zirconia</td><td class="pt-price">23,000 AED</td></tr>
       </tbody>
     </table>
-    <p class="Bmd rv" style="text-align:center;margin-top:16px">فينير السن الواحد من 839 AED · تقسيط بدون فوائد عبر Tabby و Tamara</p>
-  </div>
-</section>
-
-<!-- ④ FAQ -->
-<section style="background:var(--s50)" aria-labelledby="faq-h">
-  <div class="wrap">
-    <div class="sec-hdr rv">
-      <span class="eye">أسئلة شائعة</span>
-      <h2 class="Hlg" id="faq-h">ما يهمك معرفته</h2>
-    </div>
-    <ul class="rv" style="max-width:700px;margin:24px auto 0;list-style:none;padding:0;display:flex;flex-direction:column;gap:14px">
-      <li style="font-size:14px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">هل الفينير يضر الأسنان؟</strong> — نحت طبقة رقيقة جداً. التقنية الرقمية تحدد أقل كمية نحت ممكنة، وأحياناً بدون نحت.</li>
-      <li style="font-size:14px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">كم جلسة يحتاج؟</strong> — من جلستين إلى ثلاث: فحص وتصميم، ابتسامة تجريبية، ثم تركيب نهائي.</li>
-      <li style="font-size:14px;color:var(--s700);line-height:1.7"><strong style="color:var(--b900)">ماذا لو لم تعجبني النتيجة؟</strong> — الابتسامة التجريبية نموذج حقيقي قبل أي إجراء نهائي، مع تعديلات غير محدودة.</li>
-    </ul>
-    <div style="text-align:center;margin-top:24px" class="rv">
-      <a href="porcelain-veneers.html" target="_blank" rel="noopener" class="btn btn--od">تعرّف أكثر على فينير الأسنان ←</a>
+    <p class="Bmd rv" style="text-align:center;margin-top:12px;font-size:12px">
+      <span class="ar">السن الواحد من 839 AED · تقسيط بدون فوائد عبر Tabby و Tamara</span>
+      <span class="en">Single veneer from 839 AED · Interest-free installments via Tabby &amp; Tamara</span>
+    </p>
+    <div style="text-align:center;margin-top:16px" class="rv">
+      <a href="porcelain-veneers.html" target="_blank" rel="noopener" class="btn btn--od">
+        <span class="ar">تعرّف أكثر على فينير الأسنان ←</span>
+        <span class="en">Learn more about veneers →</span>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ⑤ FINAL CTA -->
-<section class="lp-cta" aria-labelledby="cta-h">
+<!-- FINAL CTA -->
+<section class="lp-cta">
   <div class="wrap rv">
-    <h2 class="Hlg" id="cta-h">ابتسامتك الجديدة تبدأ من هنا</h2>
-    <p class="Blg">تصميم رقمي لابتسامتك — اكتشف كيف ستبدو قبل أن تقرر.</p>
-    <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعدك الآن</a>
+    <h2 class="Hlg">
+      <span class="ar">ابتسامتك الجديدة تبدأ من هنا</span>
+      <span class="en">Your New Smile Starts Here</span>
+    </h2>
+    <p class="Blg">
+      <span class="ar">تصميم رقمي لابتسامتك — اكتشف كيف ستبدو قبل أن تقرر.</span>
+      <span class="en">A digital design of your smile — see how it looks before you decide.</span>
+    </p>
+    <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">
+      <span class="ar">احجز موعدك الآن</span>
+      <span class="en">Book Your Appointment</span>
+    </a>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="lp-ft">
   <div class="wrap">
-    <p>Vision Dental Clinic · شارع خليفة، أبوظبي · <a href="tel:+97123122777" dir="ltr">02 312 2777</a></p>
-    <p style="margin-top:4px">السبت — الخميس: ١٠:٣٠ ص – ٧:٣٠ م · الجمعة: مغلق</p>
+    <p>Vision Dental Clinic · <span class="ar">شارع خليفة، أبوظبي</span><span class="en">Khalifa Street, Abu Dhabi</span> · <a href="tel:+97123122777" dir="ltr">02 312 2777</a></p>
+    <p style="margin-top:4px">
+      <span class="ar">السبت — الخميس: ١٠:٣٠ ص – ٧:٣٠ م · الجمعة: مغلق</span>
+      <span class="en">Sat — Thu: 10:30 AM – 7:30 PM · Fri: Closed</span>
+    </p>
     <p style="margin-top:4px">MOHAP Licensed No. 5889VHC5-110626</p>
   </div>
 </footer>
 
-<!-- STICKY BOTTOM CTA (mobile) -->
+<!-- STICKY CTA (mobile) -->
 <div class="sticky-cta">
-  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">احجز موعدك الآن</a>
+  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">
+    <span class="ar">احجز موعدك الآن</span>
+    <span class="en">Book Your Appointment</span>
+  </a>
 </div>
 
 <!-- FLOATING CHAT -->
 <div class="ch-float">
-  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" aria-label="احجز موعد">
+  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" aria-label="Book appointment">
     <div class="ch-pulse"></div>
     <svg viewBox="0 0 24 24" fill="none"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" fill="#fff"/></svg>
   </a>
 </div>
 
 <script>
-const hdr=document.getElementById('lp-hdr');
-window.addEventListener('scroll',()=>hdr.classList.toggle('on',scrollY>50),{passive:true});
+// Language detection & toggle
 (function(){
-  const track=document.getElementById('ba-track'),prev=document.getElementById('ba-prev'),next=document.getElementById('ba-next');
-  if(!track||!prev||!next)return;
-  let pos=0;
-  function getV(){return innerWidth<600?1:innerWidth<900?2:3}
-  function getW(){const c=track.querySelector('.bac');return c?c.offsetWidth+16:0}
-  function upd(){const m=track.children.length-getV();if(pos>m)pos=m;if(pos<0)pos=0;track.style.transform='translateX('+pos*getW()+'px)';prev.disabled=pos<=0;next.disabled=pos>=m}
-  prev.addEventListener('click',()=>{pos--;upd()});next.addEventListener('click',()=>{pos++;upd()});
-  addEventListener('resize',upd);upd();
+  var root=document.documentElement;
+  function setLang(l){
+    root.setAttribute('lang',l);
+    root.setAttribute('dir',l==='ar'?'rtl':'ltr');
+    try{localStorage.setItem('vdc-lang',l)}catch(e){}
+  }
+  // Check saved preference, then browser language
+  var saved;
+  try{saved=localStorage.getItem('vdc-lang')}catch(e){}
+  if(saved){setLang(saved)}
+  else{var bl=(navigator.language||'').toLowerCase();setLang(bl.startsWith('ar')?'ar':'en')}
+  document.getElementById('lang-btn').addEventListener('click',function(){
+    setLang(root.getAttribute('lang')==='ar'?'en':'ar');
+  });
 })();
-document.querySelectorAll('.ba-slider').forEach(s=>{
-  let d=false;
-  function sp(x){const r=s.getBoundingClientRect();let p=((x-r.left)/r.width)*100;p=Math.max(5,Math.min(95,p));s.querySelector('.ba-img-a').style.clipPath='inset(0 0 0 '+p+'%)';s.querySelector('.ba-handle').style.left=p+'%';s.querySelector('.ba-handle-btn').style.left=p+'%'}
-  s.addEventListener('mousedown',e=>{d=true;sp(e.clientX);e.preventDefault()});
-  document.addEventListener('mousemove',e=>{if(d)sp(e.clientX)});document.addEventListener('mouseup',()=>{d=false});
-  s.addEventListener('touchstart',e=>{d=true;sp(e.touches[0].clientX)},{passive:true});
-  document.addEventListener('touchmove',e=>{if(d)sp(e.touches[0].clientX)},{passive:true});
-  document.addEventListener('touchend',()=>{d=false});
+
+// Header scroll
+var hdr=document.getElementById('lp-hdr');
+window.addEventListener('scroll',function(){hdr.classList.toggle('on',scrollY>50)},{passive:true});
+
+// Gallery carousel
+(function(){
+  var track=document.getElementById('ba-track'),prev=document.getElementById('ba-prev'),next=document.getElementById('ba-next');
+  if(!track||!prev||!next)return;
+  var pos=0;
+  function getV(){return innerWidth<600?1:innerWidth<900?2:3}
+  function getW(){var c=track.querySelector('.bac');return c?c.offsetWidth+16:0}
+  function upd(){var m=track.children.length-getV();if(pos>m)pos=m;if(pos<0)pos=0;
+    var lang=document.documentElement.getAttribute('lang');
+    var dir=lang==='ar'?1:-1;
+    track.style.transform='translateX('+(dir*pos*getW())+'px)';
+    prev.disabled=pos<=0;next.disabled=pos>=m}
+  prev.addEventListener('click',function(){pos--;upd()});
+  next.addEventListener('click',function(){pos++;upd()});
+  addEventListener('resize',upd);
+  // Re-update on language change
+  new MutationObserver(upd).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+  upd();
+})();
+
+// Before/after sliders
+document.querySelectorAll('.ba-slider').forEach(function(s){
+  var d=false;
+  function sp(x){var r=s.getBoundingClientRect();var p=((x-r.left)/r.width)*100;p=Math.max(5,Math.min(95,p));s.querySelector('.ba-img-a').style.clipPath='inset(0 0 0 '+p+'%)';s.querySelector('.ba-handle').style.left=p+'%';s.querySelector('.ba-handle-btn').style.left=p+'%'}
+  s.addEventListener('mousedown',function(e){d=true;sp(e.clientX);e.preventDefault()});
+  document.addEventListener('mousemove',function(e){if(d)sp(e.clientX)});document.addEventListener('mouseup',function(){d=false});
+  s.addEventListener('touchstart',function(e){d=true;sp(e.touches[0].clientX)},{passive:true});
+  document.addEventListener('touchmove',function(e){if(d)sp(e.touches[0].clientX)},{passive:true});
+  document.addEventListener('touchend',function(){d=false});
 });
-const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}}),{threshold:.1,rootMargin:'0px 0px -28px 0px'});
-document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+// Reveal animations
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}})},{threshold:.1,rootMargin:'0px 0px -28px 0px'});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
 </script>
 </body>
 </html>
