@@ -541,6 +541,58 @@ ul{list-style:none}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 .skip-link{position:absolute;top:-100%;left:16px;background:var(--b900);color:var(--w);padding:12px 24px;border-radius:0 0 8px 8px;font-size:14px;font-weight:700;z-index:9999;transition:top .2s}.skip-link:focus{top:0}
 .faq-wrap{max-width:800px;margin:0 auto;background:var(--glass-card);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);border:var(--glass-card-b);border-radius:var(--rl);padding:8px 28px;box-shadow:var(--glass-card-sh)}.faq-item{border-bottom:1px solid rgba(255,255,255,.5)}.faq-q{display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-size:15px;font-weight:700;color:var(--b900);cursor:pointer;gap:16px}.faq-q svg{width:18px;height:18px;flex-shrink:0;transition:transform .3s;color:var(--s400)}.faq-item.active .faq-q svg{transform:rotate(180deg)}.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}.faq-item.active .faq-a{max-height:600px}.faq-a-in{padding:0 0 20px;font-size:14px;line-height:1.75;color:var(--s600)}.faq-a-in a{color:var(--g600);font-weight:600}.faq-a-in strong{color:var(--s800)}
+
+/* ═══ VIDEO TESTIMONIALS ═══ */
+.vt-sec{margin-top:var(--sy)}
+.vt-h{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px;margin-bottom:24px}
+.vt-filters{display:flex;gap:8px;flex-wrap:wrap}
+.vt-f{font-size:12px;font-weight:700;padding:7px 16px;border-radius:100px;cursor:pointer;
+  background:var(--glass-card);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);
+  border:var(--glass-card-b);color:var(--s600);transition:all .25s}
+.vt-f:hover{color:var(--b900);border-color:var(--b200)}
+.vt-f.active{background:var(--gg);color:var(--w);border-color:transparent;box-shadow:0 4px 16px rgba(90,159,42,.3)}
+.vt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.vt-card{position:relative;border-radius:var(--rl);overflow:hidden;cursor:pointer;
+  background:var(--glass-card);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);
+  border:var(--glass-card-b);box-shadow:var(--glass-card-sh);transition:transform .3s,box-shadow .3s}
+.vt-card:hover{transform:translateY(-4px);box-shadow:var(--shm)}
+.vt-card[hidden]{display:none}
+.vt-thumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--s800)}
+.vt-thumb img{width:100%;height:100%;object-fit:cover}
+.vt-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  background:rgba(15,25,35,.25);transition:background .3s}
+.vt-card:hover .vt-play{background:rgba(15,25,35,.4)}
+.vt-play-btn{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  background:rgba(255,255,255,.25);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);
+  border:1.5px solid rgba(255,255,255,.45);box-shadow:0 8px 32px rgba(0,0,0,.15);transition:transform .3s,background .3s}
+.vt-card:hover .vt-play-btn{transform:scale(1.1);background:rgba(255,255,255,.35)}
+.vt-play-btn svg{width:22px;height:22px;fill:var(--w);margin-left:3px}
+.vt-info{padding:14px 16px}
+.vt-dr{font-size:13px;font-weight:700;color:var(--b900)}
+.vt-svc{font-size:11px;color:var(--s400);font-weight:600;margin-top:2px}
+.vt-card.playing .vt-play{display:none}
+.vt-card.playing .vt-thumb img{display:none}
+.vt-card video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+@media(max-width:768px){
+  .vt-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .vt-h{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:480px){.vt-grid{grid-template-columns:1fr}}
+
+/* ═══ LOCATION ═══ */
+.loc-sec{padding:var(--sy) 0}
+.loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:stretch}
+.loc-map{border-radius:var(--rl);overflow:hidden;min-height:360px;background:var(--glass-card);
+  backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);border:var(--glass-card-b);box-shadow:var(--glass-card-sh)}
+.loc-map iframe{width:100%;height:100%;border:0;min-height:360px;display:block}
+.loc-info{display:flex;flex-direction:column;gap:20px;justify-content:center}
+.loc-row{display:flex;gap:14px;align-items:flex-start}
+.loc-row svg{width:20px;height:20px;flex-shrink:0;stroke:var(--g600);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;margin-top:2px}
+.loc-row h4{font-size:14px;font-weight:700;color:var(--b900);margin-bottom:2px}
+.loc-row p{font-size:13.5px;color:var(--s600);line-height:1.6}
+.loc-row a{color:var(--g600);font-weight:600}
+.loc-dir{margin-top:8px}
+@media(max-width:768px){.loc-grid{grid-template-columns:1fr}.loc-map{min-height:280px}.loc-map iframe{min-height:280px}}
 </style>
 </head>
 <body>
@@ -1261,6 +1313,102 @@ ul{list-style:none}
       </div>
     </div>
 
+    <!-- Video Testimonials -->
+    <div class="vt-sec" id="video-testimonials">
+      <div class="vt-h rv">
+        <div>
+          <p class="eye" style="margin-bottom:6px">Real Experiences</p>
+          <h3 class="Hmd">Patient <em class="em">Testimonials</em></h3>
+        </div>
+        <div class="vt-filters" role="tablist" aria-label="Filter testimonials">
+          <button class="vt-f active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="vt-f" data-filter="hussien" role="tab">Dr. Hussien</button>
+          <button class="vt-f" data-filter="amr" role="tab">Prof. Amr</button>
+          <button class="vt-f" data-filter="asmaa" role="tab">Dr. Asmaa</button>
+          <button class="vt-f" data-filter="ammar" role="tab">Dr. Ammar</button>
+        </div>
+      </div>
+      <div class="vt-grid">
+        <div class="vt-card rv" data-dr="hussien" data-service="implants">
+          <div class="vt-thumb">
+            <img src="videos/thumbs/testimonial-hussien-implants.webp" alt="Patient testimonial — dental implants with Dr. Hussien" loading="lazy" width="640" height="360">
+            <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
+          </div>
+          <div class="vt-info"><div class="vt-dr">Dr. Hussien Tahoun</div><div class="vt-svc">Dental Implants</div></div>
+        </div>
+        <div class="vt-card rv d1" data-dr="hussien" data-service="surgery">
+          <div class="vt-thumb">
+            <img src="videos/thumbs/testimonial-hussien-surgery.webp" alt="Patient testimonial — oral surgery with Dr. Hussien" loading="lazy" width="640" height="360">
+            <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
+          </div>
+          <div class="vt-info"><div class="vt-dr">Dr. Hussien Tahoun</div><div class="vt-svc">Oral Surgery</div></div>
+        </div>
+        <div class="vt-card rv d2" data-dr="amr" data-service="orthodontics">
+          <div class="vt-thumb">
+            <img src="videos/thumbs/testimonial-amr-ortho-1.webp" alt="Patient testimonial — orthodontics with Prof. Amr Labib" loading="lazy" width="640" height="360">
+            <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
+          </div>
+          <div class="vt-info"><div class="vt-dr">Prof. Amr Labib</div><div class="vt-svc">Orthodontics</div></div>
+        </div>
+        <div class="vt-card rv" data-dr="amr" data-service="orthodontics">
+          <div class="vt-thumb">
+            <img src="videos/thumbs/testimonial-amr-ortho-2.webp" alt="Patient testimonial — orthodontics with Prof. Amr Labib" loading="lazy" width="640" height="360">
+            <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
+          </div>
+          <div class="vt-info"><div class="vt-dr">Prof. Amr Labib</div><div class="vt-svc">Orthodontics</div></div>
+        </div>
+        <div class="vt-card rv d1" data-dr="amr" data-service="orthodontics pediatric">
+          <div class="vt-thumb">
+            <img src="videos/thumbs/testimonial-amr-ortho-pediatric.webp" alt="Patient testimonial — orthodontics and pediatric with Prof. Amr Labib" loading="lazy" width="640" height="360">
+            <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
+          </div>
+          <div class="vt-info"><div class="vt-dr">Prof. Amr Labib</div><div class="vt-svc">Orthodontics &amp; Pediatric</div></div>
+        </div>
+        <div class="vt-card rv d2" data-dr="asmaa" data-service="orthodontics">
+          <div class="vt-thumb">
+            <img src="videos/thumbs/testimonial-asmaa-1.webp" alt="Patient testimonial — Invisalign with Dr. Asmaa Butt" loading="lazy" width="640" height="360">
+            <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
+          </div>
+          <div class="vt-info"><div class="vt-dr">Dr. Asmaa Butt</div><div class="vt-svc">Invisalign®</div></div>
+        </div>
+        <div class="vt-card rv" data-dr="asmaa" data-service="orthodontics">
+          <div class="vt-thumb">
+            <img src="videos/thumbs/testimonial-asmaa-2.webp" alt="Patient testimonial — Invisalign with Dr. Asmaa Butt" loading="lazy" width="640" height="360">
+            <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
+          </div>
+          <div class="vt-info"><div class="vt-dr">Dr. Asmaa Butt</div><div class="vt-svc">Invisalign®</div></div>
+        </div>
+        <div class="vt-card rv d1" data-dr="ammar" data-service="general">
+          <div class="vt-thumb">
+            <img src="videos/thumbs/testimonial-ammar-1.webp" alt="Patient testimonial — general dentistry with Dr. Ammar" loading="lazy" width="640" height="360">
+            <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
+          </div>
+          <div class="vt-info"><div class="vt-dr">Dr. Ammar Anbari</div><div class="vt-svc">General Dentistry</div></div>
+        </div>
+        <div class="vt-card rv d2" data-dr="ammar" data-service="general">
+          <div class="vt-thumb">
+            <img src="videos/thumbs/testimonial-ammar-2.webp" alt="Patient testimonial — general dentistry with Dr. Ammar" loading="lazy" width="640" height="360">
+            <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
+          </div>
+          <div class="vt-info"><div class="vt-dr">Dr. Ammar Anbari</div><div class="vt-svc">General Dentistry</div></div>
+        </div>
+        <div class="vt-card rv" data-dr="all" data-service="veneers">
+          <div class="vt-thumb">
+            <img src="videos/thumbs/testimonial-veneers.webp" alt="Patient testimonial — veneers treatment" loading="lazy" width="640" height="360">
+            <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
+          </div>
+          <div class="vt-info"><div class="vt-dr">Veneers Patient</div><div class="vt-svc">Veneers</div></div>
+        </div>
+        <div class="vt-card rv d1" data-dr="all" data-service="all">
+          <div class="vt-thumb">
+            <img src="videos/thumbs/testimonial-all-doctors.webp" alt="Patient testimonial — Vision Dental Clinic team" loading="lazy" width="640" height="360">
+            <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
+          </div>
+          <div class="vt-info"><div class="vt-dr">Vision Dental Clinic</div><div class="vt-svc">Our Team</div></div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -1442,6 +1590,46 @@ ul{list-style:none}
   </div>
 </section>
 
+<!-- LOCATION -->
+<section class="loc-sec" id="location" aria-labelledby="loc-h">
+  <div class="W">
+    <div style="text-align:center;margin-bottom:32px">
+      <p class="eye eye--cx rv">Find Us</p>
+      <h2 class="Hlg rv d1" id="loc-h" style="font-size:clamp(24px,3vw,36px)">Visit <em class="em">Our Clinic</em></h2>
+    </div>
+    <div class="loc-grid">
+      <div class="loc-map rv rv-l">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3632.071!2d54.3579!3d24.4869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e6650b30bc9f7%3A0xc5cbc79f6adf3d6c!2sVision%20Dental%20Clinic!5e0!3m2!1sen!2sae!4v1695000000000!5m2!1sen!2sae" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Vision Dental Clinic location on Google Maps"></iframe>
+      </div>
+      <div class="loc-info rv rv-r">
+        <div class="loc-row">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div><h4>Address</h4><p>1302 Al Ansari Exchange Building<br>Khalifa Street, Abu Dhabi, UAE</p></div>
+        </div>
+        <div class="loc-row">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.71A2 2 0 012.18 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.61-.61a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          <div><h4>Phone</h4><p><a href="tel:+97123122777">02 312 2777</a></p></div>
+        </div>
+        <div class="loc-row">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <div><h4>Email</h4><p><a href="mailto:info@visiondentalclinic.com">info@visiondentalclinic.com</a></p></div>
+        </div>
+        <div class="loc-row">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <div><h4>Working Hours</h4><p>Saturday – Thursday: 10:30 AM – 7:30 PM<br>Friday: Closed</p></div>
+        </div>
+        <div class="loc-row">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <div><h4>License</h4><p>MOHAP Licensed — No. 5889VHC5-110626</p></div>
+        </div>
+        <div class="loc-dir">
+          <a href="https://maps.app.goo.gl/p3T7cCv46nRdvMCv7" target="_blank" rel="noopener" class="btn btn--g btn--arr">Get Directions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ⑨ FOOTER -->
 <footer id="ftr" role="contentinfo">
   <div class="ft">
@@ -1591,6 +1779,50 @@ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 document.querySelectorAll('.sc').forEach(c=>{c.addEventListener('click',e=>{if(e.target.closest('a'))return;const a=c.querySelector('.sc-lnk');if(a)window.location.href=a.href;});});
 document.querySelectorAll('.tc').forEach(c=>{c.addEventListener('click',e=>{if(e.target.closest('a'))return;const a=c.querySelector('.tc-lnk');if(a)window.location.href=a.href;});});
 document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>{const item=q.parentElement;item.classList.toggle('active');document.querySelectorAll('.faq-item').forEach(i=>{if(i!==item)i.classList.remove('active')})}));
+
+/* Video Testimonials */
+(function(){
+  const videoMap={
+    'testimonial-hussien-implants':'videos/testimonial-hussien-implants.mp4',
+    'testimonial-hussien-surgery':'videos/testimonial-hussien-surgery.mp4',
+    'testimonial-amr-ortho-1':'videos/testimonial-amr-ortho-1.mp4',
+    'testimonial-amr-ortho-2':'videos/testimonial-amr-ortho-2.mp4',
+    'testimonial-amr-ortho-pediatric':'videos/testimonial-amr-ortho-pediatric.mp4',
+    'testimonial-asmaa-1':'videos/testimonial-asmaa-1.mp4',
+    'testimonial-asmaa-2':'videos/testimonial-asmaa-2.mp4',
+    'testimonial-ammar-1':'videos/testimonial-ammar-1.mp4',
+    'testimonial-ammar-2':'videos/testimonial-ammar-2.mp4',
+    'testimonial-veneers':'videos/testimonial-veneers.mp4',
+    'testimonial-all-doctors':'videos/testimonial-all-doctors.mp4'
+  };
+  const cards=document.querySelectorAll('.vt-card');
+  const filters=document.querySelectorAll('.vt-f');
+  filters.forEach(f=>f.addEventListener('click',()=>{
+    filters.forEach(b=>b.classList.remove('active'));
+    f.classList.add('active');
+    const v=f.dataset.filter;
+    cards.forEach(c=>{
+      const dr=c.dataset.dr;
+      c.hidden=!(v==='all'||dr===v||dr==='all');
+    });
+    document.querySelectorAll('.vt-card video').forEach(vid=>{vid.pause();vid.remove();vid.closest('.vt-card').classList.remove('playing')});
+  }));
+  cards.forEach(c=>{
+    c.addEventListener('click',()=>{
+      const thumb=c.querySelector('.vt-thumb img');
+      const key=thumb.src.split('/').pop().replace('.webp','');
+      const src=videoMap[key];
+      if(!src)return;
+      document.querySelectorAll('.vt-card video').forEach(v=>{v.pause();v.remove();v.closest('.vt-card').classList.remove('playing')});
+      const vid=document.createElement('video');
+      vid.src=src;vid.controls=true;vid.autoplay=true;vid.playsInline=true;
+      vid.style.cssText='position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2';
+      c.querySelector('.vt-thumb').appendChild(vid);
+      c.classList.add('playing');
+      vid.addEventListener('ended',()=>{vid.remove();c.classList.remove('playing')});
+    });
+  });
+})();
 </script>
 
 <script type="application/ld+json">
