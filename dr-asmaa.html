@@ -96,6 +96,29 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
 @media(max-width:768px){.ca-grid{grid-template-columns:1fr!important}}
 @media(max-width:900px){.tech-grid{grid-template-columns:repeat(2,1fr)!important}}
 @media(max-width:600px){.tech-grid{grid-template-columns:1fr!important}}
+/* Video Testimonials */
+.vt-sec{padding:var(--sy) 0}
+.vt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.vt-card{position:relative;border-radius:var(--rl);overflow:hidden;cursor:pointer;
+  background:var(--glass-card);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);
+  border:var(--glass-card-b);box-shadow:var(--glass-card-sh);transition:transform .3s,box-shadow .3s}
+.vt-card:hover{transform:translateY(-4px);box-shadow:var(--shm)}
+.vt-thumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--s800)}
+.vt-thumb img{width:100%;height:100%;object-fit:cover}
+.vt-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  background:rgba(15,25,35,.25);transition:background .3s}
+.vt-card:hover .vt-play{background:rgba(15,25,35,.4)}
+.vt-play-btn{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  background:rgba(255,255,255,.25);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);
+  border:1.5px solid rgba(255,255,255,.45);box-shadow:0 8px 32px rgba(0,0,0,.15);transition:transform .3s,background .3s}
+.vt-card:hover .vt-play-btn{transform:scale(1.1);background:rgba(255,255,255,.35)}
+.vt-play-btn svg{width:22px;height:22px;fill:var(--w);margin-left:3px}
+.vt-info{padding:14px 16px}
+.vt-dr{font-size:13px;font-weight:700;color:var(--b900)}
+.vt-svc{font-size:11px;color:var(--s400);font-weight:600;margin-top:2px}
+.vt-card.playing .vt-play{display:none}
+.vt-card.playing .vt-thumb img{display:none}
+@media(max-width:768px){.vt-grid{grid-template-columns:1fr}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":["Dentist","Physician"],"name":"Dr. Asmaa Butt","alternateName":"دكتورة أسماء بت - أسنان أطفال أبوظبي","description":"Dr. Asmaa Butt — Pediatric and Cosmetic Dentist at Vision Dental Clinic Abu Dhabi. Invisalign certified provider. Expert in children's dentistry, veneers, teeth whitening, and digital smile design.","url":"https://visiondentalclinic.com/dr-asmaa.html","worksFor":{"@type":"Dentist","name":"Vision Dental Clinic","url":"https://visiondentalclinic.com","address":{"@type":"PostalAddress","addressLocality":"Abu Dhabi","addressCountry":"AE"}}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Dr. Asmaa the Invisalign provider at Vision Dental?","acceptedAnswer":{"@type":"Answer","text":"Yes. Dr. Asmaa Butt is the clinic's certified Invisalign provider. She manages all clear aligner cases, from initial consultation and 3D scanning to treatment monitoring and final refinements."}},{"@type":"Question","name":"Can Dr. Asmaa treat my child?","acceptedAnswer":{"@type":"Answer","text":"Yes. She provides comprehensive pediatric dental care including check-ups, fluoride treatments, fissure sealants, restorations, and space maintainers. She uses child-friendly techniques with STA anesthesia and Nitrous Oxide sedation when needed."}},{"@type":"Question","name":"Which whitening treatment does Dr. Asmaa recommend?","acceptedAnswer":{"@type":"Answer","text":"She offers both Philips Zoom (1,299 AED) and Nano whitening (1,099 AED). Zoom delivers faster, more dramatic results in about 45 minutes. The best option depends on your sensitivity level and desired shade improvement — she'll recommend during consultation."}},{"@type":"Question","name":"How long does Invisalign treatment take?","acceptedAnswer":{"@type":"Answer","text":"Most cases take 6–18 months depending on complexity. Simple alignment cases may be completed in as few as 6 months, while more complex bite corrections take longer. A treatment timeline is provided after the initial scan."}},{"@type":"Question","name":"Does whitening damage tooth enamel?","acceptedAnswer":{"@type":"Answer","text":"Professional whitening under dental supervision is clinically safe for enamel when applied correctly. Dr. Asmaa customises the treatment to your sensitivity level and provides aftercare instructions to maintain results."}}]}</script>
@@ -328,6 +351,39 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
   </div>
 </section>
 
+<!-- VIDEO TESTIMONIALS -->
+<section class="vt-sec S" aria-labelledby="vt-h">
+  <div class="W">
+    <div style="text-align:center;margin-bottom:32px">
+      <p class="eye eye--cx rv">Real Experiences</p>
+      <h3 class="Hlg rv d1" id="vt-h" style="font-size:clamp(22px,2.5vw,32px)">Patient <em class="em">Testimonials</em></h3>
+    </div>
+    <div class="vt-grid">
+      <div class="vt-card rv" data-video="videos/testimonial-asmaa-1.mp4">
+        <div class="vt-thumb">
+          <img src="videos/thumbs/testimonial-asmaa-1.webp" alt="Patient testimonial — Dr. Asmaa Butt" loading="lazy" width="640" height="360">
+          <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
+        </div>
+        <div class="vt-info"><div class="vt-dr">Patient Testimonial</div></div>
+      </div>
+      <div class="vt-card rv d1" data-video="videos/testimonial-asmaa-2.mp4">
+        <div class="vt-thumb">
+          <img src="videos/thumbs/testimonial-asmaa-2.webp" alt="Patient testimonial — Dr. Asmaa Butt" loading="lazy" width="640" height="360">
+          <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
+        </div>
+        <div class="vt-info"><div class="vt-dr">Patient Testimonial</div></div>
+      </div>
+      <div class="vt-card rv d2" data-video="videos/testimonial-all-doctors.mp4">
+        <div class="vt-thumb">
+          <img src="videos/thumbs/testimonial-all-doctors.webp" alt="Patient testimonial — Vision Dental Clinic" loading="lazy" width="640" height="360">
+          <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
+        </div>
+        <div class="vt-info"><div class="vt-dr">Patient Testimonial</div><div class="vt-svc">Our Team</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer id="ftr">
   <div class="ft">
     <div class="fl">
@@ -359,6 +415,7 @@ hbg.addEventListener("click",open);mx.addEventListener("click",close);mn.querySe
 const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add("on");io.unobserve(x.target)}}),{threshold:.1,rootMargin:"0px 0px -28px 0px"});
 document.querySelectorAll(".rv").forEach(el=>io.observe(el));
 document.querySelectorAll('.gal-split').forEach(split=>{const after=split.querySelector('.gal-half:nth-child(2)');const divLine=split.querySelector('.gal-div');const arrow=split.querySelector('.gal-arrow');if(!after||!divLine)return;let dragging=false;function setPos(x){const rect=split.getBoundingClientRect();let pct=((x-rect.left)/rect.width)*100;pct=Math.max(5,Math.min(95,pct));after.style.clipPath='inset(0 0 0 '+pct+'%)';divLine.style.left=pct+'%';if(arrow)arrow.style.left=pct+'%'}split.addEventListener('mousedown',function(e){dragging=true;setPos(e.clientX);e.preventDefault()});window.addEventListener('mousemove',function(e){if(dragging)setPos(e.clientX)});window.addEventListener('mouseup',function(){dragging=false});split.addEventListener('touchstart',function(e){dragging=true;setPos(e.touches[0].clientX)},{passive:true});window.addEventListener('touchmove',function(e){if(dragging)setPos(e.touches[0].clientX)},{passive:true});window.addEventListener('touchend',function(){dragging=false})});
+document.querySelectorAll('.vt-card').forEach(c=>{c.addEventListener('click',()=>{const src=c.dataset.video;if(!src)return;document.querySelectorAll('.vt-card video').forEach(v=>{v.pause();v.remove();v.closest('.vt-card').classList.remove('playing')});const vid=document.createElement('video');vid.src=src;vid.controls=true;vid.autoplay=true;vid.playsInline=true;vid.style.cssText='position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2';c.querySelector('.vt-thumb').appendChild(vid);c.classList.add('playing');vid.addEventListener('ended',()=>{vid.remove();c.classList.remove('playing')})})});
 </script>
 
 <!-- FLOATING CHAT -->

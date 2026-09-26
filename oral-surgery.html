@@ -62,6 +62,7 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
 .cluster-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:28px}.cluster-grid a{display:flex;flex-direction:column;gap:10px;padding:22px 20px;background:var(--w);border:.5px solid var(--s100);border-radius:var(--rl);transition:all .28s;text-decoration:none}.cluster-grid a:hover{box-shadow:var(--shm);transform:translateY(-4px);border-color:transparent}.cluster-grid .cg-icon{width:42px;height:42px;border-radius:12px;background:var(--b50);display:flex;align-items:center;justify-content:center}.cluster-grid .cg-icon svg{width:20px;height:20px;stroke:var(--b700);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.cluster-grid h3{font-size:14px;font-weight:800;color:var(--b900);line-height:1.3}.cluster-grid p{font-size:12.5px;line-height:1.6;color:var(--s600)}.cluster-grid .cg-dr{font-size:11px;font-weight:600;color:var(--g600);margin-top:auto}
 @media(max-width:900px){.cluster-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:768px){.cluster-grid{grid-template-columns:1fr}}
+.vt-sec{padding:var(--sy) 0}.vt-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}.vt-card{position:relative;border-radius:var(--rl);overflow:hidden;cursor:pointer;background:var(--glass-card);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);border:var(--glass-card-b);box-shadow:var(--glass-card-sh);transition:transform .3s,box-shadow .3s}.vt-card:hover{transform:translateY(-4px);box-shadow:var(--shm)}.vt-thumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--s800)}.vt-thumb img{width:100%;height:100%;object-fit:cover}.vt-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(15,25,35,.25);transition:background .3s}.vt-card:hover .vt-play{background:rgba(15,25,35,.4)}.vt-play-btn{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.25);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);border:1.5px solid rgba(255,255,255,.45);box-shadow:0 8px 32px rgba(0,0,0,.15);transition:transform .3s,background .3s}.vt-card:hover .vt-play-btn{transform:scale(1.1);background:rgba(255,255,255,.35)}.vt-play-btn svg{width:22px;height:22px;fill:var(--w);margin-left:3px}.vt-info{padding:14px 16px}.vt-dr{font-size:13px;font-weight:700;color:var(--b900)}.vt-svc{font-size:11px;color:var(--s400);font-weight:600;margin-top:2px}.vt-card.playing .vt-play{display:none}.vt-card.playing .vt-thumb img{display:none}@media(max-width:768px){.vt-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -254,6 +255,32 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
   </div>
 </div></section>
 
+<!-- VIDEO TESTIMONIALS -->
+<section class="vt-sec S" aria-labelledby="vt-h">
+  <div class="W">
+    <div style="text-align:center;margin-bottom:32px">
+      <p class="eye eye--cx rv">Real Experiences</p>
+      <h3 class="Hlg rv d1" id="vt-h" style="font-size:clamp(22px,2.5vw,32px)">Patient <em class="em">Testimonials</em></h3>
+    </div>
+    <div class="vt-grid">
+      <div class="vt-card rv" data-video="videos/testimonial-hussien-surgery.mp4">
+        <div class="vt-thumb">
+          <img src="videos/thumbs/testimonial-hussien-surgery.webp" alt="Patient testimonial — oral surgery" loading="lazy" width="640" height="360">
+          <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
+        </div>
+        <div class="vt-info"><div class="vt-dr">Patient Testimonial</div><div class="vt-svc">Oral Surgery</div></div>
+      </div>
+      <div class="vt-card rv d1" data-video="videos/testimonial-all-doctors.mp4">
+        <div class="vt-thumb">
+          <img src="videos/thumbs/testimonial-all-doctors.webp" alt="Patient testimonial — Vision Dental Clinic" loading="lazy" width="640" height="360">
+          <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
+        </div>
+        <div class="vt-info"><div class="vt-dr">Patient Testimonial</div><div class="vt-svc">Our Team</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="S srv-cta"><div class="W"><div class="srv-cta-in rv">
   <p class="eye eye--lt eye--cx">Surgical Expertise</p>
   <h2>Ready for a<br><em class="em--lt">Surgical Consultation?</em></h2>
@@ -326,6 +353,7 @@ hbg.addEventListener('click',open);mx.addEventListener('click',close);mn.querySe
 document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>{const i=q.parentElement;const w=i.classList.contains('open');document.querySelectorAll('.faq-item').forEach(x=>x.classList.remove('open'));if(!w)i.classList.add('open')}));
 const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}}),{threshold:.1,rootMargin:'0px 0px -28px 0px'});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+document.querySelectorAll('.vt-card').forEach(c=>{c.addEventListener('click',()=>{const src=c.dataset.video;if(!src)return;document.querySelectorAll('.vt-card video').forEach(v=>{v.pause();v.remove();v.closest('.vt-card').classList.remove('playing')});const vid=document.createElement('video');vid.src=src;vid.controls=true;vid.autoplay=true;vid.playsInline=true;vid.style.cssText='position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2';c.querySelector('.vt-thumb').appendChild(vid);c.classList.add('playing');vid.addEventListener('ended',()=>{vid.remove();c.classList.remove('playing')})})});
 </script>
 
 <!-- FLOATING CHAT -->

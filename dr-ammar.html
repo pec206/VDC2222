@@ -103,6 +103,29 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
 .faq-a-in{padding:0 0 20px;font-size:14px;color:var(--s600);line-height:1.78}
 @media(max-width:900px){.ca-grid{grid-template-columns:1fr}.tech-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.tech-grid{grid-template-columns:1fr}}
+/* Video Testimonials */
+.vt-sec{padding:var(--sy) 0}
+.vt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.vt-card{position:relative;border-radius:var(--rl);overflow:hidden;cursor:pointer;
+  background:var(--glass-card);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);
+  border:var(--glass-card-b);box-shadow:var(--glass-card-sh);transition:transform .3s,box-shadow .3s}
+.vt-card:hover{transform:translateY(-4px);box-shadow:var(--shm)}
+.vt-thumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--s800)}
+.vt-thumb img{width:100%;height:100%;object-fit:cover}
+.vt-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  background:rgba(15,25,35,.25);transition:background .3s}
+.vt-card:hover .vt-play{background:rgba(15,25,35,.4)}
+.vt-play-btn{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  background:rgba(255,255,255,.25);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);
+  border:1.5px solid rgba(255,255,255,.45);box-shadow:0 8px 32px rgba(0,0,0,.15);transition:transform .3s,background .3s}
+.vt-card:hover .vt-play-btn{transform:scale(1.1);background:rgba(255,255,255,.35)}
+.vt-play-btn svg{width:22px;height:22px;fill:var(--w);margin-left:3px}
+.vt-info{padding:14px 16px}
+.vt-dr{font-size:13px;font-weight:700;color:var(--b900)}
+.vt-svc{font-size:11px;color:var(--s400);font-weight:600;margin-top:2px}
+.vt-card.playing .vt-play{display:none}
+.vt-card.playing .vt-thumb img{display:none}
+@media(max-width:768px){.vt-grid{grid-template-columns:1fr}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":["Dentist","Physician"],"name":"Dr. Ammar Anbari","alternateName":"دكتور عمار عنبري - زراعة أسنان أبوظبي","description":"Dr. Ammar Anbari — Restorative Dentist and Implantologist at Vision Dental Clinic Abu Dhabi. Expert in dental implants, full-arch rehabilitation, porcelain veneers, and digital smile design using CBCT-guided surgery.","url":"https://visiondentalclinic.com/dr-ammar.html","worksFor":{"@type":"Dentist","name":"Vision Dental Clinic","url":"https://visiondentalclinic.com","address":{"@type":"PostalAddress","addressLocality":"Abu Dhabi","addressCountry":"AE"}}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What types of veneers does Dr. Ammar offer?","acceptedAnswer":{"@type":"Answer","text":"Both porcelain (E-max) and composite veneers. Porcelain veneers last 15–20 years and are custom-made. Composite veneers are applied in one visit and are suitable for minor corrections."}},{"@type":"Question","name":"Can Dr. Ammar handle both implants and cosmetic work?","acceptedAnswer":{"@type":"Answer","text":"Yes. He manages surgical placement and restorative design, providing continuity from implant to final crown without referral to another specialist."}},{"@type":"Question","name":"How does Dr. Ammar plan smile design cases?","acceptedAnswer":{"@type":"Answer","text":"Using Digital Smile Design software and 3Shape scanning, he creates a virtual preview of the final result. A physical mockup (trial smile) is then made so the patient can see and approve the design before any preparation begins. Unlimited adjustments are included."}},{"@type":"Question","name":"What implant system does the clinic use?","acceptedAnswer":{"@type":"Answer","text":"Straumann® implants, a Swiss system with over 60 years of research and a documented success rate above 97% over 10 years."}},{"@type":"Question","name":"How long does a full-arch rehabilitation take?","acceptedAnswer":{"@type":"Answer","text":"Typically 4–6 months from planning to final prosthetic delivery. With immediate loading protocols, temporary teeth can be placed the same day as implant surgery in qualifying cases."}}]}</script>
@@ -357,6 +380,39 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
   </div>
 </div></section>
 
+<!-- VIDEO TESTIMONIALS -->
+<section class="vt-sec S" aria-labelledby="vt-h">
+  <div class="W">
+    <div style="text-align:center;margin-bottom:32px">
+      <p class="eye eye--cx rv">Real Experiences</p>
+      <h3 class="Hlg rv d1" id="vt-h" style="font-size:clamp(22px,2.5vw,32px)">Patient <em class="em">Testimonials</em></h3>
+    </div>
+    <div class="vt-grid">
+      <div class="vt-card rv" data-video="videos/testimonial-ammar-1.mp4">
+        <div class="vt-thumb">
+          <img src="videos/thumbs/testimonial-ammar-1.webp" alt="Patient testimonial — Dr. Ammar Anbari" loading="lazy" width="640" height="360">
+          <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
+        </div>
+        <div class="vt-info"><div class="vt-dr">Patient Testimonial</div><div class="vt-svc">General Dentistry</div></div>
+      </div>
+      <div class="vt-card rv d1" data-video="videos/testimonial-ammar-2.mp4">
+        <div class="vt-thumb">
+          <img src="videos/thumbs/testimonial-ammar-2.webp" alt="Patient testimonial — Dr. Ammar Anbari" loading="lazy" width="640" height="360">
+          <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
+        </div>
+        <div class="vt-info"><div class="vt-dr">Patient Testimonial</div><div class="vt-svc">General Dentistry</div></div>
+      </div>
+      <div class="vt-card rv d2" data-video="videos/testimonial-veneers.mp4">
+        <div class="vt-thumb">
+          <img src="videos/thumbs/testimonial-veneers.webp" alt="Patient testimonial — veneers" loading="lazy" width="640" height="360">
+          <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
+        </div>
+        <div class="vt-info"><div class="vt-dr">Patient Testimonial</div><div class="vt-svc">Veneers</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer id="ftr">
   <div class="ft">
     <div class="fl">
@@ -389,6 +445,7 @@ const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target
 document.querySelectorAll(".rv").forEach(el=>io.observe(el));
 document.querySelectorAll('.faq-q').forEach(btn=>{btn.addEventListener('click',()=>{const ans=btn.nextElementSibling;const isOpen=btn.classList.contains('open');document.querySelectorAll('.faq-q.open').forEach(ob=>{ob.classList.remove('open');ob.setAttribute('aria-expanded','false');ob.nextElementSibling.style.maxHeight=null});if(!isOpen){btn.classList.add('open');btn.setAttribute('aria-expanded','true');ans.style.maxHeight=ans.scrollHeight+'px'}})});
 document.querySelectorAll('.gal-split').forEach(split=>{const after=split.querySelector('.gal-half:nth-child(2)');const divLine=split.querySelector('.gal-div');const arrow=split.querySelector('.gal-arrow');if(!after||!divLine)return;let dragging=false;function setPos(x){const rect=split.getBoundingClientRect();let pct=((x-rect.left)/rect.width)*100;pct=Math.max(5,Math.min(95,pct));after.style.clipPath='inset(0 0 0 '+pct+'%)';divLine.style.left=pct+'%';if(arrow)arrow.style.left=pct+'%'}split.addEventListener('mousedown',function(e){dragging=true;setPos(e.clientX);e.preventDefault()});window.addEventListener('mousemove',function(e){if(dragging)setPos(e.clientX)});window.addEventListener('mouseup',function(){dragging=false});split.addEventListener('touchstart',function(e){dragging=true;setPos(e.touches[0].clientX)},{passive:true});window.addEventListener('touchmove',function(e){if(dragging)setPos(e.touches[0].clientX)},{passive:true});window.addEventListener('touchend',function(){dragging=false})});
+document.querySelectorAll('.vt-card').forEach(c=>{c.addEventListener('click',()=>{const src=c.dataset.video;if(!src)return;document.querySelectorAll('.vt-card video').forEach(v=>{v.pause();v.remove();v.closest('.vt-card').classList.remove('playing')});const vid=document.createElement('video');vid.src=src;vid.controls=true;vid.autoplay=true;vid.playsInline=true;vid.style.cssText='position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2';c.querySelector('.vt-thumb').appendChild(vid);c.classList.add('playing');vid.addEventListener('ended',()=>{vid.remove();c.classList.remove('playing')})})});
 </script>
 
 <!-- FLOATING CHAT -->
