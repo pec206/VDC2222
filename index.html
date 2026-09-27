@@ -23,12 +23,12 @@
 :root{
   --b950:#0f2236;--b900:#1a3a52;--b800:#1e4a6e;--b700:#2D5F8A;--b600:#3a74a8;
   --b400:#5b9cc9;--b200:#b8d9ef;--b100:#d9edf8;--b50:#eaf4fb;
-  --g700:#6b9900;--g600:#8ab300;--g500:#c0ff00;--g400:#c0ff00;
+  --g700:#3d6600;--g600:#4a7a00;--g500:#6b9900;--g400:#8ab300;
   --g200:#e0ff80;--g100:#f0ffcc;--g50:#f8ffe6;
   --s950:#080f16;--s900:#0f1923;--s800:#1c2b38;--s700:#263a4a;
   --s600:#3d5268;--s400:#7a95ab;--s300:#a8bfce;--s200:#c8d8e4;
   --s100:#e8eff5;--s50:#f5f8fb;--w:#ffffff;
-  --gg:linear-gradient(135deg,#8ab300 0%,#c0ff00 100%);
+  --gg:linear-gradient(135deg,#4a7a00 0%,#8ab300 100%);
   --gb:linear-gradient(135deg,#1e4a6e 0%,#2D5F8A 100%);
   --gcard:linear-gradient(150deg,#eaf4fb 0%,#f8ffe6 100%);
   --fd:'DM Serif Display',Georgia,serif;--fb:'Plus Jakarta Sans',system-ui,sans-serif;
@@ -40,9 +40,9 @@
   --glass-b:1.5px solid rgba(255,255,255,.45);
   --glass-blur:blur(30px) saturate(1.6);
   --glass-sh:0 8px 32px rgba(0,0,0,.07),inset 0 1.5px 0 rgba(255,255,255,.8),inset 0 -0.5px 0 rgba(0,0,0,.04);
-  --glass-card:rgba(255,255,255,.55);
-  --glass-card-b:1px solid rgba(255,255,255,.65);
-  --glass-card-sh:0 8px 32px rgba(0,0,0,.06),inset 0 1.5px 0 rgba(255,255,255,.9),inset 0 -0.5px 0 rgba(0,0,0,.03);
+  --glass-card:rgba(255,255,255,.25);
+  --glass-card-b:1px solid rgba(255,255,255,.45);
+  --glass-card-sh:0 8px 32px rgba(0,0,0,.08),inset 0 1.5px 0 rgba(255,255,255,.7),inset 0 -0.5px 0 rgba(0,0,0,.03);
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
@@ -554,8 +554,8 @@ ul{list-style:none}
 .ins-track:hover{animation-play-state:paused}
 .ins-lbl{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55);white-space:nowrap;flex-shrink:0}
 .ins-sep{color:rgba(255,255,255,.15);font-size:14px;flex-shrink:0}
-.ins-logo{height:28px;width:auto;object-fit:contain;filter:brightness(0) invert(1) opacity(.6);transition:filter .3s;flex-shrink:0}
-.ins-logo:hover{filter:brightness(0) invert(1) opacity(.9)}
+.ins-logo{height:28px;width:auto;object-fit:contain;transition:filter .3s;flex-shrink:0}
+.ins-logo:hover{filter:brightness(1.1)}
 .ct-bar{background:rgba(255,255,255,.35);backdrop-filter:blur(20px) saturate(1.4);-webkit-backdrop-filter:blur(20px) saturate(1.4);padding:13px 0;overflow:hidden;position:relative;border-top:1px solid rgba(255,255,255,.5);border-bottom:1px solid rgba(255,255,255,.5)}
 .ct-bar::before,.ct-bar::after{content:'';position:absolute;top:0;bottom:0;width:48px;z-index:2;pointer-events:none}
 .ct-bar::before{left:0;background:linear-gradient(to right,rgba(219,233,244,.6),transparent)}
