@@ -213,14 +213,14 @@ ul{list-style:none}
 .srv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:20px}
 .srv-grid-2{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .sc{border-radius:var(--rl);overflow:hidden;
-  border:2px solid transparent;
+  border:2.5px solid transparent;
   background:
-    linear-gradient(145deg,rgba(10,30,60,.86),rgba(6,20,48,.92)) padding-box,
-    linear-gradient(135deg,rgba(160,200,255,.55),rgba(80,140,240,.15) 40%,rgba(60,110,220,.1) 60%,rgba(150,195,255,.5)) border-box;
-  backdrop-filter:blur(18px) saturate(1.5);-webkit-backdrop-filter:blur(18px) saturate(1.5);
+    linear-gradient(145deg,rgba(10,30,60,.58),rgba(6,20,48,.65)) padding-box,
+    linear-gradient(135deg,rgba(180,215,255,.7),rgba(100,160,250,.2) 35%,rgba(60,110,220,.12) 65%,rgba(170,210,255,.65)) border-box;
+  backdrop-filter:blur(20px) saturate(1.6);-webkit-backdrop-filter:blur(20px) saturate(1.6);
   transition:all .32s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;cursor:pointer;
-  box-shadow:0 8px 32px rgba(10,40,90,.3),0 0 24px rgba(80,140,255,.08),inset 0 1px 0 rgba(255,255,255,.12)}
-.sc:hover{box-shadow:0 16px 48px rgba(10,40,90,.38),0 0 36px rgba(80,140,255,.14),inset 0 1px 0 rgba(255,255,255,.18);transform:translateY(-6px)}
+  box-shadow:0 12px 40px rgba(10,30,80,.35),0 4px 20px rgba(0,0,0,.15),0 0 28px rgba(70,130,255,.1),inset 0 1px 0 rgba(255,255,255,.15)}
+.sc:hover{box-shadow:0 20px 56px rgba(10,30,80,.42),0 8px 28px rgba(0,0,0,.18),0 0 40px rgba(70,130,255,.16),inset 0 1px 0 rgba(255,255,255,.22);transform:translateY(-6px)}
 .sc-img{aspect-ratio:3/2;overflow:hidden;position:relative;background:var(--gcard);flex-shrink:0}
 .sc-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
 .sc:hover .sc-img img{transform:scale(1.05)}
@@ -232,7 +232,8 @@ ul{list-style:none}
   box-shadow:inset 0 1px 0 rgba(255,255,255,.5)}
 .sc-bdg--w{background:rgba(255,255,255,.45);color:var(--b900);backdrop-filter:blur(12px) saturate(1.3);-webkit-backdrop-filter:blur(12px) saturate(1.3);
   border:1px solid rgba(255,255,255,.6);box-shadow:inset 0 1px 0 rgba(255,255,255,.7)}
-.sc-body{padding:18px 20px;flex:1;display:flex;flex-direction:column}
+.sc-body{padding:18px 20px;flex:1;display:flex;flex-direction:column;
+  background:rgba(6,20,45,.4)}
 .sc-body h3{font-size:16px;font-weight:800;color:var(--w);margin-bottom:6px}
 .sc-body p{font-size:13px;line-height:1.6;color:rgba(255,255,255,.6);margin-bottom:14px;flex:1}
 .sc-lnk{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:var(--g400);transition:gap .2s}
