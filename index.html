@@ -215,8 +215,9 @@ ul{list-style:none}
 .sc{border-radius:var(--rl);overflow:hidden;
   border:2.5px solid transparent;
   background:
-    linear-gradient(135deg,rgba(195,218,248,.88),rgba(215,232,255,.92) 25%,rgba(240,248,255,.96) 45%,rgba(255,255,255,.98) 50%,rgba(235,245,255,.94) 55%,rgba(210,228,252,.9) 75%,rgba(190,214,245,.86)) padding-box,
+    linear-gradient(135deg,rgba(195,218,248,.55),rgba(215,232,255,.6) 25%,rgba(240,248,255,.7) 45%,rgba(255,255,255,.75) 50%,rgba(235,245,255,.65) 55%,rgba(210,228,252,.58) 75%,rgba(190,214,245,.52)) padding-box,
     linear-gradient(135deg,rgba(160,200,255,.75),rgba(90,150,240,.2) 35%,rgba(50,100,210,.12) 65%,rgba(150,195,255,.7)) border-box;
+  backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);
   transition:all .32s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;cursor:pointer;
   box-shadow:0 6px 24px rgba(20,60,120,.12),0 2px 8px rgba(0,0,0,.06),inset 0 1px 0 rgba(255,255,255,.9)}
 .sc:hover{box-shadow:0 12px 36px rgba(20,60,120,.18),0 4px 14px rgba(0,0,0,.08),inset 0 1px 0 rgba(255,255,255,.95);transform:translateY(-6px)}
