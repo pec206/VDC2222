@@ -124,7 +124,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}ul{list-st
 .sci{display:flex;align-items:center;gap:7px;font-size:13px;color:rgba(255,255,255,.42);font-weight:500}
 .sci svg{width:14px;height:14px;stroke:#c0ff00;fill:none;stroke-width:2;stroke-linecap:round;flex-shrink:0}
 .rel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.rel-card{border-radius:var(--rl);overflow:hidden;border:.5px solid var(--s100);background:var(--w);transition:all .28s}
+.rel-card{border-radius:var(--rl);overflow:hidden;border:2px solid rgba(100,170,255,.3);background:rgba(10,30,60,.6);transition:all .28s;backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);box-shadow:0 6px 24px rgba(0,0,0,.15),0 2px 8px rgba(0,0,0,.08),inset 0 1px 0 rgba(255,255,255,.12)}
 .rel-card:hover{box-shadow:var(--shl);transform:translateY(-5px);border-color:transparent}
 .rel-img{height:170px;overflow:hidden}.rel-img img{width:100%;height:100%;object-fit:cover;transition:transform .45s}
 .rel-card:hover .rel-img img{transform:scale(1.05)}
@@ -153,14 +153,14 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}ul{list-st
 @keyframes ch-ring{0%{transform:scale(1);opacity:1}100%{transform:scale(1.6);opacity:0}}
 .faq-s{background:var(--s50);padding:clamp(60px,7vw,100px) 0}
 .faq-grid{max-width:800px;margin:0 auto}
-.faq-item{background:var(--w);border-radius:var(--rl);margin-bottom:12px;border:1px solid var(--s100);overflow:hidden;transition:all .2s}
-.faq-item:hover{border-color:var(--s200)}
-.faq-q{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;cursor:pointer;font-size:15px;font-weight:700;color:var(--b900);gap:16px}
-.faq-q svg{width:20px;height:20px;stroke:var(--s400);flex-shrink:0;transition:transform .3s}
-.faq-item.open .faq-q svg{transform:rotate(180deg);stroke:var(--g600)}
+.faq-item{border-radius:var(--rl);margin-bottom:12px;overflow:hidden;transition:all .2s;border:2.5px solid transparent;background:linear-gradient(135deg,rgba(8,28,58,.6),rgba(12,35,68,.62) 25%,rgba(20,48,85,.68) 45%,rgba(28,58,100,.72) 50%,rgba(18,44,78,.66) 55%,rgba(10,32,62,.61) 75%,rgba(6,24,52,.58)) padding-box,linear-gradient(135deg,rgba(160,200,255,.75),rgba(90,150,240,.2) 35%,rgba(50,100,210,.12) 65%,rgba(150,195,255,.7)) border-box;backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);box-shadow:0 6px 24px rgba(0,0,0,.15),0 2px 8px rgba(0,0,0,.08),inset 0 1px 0 rgba(255,255,255,.12)}
+.faq-item:hover{box-shadow:0 10px 30px rgba(0,0,0,.2),inset 0 1px 0 rgba(255,255,255,.16)}
+.faq-q{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;cursor:pointer;font-size:15px;font-weight:700;color:var(--w);gap:16px}
+.faq-q svg{width:20px;height:20px;stroke:rgba(255,255,255,.5);flex-shrink:0;transition:transform .3s}
+.faq-item.open .faq-q svg{transform:rotate(180deg);stroke:var(--g400)}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
 .faq-item.open .faq-a{max-height:500px}
-.faq-a-in{padding:0 24px 20px;font-size:14px;line-height:1.8;color:var(--s600)}
+.faq-a-in{padding:0 24px 20px;font-size:14px;line-height:1.8;color:rgba(255,255,255,.7)}
 .skip-link{position:absolute;top:-100%;left:16px;background:var(--b900);color:var(--w);padding:12px 24px;border-radius:0 0 8px 8px;font-size:14px;font-weight:700;z-index:9999;transition:top .2s}.skip-link:focus{top:0}
 .cluster-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}.cluster-grid a{display:flex;flex-direction:column;gap:10px;padding:22px 20px;background:var(--w);border:.5px solid var(--s100);border-radius:var(--rl);transition:all .28s;text-decoration:none}.cluster-grid a:hover{box-shadow:var(--shm);transform:translateY(-4px);border-color:transparent}.cluster-grid .cg-icon{width:42px;height:42px;border-radius:12px;background:var(--b50);display:flex;align-items:center;justify-content:center}.cluster-grid .cg-icon svg{width:20px;height:20px;stroke:var(--b700);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.cluster-grid h3{font-size:14px;font-weight:800;color:var(--b900);line-height:1.3}.cluster-grid p{font-size:12.5px;line-height:1.6;color:var(--s600)}.cluster-grid .cg-dr{font-size:11px;font-weight:600;color:var(--g600);margin-top:auto}
 @media(max-width:768px){.cluster-grid{grid-template-columns:1fr}}
