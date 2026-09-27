@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 <style>
-:root{--b900:#1a3a52;--b800:#1e4a6e;--b700:#2D5F8A;--b50:#eaf4fb;--g600:#5a9f2a;--g500:#7AB648;--g400:#93c96a;--g50:#f3fae8;--s900:#0f1923;--s600:#3d5268;--s400:#7a95ab;--s200:#c8d8e4;--s100:#e8eff5;--s50:#f5f8fb;--w:#fff;--gg:linear-gradient(135deg,#5a9f2a,#7AB648);--gb:linear-gradient(135deg,#1e4a6e,#2D5F8A);--gcard:linear-gradient(150deg,#eaf4fb,#f3fae8);--fd:"DM Serif Display",Georgia,serif;--fb:"Plus Jakarta Sans",system-ui,sans-serif;--shm:0 6px 24px rgba(15,25,35,.10);--shl:0 16px 48px rgba(15,25,35,.14);--cw:1160px;--px:clamp(20px,5vw,48px);--r:8px;--rl:22px;--rxl:32px}
+:root{--b900:#1a3a52;--b800:#1e4a6e;--b700:#2D5F8A;--b50:#eaf4fb;--g600:#8ab300;--g500:#c0ff00;--g400:#c0ff00;--g50:#f8ffe6;--s900:#0f1923;--s600:#3d5268;--s400:#7a95ab;--s200:#c8d8e4;--s100:#e8eff5;--s50:#f5f8fb;--w:#fff;--gg:linear-gradient(135deg,#8ab300,#c0ff00);--gb:linear-gradient(135deg,#1e4a6e,#2D5F8A);--gcard:linear-gradient(150deg,#eaf4fb,#f3fae8);--fd:"DM Serif Display",Georgia,serif;--fb:"Plus Jakarta Sans",system-ui,sans-serif;--shm:0 6px 24px rgba(15,25,35,.10);--shl:0 16px 48px rgba(15,25,35,.14);--cw:1160px;--px:clamp(20px,5vw,48px);--r:8px;--rl:22px;--rxl:32px}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}body{font-family:var(--fb);color:var(--s900);background:var(--w);overflow-x:hidden;line-height:1.6}
 img{max-width:100%;height:auto;display:block}a{text-decoration:none;color:inherit}button{font-family:inherit;cursor:pointer;border:none;background:none}ul{list-style:none}
 .W{max-width:var(--cw);margin:0 auto;padding:0 var(--px)}.S{padding:clamp(60px,7vw,100px) 0}.S--lt{background:var(--s50)}.S--dk{background:var(--s900);color:var(--w)}
@@ -24,7 +24,7 @@ img{max-width:100%;height:auto;display:block}a{text-decoration:none;color:inheri
 .Hlg{font-family:var(--fd);font-size:clamp(30px,4vw,50px);line-height:1.12;letter-spacing:-.015em;color:var(--b900)}.Hlg--lt{color:var(--w)}.em{color:var(--g500);font-style:italic}.em--lt{color:var(--g400);font-style:italic}
 .Blg{font-size:clamp(14px,1.4vw,16px);line-height:1.78;color:var(--s600)}.Blg--lt{color:rgba(255,255,255,.62)}
 .btn{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;padding:13px 26px;border-radius:100px;white-space:nowrap;transition:all .25s;cursor:pointer}
-.btn--g{background:var(--gg);color:var(--w)}.btn--g:hover{transform:translateY(-2px)}.btn--gh{background:rgba(255,255,255,.1);color:var(--w);border:1.5px solid rgba(255,255,255,.28)}.btn--gh:hover{background:rgba(255,255,255,.18);transform:translateY(-2px)}.btn--b{background:var(--gb);color:var(--w)}.btn--b:hover{transform:translateY(-2px)}.btn--od{background:transparent;color:var(--b800);border:1.5px solid var(--s200)}.btn--od:hover{background:var(--s50)}.btn--lg{font-size:16px;padding:16px 36px}.btn--arr::after{content:"→";font-size:14px;transition:transform .2s}.btn--arr:hover::after{transform:translateX(4px)}
+.btn--g{background:rgba(192,255,0,.18);color:var(--w);border:1.5px solid rgba(192,255,0,.25);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);box-shadow:0 4px 20px rgba(192,255,0,.12),inset 0 1px 0 rgba(255,255,255,.5),inset 0 -1px 0 rgba(192,255,0,.08)}.btn--g:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(192,255,0,.22),inset 0 1px 0 rgba(255,255,255,.7);border-color:rgba(192,255,0,.4)}.btn--gh{background:rgba(255,255,255,.1);color:var(--w);border:1.5px solid rgba(255,255,255,.28)}.btn--gh:hover{background:rgba(255,255,255,.18);transform:translateY(-2px)}.btn--b{background:rgba(45,95,138,.15);color:var(--w);border:1.5px solid rgba(45,95,138,.22);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);box-shadow:0 4px 20px rgba(45,95,138,.1),inset 0 1px 0 rgba(255,255,255,.5),inset 0 -1px 0 rgba(45,95,138,.06)}.btn--b:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(45,95,138,.2),inset 0 1px 0 rgba(255,255,255,.7);border-color:rgba(45,95,138,.35)}.btn--od{background:transparent;color:var(--b800);border:1.5px solid var(--s200)}.btn--od:hover{background:var(--s50)}.btn--lg{font-size:16px;padding:16px 36px}.btn--arr::after{content:"→";font-size:14px;transition:transform .2s}.btn--arr:hover::after{transform:translateX(4px)}
 .rv{opacity:0;transform:translateY(18px);transition:opacity .6s cubic-bezier(.4,0,.2,1),transform .6s cubic-bezier(.4,0,.2,1)}.rv.on{opacity:1;transform:none}.rv-l{transform:translateX(-18px)}.rv-l.on{transform:none}.rv-r{transform:translateX(18px)}.rv-r.on{transform:none}.d1{transition-delay:.1s}.d2{transition-delay:.18s}.d3{transition-delay:.26s}
 #hdr{position:fixed;top:0;left:0;right:0;z-index:1000;transition:background .3s,box-shadow .3s;padding:0 var(--px)}#hdr.on{background:rgba(10,22,36,.96);backdrop-filter:blur(24px);box-shadow:0 1px 0 rgba(255,255,255,.05),0 4px 24px rgba(0,0,0,.22)}.hdr-in{max-width:var(--cw);margin:0 auto;display:flex;align-items:center;gap:20px;padding:14px 0}.hdr-logo img{height:40px;width:auto}.hdr-nav{flex:1;display:flex;justify-content:center}.nav-ul{display:flex;align-items:center;gap:2px}.nav-ul a{font-size:12.5px;font-weight:600;color:rgba(255,255,255,.72);padding:6px 9px;border-radius:7px;transition:all .2s;white-space:nowrap}.nav-ul a:hover,.nav-ul a.ac{color:var(--w);background:rgba(255,255,255,.08)}.hdr-r{display:flex;align-items:center;gap:12px;flex-shrink:0}.hdr-lic{font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.38);line-height:1.4;text-align:right}.hdr-lic b{color:rgba(255,255,255,.62);display:block;font-size:10px}.hbg{display:none;flex-direction:column;gap:5px;padding:6px;cursor:pointer}.hbg span{display:block;width:22px;height:2px;background:var(--w);border-radius:2px;transition:all .3s}.hbg.op span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}.hbg.op span:nth-child(2){opacity:0}.hbg.op span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}.mob-nav{display:none;position:fixed;inset:0;z-index:1001;background:rgba(10,22,36,.98);backdrop-filter:blur(24px);flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:80px 32px 40px}.mob-nav.op{display:flex}.mob-nav a{font-size:19px;font-weight:700;color:rgba(255,255,255,.7);padding:12px 40px;border-radius:12px;width:100%;text-align:center;transition:all .2s}.mob-nav a:hover{color:var(--w);background:rgba(255,255,255,.08)}.mob-nav .btn{width:100%;justify-content:center;margin-top:12px}.mob-x{position:absolute;top:22px;right:22px;color:rgba(255,255,255,.6);font-size:22px;cursor:pointer;padding:8px;line-height:1}
 .dr-hero{background:linear-gradient(rgba(10,22,36,.88),rgba(10,22,36,.88)),url('hero-bg.webp') center/cover no-repeat;padding:130px var(--px) 60px;position:relative;overflow:hidden}.dr-hero::before{content:"";position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(122,182,72,.07) 0%,transparent 70%);top:-100px;right:-80px;pointer-events:none}.dr-hero-in{max-width:var(--cw);margin:0 auto;display:grid;grid-template-columns:280px 1fr;gap:52px;align-items:center;position:relative;z-index:1}
@@ -105,27 +105,42 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
 @media(max-width:600px){.tech-grid{grid-template-columns:1fr}}
 /* Video Testimonials */
 .vt-sec{padding:var(--sy) 0}
-.vt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.vt-card{position:relative;border-radius:var(--rl);overflow:hidden;cursor:pointer;
-  background:var(--glass-card);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);
-  border:var(--glass-card-b);box-shadow:var(--glass-card-sh);transition:transform .3s,box-shadow .3s}
+.vt-slider{position:relative}
+.vt-grid{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;
+  -ms-overflow-style:none;scrollbar-width:none;padding:4px 0 12px}
+.vt-grid::-webkit-scrollbar{display:none}
+.vt-card{flex:0 0 200px;border-radius:var(--rl);overflow:hidden;cursor:pointer;scroll-snap-align:start;
+  background:rgba(45,95,138,.05);backdrop-filter:blur(16px) saturate(1.2);-webkit-backdrop-filter:blur(16px) saturate(1.2);
+  border:1.5px solid rgba(45,95,138,.12);box-shadow:0 4px 24px rgba(45,95,138,.06);transition:transform .3s,box-shadow .3s}
 .vt-card:hover{transform:translateY(-4px);box-shadow:var(--shm)}
-.vt-thumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--s800)}
+.vt-thumb{position:relative;aspect-ratio:9/16;overflow:hidden;background:var(--s800)}
 .vt-thumb img{width:100%;height:100%;object-fit:cover}
 .vt-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
   background:rgba(15,25,35,.25);transition:background .3s}
 .vt-card:hover .vt-play{background:rgba(15,25,35,.4)}
-.vt-play-btn{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+.vt-play-btn{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;
   background:rgba(255,255,255,.25);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);
   border:1.5px solid rgba(255,255,255,.45);box-shadow:0 8px 32px rgba(0,0,0,.15);transition:transform .3s,background .3s}
 .vt-card:hover .vt-play-btn{transform:scale(1.1);background:rgba(255,255,255,.35)}
-.vt-play-btn svg{width:22px;height:22px;fill:var(--w);margin-left:3px}
-.vt-info{padding:14px 16px}
-.vt-dr{font-size:13px;font-weight:700;color:var(--b900)}
-.vt-svc{font-size:11px;color:var(--s400);font-weight:600;margin-top:2px}
+.vt-play-btn svg{width:18px;height:18px;fill:var(--w);margin-left:2px}
+.vt-info{padding:10px 12px}
+.vt-dr{font-size:12px;font-weight:700;color:var(--b900)}
+.vt-svc{font-size:10px;color:var(--s400);font-weight:600;margin-top:2px}
 .vt-card.playing .vt-play{display:none}
 .vt-card.playing .vt-thumb img{display:none}
-@media(max-width:768px){.vt-grid{grid-template-columns:1fr}}
+.vt-arr{position:absolute;top:50%;transform:translateY(-70%);width:40px;height:40px;border-radius:50%;
+  background:var(--glass-card);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);
+  border:var(--glass-card-b);box-shadow:var(--shm);cursor:pointer;display:flex;align-items:center;justify-content:center;
+  z-index:2;transition:all .25s;color:var(--b900)}
+.vt-arr:hover{background:var(--b900);color:var(--w);box-shadow:var(--shl)}
+.vt-arr svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.vt-arr-l{left:-16px}
+.vt-arr-r{right:-16px}
+@media(max-width:768px){
+  .vt-card{flex:0 0 170px}
+  .vt-arr{display:none}
+}
+@media(max-width:480px){.vt-card{flex:0 0 150px}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":["Dentist","Physician"],"name":"Dr. Ammar Anbari","alternateName":"دكتور عمار عنبري - زراعة أسنان أبوظبي","description":"Dr. Ammar Anbari — Restorative Dentist and Implantologist at Vision Dental Clinic Abu Dhabi. Expert in dental implants, full-arch rehabilitation, porcelain veneers, and digital smile design using CBCT-guided surgery.","url":"https://visiondentalclinic.com/dr-ammar.html","worksFor":{"@type":"Dentist","name":"Vision Dental Clinic","url":"https://visiondentalclinic.com","address":{"@type":"PostalAddress","addressLocality":"Abu Dhabi","addressCountry":"AE"}}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What types of veneers does Dr. Ammar offer?","acceptedAnswer":{"@type":"Answer","text":"Both porcelain (E-max) and composite veneers. Porcelain veneers last 15–20 years and are custom-made. Composite veneers are applied in one visit and are suitable for minor corrections."}},{"@type":"Question","name":"Can Dr. Ammar handle both implants and cosmetic work?","acceptedAnswer":{"@type":"Answer","text":"Yes. He manages surgical placement and restorative design, providing continuity from implant to final crown without referral to another specialist."}},{"@type":"Question","name":"How does Dr. Ammar plan smile design cases?","acceptedAnswer":{"@type":"Answer","text":"Using Digital Smile Design software and 3Shape scanning, he creates a virtual preview of the final result. A physical mockup (trial smile) is then made so the patient can see and approve the design before any preparation begins. Unlimited adjustments are included."}},{"@type":"Question","name":"What implant system does the clinic use?","acceptedAnswer":{"@type":"Answer","text":"Straumann® implants, a Swiss system with over 60 years of research and a documented success rate above 97% over 10 years."}},{"@type":"Question","name":"How long does a full-arch rehabilitation take?","acceptedAnswer":{"@type":"Answer","text":"Typically 4–6 months from planning to final prosthetic delivery. With immediate loading protocols, temporary teeth can be placed the same day as implant surgery in qualifying cases."}}]}</script>
@@ -194,6 +209,7 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
         <a href="gallery.html" class="btn btn--gh">Gallery</a>
         <a href="case-studies.html#ammar" class="btn btn--gh">Cases</a>
       </div>
+      </div>
     </div>
   </div>
 </section>
@@ -213,6 +229,7 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
         <div class="spec-tags"><a href="dental-implants.html" class="spec-tag">Dental Implants</a><a href="oral-surgery.html" class="spec-tag">Surgical Extractions</a><a href="oral-surgery.html" class="spec-tag">Bone Grafting</a><a href="smile-design.html" class="spec-tag">Porcelain Veneers</a><a href="prosthodontics.html" class="spec-tag">Crowns & Bridges</a><a href="smile-design.html" class="spec-tag">Smile Design</a><span class="spec-tag">Full Mouth Cases</span><span class="spec-tag">Digital Workflow</span></div>
         <p class="eye" style="margin-top:32px">Memberships</p>
         <div class="memb-list"><div class="memb-item">Emirates Dental Association</div><div class="memb-item">International Congress of Oral Implantologists (ICOI)</div></div>
+      </div>
       </div>
     </div>
   </div>
@@ -387,28 +404,33 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
       <p class="eye eye--cx rv">Real Experiences</p>
       <h3 class="Hlg rv d1" id="vt-h" style="font-size:clamp(22px,2.5vw,32px)">Patient <em class="em">Testimonials</em></h3>
     </div>
+    <div class="vt-slider">
+      <button class="vt-arr vt-arr-l" aria-label="Previous"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <button class="vt-arr vt-arr-r" aria-label="Next"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
     <div class="vt-grid">
       <div class="vt-card rv" data-video="videos/testimonial-ammar-1.mp4">
         <div class="vt-thumb">
-          <img src="videos/thumbs/testimonial-ammar-1.webp" alt="Patient testimonial — Dr. Ammar Anbari" loading="lazy" width="640" height="360">
+          <img src="videos/thumbs/testimonial-ammar-1.webp" alt="Patient testimonial — Dr. Ammar Anbari" loading="lazy" width="360" height="640">
           <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
         </div>
         <div class="vt-info"><div class="vt-dr">Patient Testimonial</div><div class="vt-svc">General Dentistry</div></div>
       </div>
       <div class="vt-card rv d1" data-video="videos/testimonial-ammar-2.mp4">
         <div class="vt-thumb">
-          <img src="videos/thumbs/testimonial-ammar-2.webp" alt="Patient testimonial — Dr. Ammar Anbari" loading="lazy" width="640" height="360">
+          <img src="videos/thumbs/testimonial-ammar-2.webp" alt="Patient testimonial — Dr. Ammar Anbari" loading="lazy" width="360" height="640">
           <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
         </div>
         <div class="vt-info"><div class="vt-dr">Patient Testimonial</div><div class="vt-svc">General Dentistry</div></div>
       </div>
       <div class="vt-card rv d2" data-video="videos/testimonial-veneers.mp4">
         <div class="vt-thumb">
-          <img src="videos/thumbs/testimonial-veneers.webp" alt="Patient testimonial — veneers" loading="lazy" width="640" height="360">
+          <img src="videos/thumbs/testimonial-veneers.webp" alt="Patient testimonial — veneers" loading="lazy" width="360" height="640">
           <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
         </div>
         <div class="vt-info"><div class="vt-dr">Patient Testimonial</div><div class="vt-svc">Veneers</div></div>
       </div>
+      </div>
+    </div>
     </div>
   </div>
 </section>

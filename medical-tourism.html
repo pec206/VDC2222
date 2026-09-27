@@ -20,10 +20,10 @@
 /* ═══ UNIFIED TOKENS — same as index.html ═══ */
 :root{
   --b900:#1a3a52;--b800:#1e4a6e;--b700:#2D5F8A;--b50:#eaf4fb;
-  --g600:#5a9f2a;--g500:#7AB648;--g400:#93c96a;--g50:#f3fae8;
+  --g600:#8ab300;--g500:#c0ff00;--g400:#c0ff00;--g50:#f8ffe6;
   --s900:#0f1923;--s800:#1c2b38;--s600:#3d5268;--s400:#7a95ab;
   --s200:#c8d8e4;--s100:#e8eff5;--s50:#f5f8fb;--w:#fff;
-  --gg:linear-gradient(135deg,#5a9f2a,#7AB648);
+  --gg:linear-gradient(135deg,#8ab300,#c0ff00);
   --gb:linear-gradient(135deg,#1e4a6e,#2D5F8A);
   --gcard:linear-gradient(150deg,#eaf4fb,#f3fae8);
   --fd:'DM Serif Display',Georgia,serif;--fb:'Plus Jakarta Sans',system-ui,sans-serif;
@@ -44,9 +44,9 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}ul{list-st
 .Hlg--lt{color:var(--w)}.em{color:var(--g500);font-style:italic}.em--lt{color:var(--g400);font-style:italic}
 .Blg{font-size:clamp(14px,1.4vw,16px);line-height:1.78;color:var(--s600)}.Blg--lt{color:rgba(255,255,255,.62)}
 .btn{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;padding:13px 26px;border-radius:100px;white-space:nowrap;transition:all .25s;cursor:pointer}
-.btn--g{background:var(--gg);color:var(--w);box-shadow:0 4px 18px rgba(90,159,42,.30)}.btn--g:hover{transform:translateY(-2px)}
+.btn--g{background:rgba(192,255,0,.18);color:var(--w);border:1.5px solid rgba(192,255,0,.25);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);box-shadow:0 4px 20px rgba(192,255,0,.12),inset 0 1px 0 rgba(255,255,255,.5),inset 0 -1px 0 rgba(192,255,0,.08)}.btn--g:hover{transform:translateY(-2px)}
 .btn--gh{background:rgba(255,255,255,.1);color:var(--w);border:1.5px solid rgba(255,255,255,.28)}.btn--gh:hover{background:rgba(255,255,255,.18);transform:translateY(-2px)}
-.btn--b{background:var(--gb);color:var(--w)}.btn--b:hover{transform:translateY(-2px)}
+.btn--b{background:rgba(45,95,138,.15);color:var(--w);border:1.5px solid rgba(45,95,138,.22);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);box-shadow:0 4px 20px rgba(45,95,138,.1),inset 0 1px 0 rgba(255,255,255,.5),inset 0 -1px 0 rgba(45,95,138,.06)}.btn--b:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(45,95,138,.2),inset 0 1px 0 rgba(255,255,255,.7);border-color:rgba(45,95,138,.35)}
 .btn--lg{font-size:16px;padding:16px 36px}.btn--arr::after{content:'→';font-size:14px;transition:transform .2s}.btn--arr:hover::after{transform:translateX(4px)}
 .rv{opacity:0;transform:translateY(18px);transition:opacity .6s cubic-bezier(.4,0,.2,1),transform .6s cubic-bezier(.4,0,.2,1)}.rv.on{opacity:1;transform:none}
 .rv-l{transform:translateX(-18px)}.rv-l.on{transform:none}.rv-r{transform:translateX(18px)}.rv-r.on{transform:none}
@@ -249,7 +249,7 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
   <div class="srv-hero-ov"></div>
   <div class="srv-hero-in">
     <div class="hero-tag">International Patients Welcome</div>
-    <div class="mt-img-frame" style="margin-bottom:36px;border-radius:var(--rxl);overflow:hidden;border:3px solid var(--g500);box-shadow:0 16px 48px rgba(90,159,42,.18)">
+    <div class="mt-img-frame" style="margin-bottom:36px;border-radius:var(--rxl);overflow:hidden;border:3px solid var(--g500);box-shadow:0 16px 48px rgba(192,255,0,.18)">
       <img src="medical-tourism-hero.webp" alt="Vision Dental Clinic — Medical Tourism Abu Dhabi" loading="lazy">
     </div>
     <h1>World-Class Dental Care.<br><em>Right in Abu Dhabi.</em></h1>
@@ -293,11 +293,11 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
     </div>
     <div class="offer-grid">
       <div class="offer-card rv"><div class="offer-ico offer-ico--b"><svg viewBox="0 0 24 24" fill="none" stroke="#2D5F8A" stroke-width="1.8" stroke-linecap="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div><h3>Dedicated Patient Coordinator</h3><p>A personal coordinator handles your case from first contact through final follow-up — treatment planning, scheduling, and every question along the way.</p></div>
-      <div class="offer-card rv d1"><div class="offer-ico offer-ico--g"><svg viewBox="0 0 24 24" fill="none" stroke="#5a9f2a" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><h3>Virtual Pre-Treatment Consultation</h3><p>Share your X-rays and photos before you travel. We provide a full digital treatment plan with timeline and cost — before you book your flight.</p></div>
+      <div class="offer-card rv d1"><div class="offer-ico offer-ico--g"><svg viewBox="0 0 24 24" fill="none" stroke="#8ab300" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><h3>Virtual Pre-Treatment Consultation</h3><p>Share your X-rays and photos before you travel. We provide a full digital treatment plan with timeline and cost — before you book your flight.</p></div>
       <div class="offer-card rv d2"><div class="offer-ico offer-ico--b"><svg viewBox="0 0 24 24" fill="none" stroke="#2D5F8A" stroke-width="1.8" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><h3>Airport &amp; Accommodation Assistance</h3><p>We assist with transport coordination from Abu Dhabi International Airport and can recommend nearby accommodation options.</p></div>
-      <div class="offer-card rv"><div class="offer-ico offer-ico--g"><svg viewBox="0 0 24 24" fill="none" stroke="#5a9f2a" stroke-width="1.8" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Transparent Pricing &amp; Written Plans</h3><p>No hidden costs. Every treatment plan is written and itemised before any procedure begins. No pressure, no surprise fees.</p></div>
+      <div class="offer-card rv"><div class="offer-ico offer-ico--g"><svg viewBox="0 0 24 24" fill="none" stroke="#8ab300" stroke-width="1.8" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Transparent Pricing &amp; Written Plans</h3><p>No hidden costs. Every treatment plan is written and itemised before any procedure begins. No pressure, no surprise fees.</p></div>
       <div class="offer-card rv d1"><div class="offer-ico offer-ico--b"><svg viewBox="0 0 24 24" fill="none" stroke="#2D5F8A" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><h3>Efficient Treatment Timelines</h3><p>Our in-house digital lab compresses timelines significantly. Many cases completed in one stay that would require multiple visits elsewhere.</p></div>
-      <div class="offer-card rv d2"><div class="offer-ico offer-ico--g"><svg viewBox="0 0 24 24" fill="none" stroke="#5a9f2a" stroke-width="1.8" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/></svg></div><h3>English &amp; Arabic Team</h3><p>Our clinical and administrative team communicates in English and Arabic. Patients from Europe, the GCC, East Africa, and Asia — communication is never a barrier.</p></div>
+      <div class="offer-card rv d2"><div class="offer-ico offer-ico--g"><svg viewBox="0 0 24 24" fill="none" stroke="#8ab300" stroke-width="1.8" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/></svg></div><h3>English &amp; Arabic Team</h3><p>Our clinical and administrative team communicates in English and Arabic. Patients from Europe, the GCC, East Africa, and Asia — communication is never a barrier.</p></div>
     </div>
   </div>
 </section>

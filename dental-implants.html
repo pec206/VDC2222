@@ -21,10 +21,10 @@
 <style>
 :root{
   --b900:#1a3a52;--b800:#1e4a6e;--b700:#2D5F8A;--b50:#eaf4fb;
-  --g600:#5a9f2a;--g500:#7AB648;--g100:#e8f5d8;--g50:#f3fae8;
+  --g600:#8ab300;--g500:#c0ff00;--g100:#f0ffcc;--g50:#f8ffe6;
   --s900:#0f1923;--s800:#1c2b38;--s600:#3d5268;--s400:#7a95ab;
   --s200:#c8d8e4;--s100:#e8eff5;--s50:#f5f8fb;--w:#fff;
-  --gg:linear-gradient(135deg,#5a9f2a,#7AB648);
+  --gg:linear-gradient(135deg,#8ab300,#c0ff00);
   --gb:linear-gradient(135deg,#1e4a6e,#2D5F8A);
   --fd:'DM Serif Display',Georgia,serif;--fb:'Plus Jakarta Sans',system-ui,sans-serif;
   --sh:0 2px 8px rgba(15,25,35,.08);--shm:0 6px 24px rgba(15,25,35,.10);--shl:0 16px 48px rgba(15,25,35,.14);
@@ -43,17 +43,17 @@ ul{list-style:none}
 .S--dk{background:var(--s900);color:var(--w)}
 .eye{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--g600);margin-bottom:12px}
 .eye::before{content:'';width:16px;height:2px;background:var(--gg);border-radius:2px}
-.eye--lt{color:#93c96a}.eye--lt::before{background:var(--gg)}
+.eye--lt{color:#c0ff00}.eye--lt::before{background:var(--gg)}
 .eye--cx{justify-content:center}
 .Hlg{font-family:var(--fd);font-size:clamp(30px,4vw,50px);line-height:1.12;letter-spacing:-.015em;color:var(--b900)}
 .Hlg--lt{color:var(--w)}
 .Hmd{font-family:var(--fd);font-size:clamp(22px,2.8vw,34px);line-height:1.2;color:var(--b900)}
-.em{color:var(--g500);font-style:italic}.em--lt{color:#93c96a;font-style:italic}
+.em{color:var(--g500);font-style:italic}.em--lt{color:#c0ff00;font-style:italic}
 .Blg{font-size:clamp(14px,1.4vw,16px);line-height:1.78;color:var(--s600)}
 .Blg--lt{color:rgba(255,255,255,.62)}
 .btn{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;padding:13px 26px;border-radius:100px;white-space:nowrap;transition:all .25s;cursor:pointer}
-.btn--g{background:var(--gg);color:var(--w);box-shadow:0 4px 18px rgba(90,159,42,.30)}
-.btn--g:hover{transform:translateY(-2px);box-shadow:0 8px 26px rgba(90,159,42,.40)}
+.btn--g{background:rgba(192,255,0,.18);color:var(--w);border:1.5px solid rgba(192,255,0,.25);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);box-shadow:0 4px 20px rgba(192,255,0,.12),inset 0 1px 0 rgba(255,255,255,.5),inset 0 -1px 0 rgba(192,255,0,.08)}
+.btn--g:hover{transform:translateY(-2px);box-shadow:0 8px 26px rgba(192,255,0,.40)}
 .btn--b{background:var(--gb);color:var(--w);box-shadow:0 4px 18px rgba(30,74,110,.25)}
 .btn--b:hover{transform:translateY(-2px)}
 .btn--od{background:transparent;color:var(--b800);border:1.5px solid var(--s200)}
@@ -104,12 +104,12 @@ ul{list-style:none}
 .srv-breadcrumb a:hover{color:rgba(255,255,255,.8)}
 .srv-breadcrumb span{color:rgba(255,255,255,.25)}
 .srv-hero h1{font-family:var(--fd);font-size:clamp(36px,5vw,64px);color:var(--w);line-height:1.07;letter-spacing:-.02em;margin-bottom:16px}
-.srv-hero h1 em{font-style:italic;color:#93c96a}
+.srv-hero h1 em{font-style:italic;color:#c0ff00}
 .srv-hero-sub{font-size:clamp(15px,1.5vw,17px);color:rgba(255,255,255,.62);line-height:1.75;max-width:520px;margin-bottom:32px}
 .srv-hero-acts{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:36px}
 .srv-hero-trust{display:flex;flex-wrap:wrap;gap:20px}
 .sht{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;color:rgba(255,255,255,.55)}
-.sht svg{width:16px;height:16px;stroke:#93c96a;fill:none;stroke-width:2;flex-shrink:0}
+.sht svg{width:16px;height:16px;stroke:#c0ff00;fill:none;stroke-width:2;flex-shrink:0}
 
 /* OVERVIEW */
 .ov-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
@@ -189,7 +189,7 @@ ul{list-style:none}
 .srv-cta-btns{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:28px}
 .srv-cta-inf{display:flex;justify-content:center;flex-wrap:wrap;gap:20px}
 .sci{display:flex;align-items:center;gap:7px;font-size:13px;color:rgba(255,255,255,.42);font-weight:500}
-.sci svg{width:14px;height:14px;stroke:#93c96a;fill:none;stroke-width:2;stroke-linecap:round;flex-shrink:0}
+.sci svg{width:14px;height:14px;stroke:#c0ff00;fill:none;stroke-width:2;stroke-linecap:round;flex-shrink:0}
 
 /* RELATED */
 .rel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -213,14 +213,14 @@ ul{list-style:none}
 .fl img{height:36px;width:auto;margin-bottom:12px}
 .fl-d{font-size:13px;line-height:1.7;color:rgba(255,255,255,.38);margin-bottom:18px;max-width:230px}
 .fl-lic{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.05);border:.5px solid rgba(255,255,255,.08);border-radius:var(--r);padding:8px 12px;font-size:9.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:rgba(255,255,255,.42)}
-.fl-lic svg{width:12px;height:12px;stroke:#93c96a;fill:none;stroke-width:2;flex-shrink:0}
+.fl-lic svg{width:12px;height:12px;stroke:#c0ff00;fill:none;stroke-width:2;flex-shrink:0}
 .fcol h4{font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:14px}
 .fls{display:flex;flex-direction:column;gap:8px}
 .fls a{font-size:13px;color:rgba(255,255,255,.46);transition:color .2s}
 .fls a:hover{color:var(--w)}
 .fcs{display:flex;flex-direction:column;gap:11px}
 .fci{display:flex;align-items:flex-start;gap:8px}
-.fci svg{width:13px;height:13px;stroke:#93c96a;fill:none;stroke-width:2;stroke-linecap:round;flex-shrink:0;margin-top:2px}
+.fci svg{width:13px;height:13px;stroke:#c0ff00;fill:none;stroke-width:2;stroke-linecap:round;flex-shrink:0;margin-top:2px}
 .fci p{font-size:12.5px;color:rgba(255,255,255,.46);line-height:1.5}
 .fb{border-top:.5px solid rgba(255,255,255,.05);padding:16px var(--px);max-width:var(--cw);margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
 .fb p,.fb a{font-size:11.5px;color:rgba(255,255,255,.25)}
@@ -260,27 +260,42 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
 .skip-link{position:absolute;top:-100%;left:16px;background:var(--b900);color:var(--w);padding:12px 24px;border-radius:0 0 8px 8px;font-size:14px;font-weight:700;z-index:9999;transition:top .2s}.skip-link:focus{top:0}
 /* Video Testimonials */
 .vt-sec{padding:var(--sy) 0}
-.vt-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
-.vt-card{position:relative;border-radius:var(--rl);overflow:hidden;cursor:pointer;
-  background:var(--glass-card);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);
-  border:var(--glass-card-b);box-shadow:var(--glass-card-sh);transition:transform .3s,box-shadow .3s}
+.vt-slider{position:relative}
+.vt-grid{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;
+  -ms-overflow-style:none;scrollbar-width:none;padding:4px 0 12px}
+.vt-grid::-webkit-scrollbar{display:none}
+.vt-card{flex:0 0 200px;border-radius:var(--rl);overflow:hidden;cursor:pointer;scroll-snap-align:start;
+  background:rgba(45,95,138,.05);backdrop-filter:blur(16px) saturate(1.2);-webkit-backdrop-filter:blur(16px) saturate(1.2);
+  border:1.5px solid rgba(45,95,138,.12);box-shadow:0 4px 24px rgba(45,95,138,.06);transition:transform .3s,box-shadow .3s}
 .vt-card:hover{transform:translateY(-4px);box-shadow:var(--shm)}
-.vt-thumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--s800)}
+.vt-thumb{position:relative;aspect-ratio:9/16;overflow:hidden;background:var(--s800)}
 .vt-thumb img{width:100%;height:100%;object-fit:cover}
 .vt-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
   background:rgba(15,25,35,.25);transition:background .3s}
 .vt-card:hover .vt-play{background:rgba(15,25,35,.4)}
-.vt-play-btn{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+.vt-play-btn{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;
   background:rgba(255,255,255,.25);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);
   border:1.5px solid rgba(255,255,255,.45);box-shadow:0 8px 32px rgba(0,0,0,.15);transition:transform .3s,background .3s}
 .vt-card:hover .vt-play-btn{transform:scale(1.1);background:rgba(255,255,255,.35)}
-.vt-play-btn svg{width:22px;height:22px;fill:var(--w);margin-left:3px}
-.vt-info{padding:14px 16px}
-.vt-dr{font-size:13px;font-weight:700;color:var(--b900)}
-.vt-svc{font-size:11px;color:var(--s400);font-weight:600;margin-top:2px}
+.vt-play-btn svg{width:18px;height:18px;fill:var(--w);margin-left:2px}
+.vt-info{padding:10px 12px}
+.vt-dr{font-size:12px;font-weight:700;color:var(--b900)}
+.vt-svc{font-size:10px;color:var(--s400);font-weight:600;margin-top:2px}
 .vt-card.playing .vt-play{display:none}
 .vt-card.playing .vt-thumb img{display:none}
-@media(max-width:768px){.vt-grid{grid-template-columns:1fr}}
+.vt-arr{position:absolute;top:50%;transform:translateY(-70%);width:40px;height:40px;border-radius:50%;
+  background:var(--glass-card);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);
+  border:var(--glass-card-b);box-shadow:var(--shm);cursor:pointer;display:flex;align-items:center;justify-content:center;
+  z-index:2;transition:all .25s;color:var(--b900)}
+.vt-arr:hover{background:var(--b900);color:var(--w);box-shadow:var(--shl)}
+.vt-arr svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.vt-arr-l{left:-16px}
+.vt-arr-r{right:-16px}
+@media(max-width:768px){
+  .vt-card{flex:0 0 170px}
+  .vt-arr{display:none}
+}
+@media(max-width:480px){.vt-card{flex:0 0 150px}}
 </style>
 </head>
 <body>
@@ -369,6 +384,7 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
             onerror="this.style.display='none';this.parentElement.classList.add('ov-img-ph')">
         </div>
       </div>
+      </div>
     </div>
   </div>
 </section>
@@ -441,6 +457,7 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
           <p>Instant digital radiography at your chair for real-time diagnostic imaging during implant procedures, with minimal radiation exposure.</p>
         </div>
       </div>
+      </div>
     </div>
   </div>
 </section>
@@ -500,6 +517,7 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
         </div>
         <div class="ba-info"><h4>Full-Arch Rehabilitation</h4><p>Dr. Hussien Tahoun · Complete jaw restoration with implant-supported prosthetics</p></div>
       </div>
+      </div>
     </div>
   </div>
 </section>
@@ -537,6 +555,7 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
       <div class="faq-item rv d2">
         <div class="faq-q">Is the consultation fee deducted from my treatment?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
         <div class="faq-a"><div class="faq-a-in">Yes. If you decide to proceed with treatment, your consultation fee is deducted from the total treatment cost.</div></div>
+      </div>
       </div>
     </div>
   </div>
@@ -618,21 +637,26 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
       <p class="eye eye--cx rv">Real Experiences</p>
       <h3 class="Hlg rv d1" id="vt-h" style="font-size:clamp(22px,2.5vw,32px)">Patient <em class="em">Testimonials</em></h3>
     </div>
+    <div class="vt-slider">
+      <button class="vt-arr vt-arr-l" aria-label="Previous"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <button class="vt-arr vt-arr-r" aria-label="Next"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
     <div class="vt-grid">
       <div class="vt-card rv" data-video="videos/testimonial-hussien-implants.mp4">
         <div class="vt-thumb">
-          <img src="videos/thumbs/testimonial-hussien-implants.webp" alt="Patient testimonial — dental implants" loading="lazy" width="640" height="360">
+          <img src="videos/thumbs/testimonial-hussien-implants.webp" alt="Patient testimonial — dental implants" loading="lazy" width="360" height="640">
           <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
         </div>
         <div class="vt-info"><div class="vt-dr">Patient Testimonial</div><div class="vt-svc">Dental Implants</div></div>
       </div>
       <div class="vt-card rv d1" data-video="videos/testimonial-all-doctors.mp4">
         <div class="vt-thumb">
-          <img src="videos/thumbs/testimonial-all-doctors.webp" alt="Patient testimonial — Vision Dental Clinic" loading="lazy" width="640" height="360">
+          <img src="videos/thumbs/testimonial-all-doctors.webp" alt="Patient testimonial — Vision Dental Clinic" loading="lazy" width="360" height="640">
           <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
         </div>
         <div class="vt-info"><div class="vt-dr">Patient Testimonial</div><div class="vt-svc">Our Team</div></div>
       </div>
+      </div>
+    </div>
     </div>
   </div>
 </section>
@@ -655,6 +679,7 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
         <div class="sci"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Khalifa Street, Abu Dhabi</div>
         <div class="sci"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Sat–Thu · 10:30 AM – 7:30 PM · Fri Off</div>
         <div class="sci"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>MOHAP No. 5889VHC5-110626</div>
+      </div>
       </div>
     </div>
   </div>

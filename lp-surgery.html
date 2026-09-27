@@ -14,12 +14,12 @@
 :root{
   --b950:#0f2236;--b900:#1a3a52;--b800:#1e4a6e;--b700:#2D5F8A;--b600:#3a74a8;
   --b400:#5b9cc9;--b200:#b8d9ef;--b100:#d9edf8;--b50:#eaf4fb;
-  --g700:#4a8a1f;--g600:#5a9f2a;--g500:#7AB648;--g400:#93c96a;
-  --g200:#c5e49a;--g100:#e8f5d8;--g50:#f3fae8;
+  --g700:#6b9900;--g600:#8ab300;--g500:#c0ff00;--g400:#c0ff00;
+  --g200:#e0ff80;--g100:#f0ffcc;--g50:#f8ffe6;
   --s950:#080f16;--s900:#0f1923;--s800:#1c2b38;--s700:#263a4a;
   --s600:#3d5268;--s400:#7a95ab;--s300:#a8bfce;--s200:#c8d8e4;
   --s100:#e8eff5;--s50:#f5f8fb;--w:#ffffff;
-  --gg:linear-gradient(135deg,#5a9f2a 0%,#7AB648 100%);
+  --gg:linear-gradient(135deg,#8ab300 0%,#c0ff00 100%);
   --gb:linear-gradient(135deg,#1e4a6e 0%,#2D5F8A 100%);
   --fd:'DM Serif Display',Georgia,serif;
   --fb:'Plus Jakarta Sans',system-ui,sans-serif;
@@ -48,8 +48,8 @@ section{padding:clamp(36px,4.5vw,56px) 0}
 
 /* ─── GLASS BUTTONS ─── */
 .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:var(--rl);font-family:var(--fb);font-size:15px;font-weight:700;transition:all .3s ease;cursor:pointer;border:none}
-.btn--g{background:linear-gradient(135deg,rgba(90,159,42,.7) 0%,rgba(122,182,72,.75) 100%);color:var(--w);border:var(--glass-b);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);box-shadow:0 8px 32px rgba(90,159,42,.25),inset 0 2px 0 rgba(255,255,255,.4),inset 0 -1px 0 rgba(0,0,0,.1)}
-.btn--g:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(90,159,42,.35),inset 0 2px 0 rgba(255,255,255,.5)}
+.btn--g{background:rgba(192,255,0,.18);color:var(--w);border:var(--glass-b);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);box-shadow:0 8px 32px rgba(192,255,0,.25),inset 0 2px 0 rgba(255,255,255,.4),inset 0 -1px 0 rgba(0,0,0,.1)}
+.btn--g:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(192,255,0,.35),inset 0 2px 0 rgba(255,255,255,.5)}
 .btn--od{background:var(--glass);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);color:var(--b700);border:var(--glass-b);padding:10px 24px;font-size:14px;border-radius:var(--rl);box-shadow:var(--glass-sh)}
 .btn--od:hover{background:rgba(255,255,255,.28);box-shadow:0 12px 40px rgba(0,0,0,.08),inset 0 2px 0 rgba(255,255,255,.9)}
 .btn--arr::after{content:'←';margin-right:-4px;transition:transform .3s}
@@ -72,7 +72,7 @@ section{padding:clamp(36px,4.5vw,56px) 0}
 
 /* ─── HERO with color blobs ─── */
 .lp-hero{padding:110px 0 clamp(40px,5vw,64px);position:relative;overflow:hidden;text-align:center;background:linear-gradient(160deg,#dbe9f4 0%,#e4eef5 40%,#e0f0d8 100%)}
-.lp-hero::before{content:'';position:absolute;top:-20%;right:-15%;width:500px;height:500px;background:radial-gradient(circle,rgba(90,159,42,.2) 0%,transparent 70%);z-index:0;pointer-events:none}
+.lp-hero::before{content:'';position:absolute;top:-20%;right:-15%;width:500px;height:500px;background:radial-gradient(circle,rgba(192,255,0,.2) 0%,transparent 70%);z-index:0;pointer-events:none}
 .lp-hero::after{content:'';position:absolute;bottom:-25%;left:-10%;width:450px;height:450px;background:radial-gradient(circle,rgba(45,95,138,.2) 0%,transparent 70%);z-index:0;pointer-events:none}
 .lp-hero .wrap{position:relative;z-index:2}
 .lp-hero .Hxl{margin-bottom:12px}
@@ -90,14 +90,14 @@ section{padding:clamp(36px,4.5vw,56px) 0}
 
 /* ─── STEPS / FAQ / PRICING section with blobs ─── */
 .sec-content{position:relative;overflow:hidden;background:linear-gradient(170deg,#e2ecf3 0%,#eaf1f6 50%,#e5f0de 100%)}
-.sec-content::before{content:'';position:absolute;top:10%;right:-8%;width:380px;height:380px;background:radial-gradient(circle,rgba(90,159,42,.15) 0%,transparent 70%);pointer-events:none}
+.sec-content::before{content:'';position:absolute;top:10%;right:-8%;width:380px;height:380px;background:radial-gradient(circle,rgba(192,255,0,.15) 0%,transparent 70%);pointer-events:none}
 .sec-content::after{content:'';position:absolute;bottom:5%;left:-5%;width:320px;height:320px;background:radial-gradient(circle,rgba(45,95,138,.15) 0%,transparent 70%);pointer-events:none}
 .sec-content .wrap{position:relative;z-index:1}
 
 /* ─── GLASS STEPS ─── */
 .ts-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}
 .ts-step{background:var(--glass);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);border:var(--glass-b);border-radius:var(--rl);padding:28px 20px;text-align:center;box-shadow:var(--glass-sh);position:relative}
-.ts-num{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,rgba(90,159,42,.7) 0%,rgba(122,182,72,.75) 100%);color:var(--w);font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;border:1px solid rgba(255,255,255,.3);box-shadow:0 3px 12px rgba(90,159,42,.2),inset 0 1px 0 rgba(255,255,255,.4)}
+.ts-num{width:36px;height:36px;border-radius:50%;background:rgba(192,255,0,.18);color:var(--w);font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;border:1px solid rgba(255,255,255,.3);box-shadow:0 3px 12px rgba(192,255,0,.2),inset 0 1px 0 rgba(255,255,255,.4)}
 .ts-step h3{font-family:var(--fd);font-size:16px;color:var(--b900);margin-bottom:6px}
 .ts-step p{font-size:13px;color:var(--s600);line-height:1.5}
 .ts-note{text-align:center;margin-top:24px;font-size:14px;font-weight:700;color:var(--g700)}

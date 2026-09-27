@@ -23,14 +23,14 @@
 :root{
   --b950:#0f2236;--b900:#1a3a52;--b800:#1e4a6e;--b700:#2D5F8A;--b600:#3a74a8;
   --b400:#5b9cc9;--b200:#b8d9ef;--b100:#d9edf8;--b50:#eaf4fb;
-  --g700:#4a8a1f;--g600:#5a9f2a;--g500:#7AB648;--g400:#93c96a;
-  --g200:#c5e49a;--g100:#e8f5d8;--g50:#f3fae8;
+  --g700:#6b9900;--g600:#8ab300;--g500:#c0ff00;--g400:#c0ff00;
+  --g200:#e0ff80;--g100:#f0ffcc;--g50:#f8ffe6;
   --s950:#080f16;--s900:#0f1923;--s800:#1c2b38;--s700:#263a4a;
   --s600:#3d5268;--s400:#7a95ab;--s300:#a8bfce;--s200:#c8d8e4;
   --s100:#e8eff5;--s50:#f5f8fb;--w:#ffffff;
-  --gg:linear-gradient(135deg,#5a9f2a 0%,#7AB648 100%);
+  --gg:linear-gradient(135deg,#8ab300 0%,#c0ff00 100%);
   --gb:linear-gradient(135deg,#1e4a6e 0%,#2D5F8A 100%);
-  --gcard:linear-gradient(150deg,#eaf4fb 0%,#f3fae8 100%);
+  --gcard:linear-gradient(150deg,#eaf4fb 0%,#f8ffe6 100%);
   --fd:'DM Serif Display',Georgia,serif;--fb:'Plus Jakarta Sans',system-ui,sans-serif;
   --sh:0 2px 8px rgba(15,25,35,.08);--shm:0 6px 24px rgba(15,25,35,.10);
   --shl:0 16px 48px rgba(15,25,35,.14);--shxl:0 28px 72px rgba(15,25,35,.18);
@@ -77,14 +77,20 @@ ul{list-style:none}
 .btn{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;
   padding:13px 26px;border-radius:100px;white-space:nowrap;
   transition:all .25s cubic-bezier(.4,0,.2,1);cursor:pointer;letter-spacing:.01em}
-.btn--g{background:var(--gg);color:var(--w);box-shadow:0 4px 20px rgba(90,159,42,.32)}
-.btn--g:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(90,159,42,.42)}
+.btn--g{background:rgba(192,255,0,.18);color:var(--w);border:1.5px solid rgba(192,255,0,.25);
+  backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);
+  box-shadow:0 4px 20px rgba(192,255,0,.12),inset 0 1px 0 rgba(255,255,255,.5),inset 0 -1px 0 rgba(192,255,0,.08)}
+.btn--g:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(192,255,0,.22),inset 0 1px 0 rgba(255,255,255,.7);border-color:rgba(192,255,0,.4)}
 .btn--gh{background:rgba(255,255,255,.1);color:var(--w);border:1.5px solid rgba(255,255,255,.28);backdrop-filter:blur(8px)}
 .btn--gh:hover{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.55);transform:translateY(-2px)}
-.btn--b{background:var(--gb);color:var(--w);box-shadow:0 4px 20px rgba(30,74,110,.28)}
-.btn--b:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(30,74,110,.38)}
-.btn--od{background:transparent;color:var(--b800);border:1.5px solid var(--s200)}
-.btn--od:hover{background:var(--s50);border-color:var(--b200)}
+.btn--b{background:rgba(45,95,138,.15);color:var(--b800);border:1.5px solid rgba(45,95,138,.22);
+  backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);
+  box-shadow:0 4px 20px rgba(45,95,138,.1),inset 0 1px 0 rgba(255,255,255,.5),inset 0 -1px 0 rgba(45,95,138,.06)}
+.btn--b:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(45,95,138,.18),inset 0 1px 0 rgba(255,255,255,.7);border-color:rgba(45,95,138,.35)}
+.btn--od{background:rgba(255,255,255,.25);color:var(--b800);border:1.5px solid rgba(45,95,138,.15);
+  backdrop-filter:blur(12px) saturate(1.3);-webkit-backdrop-filter:blur(12px) saturate(1.3);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.6),inset 0 -1px 0 rgba(0,0,0,.03)}
+.btn--od:hover{background:rgba(255,255,255,.45);border-color:rgba(45,95,138,.25);box-shadow:0 4px 16px rgba(0,0,0,.06),inset 0 1px 0 rgba(255,255,255,.8)}
 .btn--sm{font-size:13px;padding:9px 18px}
 .btn--lg{font-size:16px;padding:16px 36px}
 .btn--arr::after{content:'→';font-size:15px;transition:transform .2s}
@@ -132,8 +138,10 @@ ul{list-style:none}
   animation:hero-zoom 10s ease-in-out infinite alternate}
 @keyframes hero-zoom{0%{transform:scale(1)}100%{transform:scale(1.12)}}
 /* JAWDA Badge */
-.jawda-badge{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,rgba(212,175,55,.15),rgba(212,175,55,.08));
-  border:1.5px solid rgba(212,175,55,.35);border-radius:var(--rm);padding:10px 16px;margin-bottom:20px}
+.jawda-badge{display:inline-flex;align-items:center;gap:10px;background:rgba(212,175,55,.1);
+  border:1.5px solid rgba(212,175,55,.25);border-radius:var(--rm);padding:10px 16px;margin-bottom:20px;
+  backdrop-filter:blur(12px) saturate(1.3);-webkit-backdrop-filter:blur(12px) saturate(1.3);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 4px 16px rgba(212,175,55,.08)}
 .jawda-badge svg{width:28px;height:28px;flex-shrink:0}
 .jawda-badge-txt{display:flex;flex-direction:column}
 .jawda-badge-t{font-size:12px;font-weight:800;color:#d4af37;letter-spacing:.04em;line-height:1.2}
@@ -214,8 +222,11 @@ ul{list-style:none}
 .sc-img-ph{aspect-ratio:3/2;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px}
 .sc-bdg{position:absolute;top:10px;left:10px;font-size:10px;font-weight:700;
   letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:100px}
-.sc-bdg--g{background:var(--gg);color:var(--w)}
-.sc-bdg--w{background:var(--w);color:var(--b900);box-shadow:var(--sh)}
+.sc-bdg--g{background:rgba(192,255,0,.18);color:var(--g700);border:1px solid rgba(192,255,0,.25);
+  backdrop-filter:blur(12px) saturate(1.3);-webkit-backdrop-filter:blur(12px) saturate(1.3);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.5)}
+.sc-bdg--w{background:rgba(255,255,255,.45);color:var(--b900);backdrop-filter:blur(12px) saturate(1.3);-webkit-backdrop-filter:blur(12px) saturate(1.3);
+  border:1px solid rgba(255,255,255,.6);box-shadow:inset 0 1px 0 rgba(255,255,255,.7)}
 .sc-body{padding:18px 20px;flex:1;display:flex;flex-direction:column}
 .sc-body h3{font-size:16px;font-weight:800;color:var(--b900);margin-bottom:6px}
 .sc-body p{font-size:13px;line-height:1.6;color:var(--s600);margin-bottom:14px;flex:1}
@@ -224,9 +235,15 @@ ul{list-style:none}
 .sc-lnk svg{width:12px;height:12px;transition:transform .2s}
 .sc-lnk:hover svg{transform:translateX(3px)}
 .sc-prc{display:inline-block;font-size:13px;font-weight:800;color:var(--g600);margin-bottom:6px;letter-spacing:.01em}
-.sc-tech{display:flex;flex-wrap:wrap;gap:4px;margin:8px 0 4px}.sc-tech span{font-size:10px;font-weight:700;color:var(--b800);background:var(--b50);padding:2px 8px;border-radius:100px;letter-spacing:.02em;white-space:nowrap}
-.sc-cs{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;color:var(--b700);border:1.5px solid var(--b700);padding:5px 12px;border-radius:100px;transition:all .2s;letter-spacing:.01em}
-.sc-cs:hover{background:var(--b700);color:var(--w)}
+.sc-tech{display:flex;flex-wrap:wrap;gap:4px;margin:8px 0 4px}.sc-tech span{font-size:10px;font-weight:700;color:var(--b800);
+  background:rgba(45,95,138,.08);border:1px solid rgba(45,95,138,.12);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  padding:2px 8px;border-radius:100px;letter-spacing:.02em;white-space:nowrap;box-shadow:inset 0 1px 0 rgba(255,255,255,.5)}
+.sc-cs{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;color:var(--b700);
+  border:1.5px solid rgba(45,95,138,.2);padding:5px 12px;border-radius:100px;transition:all .2s;letter-spacing:.01em;
+  background:rgba(45,95,138,.06);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.5)}
+.sc-cs:hover{background:rgba(45,95,138,.15);color:var(--b900);border-color:rgba(45,95,138,.3);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 4px 12px rgba(45,95,138,.1)}
 .sc-cs svg{width:10px;height:10px}
 .sc-book{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-top:14px;
   padding-top:14px;border-top:1px solid rgba(255,255,255,.5)}
@@ -242,7 +259,8 @@ ul{list-style:none}
 .df:hover{background:var(--glass-card);border-color:rgba(255,255,255,.6);transform:translateX(5px);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur)}
 .df-ico{width:42px;height:42px;flex-shrink:0;border-radius:11px;
   display:flex;align-items:center;justify-content:center}
-.df-ico--b{background:var(--b50)}.df-ico--g{background:var(--g50)}
+.df-ico--b{background:rgba(45,95,138,.08);border:1px solid rgba(45,95,138,.12);box-shadow:inset 0 1px 0 rgba(255,255,255,.5)}
+.df-ico--g{background:rgba(192,255,0,.08);border:1px solid rgba(192,255,0,.12);box-shadow:inset 0 1px 0 rgba(255,255,255,.5)}
 .df-ico svg{width:21px;height:21px}
 .df h4{font-size:14px;font-weight:700;color:var(--b900);margin-bottom:3px}
 .df p{font-size:13px;line-height:1.6;color:var(--s600)}
@@ -254,7 +272,8 @@ ul{list-style:none}
   background:var(--gg);transform:scaleX(0);transform-origin:left;transition:transform .3s}
 .dtc:hover{box-shadow:var(--shm);transform:translateY(-3px)}
 .dtc:hover::after{transform:scaleX(1)}
-.dtc-ico{width:40px;height:40px;border-radius:10px;background:rgba(45,95,138,.08);
+.dtc-ico{width:40px;height:40px;border-radius:10px;background:rgba(45,95,138,.08);border:1px solid rgba(45,95,138,.12);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.5);
   display:flex;align-items:center;justify-content:center;margin-bottom:10px}
 .dtc-ico svg{width:20px;height:20px;stroke:var(--b700);fill:none;stroke-width:1.6;stroke-linecap:round}
 .dtc h4{font-size:13px;font-weight:700;color:var(--b900);margin-bottom:3px}
@@ -269,7 +288,8 @@ ul{list-style:none}
 .ba-fs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:40px}
 .ba-f{padding:8px 18px;border-radius:100px;font-size:12px;font-weight:700;
   border:1px solid rgba(255,255,255,.14);color:rgba(255,255,255,.5);cursor:pointer;transition:all .2s}
-.ba-f.ac,.ba-f:hover{background:var(--gg);border-color:transparent;color:var(--w)}
+.ba-f.ac,.ba-f:hover{background:rgba(192,255,0,.2);border-color:rgba(192,255,0,.35);color:rgba(255,255,255,.9);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 4px 16px rgba(192,255,0,.15)}
 .ba-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .bac{border-radius:var(--rl);overflow:hidden;border:1px solid rgba(255,255,255,.07);
   background:rgba(255,255,255,.03);transition:all .28s}
@@ -303,7 +323,8 @@ ul{list-style:none}
 .ba-arr{width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(255,255,255,.18);
   background:rgba(255,255,255,.06);color:rgba(255,255,255,.7);display:flex;align-items:center;
   justify-content:center;cursor:pointer;transition:all .2s;font-size:18px}
-.ba-arr:hover{background:var(--gg);border-color:transparent;color:var(--w)}
+.ba-arr:hover{background:rgba(192,255,0,.2);border-color:rgba(192,255,0,.3);color:var(--w);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 4px 12px rgba(192,255,0,.15)}
 .ba-arr:disabled{opacity:.3;cursor:default;background:transparent;border-color:rgba(255,255,255,.08)}
 /* Draggable slider */
 .ba-slider{position:relative;height:260px;overflow:hidden;cursor:ew-resize;user-select:none;-webkit-user-select:none}
@@ -335,14 +356,19 @@ ul{list-style:none}
 .dr-cd{width:6px;height:6px;border-radius:50%;flex-shrink:0}
 .dr-cd-g{background:var(--g500)}.dr-cd-b{background:var(--b700)}
 .dr-ct-txt{font-size:11px;font-weight:600;color:var(--s700);line-height:1.3}
-.dr-ph{position:absolute;top:22px;right:-18px;background:var(--gg);color:var(--w);
-  border-radius:var(--rm);padding:12px 16px;box-shadow:var(--shl);max-width:180px}
+.dr-ph{position:absolute;top:22px;right:-18px;background:rgba(192,255,0,.18);color:var(--g700);
+  border:1.5px solid rgba(192,255,0,.25);border-radius:var(--rm);padding:12px 16px;max-width:180px;
+  backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);
+  box-shadow:0 8px 32px rgba(192,255,0,.1),inset 0 1px 0 rgba(255,255,255,.5)}
 .dr-ph p{font-size:11.5px;font-weight:700;line-height:1.4}
 .dr-ph span{font-size:10px;opacity:.8;display:block;margin-top:3px}
 .dr-bdgs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}
 .drbdg{font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
-  padding:4px 10px;border-radius:100px;background:var(--b50);color:var(--b800);border:.5px solid var(--b200)}
-.drbdg--g{background:var(--g50);color:var(--g700);border-color:var(--g200)}
+  padding:4px 10px;border-radius:100px;background:rgba(45,95,138,.08);color:var(--b800);border:1px solid rgba(45,95,138,.15);
+  backdrop-filter:blur(10px) saturate(1.3);-webkit-backdrop-filter:blur(10px) saturate(1.3);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.55)}
+.drbdg--g{background:rgba(192,255,0,.1);color:var(--g700);border-color:rgba(192,255,0,.2);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.5)}
 .dr-nm{font-family:var(--fd);font-size:clamp(26px,3.2vw,42px);color:var(--b900);line-height:1.1;margin-bottom:4px}
 .dr-ti{font-size:13.5px;font-weight:700;color:var(--g600);margin-bottom:4px;letter-spacing:.02em}
 .dr-ql{font-size:12px;color:var(--s400);margin-bottom:20px;font-weight:500}
@@ -355,7 +381,9 @@ ul{list-style:none}
 .dr-sl{font-size:10px;font-weight:700;color:var(--s600);text-transform:uppercase;letter-spacing:.04em;line-height:1.3}
 .dr-sp{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:24px}
 .dr-sptg{font-size:11px;font-weight:600;padding:4px 10px;border-radius:100px;
-  background:var(--s50);color:var(--s700);border:.5px solid var(--s200)}
+  background:rgba(255,255,255,.3);color:var(--s700);border:1px solid rgba(255,255,255,.45);
+  backdrop-filter:blur(10px) saturate(1.3);-webkit-backdrop-filter:blur(10px) saturate(1.3);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.6)}
 .dr-acs{display:flex;gap:10px;flex-wrap:wrap}
 
 /* Team strip */
@@ -433,7 +461,9 @@ ul{list-style:none}
 .blc:hover .blc-img img{transform:scale(1.05)}
 .blc-cat{position:absolute;top:10px;left:10px;font-size:10px;font-weight:700;
   letter-spacing:.06em;text-transform:uppercase;padding:4px 9px;border-radius:100px;
-  background:var(--gb);color:var(--w)}
+  background:rgba(45,95,138,.35);color:var(--w);border:1px solid rgba(255,255,255,.25);
+  backdrop-filter:blur(12px) saturate(1.3);-webkit-backdrop-filter:blur(12px) saturate(1.3);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.4);text-shadow:0 1px 3px rgba(0,0,0,.3)}
 .blc-bd{padding:18px 20px}
 .blc-dt{font-size:11px;font-weight:600;color:var(--s400);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px}
 .blc-bd h3{font-size:15px;font-weight:800;color:var(--b900);margin-bottom:8px;line-height:1.35}
@@ -516,27 +546,27 @@ ul{list-style:none}
 @keyframes ch-ring{0%{transform:scale(1);opacity:1}100%{transform:scale(1.6);opacity:0}}
 
 /* ═══ INSURANCE BAR (sliding marquee — reverse direction) ═══ */
-.ins-bar{background:rgba(255,255,255,.35);backdrop-filter:blur(20px) saturate(1.4);-webkit-backdrop-filter:blur(20px) saturate(1.4);border-top:1px solid rgba(255,255,255,.5);border-bottom:1px solid rgba(255,255,255,.5);padding:14px 0;overflow:hidden;position:relative}
+.ins-bar{background:var(--s900);padding:14px 0;overflow:hidden;position:relative;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06)}
 .ins-bar::before,.ins-bar::after{content:'';position:absolute;top:0;bottom:0;width:48px;z-index:2;pointer-events:none}
-.ins-bar::before{left:0;background:linear-gradient(to right,rgba(224,240,216,.5),transparent)}
-.ins-bar::after{right:0;background:linear-gradient(to left,rgba(224,240,216,.5),transparent)}
+.ins-bar::before{left:0;background:linear-gradient(to right,var(--s900),transparent)}
+.ins-bar::after{right:0;background:linear-gradient(to left,var(--s900),transparent)}
 .ins-track{display:flex;align-items:center;gap:48px;width:max-content}
 .ins-track:hover{animation-play-state:paused}
-.ins-lbl{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--s400);white-space:nowrap;flex-shrink:0}
-.ins-sep{color:var(--s200);font-size:14px;flex-shrink:0}
-.ins-logo{height:28px;width:auto;object-fit:contain;filter:grayscale(30%);transition:filter .3s;flex-shrink:0}
-.ins-logo:hover{filter:grayscale(0%)}
-.ct-bar{background:var(--s900);padding:13px 0;overflow:hidden;position:relative;border-bottom:1px solid rgba(255,255,255,.06)}
+.ins-lbl{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55);white-space:nowrap;flex-shrink:0}
+.ins-sep{color:rgba(255,255,255,.15);font-size:14px;flex-shrink:0}
+.ins-logo{height:28px;width:auto;object-fit:contain;filter:brightness(0) invert(1) opacity(.6);transition:filter .3s;flex-shrink:0}
+.ins-logo:hover{filter:brightness(0) invert(1) opacity(.9)}
+.ct-bar{background:rgba(255,255,255,.35);backdrop-filter:blur(20px) saturate(1.4);-webkit-backdrop-filter:blur(20px) saturate(1.4);padding:13px 0;overflow:hidden;position:relative;border-top:1px solid rgba(255,255,255,.5);border-bottom:1px solid rgba(255,255,255,.5)}
 .ct-bar::before,.ct-bar::after{content:'';position:absolute;top:0;bottom:0;width:48px;z-index:2;pointer-events:none}
-.ct-bar::before{left:0;background:linear-gradient(to right,var(--s900),transparent)}
-.ct-bar::after{right:0;background:linear-gradient(to left,var(--s900),transparent)}
+.ct-bar::before{left:0;background:linear-gradient(to right,rgba(219,233,244,.6),transparent)}
+.ct-bar::after{right:0;background:linear-gradient(to left,rgba(219,233,244,.6),transparent)}
 .ct-track{display:flex;align-items:center;gap:36px;width:max-content}
 .ct-track:hover{animation-play-state:paused}
-.ct-item{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:rgba(255,255,255,.55);white-space:nowrap;flex-shrink:0}
-.ct-item svg{width:14px;height:14px;stroke:#93c96a;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
-.ct-item a{color:rgba(255,255,255,.55);transition:color .2s}
-.ct-item a:hover{color:var(--w)}
-.ct-sep{color:rgba(255,255,255,.15);font-size:14px;flex-shrink:0}
+.ct-item{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--s600);white-space:nowrap;flex-shrink:0}
+.ct-item svg{width:14px;height:14px;stroke:var(--g600);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.ct-item a{color:var(--s600);transition:color .2s}
+.ct-item a:hover{color:var(--b900)}
+.ct-sep{color:var(--s200);font-size:14px;flex-shrink:0}
 
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 .skip-link{position:absolute;top:-100%;left:16px;background:var(--b900);color:var(--w);padding:12px 24px;border-radius:0 0 8px 8px;font-size:14px;font-weight:700;z-index:9999;transition:top .2s}.skip-link:focus{top:0}
@@ -550,34 +580,46 @@ ul{list-style:none}
   background:var(--glass-card);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);
   border:var(--glass-card-b);color:var(--s600);transition:all .25s}
 .vt-f:hover{color:var(--b900);border-color:var(--b200)}
-.vt-f.active{background:var(--gg);color:var(--w);border-color:transparent;box-shadow:0 4px 16px rgba(90,159,42,.3)}
-.vt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.vt-card{position:relative;border-radius:var(--rl);overflow:hidden;cursor:pointer;
-  background:var(--glass-card);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);
-  border:var(--glass-card-b);box-shadow:var(--glass-card-sh);transition:transform .3s,box-shadow .3s}
+.vt-f.active{background:var(--gg);color:var(--w);border-color:transparent;box-shadow:0 4px 16px rgba(192,255,0,.3)}
+.vt-slider{position:relative}
+.vt-grid{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;
+  -ms-overflow-style:none;scrollbar-width:none;padding:4px 0 12px}
+.vt-grid::-webkit-scrollbar{display:none}
+.vt-card{flex:0 0 200px;border-radius:var(--rl);overflow:hidden;cursor:pointer;scroll-snap-align:start;
+  background:rgba(45,95,138,.05);backdrop-filter:blur(16px) saturate(1.2);-webkit-backdrop-filter:blur(16px) saturate(1.2);
+  border:1.5px solid rgba(45,95,138,.12);box-shadow:0 4px 24px rgba(45,95,138,.06);transition:transform .3s,box-shadow .3s}
 .vt-card:hover{transform:translateY(-4px);box-shadow:var(--shm)}
 .vt-card[hidden]{display:none}
-.vt-thumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--s800)}
+.vt-thumb{position:relative;aspect-ratio:9/16;overflow:hidden;background:var(--s800)}
 .vt-thumb img{width:100%;height:100%;object-fit:cover}
 .vt-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
   background:rgba(15,25,35,.25);transition:background .3s}
 .vt-card:hover .vt-play{background:rgba(15,25,35,.4)}
-.vt-play-btn{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+.vt-play-btn{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;
   background:rgba(255,255,255,.25);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);
   border:1.5px solid rgba(255,255,255,.45);box-shadow:0 8px 32px rgba(0,0,0,.15);transition:transform .3s,background .3s}
 .vt-card:hover .vt-play-btn{transform:scale(1.1);background:rgba(255,255,255,.35)}
-.vt-play-btn svg{width:22px;height:22px;fill:var(--w);margin-left:3px}
-.vt-info{padding:14px 16px}
-.vt-dr{font-size:13px;font-weight:700;color:var(--b900)}
-.vt-svc{font-size:11px;color:var(--s400);font-weight:600;margin-top:2px}
+.vt-play-btn svg{width:18px;height:18px;fill:var(--w);margin-left:2px}
+.vt-info{padding:10px 12px}
+.vt-dr{font-size:12px;font-weight:700;color:var(--b900)}
+.vt-svc{font-size:10px;color:var(--s400);font-weight:600;margin-top:2px}
 .vt-card.playing .vt-play{display:none}
 .vt-card.playing .vt-thumb img{display:none}
 .vt-card video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.vt-arr{position:absolute;top:50%;transform:translateY(-70%);width:40px;height:40px;border-radius:50%;
+  background:var(--glass-card);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);
+  border:var(--glass-card-b);box-shadow:var(--shm);cursor:pointer;display:flex;align-items:center;justify-content:center;
+  z-index:2;transition:all .25s;color:var(--b900)}
+.vt-arr:hover{background:var(--b900);color:var(--w);box-shadow:var(--shl)}
+.vt-arr svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.vt-arr-l{left:-16px}
+.vt-arr-r{right:-16px}
 @media(max-width:768px){
-  .vt-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .vt-card{flex:0 0 170px}
   .vt-h{flex-direction:column;align-items:flex-start}
+  .vt-arr{display:none}
 }
-@media(max-width:480px){.vt-grid{grid-template-columns:1fr}}
+@media(max-width:480px){.vt-card{flex:0 0 150px}}
 
 /* ═══ LOCATION ═══ */
 .loc-sec{padding:var(--sy) 0}
@@ -714,7 +756,7 @@ ul{list-style:none}
 <!-- TRUST BAR -->
 <div id="trust" role="complementary" aria-label="Partners">
   <div class="tb-in">
-    <p class="tb-lbl">Our Partners</p>
+    <p class="tb-lbl">Quality Partners</p>
     <div class="tb-wrap">
       <div class="tb-track">
         <div class="tlog"><img src="straumann.png" alt="Straumann dental implant system logo" onerror="this.outerHTML='<span class=\'tlog-t\' loading="lazy">Straumann®</span>'"></div>
@@ -1123,7 +1165,7 @@ ul{list-style:none}
           </div>
           <div class="df rv d2">
             <div class="df-ico df-ico--g">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#5a9f2a" stroke-width="1.8" stroke-linecap="round">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#8ab300" stroke-width="1.8" stroke-linecap="round">
                 <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4M7 8h10M7 11h7"/>
               </svg>
             </div>
@@ -1328,84 +1370,88 @@ ul{list-style:none}
           <button class="vt-f" data-filter="ammar" role="tab">Dr. Ammar</button>
         </div>
       </div>
+      <div class="vt-slider">
+        <button class="vt-arr vt-arr-l" aria-label="Previous"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button class="vt-arr vt-arr-r" aria-label="Next"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
       <div class="vt-grid">
         <div class="vt-card rv" data-dr="hussien" data-service="implants">
           <div class="vt-thumb">
-            <img src="videos/thumbs/testimonial-hussien-implants.webp" alt="Patient testimonial — dental implants with Dr. Hussien" loading="lazy" width="640" height="360">
+            <img src="videos/thumbs/testimonial-hussien-implants.webp" alt="Patient testimonial — dental implants with Dr. Hussien" loading="lazy" width="360" height="640">
             <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
           </div>
           <div class="vt-info"><div class="vt-dr">Dr. Hussien Tahoun</div><div class="vt-svc">Dental Implants</div></div>
         </div>
         <div class="vt-card rv d1" data-dr="hussien" data-service="surgery">
           <div class="vt-thumb">
-            <img src="videos/thumbs/testimonial-hussien-surgery.webp" alt="Patient testimonial — oral surgery with Dr. Hussien" loading="lazy" width="640" height="360">
+            <img src="videos/thumbs/testimonial-hussien-surgery.webp" alt="Patient testimonial — oral surgery with Dr. Hussien" loading="lazy" width="360" height="640">
             <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
           </div>
           <div class="vt-info"><div class="vt-dr">Dr. Hussien Tahoun</div><div class="vt-svc">Oral Surgery</div></div>
         </div>
         <div class="vt-card rv d2" data-dr="amr" data-service="orthodontics">
           <div class="vt-thumb">
-            <img src="videos/thumbs/testimonial-amr-ortho-1.webp" alt="Patient testimonial — orthodontics with Prof. Amr Labib" loading="lazy" width="640" height="360">
+            <img src="videos/thumbs/testimonial-amr-ortho-1.webp" alt="Patient testimonial — orthodontics with Prof. Amr Labib" loading="lazy" width="360" height="640">
             <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
           </div>
           <div class="vt-info"><div class="vt-dr">Prof. Amr Labib</div><div class="vt-svc">Orthodontics</div></div>
         </div>
         <div class="vt-card rv" data-dr="amr" data-service="orthodontics">
           <div class="vt-thumb">
-            <img src="videos/thumbs/testimonial-amr-ortho-2.webp" alt="Patient testimonial — orthodontics with Prof. Amr Labib" loading="lazy" width="640" height="360">
+            <img src="videos/thumbs/testimonial-amr-ortho-2.webp" alt="Patient testimonial — orthodontics with Prof. Amr Labib" loading="lazy" width="360" height="640">
             <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
           </div>
           <div class="vt-info"><div class="vt-dr">Prof. Amr Labib</div><div class="vt-svc">Orthodontics</div></div>
         </div>
         <div class="vt-card rv d1" data-dr="amr" data-service="orthodontics pediatric">
           <div class="vt-thumb">
-            <img src="videos/thumbs/testimonial-amr-ortho-pediatric.webp" alt="Patient testimonial — orthodontics and pediatric with Prof. Amr Labib" loading="lazy" width="640" height="360">
+            <img src="videos/thumbs/testimonial-amr-ortho-pediatric.webp" alt="Patient testimonial — orthodontics and pediatric with Prof. Amr Labib" loading="lazy" width="360" height="640">
             <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
           </div>
           <div class="vt-info"><div class="vt-dr">Prof. Amr Labib</div><div class="vt-svc">Orthodontics &amp; Pediatric</div></div>
         </div>
         <div class="vt-card rv d2" data-dr="asmaa" data-service="orthodontics">
           <div class="vt-thumb">
-            <img src="videos/thumbs/testimonial-asmaa-1.webp" alt="Patient testimonial — Dr. Asmaa Butt" loading="lazy" width="640" height="360">
+            <img src="videos/thumbs/testimonial-asmaa-1.webp" alt="Patient testimonial — Dr. Asmaa Butt" loading="lazy" width="360" height="640">
             <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
           </div>
           <div class="vt-info"><div class="vt-dr">Dr. Asmaa Butt</div></div>
         </div>
         <div class="vt-card rv" data-dr="asmaa" data-service="orthodontics">
           <div class="vt-thumb">
-            <img src="videos/thumbs/testimonial-asmaa-2.webp" alt="Patient testimonial — Dr. Asmaa Butt" loading="lazy" width="640" height="360">
+            <img src="videos/thumbs/testimonial-asmaa-2.webp" alt="Patient testimonial — Dr. Asmaa Butt" loading="lazy" width="360" height="640">
             <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
           </div>
           <div class="vt-info"><div class="vt-dr">Dr. Asmaa Butt</div></div>
         </div>
         <div class="vt-card rv d1" data-dr="ammar" data-service="general">
           <div class="vt-thumb">
-            <img src="videos/thumbs/testimonial-ammar-1.webp" alt="Patient testimonial — general dentistry with Dr. Ammar" loading="lazy" width="640" height="360">
+            <img src="videos/thumbs/testimonial-ammar-1.webp" alt="Patient testimonial — general dentistry with Dr. Ammar" loading="lazy" width="360" height="640">
             <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
           </div>
           <div class="vt-info"><div class="vt-dr">Dr. Ammar Anbari</div><div class="vt-svc">General Dentistry</div></div>
         </div>
         <div class="vt-card rv d2" data-dr="ammar" data-service="general">
           <div class="vt-thumb">
-            <img src="videos/thumbs/testimonial-ammar-2.webp" alt="Patient testimonial — general dentistry with Dr. Ammar" loading="lazy" width="640" height="360">
+            <img src="videos/thumbs/testimonial-ammar-2.webp" alt="Patient testimonial — general dentistry with Dr. Ammar" loading="lazy" width="360" height="640">
             <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
           </div>
           <div class="vt-info"><div class="vt-dr">Dr. Ammar Anbari</div><div class="vt-svc">General Dentistry</div></div>
         </div>
         <div class="vt-card rv" data-dr="all" data-service="veneers">
           <div class="vt-thumb">
-            <img src="videos/thumbs/testimonial-veneers.webp" alt="Patient testimonial — veneers treatment" loading="lazy" width="640" height="360">
+            <img src="videos/thumbs/testimonial-veneers.webp" alt="Patient testimonial — veneers treatment" loading="lazy" width="360" height="640">
             <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
           </div>
           <div class="vt-info"><div class="vt-dr">Veneers Patient</div><div class="vt-svc">Veneers</div></div>
         </div>
         <div class="vt-card rv d1" data-dr="all" data-service="all">
           <div class="vt-thumb">
-            <img src="videos/thumbs/testimonial-all-doctors.webp" alt="Patient testimonial — Vision Dental Clinic team" loading="lazy" width="640" height="360">
+            <img src="videos/thumbs/testimonial-all-doctors.webp" alt="Patient testimonial — Vision Dental Clinic team" loading="lazy" width="360" height="640">
             <div class="vt-play"><div class="vt-play-btn"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div></div>
           </div>
           <div class="vt-info"><div class="vt-dr">Vision Dental Clinic</div><div class="vt-svc">Our Team</div></div>
         </div>
+      </div>
       </div>
     </div>
 
@@ -1822,6 +1868,14 @@ document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>{c
       vid.addEventListener('ended',()=>{vid.remove();c.classList.remove('playing')});
     });
   });
+  const slider=document.querySelector('.vt-grid');
+  const arrL=document.querySelector('.vt-arr-l');
+  const arrR=document.querySelector('.vt-arr-r');
+  if(slider&&arrL&&arrR){
+    const scrollAmt=430;
+    arrL.addEventListener('click',()=>slider.scrollBy({left:-scrollAmt,behavior:'smooth'}));
+    arrR.addEventListener('click',()=>slider.scrollBy({left:scrollAmt,behavior:'smooth'}));
+  }
 })();
 </script>
 
