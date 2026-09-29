@@ -77,18 +77,21 @@ ul{list-style:none}
 .btn{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;
   padding:13px 26px;border-radius:100px;white-space:nowrap;
   transition:all .25s cubic-bezier(.4,0,.2,1);cursor:pointer;letter-spacing:.01em}
-.btn--g{background:rgba(192,255,0,.35);color:#3d6600;border:1.5px solid rgba(75,120,0,.45);
+.btn--g{background:rgba(192,255,0,.35);color:#fff;border:1.5px solid rgba(75,120,0,.45);
   backdrop-filter:blur(8px) saturate(1.2);-webkit-backdrop-filter:blur(8px) saturate(1.2);
-  box-shadow:0 2px 12px rgba(107,153,0,.15),inset 0 1px 0 rgba(255,255,255,.7)}
-.btn--g:hover{transform:translateY(-2px);color:#2d5000;box-shadow:0 4px 20px rgba(107,153,0,.25),inset 0 1px 0 rgba(255,255,255,.8);border-color:rgba(75,120,0,.6)}
-.S--dk .btn--g,#ba .btn--g,#book .btn--g{background:rgba(192,255,0,.25);color:var(--w);border-color:rgba(192,255,0,.45);box-shadow:0 4px 20px rgba(192,255,0,.25),inset 0 1px 0 rgba(255,255,255,.5)}
-.S--dk .btn--g:hover,#ba .btn--g:hover,#book .btn--g:hover{color:var(--w);box-shadow:0 8px 28px rgba(192,255,0,.22),inset 0 1px 0 rgba(255,255,255,.7);border-color:rgba(192,255,0,.4)}
-.btn--gh{background:rgba(255,255,255,.1);color:var(--w);border:1.5px solid rgba(255,255,255,.28);backdrop-filter:blur(8px)}
-.btn--gh:hover{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.55);transform:translateY(-2px)}
+  text-shadow:0 1px 3px rgba(0,0,0,.35);
+  box-shadow:0 2px 12px rgba(107,153,0,.15),inset 0 2px 8px rgba(255,255,255,.25),inset 0 -2px 8px rgba(0,40,0,.15)}
+.btn--g:hover{transform:translateY(-2px);color:#fff;box-shadow:0 4px 20px rgba(107,153,0,.25),inset 0 2px 10px rgba(255,255,255,.35),inset 0 -2px 10px rgba(0,40,0,.2);border-color:rgba(75,120,0,.6)}
+.S--dk .btn--g,#hero .btn--g,#ba .btn--g,#book .btn--g{background:rgba(192,255,0,.25);color:#fff;border-color:rgba(192,255,0,.45);text-shadow:0 1px 3px rgba(0,0,0,.4);box-shadow:0 4px 20px rgba(192,255,0,.25),inset 0 2px 8px rgba(255,255,255,.2),inset 0 -2px 8px rgba(0,40,0,.2)}
+.S--dk .btn--g:hover,#hero .btn--g:hover,#ba .btn--g:hover,#book .btn--g:hover{color:#fff;box-shadow:0 8px 28px rgba(192,255,0,.22),inset 0 2px 10px rgba(255,255,255,.3),inset 0 -2px 10px rgba(0,40,0,.25);border-color:rgba(192,255,0,.4)}
+.btn--gh{background:rgba(255,255,255,.1);color:var(--w);border:1.5px solid rgba(255,255,255,.28);backdrop-filter:blur(8px);
+  box-shadow:inset 0 2px 8px rgba(255,255,255,.15),inset 0 -2px 8px rgba(0,0,0,.1)}
+.btn--gh:hover{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.55);transform:translateY(-2px);
+  box-shadow:inset 0 2px 10px rgba(255,255,255,.25),inset 0 -2px 10px rgba(0,0,0,.15)}
 .btn--b{background:rgba(45,95,138,.15);color:var(--b800);border:1.5px solid rgba(45,95,138,.22);
   backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);
-  box-shadow:0 4px 20px rgba(45,95,138,.1),inset 0 1px 0 rgba(255,255,255,.5),inset 0 -1px 0 rgba(45,95,138,.06)}
-.btn--b:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(45,95,138,.18),inset 0 1px 0 rgba(255,255,255,.7);border-color:rgba(45,95,138,.35)}
+  box-shadow:0 4px 20px rgba(45,95,138,.1),inset 0 2px 8px rgba(255,255,255,.3),inset 0 -2px 8px rgba(45,95,138,.12)}
+.btn--b:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(45,95,138,.18),inset 0 2px 10px rgba(255,255,255,.4),inset 0 -2px 10px rgba(45,95,138,.15);border-color:rgba(45,95,138,.35)}
 .btn--od{background:rgba(255,255,255,.25);color:var(--b800);border:1.5px solid rgba(45,95,138,.15);
   backdrop-filter:blur(12px) saturate(1.3);-webkit-backdrop-filter:blur(12px) saturate(1.3);
   box-shadow:inset 0 1px 0 rgba(255,255,255,.6),inset 0 -1px 0 rgba(0,0,0,.03)}
@@ -794,17 +797,17 @@ ul{list-style:none}
     <p class="tb-lbl">Quality Partners</p>
     <div class="tb-wrap">
       <div class="tb-track">
-        <div class="tlog"><img src="straumann.png" alt="Straumann® implant partner — Vision Dental Clinic Abu Dhabi logo" onerror="this.outerHTML='<span class=\'tlog-t\' loading="lazy">Straumann®</span>'"></div>
-        <div class="tlog"><img src="invisalign.webp" alt="Invisalign clear aligner system logo" onerror="this.outerHTML='<span class=\'tlog-t\' loading="lazy">Invisalign®</span>'"></div>
-        <div class="tlog"><img src="Imes_icore.webp" alt="imes-icore dental milling technology logo" onerror="this.outerHTML='<span class=\'tlog-t\' loading="lazy">imes-icore®</span>'"></div>
-        <div class="tlog"><img src="ivoclar.png" alt="Ivoclar Vivadent dental ceramics logo" onerror="this.outerHTML='<span class=\'tlog-t\' loading="lazy">Ivoclar</span>'"></div>
-        <div class="tlog"><img src="3shape.png" alt="3Shape TRIOS® intraoral scanner — digital impressions Abu Dhabi logo" onerror="this.outerHTML='<span class=\'tlog-t\' loading="lazy">3Shape</span>'"></div>
+        <div class="tlog"><img src="straumann.png" alt="Straumann® implant partner — Vision Dental Clinic Abu Dhabi logo" onerror="this.outerHTML='<span class=\'tlog-t\'>Straumann®</span>'"></div>
+        <div class="tlog"><img src="invisalign.webp" alt="Invisalign clear aligner system logo" onerror="this.outerHTML='<span class=\'tlog-t\'>Invisalign®</span>'"></div>
+        <div class="tlog"><img src="Imes_icore.webp" alt="imes-icore dental milling technology logo" onerror="this.outerHTML='<span class=\'tlog-t\'>imes-icore®</span>'"></div>
+        <div class="tlog"><img src="ivoclar.png" alt="Ivoclar Vivadent dental ceramics logo" onerror="this.outerHTML='<span class=\'tlog-t\'>Ivoclar</span>'"></div>
+        <div class="tlog"><img src="3shape.png" alt="3Shape TRIOS® intraoral scanner — digital impressions Abu Dhabi logo" onerror="this.outerHTML='<span class=\'tlog-t\'>3Shape</span>'"></div>
         <!-- Duplicate for loop -->
-        <div class="tlog"><img src="straumann.png" alt="Straumann® implant partner — Vision Dental Clinic Abu Dhabi" aria-hidden="true" onerror="this.outerHTML='<span class=\'tlog-t\' loading="lazy">Straumann®</span>'"></div>
-        <div class="tlog"><img src="invisalign.webp" alt="Invisalign® certified provider — Vision Dental Clinic Abu Dhabi" aria-hidden="true" onerror="this.outerHTML='<span class=\'tlog-t\' loading="lazy">Invisalign®</span>'"></div>
-        <div class="tlog"><img src="Imes_icore.webp" alt="imes-icore CAD/CAM milling — in-house dental lab Abu Dhabi" aria-hidden="true" onerror="this.outerHTML='<span class=\'tlog-t\' loading="lazy">imes-icore®</span>'"></div>
-        <div class="tlog"><img src="ivoclar.png" alt="Ivoclar Vivadent® premium dental ceramics" aria-hidden="true" onerror="this.outerHTML='<span class=\'tlog-t\' loading="lazy">Ivoclar</span>'"></div>
-        <div class="tlog"><img src="3shape.png" alt="3Shape TRIOS® intraoral scanner — digital impressions Abu Dhabi" aria-hidden="true" onerror="this.outerHTML='<span class=\'tlog-t\' loading="lazy">3Shape</span>'"></div>
+        <div class="tlog"><img src="straumann.png" alt="Straumann® implant partner — Vision Dental Clinic Abu Dhabi" aria-hidden="true" onerror="this.outerHTML='<span class=\'tlog-t\'>Straumann®</span>'"></div>
+        <div class="tlog"><img src="invisalign.webp" alt="Invisalign® certified provider — Vision Dental Clinic Abu Dhabi" aria-hidden="true" onerror="this.outerHTML='<span class=\'tlog-t\'>Invisalign®</span>'"></div>
+        <div class="tlog"><img src="Imes_icore.webp" alt="imes-icore CAD/CAM milling — in-house dental lab Abu Dhabi" aria-hidden="true" onerror="this.outerHTML='<span class=\'tlog-t\'>imes-icore®</span>'"></div>
+        <div class="tlog"><img src="ivoclar.png" alt="Ivoclar Vivadent® premium dental ceramics" aria-hidden="true" onerror="this.outerHTML='<span class=\'tlog-t\'>Ivoclar</span>'"></div>
+        <div class="tlog"><img src="3shape.png" alt="3Shape TRIOS® intraoral scanner — digital impressions Abu Dhabi" aria-hidden="true" onerror="this.outerHTML='<span class=\'tlog-t\'>3Shape</span>'"></div>
       </div>
     </div>
   </div>
@@ -889,6 +892,15 @@ ul{list-style:none}
           </div>
           <div class="ba-inf"><h4>Porcelain Veneers</h4><p>Dr. Salim · Natural result</p></div>
         </div>
+        <div class="bac" data-cat="implants fullmouth">
+          <div class="ba-slider" data-before="ba-hussien-1-before.webp" data-after="ba-hussien-1-after.webp">
+            <div class="ba-img-b"><img src="ba-hussien-1-before.webp" alt="Before full-arch implant rehabilitation Abu Dhabi" loading="lazy"></div>
+            <div class="ba-img-a"><img src="ba-hussien-1-after.webp" alt="After full-arch implant restoration Abu Dhabi" loading="lazy"></div>
+            <div class="ba-handle"></div><div class="ba-handle-btn">&#8596;</div>
+            <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
+          </div>
+          <div class="ba-inf"><h4>Full-Arch Implant Rehabilitation</h4><p>Dr. Hussien Tahoun · Complete jaw restoration</p></div>
+        </div>
         <div class="bac" data-cat="veneers">
           <div class="ba-slider" data-before="ba-ammar-1-before.webp" data-after="ba-ammar-1-after.webp">
             <div class="ba-img-b"><img src="ba-ammar-1-before.webp" alt="Before porcelain veneers treatment Abu Dhabi" loading="lazy"></div>
@@ -924,15 +936,6 @@ ul{list-style:none}
             <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
           </div>
           <div class="ba-inf"><h4>Anterior Implant</h4><p>Dr. Ammar Anbari · Front tooth implant with full crown</p></div>
-        </div>
-        <div class="bac" data-cat="implants">
-          <div class="ba-slider" data-before="ba-hussien-1-before.webp" data-after="ba-hussien-1-after.webp">
-            <div class="ba-img-b"><img src="ba-hussien-1-before.webp" alt="Before full-arch implant rehabilitation Abu Dhabi" loading="lazy"></div>
-            <div class="ba-img-a"><img src="ba-hussien-1-after.webp" alt="After full-arch implant restoration Abu Dhabi" loading="lazy"></div>
-            <div class="ba-handle"></div><div class="ba-handle-btn">&#8596;</div>
-            <span class="ba-lbl ba-lb">Before</span><span class="ba-lbl ba-la">After</span>
-          </div>
-          <div class="ba-inf"><h4>Full-Arch Implant Rehabilitation</h4><p>Dr. Hussien Tahoun · Complete jaw restoration</p></div>
         </div>
         <div class="bac" data-cat="veneers">
           <div class="ba-slider" data-before="ba-asmaa-1-before.webp" data-after="ba-asmaa-1-after.webp">
@@ -1800,7 +1803,7 @@ document.querySelectorAll('.ba-f').forEach(b=>b.addEventListener('click',()=>{
   b.classList.add('ac');b.setAttribute('aria-selected','true');
   const track=document.getElementById('ba-track');
   track.querySelectorAll('.bac').forEach(card=>{
-    card.style.display=(filter==='all'||card.dataset.cat===filter)?'block':'none';
+    card.style.display=(filter==='all'||card.dataset.cat.split(' ').includes(filter))?'block':'none';
   });
   track.style.transform='translateX(0)';
   const prev=document.getElementById('ba-prev');
