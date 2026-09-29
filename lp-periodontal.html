@@ -8,7 +8,7 @@
 <meta name="robots" content="noindex,nofollow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -23,6 +23,7 @@
   --gb:linear-gradient(135deg,#1e4a6e 0%,#2D5F8A 100%);
   --fd:'DM Serif Display',Georgia,serif;
   --fb:'Plus Jakarta Sans',system-ui,sans-serif;
+  --fa:'Cairo',system-ui,sans-serif;
   --cw:1200px;--px:clamp(20px,5vw,48px);
   --r:12px;--rm:18px;--rl:24px;--rxl:40px;
   --glass:rgba(255,255,255,.15);
@@ -38,6 +39,7 @@ body{font-family:var(--fb);color:var(--s900);background:#e8eff5;line-height:1.6;
 img{max-width:100%;display:block}
 a{text-decoration:none;color:inherit}
 
+html[lang="ar"] body,html[lang="ar"] .Hxl,html[lang="ar"] .Hlg,html[lang="ar"] .btn,html[lang="ar"] .eye,html[lang="ar"] .lang-btn,html[lang="ar"] .dr-card-info h3,html[lang="ar"] .ss-txt h3,html[lang="ar"] .warn-card h4,html[lang="ar"] .faq-q,html[lang="ar"] .final-cta h2{font-family:var(--fa)}
 html[lang="ar"] .en{display:none!important}
 html[lang="en"] .ar{display:none!important}
 
@@ -50,7 +52,7 @@ html[lang="en"] .ar{display:none!important}
 section{padding:clamp(36px,4.5vw,56px) 0}
 
 .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:var(--rl);font-family:var(--fb);font-size:15px;font-weight:700;transition:all .3s ease;cursor:pointer;border:none}
-.btn--g{background:rgba(192,255,0,.25);color:var(--w);border:var(--glass-b);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);box-shadow:0 8px 32px rgba(192,255,0,.25),inset 0 2px 0 rgba(255,255,255,.4),inset 0 -1px 0 rgba(0,0,0,.1)}
+.btn--g{background:rgba(192,255,0,.25);color:var(--b900);border:var(--glass-b);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);box-shadow:0 8px 32px rgba(192,255,0,.25),inset 0 2px 0 rgba(255,255,255,.4),inset 0 -1px 0 rgba(0,0,0,.1)}
 .btn--g:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(192,255,0,.35),inset 0 2px 0 rgba(255,255,255,.5)}.S--lt .btn--g,.lt-bg .btn--g{background:rgba(192,255,0,.35);color:#3d6600;border-color:rgba(107,153,0,.4);box-shadow:0 2px 12px rgba(107,153,0,.15),inset 0 1px 0 rgba(255,255,255,.7)}.S--lt .btn--g:hover,.lt-bg .btn--g:hover{color:#3d6600;box-shadow:0 4px 20px rgba(107,153,0,.25),inset 0 1px 0 rgba(255,255,255,.8);border-color:rgba(107,153,0,.55)}
 .btn--od{background:var(--glass);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);color:var(--b700);border:var(--glass-b);padding:10px 24px;font-size:14px;border-radius:var(--rl);box-shadow:var(--glass-sh)}
 .btn--od:hover{background:rgba(255,255,255,.28);box-shadow:0 12px 40px rgba(0,0,0,.08),inset 0 2px 0 rgba(255,255,255,.9)}
@@ -115,7 +117,7 @@ html[lang="ar"] .steps-strip .ss-item{border-left:1px solid rgba(255,255,255,.3)
 html[lang="ar"] .steps-strip .ss-item:last-child{border-left:none}
 html[lang="en"] .steps-strip .ss-item{border-right:1px solid rgba(255,255,255,.3)}
 html[lang="en"] .steps-strip .ss-item:last-child{border-right:none}
-.ss-num{width:30px;height:30px;border-radius:50%;background:rgba(192,255,0,.25);color:var(--w);font-weight:800;font-size:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;border:1px solid rgba(255,255,255,.3);box-shadow:0 3px 12px rgba(192,255,0,.2),inset 0 1px 0 rgba(255,255,255,.4)}
+.ss-num{width:30px;height:30px;border-radius:50%;background:rgba(192,255,0,.25);color:var(--b900);font-weight:800;font-size:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;border:1px solid rgba(255,255,255,.3);box-shadow:0 3px 12px rgba(192,255,0,.2),inset 0 1px 0 rgba(255,255,255,.4)}
 .ss-txt h3{font-family:var(--fd);font-size:14px;color:var(--b900);line-height:1.2}
 .ss-txt p{font-size:11px;color:var(--s400);line-height:1.3;margin-top:1px}
 @media(max-width:768px){
@@ -142,7 +144,7 @@ html[lang="en"] .steps-strip .ss-item:last-child{border-right:none}
 .lp-cta .wrap{position:relative;z-index:1}
 .lp-cta .Hlg{color:var(--w);margin-bottom:10px}
 .lp-cta .Blg{color:rgba(255,255,255,.75);max-width:500px;margin:0 auto 24px}
-.lp-cta .btn--g{font-size:16px;padding:14px 36px}
+.lp-cta .btn--g{font-size:16px;padding:14px 36px;color:var(--w)}
 
 .lp-ft{background:linear-gradient(135deg,rgba(226,236,243,.6) 0%,rgba(219,233,244,.4) 100%);backdrop-filter:blur(12px);padding:20px 0;text-align:center}
 .lp-ft p{font-size:12px;color:var(--s400)}
@@ -262,23 +264,23 @@ html[lang="en"] .steps-strip .ss-item:last-child{border-right:none}
   <div class="wrap">
     <div class="sec-hdr rv">
       <span class="eye"><span class="ar">مسار العلاج</span><span class="en">The Process</span></span>
-      <h2 class="Hlg"><span class="ar">٤ خطوات لصحة اللثة</span><span class="en">4 Steps to Healthy Gums</span></h2>
+      <h2 class="Hlg"><span class="ar">4 خطوات لصحة اللثة</span><span class="en">4 Steps to Healthy Gums</span></h2>
     </div>
     <div class="steps-strip rv">
       <div class="ss-item">
-        <div class="ss-num"><span class="ar">١</span><span class="en">1</span></div>
+        <div class="ss-num">1</div>
         <div class="ss-txt"><h3><span class="ar">الأشعة البانورامية</span><span class="en">Panoramic X-ray</span></h3><p><span class="ar">تقييم شامل لمستوى العظم</span><span class="en">Complete bone level assessment</span></p></div>
       </div>
       <div class="ss-item">
-        <div class="ss-num"><span class="ar">٢</span><span class="en">2</span></div>
+        <div class="ss-num">2</div>
         <div class="ss-txt"><h3><span class="ar">فحص الجيوب</span><span class="en">Pocket Probing</span></h3><p><span class="ar">قياس عمق الجيوب حول الأسنان</span><span class="en">Measure pocket depth around teeth</span></p></div>
       </div>
       <div class="ss-item">
-        <div class="ss-num"><span class="ar">٣</span><span class="en">3</span></div>
+        <div class="ss-num">3</div>
         <div class="ss-txt"><h3><span class="ar">التنظيف العميق</span><span class="en">Deep Cleaning</span></h3><p><span class="ar">إزالة الجير بالموجات + ليزر</span><span class="en">Ultrasonic scaling + laser</span></p></div>
       </div>
       <div class="ss-item">
-        <div class="ss-num"><span class="ar">٤</span><span class="en">4</span></div>
+        <div class="ss-num">4</div>
         <div class="ss-txt"><h3><span class="ar">خطة المتابعة</span><span class="en">Follow-up Plan</span></h3><p><span class="ar">مواعيد دورية للحفاظ على النتيجة</span><span class="en">Scheduled visits to maintain results</span></p></div>
       </div>
     </div>
@@ -292,7 +294,7 @@ html[lang="en"] .steps-strip .ss-item:last-child{border-right:none}
         <li class="en"><strong>Is deep cleaning painful?</strong> — We use local anaesthesia and an ultrasonic scaler that works more gently than hand tools. Most patients feel only slight pressure.</li>
         <li class="ar"><strong>هل التهاب اللثة ممكن يسبب فقدان الأسنان؟</strong> — نعم. التهاب اللثة غير المعالج يدمر العظم الداعم للأسنان تدريجياً، مما يؤدي لتخلخلها وفقدانها. العلاج المبكر يمنع هذا التطور.</li>
         <li class="en"><strong>Can gum disease cause tooth loss?</strong> — Yes. Untreated gum disease gradually destroys the bone supporting your teeth, leading to loosening and tooth loss. Early treatment prevents this progression.</li>
-        <li class="ar"><strong>كم مرة أحتاج زيارة متابعة؟</strong> — حسب شدة الحالة: كل ٣ أشهر للحالات المتقدمة، وكل ٦ أشهر بعد استقرار الوضع. طبيبك يحدد الجدول المناسب.</li>
+        <li class="ar"><strong>كم مرة أحتاج زيارة متابعة؟</strong> — حسب شدة الحالة: كل 3 أشهر للحالات المتقدمة، وكل 6 أشهر بعد استقرار الوضع. طبيبك يحدد الجدول المناسب.</li>
         <li class="en"><strong>How often do I need follow-up visits?</strong> — Depends on severity: every 3 months for advanced cases, every 6 months once stable. Your dentist determines the right schedule.</li>
       </ul>
     </div>
@@ -329,7 +331,7 @@ html[lang="en"] .steps-strip .ss-item:last-child{border-right:none}
   <div class="wrap">
     <p>Vision Dental Clinic · <span class="ar">شارع خليفة، أبوظبي</span><span class="en">Khalifa Street, Abu Dhabi</span> · <a href="tel:+97123122777" dir="ltr">02 312 2777</a></p>
     <p style="margin-top:4px">
-      <span class="ar">السبت — الخميس: ١٠:٣٠ ص – ٧:٣٠ م · الجمعة: مغلق</span>
+      <span class="ar">السبت — الخميس: 10:30 ص – 7:30 م · الجمعة: مغلق</span>
       <span class="en">Sat — Thu: 10:30 AM – 7:30 PM · Fri: Closed</span>
     </p>
     <p style="margin-top:4px">MOHAP Licensed No. 5889VHC5-110626</p>

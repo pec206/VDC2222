@@ -8,7 +8,7 @@
 <meta name="robots" content="noindex,nofollow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -23,6 +23,7 @@
   --gb:linear-gradient(135deg,#1e4a6e 0%,#2D5F8A 100%);
   --fd:'DM Serif Display',Georgia,serif;
   --fb:'Plus Jakarta Sans',system-ui,sans-serif;
+  --fa:'Cairo',system-ui,sans-serif;
   --cw:1200px;--px:clamp(20px,5vw,48px);
   --r:12px;--rm:18px;--rl:24px;--rxl:40px;
   --glass:rgba(255,255,255,.15);
@@ -38,6 +39,8 @@ body{font-family:var(--fb);color:var(--s900);background:#e8eff5;line-height:1.6;
 img{max-width:100%;display:block}
 a{text-decoration:none;color:inherit}
 
+html[lang="ar"] body,html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3,html[lang="ar"] h4,html[lang="ar"] .Hxl,html[lang="ar"] .Hlg,html[lang="ar"] .Hmd,html[lang="ar"] .btn,html[lang="ar"] .eye,html[lang="ar"] .lang-btn,html[lang="ar"] th,html[lang="ar"] td{font-family:var(--fa)!important}
+
 /* TYPOGRAPHY */
 .Hxl{font-family:var(--fd);font-size:clamp(32px,5vw,56px);line-height:1.15;color:var(--b900)}
 .Hlg{font-family:var(--fd);font-size:clamp(26px,3.5vw,42px);line-height:1.2;color:var(--b900)}
@@ -52,7 +55,7 @@ section{padding:clamp(36px,4.5vw,56px) 0}
 
 /* ─── GLASS BUTTONS ─── */
 .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:var(--rl);font-family:var(--fb);font-size:15px;font-weight:700;transition:all .3s ease;cursor:pointer;border:none}
-.btn--g{background:rgba(192,255,0,.25);color:var(--w);border:var(--glass-b);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);box-shadow:0 8px 32px rgba(192,255,0,.25),inset 0 2px 0 rgba(255,255,255,.4),inset 0 -1px 0 rgba(0,0,0,.1)}
+.btn--g{background:rgba(192,255,0,.25);color:var(--b900);border:var(--glass-b);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);box-shadow:0 8px 32px rgba(192,255,0,.25),inset 0 2px 0 rgba(255,255,255,.4),inset 0 -1px 0 rgba(0,0,0,.1)}
 .btn--g:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(192,255,0,.35),inset 0 2px 0 rgba(255,255,255,.5)}.S--lt .btn--g,.lt-bg .btn--g{background:rgba(192,255,0,.35);color:#3d6600;border-color:rgba(107,153,0,.4);box-shadow:0 2px 12px rgba(107,153,0,.15),inset 0 1px 0 rgba(255,255,255,.7)}.S--lt .btn--g:hover,.lt-bg .btn--g:hover{color:#3d6600;box-shadow:0 4px 20px rgba(107,153,0,.25),inset 0 1px 0 rgba(255,255,255,.8);border-color:rgba(107,153,0,.55)}
 .btn--b{background:linear-gradient(135deg,rgba(30,74,110,.7) 0%,rgba(45,95,138,.75) 100%);color:var(--w);border:var(--glass-b);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);box-shadow:0 8px 32px rgba(30,74,110,.25),inset 0 2px 0 rgba(255,255,255,.4),inset 0 -1px 0 rgba(0,0,0,.1)}
 .btn--b:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(30,74,110,.35),inset 0 2px 0 rgba(255,255,255,.5)}
@@ -131,7 +134,7 @@ section{padding:clamp(36px,4.5vw,56px) 0}
 /* ─── GLASS STEPS ─── */
 .ts-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:40px}
 .ts-step{background:var(--glass);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);border-radius:var(--rl);padding:32px 24px;text-align:center;border:var(--glass-b);box-shadow:var(--glass-sh);position:relative}
-.ts-num{width:40px;height:40px;border-radius:50%;background:rgba(192,255,0,.25);color:var(--w);font-weight:800;font-size:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;border:1px solid rgba(255,255,255,.3);box-shadow:0 3px 12px rgba(192,255,0,.2),inset 0 1px 0 rgba(255,255,255,.4)}
+.ts-num{width:40px;height:40px;border-radius:50%;background:rgba(192,255,0,.25);color:var(--b900);font-weight:800;font-size:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;border:1px solid rgba(255,255,255,.3);box-shadow:0 3px 12px rgba(192,255,0,.2),inset 0 1px 0 rgba(255,255,255,.4)}
 .ts-step h3{font-family:var(--fd);font-size:18px;color:var(--b900);margin-bottom:8px}
 .ts-step p{font-size:14px;color:var(--s600);line-height:1.6}
 .ts-note{text-align:center;margin-top:24px;font-size:15px;font-weight:700;color:var(--g700)}
@@ -150,7 +153,7 @@ section{padding:clamp(36px,4.5vw,56px) 0}
 .lp-cta .wrap{position:relative;z-index:1}
 .lp-cta .Hlg{color:var(--w);margin-bottom:10px}
 .lp-cta .Blg{color:rgba(255,255,255,.75);max-width:540px;margin:0 auto 24px}
-.lp-cta .btn--g{font-size:16px;padding:14px 36px}
+.lp-cta .btn--g{font-size:16px;padding:14px 36px;color:var(--w)}
 
 /* ─── GLASS FOOTER ─── */
 .lp-ft{background:linear-gradient(135deg,rgba(226,236,243,.6) 0%,rgba(219,233,244,.4) 100%);backdrop-filter:blur(12px);padding:20px 0;text-align:center}
@@ -277,22 +280,22 @@ section{padding:clamp(36px,4.5vw,56px) 0}
     </div>
     <div class="ts-grid">
       <div class="ts-step rv">
-        <div class="ts-num">١</div>
+        <div class="ts-num">1</div>
         <h3>التشخيص الشامل</h3>
         <p>فحص كامل مع تصوير CBCT ومسح رقمي لتقييم صحة الفم.</p>
       </div>
       <div class="ts-step rv">
-        <div class="ts-num">٢</div>
+        <div class="ts-num">2</div>
         <h3>التخطيط الرقمي</h3>
         <p>تصميم DSD يُظهر النتيجة المتوقعة مع خطة مفصلة بالتسلسل والمدة.</p>
       </div>
       <div class="ts-step rv">
-        <div class="ts-num">٣</div>
+        <div class="ts-num">3</div>
         <h3>العلاج المرحلي</h3>
         <p>تنفيذ مرحلي منظّم — من الأساسيات إلى التجميل — بإشراف فريق متكامل.</p>
       </div>
       <div class="ts-step rv">
-        <div class="ts-num">٤</div>
+        <div class="ts-num">4</div>
         <h3>الابتسامة النهائية</h3>
         <p>تركيب التركيبات النهائية من مختبرنا الرقمي الداخلي — نتيجة دائمة.</p>
       </div>
@@ -349,7 +352,7 @@ section{padding:clamp(36px,4.5vw,56px) 0}
 <footer class="lp-ft">
   <div class="wrap">
     <p>Vision Dental Clinic · شارع خليفة، أبوظبي · <a href="tel:+97123122777" dir="ltr">02 312 2777</a></p>
-    <p style="margin-top:6px">السبت — الخميس: ١٠:٣٠ ص – ٧:٣٠ م · الجمعة: مغلق</p>
+    <p style="margin-top:6px">السبت — الخميس: 10:30 ص – 7:30 م · الجمعة: مغلق</p>
     <p style="margin-top:6px">MOHAP Licensed No. 5889VHC5-110626</p>
   </div>
 </footer>
