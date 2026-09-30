@@ -326,10 +326,13 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
           <label for="cf-msg">Message (Optional)</label>
           <textarea id="cf-msg" name="message" placeholder="Tell us about your dental concern..."></textarea>
         </div>
-        <div class="full" style="margin-top:8px">
-          <button type="submit" class="ct-form-submit">Request Consultation →</button>
+        <div style="position:absolute;left:-9999px;top:-9999px;height:0;overflow:hidden" aria-hidden="true">
+          <input type="text" name="company" tabindex="-1" autocomplete="off">
         </div>
-      
+        <div class="full" style="margin-top:8px">
+          <button type="submit" class="ct-form-submit" id="cf-submit">Request Consultation →</button>
+        </div>
+        <div id="cf-error" style="display:none;margin-top:12px;padding:12px 16px;background:rgba(220,38,38,.1);border:1px solid rgba(220,38,38,.3);border-radius:8px;color:#dc2626;font-size:.9rem"></div>
 <input type="hidden" name="visitor_id">
 <input type="hidden" name="session_id">
 <input type="hidden" name="utm_source">
@@ -342,7 +345,14 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
 <input type="hidden" name="fbclid">
 <input type="hidden" name="oppref">
 </form>
+      <div id="cf-success" style="display:none;text-align:center;padding:48px 24px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--g500)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:56px;height:56px;margin:0 auto 16px"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11.5 14.5 16 9.5"/></svg>
+        <h3 style="font-family:var(--fd);font-size:1.5rem;color:var(--b900);margin-bottom:8px">Request Received</h3>
+        <p style="color:var(--s600);margin-bottom:24px">Your request was received. Our team will contact you shortly.</p>
+        <a id="cf-continue" href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" data-vdc-event="booking_click" class="btn btn--g btn--arr" style="display:inline-flex">Continue in the App</a>
+      </div>
       <script>
+      var INQUIRY_ENDPOINT='';
       function handleContactForm(e){
         e.preventDefault();
         var n=document.getElementById('cf-name').value.trim();
@@ -351,16 +361,55 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
         var s=document.getElementById('cf-service').value;
         var d=document.getElementById('cf-doctor').value;
         var m=document.getElementById('cf-msg').value.trim();
-        var msg='Hi, I would like to request a consultation.\n';
-        msg+='Name: '+n+'\n';
-        msg+='Phone: '+p+'\n';
-        if(em) msg+='Email: '+em+'\n';
-        if(s) msg+='Service: '+s+'\n';
-        if(d) msg+='Preferred Doctor: '+d+'\n';
-        if(m) msg+='Message: '+m;
-        var url='https://chattop.mysmyle.net/?msg='+encodeURIComponent(msg);
-        url=window.VDC?VDC.decorateUrl(url):url;
-        window.open(url,'_blank');
+        var hp=document.querySelector('[name="company"]').value;
+        if(!INQUIRY_ENDPOINT){
+          var msg='Hi, I would like to request a consultation.\n';
+          msg+='Name: '+n+'\n';
+          msg+='Phone: '+p+'\n';
+          if(em) msg+='Email: '+em+'\n';
+          if(s) msg+='Service: '+s+'\n';
+          if(d) msg+='Preferred Doctor: '+d+'\n';
+          if(m) msg+='Message: '+m;
+          var url='https://chattop.mysmyle.net/?msg='+encodeURIComponent(msg);
+          url=window.VDC?VDC.decorateUrl(url):url;
+          window.open(url,'_blank');
+          return false;
+        }
+        var btn=document.getElementById('cf-submit');
+        var errEl=document.getElementById('cf-error');
+        errEl.style.display='none';
+        btn.disabled=true;
+        btn.textContent='Sending...';
+        var sid;
+        try{sid=crypto.randomUUID();}catch(ex){sid='sub_'+Date.now()+'_'+Math.random().toString(36).slice(2,10);}
+        sid='sub_'+sid;
+        var payload={submission_id:sid,name:n,phone:p,page:location.pathname,company:hp};
+        if(em) payload.email=em;
+        if(s) payload.service=s;
+        if(d) payload.doctor=d;
+        if(m) payload.message=m;
+        var hf=['visitor_id','session_id','utm_source','utm_medium','utm_campaign','utm_content','service_id','landing_page','gclid','fbclid','oppref'];
+        var hk=['vdc_vid','vdc_ref','utm_source','utm_medium','utm_campaign','utm_content','service_id','landing_page','gclid','fbclid','oppref'];
+        for(var i=0;i<hf.length;i++){
+          var v=document.querySelector('[name="'+hf[i]+'"]');
+          if(v&&v.value) payload[hk[i]]=v.value;
+        }
+        fetch(INQUIRY_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)})
+        .then(function(r){
+          if(r.ok){
+            document.getElementById('contact-form').style.display='none';
+            var suc=document.getElementById('cf-success');
+            suc.style.display='block';
+            var cont=document.getElementById('cf-continue');
+            cont.href=window.VDC?VDC.decorateUrl('https://chattop.mysmyle.net/'):'https://chattop.mysmyle.net/';
+          }else{throw new Error(r.status);}
+        })
+        .catch(function(){
+          btn.disabled=false;
+          btn.textContent='Request Consultation →';
+          errEl.textContent='We could not send your request. Please call +971 2 312 2777 or try again.';
+          errEl.style.display='block';
+        });
         return false;
       }
       </script>
