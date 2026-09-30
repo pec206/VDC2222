@@ -358,7 +358,9 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
         if(s) msg+='Service: '+s+'\n';
         if(d) msg+='Preferred Doctor: '+d+'\n';
         if(m) msg+='Message: '+m;
-        window.open('https://chattop.mysmyle.net/?msg='+encodeURIComponent(msg),'_blank');
+        var url='https://chattop.mysmyle.net/?msg='+encodeURIComponent(msg);
+        url=window.VDC?VDC.decorateUrl(url):url;
+        window.open(url,'_blank');
         return false;
       }
       </script>
