@@ -1,0 +1,39 @@
+{
+  "v": 4,
+  "createdOnFiles": { "v": 1, "at": "2026-09-26T12:00:00Z" },
+  "title": "Vision Dental Clinic — Website Presentation",
+  "cover": "cover",
+  "order": [
+    "cover",
+    "acknowledgment",
+    "design",
+    "funnel",
+    "seo",
+    "aeo",
+    "clusters-what",
+    "clusters-ours",
+    "landing-why",
+    "competitive",
+    "static-vs-wp",
+    "next-steps",
+    "closing"
+  ],
+  "sections": {
+    "s1": { "description": "Introduction and acknowledgment", "start": "cover" },
+    "s2": { "description": "Design philosophy and patient funnel", "start": "design" },
+    "s3": { "description": "SEO, AEO, and content strategy", "start": "seo" },
+    "s4": { "description": "Landing pages and competitive analysis", "start": "landing-why" },
+    "s5": { "description": "Technical decisions and next steps", "start": "static-vs-wp" }
+  },
+  "faces": {
+    "dm-serif-display": {
+      "family": "DM Serif Display",
+      "href": "https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
+    },
+    "plus-jakarta-sans": {
+      "family": "Plus Jakarta Sans",
+      "href": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    }
+  },
+  "designSystems": []
+}
