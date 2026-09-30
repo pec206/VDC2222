@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-page-type="home">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="/vdc-tracker.js" defer data-env="staging" data-endpoint=""></script>
 <title>Vision Dental Clinic | Abu Dhabi's Centre of Digital Dentistry</title>
 <meta name="description" content="Best dental clinic in Abu Dhabi — dental implants, veneers, Invisalign, teeth whitening & more. 6 specialist clinics, in-house digital lab, CBCT 3D imaging. Book now.">
 <meta property="og:title" content="Vision Dental Clinic | Abu Dhabi's Centre of Digital Dentistry">
@@ -688,7 +689,7 @@ ul{list-style:none}
   <a href="gallery.html">Gallery</a><a href="case-studies.html">Cases</a><a href="blog.html">Blog</a>
   <a href="medical-tourism.html">Medical Tourism</a>
   <a href="contact.html">Contact</a>
-  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book Appointment</a>
+  <a data-vdc-event="booking_click" href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book Appointment</a>
 </nav>
 
 <!-- HEADER -->
@@ -712,7 +713,7 @@ ul{list-style:none}
     </nav>
     <div class="hdr-r">
       <div class="hdr-lic"><span>MOHAP Licensed</span><b>No. 5889VHC5-110626</b></div>
-      <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener"
+      <a data-vdc-event="booking_click" data-vdc-label="header" href="https://chattop.mysmyle.net/" target="_blank" rel="noopener"
         class="btn btn--g hdr-ct" style="font-size:12.5px;padding:9px 18px">Book Appointment</a>
       <button class="hbg" id="hbg" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -757,7 +758,7 @@ ul{list-style:none}
     </p>
 
     <div class="h-acts">
-      <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book Appointment</a>
+      <a data-vdc-event="booking_click" href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book Appointment</a>
       <a href="#services" class="btn btn--gh">Our Services</a>
     </div>
 
@@ -843,7 +844,7 @@ ul{list-style:none}
 <!-- CONTACT INFO BAR -->
 <div class="ct-bar" role="complementary" aria-label="Contact Information">
   <div class="ct-track">
-    <span class="ct-item"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.71A2 2 0 012.18 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.61-.61a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+97123122777">+971 2 312 2777</a></span>
+    <span class="ct-item"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.71A2 2 0 012.18 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.61-.61a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg><a data-vdc-event="phone_click" href="tel:+97123122777">+971 2 312 2777</a></span>
     <span class="ct-sep">·</span>
     <span class="ct-item"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:info@visiondentalclinic.com">info@visiondentalclinic.com</a></span>
     <span class="ct-sep">·</span>
@@ -852,7 +853,7 @@ ul{list-style:none}
     <span class="ct-item"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Sat – Thu: 10:30 AM – 7:30 PM</span>
     <!-- Duplicate for seamless loop -->
     <span class="ct-sep" aria-hidden="true">·</span>
-    <span class="ct-item" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.71A2 2 0 012.18 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.61-.61a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+97123122777">+971 2 312 2777</a></span>
+    <span class="ct-item" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.71A2 2 0 012.18 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.61-.61a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg><a data-vdc-event="phone_click" href="tel:+97123122777">+971 2 312 2777</a></span>
     <span class="ct-sep" aria-hidden="true">·</span>
     <span class="ct-item" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:info@visiondentalclinic.com">info@visiondentalclinic.com</a></span>
     <span class="ct-sep" aria-hidden="true">·</span>
@@ -1045,7 +1046,7 @@ ul{list-style:none}
           <div class="sc-book">
             <a href="dental-implants.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             <a href="case-studies.html#implants" class="sc-cs">Cases<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-            <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
+            <a data-vdc-event="booking_click" href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
           </div>
         </div>
       </article>
@@ -1059,7 +1060,7 @@ ul{list-style:none}
           <div class="sc-book">
             <a href="smile-design.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             <a href="case-veneers.html" class="sc-cs">Cases<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-            <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
+            <a data-vdc-event="booking_click" href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
           </div>
         </div>
       </article>
@@ -1072,7 +1073,7 @@ ul{list-style:none}
           <div class="sc-tech"><span>3Shape Scanner</span><span>Invisalign®</span></div>
           <div class="sc-book">
             <a href="orthodontics.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-            <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
+            <a data-vdc-event="booking_click" href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
           </div>
         </div>
       </article>
@@ -1090,7 +1091,7 @@ ul{list-style:none}
           <div class="sc-book">
             <a href="whitening.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             <a href="case-whitening.html" class="sc-cs">Cases<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-            <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
+            <a data-vdc-event="booking_click" href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
           </div>
         </div>
       </article>
@@ -1103,7 +1104,7 @@ ul{list-style:none}
           <div class="sc-book">
             <a href="oral-surgery.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             <a href="case-studies.html#surgery" class="sc-cs">Cases<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-            <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
+            <a data-vdc-event="booking_click" href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
           </div>
         </div>
       </article>
@@ -1117,7 +1118,7 @@ ul{list-style:none}
           <div class="sc-book">
             <a href="prosthodontics.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             <a href="case-prosthodontic.html" class="sc-cs">Cases<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-            <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
+            <a data-vdc-event="booking_click" href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
           </div>
         </div>
       </article>
@@ -1135,7 +1136,7 @@ ul{list-style:none}
           <div class="sc-book">
             <a href="root-canal.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             <a href="case-pulpectomy.html" class="sc-cs">Cases<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-            <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
+            <a data-vdc-event="booking_click" href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
           </div>
         </div>
       </article>
@@ -1148,7 +1149,7 @@ ul{list-style:none}
           <div class="sc-tech"><span>Ultrasonic Scaler</span><span>Air Flow</span><span>Premium Polishing</span></div>
           <div class="sc-book">
             <a href="scaling.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-            <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
+            <a data-vdc-event="booking_click" href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
           </div>
         </div>
       </article>
@@ -1161,7 +1162,7 @@ ul{list-style:none}
           <div class="sc-book">
             <a href="restoration.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             <a href="case-restoration.html" class="sc-cs">Cases<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-            <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
+            <a data-vdc-event="booking_click" href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
           </div>
         </div>
       </article>
@@ -1174,7 +1175,7 @@ ul{list-style:none}
           <div class="sc-tech"><span>STA Anesthesia</span><span>Nitrous Oxide</span><span>Fluoride Sessions</span></div>
           <div class="sc-book">
             <a href="pediatric.html" class="sc-lnk">Learn more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-            <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
+            <a data-vdc-event="booking_click" href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--sm">Book</a>
           </div>
         </div>
       </article>
@@ -1321,7 +1322,7 @@ ul{list-style:none}
           <span class="dr-sptg">Full Mouth Rehab</span><span class="dr-sptg">Digital Dentistry</span>
         </div>
         <div class="dr-acs">
-          <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book with Dr. Hussien</a>
+          <a data-vdc-event="booking_click" href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book with Dr. Hussien</a>
           <a href="dr-hussien.html" class="btn btn--od">Full Profile</a>
         </div>
       </div>
@@ -1501,8 +1502,8 @@ ul{list-style:none}
       <h2 id="bk-h">Ready to Change<br>Your <em class="em--lt">Life?</em></h2>
       <p>Book a consultation today. Our team reviews every case personally and responds within a few hours. We speak English and Arabic.</p>
       <div class="bk-btns">
-        <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--lg btn--arr">Book Appointment</a>
-        <a href="tel:+97123122777" class="btn btn--gh btn--lg">
+        <a data-vdc-event="booking_click" href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--lg btn--arr">Book Appointment</a>
+        <a data-vdc-event="phone_click" href="tel:+97123122777" class="btn btn--gh btn--lg">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.71A2 2 0 012.18 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.61-.61a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
           02 312 2777
         </a>
@@ -1661,7 +1662,7 @@ ul{list-style:none}
 
       <div class="faq-item rv"><div class="faq-q">What insurance does Vision Dental accept?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div><div class="faq-a"><div class="faq-a-in">We accept major insurance providers including <strong>Thiqa, Daman, NextCare, ADNIC, and AXA</strong>. We also offer interest-free installment plans through Tabby and Tamara for patients who prefer to spread the cost. <a href="contact.html">Contact us</a> to verify your specific insurance coverage.</div></div></div>
 
-      <div class="faq-item rv"><div class="faq-q">Where is Vision Dental Clinic located?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div><div class="faq-a"><div class="faq-a-in">Vision Dental Clinic is located on <strong>Khalifa Street, Abu Dhabi</strong>. We are open Saturday to Thursday, 10:30 AM – 7:30 PM (closed Friday). Call <a href="tel:+97123122777">02 312 2777</a> to book or <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener">book online</a>. MOHAP Licensed — No. 5889VHC5-110626.</div></div></div>
+      <div class="faq-item rv"><div class="faq-q">Where is Vision Dental Clinic located?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div><div class="faq-a"><div class="faq-a-in">Vision Dental Clinic is located on <strong>Khalifa Street, Abu Dhabi</strong>. We are open Saturday to Thursday, 10:30 AM – 7:30 PM (closed Friday). Call <a data-vdc-event="phone_click" href="tel:+97123122777">02 312 2777</a> to book or <a data-vdc-event="booking_click" href="https://chattop.mysmyle.net/" target="_blank" rel="noopener">book online</a>. MOHAP Licensed — No. 5889VHC5-110626.</div></div></div>
 
     </div>
   </div>
@@ -1685,7 +1686,7 @@ ul{list-style:none}
         </div>
         <div class="loc-row">
           <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.71A2 2 0 012.18 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.61-.61a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-          <div><h4>Phone</h4><p><a href="tel:+97123122777">02 312 2777</a></p></div>
+          <div><h4>Phone</h4><p><a data-vdc-event="phone_click" href="tel:+97123122777">02 312 2777</a></p></div>
         </div>
         <div class="loc-row">
           <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -1749,7 +1750,7 @@ ul{list-style:none}
       <h4>Contact</h4>
       <div class="fcs">
         <div class="fci"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><p>1302 Al Ansari Exchange Bldg.<br>Khalifa Street, Abu Dhabi</p></div>
-        <div class="fci"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.71A2 2 0 012.18 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.61-.61a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg><p><a href="tel:+97123122777">02 312 2777</a></p></div>
+        <div class="fci"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.71A2 2 0 012.18 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.61-.61a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg><p><a data-vdc-event="phone_click" data-vdc-label="footer" href="tel:+97123122777">02 312 2777</a></p></div>
         <div class="fci"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><p><a href="mailto:info@visiondentalclinic.com">info@visiondentalclinic.com</a></p></div>
         <div class="fci"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><p>Sat–Thu: 10:30 AM – 7:30 PM · Fri Off</p></div>
       </div>
@@ -1920,7 +1921,7 @@ document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>{c
 
 <!-- FLOATING CHAT -->
 <div class="ch-float">
-  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" aria-label="Book Appointment">
+  <a data-vdc-event="booking_click" data-vdc-label="floating" data-vdc-label="floating" href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" aria-label="Book Appointment">
     <div class="ch-pulse"></div>
     <svg viewBox="0 0 24 24" fill="none"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" fill="#fff"/></svg>
   </a>

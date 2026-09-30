@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-page-type="doctor_profile">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="/vdc-tracker.js" defer data-env="staging" data-endpoint=""></script>
 <title>Dr. Hussien Salah Tahoun | Vision Dental Clinic Abu Dhabi</title>
 <meta name="description" content="Dr. Hussien Tahoun — Oral & Maxillofacial Surgeon, Medical Director. Dental implants, wisdom tooth extraction & oral surgery specialist in Abu Dhabi. 5,000+ implants placed.">
 <meta property="og:title" content="Dr. Hussien Salah Tahoun | Vision Dental Clinic">
@@ -149,7 +150,7 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
   <a href="gallery.html">Gallery</a><a href="case-studies.html">Cases</a><a href="blog.html">Blog</a>
   <a href="medical-tourism.html">Medical Tourism</a>
   <a href="contact.html">Contact</a>
-  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book Appointment</a>
+  <a data-vdc-event="booking_click" href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book Appointment</a>
 </nav>
 
 <header id="hdr">
@@ -166,7 +167,7 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
       </ul></nav>
     <div class="hdr-r">
       <div class="hdr-lic"><span>MOHAP Licensed</span><b>No. 5889VHC5-110626</b></div>
-      <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g hdr-ct" style="font-size:12.5px;padding:9px 18px">Book Appointment</a>
+      <a data-vdc-event="booking_click" data-vdc-label="header" href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g hdr-ct" style="font-size:12.5px;padding:9px 18px">Book Appointment</a>
       <button class="hbg" id="hbg"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -198,7 +199,7 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
       </div>
       <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(122,182,72,.1);border:1px solid rgba(122,182,72,.2);border-radius:100px;padding:6px 16px;margin-bottom:14px;font-size:13px;font-weight:600;color:var(--g400)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>Consultation Fee: 400 AED — deducted from treatment cost</div>
       <div class="dr-acts">
-        <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book with Dr. Hussien</a>
+        <a data-vdc-event="booking_click" href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book with Dr. Hussien</a>
         <a href="gallery.html" class="btn btn--gh">Gallery</a>
         <a href="case-studies.html#hussien" class="btn btn--gh">Cases</a>
       </div>
@@ -352,7 +353,7 @@ background:#2D5F8A;box-shadow:0 4px 16px rgba(45,95,138,.45);transition:all .3s;
     <div class="cta-box rv">
       <h3>Interested in a Similar Result?</h3>
       <p>Book a consultation and receive a digital preview of your potential outcome before any treatment begins.</p>
-      <div class="cta-btns"><a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book Appointment</a><a href="tel:+97123122777" class="btn btn--gh">+971 2 312 2777</a></div>
+      <div class="cta-btns"><a data-vdc-event="booking_click" href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" class="btn btn--g btn--arr">Book Appointment</a><a data-vdc-event="phone_click" href="tel:+97123122777" class="btn btn--gh">+971 2 312 2777</a></div>
     </div>
   </div>
 </section>
@@ -465,7 +466,7 @@ document.querySelectorAll('.vt-card').forEach(c=>{c.addEventListener('click',()=
 
 <!-- FLOATING CHAT -->
 <div class="ch-float">
-  <a href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" aria-label="Book Appointment">
+  <a data-vdc-event="booking_click" data-vdc-label="floating" href="https://chattop.mysmyle.net/" target="_blank" rel="noopener" aria-label="Book Appointment">
     <div class="ch-pulse"></div>
     <svg viewBox="0 0 24 24" fill="none"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" fill="#fff"/></svg>
   </a>
